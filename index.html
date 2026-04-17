@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO ─────────────────────────────────────────────── -->
+  <title>Gabriele Tolomei — Explainable AI · Adversarial ML · Sapienza Rome</title>
+  <meta name="description" content="Gabriele Tolomei is Associate Professor of Computer Science at Sapienza University of Rome, leading the HERCOLE Lab. Research spans explainable AI, adversarial machine learning, graph neural networks, federated learning, and recommender systems.">
+  <meta name="keywords" content="Gabriele Tolomei, explainable AI, XAI, counterfactual explanations, adversarial machine learning, graph neural networks, federated learning, recommender systems, machine unlearning, Sapienza University, HERCOLE Lab">
+  <meta name="author" content="Gabriele Tolomei">
+  <link rel="canonical" href="https://gtolomei.github.io/">
+
+  <!-- Open Graph ──────────────────────────────────────────────── -->
+  <meta property="og:type"        content="profile">
+  <meta property="og:title"       content="Gabriele Tolomei — Explainable AI · Adversarial ML">
+  <meta property="og:description" content="Associate Professor at Sapienza University of Rome. Research on explainability, security, and scalability of machine learning systems.">
+  <meta property="og:url"         content="https://gtolomei.github.io/">
+  <meta property="og:image"       content="https://gtolomei.github.io/assets/img/profile.jpg">
+  <meta property="og:site_name"   content="Gabriele Tolomei">
+  <meta property="profile:first_name" content="Gabriele">
+  <meta property="profile:last_name"  content="Tolomei">
+
+  <!-- Twitter Card ────────────────────────────────────────────── -->
+  <meta name="twitter:card"        content="summary">
+  <meta name="twitter:site"        content="@gtolomei">
+  <meta name="twitter:creator"     content="@gtolomei">
+  <meta name="twitter:title"       content="Gabriele Tolomei — Explainable AI · Adversarial ML">
+  <meta name="twitter:description" content="Associate Professor at Sapienza University of Rome. Research on explainability, security, and scalability of ML systems.">
+  <meta name="twitter:image"       content="https://gtolomei.github.io/assets/img/profile.jpg">
+
+  <!-- Favicon ─────────────────────────────────────────────────── -->
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon"      href="assets/img/favicon.png">
+
+  <!-- Sitemap / robots ────────────────────────────────────────── -->
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+
+  <!-- Theme: set before first paint to avoid flash ────────────── -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("theme-pref");
+        if (stored) { document.documentElement.setAttribute("data-theme", stored); return; }
+      } catch (_) {}
+      var h = new Date().getUTCHours();
+      document.documentElement.setAttribute("data-theme",
+        (h >= 18 || h < 6) ? "dark" : "light");
+    })();
+  </script>
+
+  <!-- Stylesheet ──────────────────────────────────────────────── -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Schema.org Person JSON-LD ───────────────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Gabriele Tolomei",
+    "url": "https://gtolomei.github.io/",
+    "image": "https://gtolomei.github.io/assets/img/profile.jpg",
+    "email": "tolomei@di.uniroma1.it",
+    "telephone": "+39 06 4925 5475",
+    "jobTitle": "Associate Professor of Computer Science",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Sapienza University of Rome",
+      "url": "https://www.uniroma1.it"
+    },
+    "alumniOf": {
+      "@type": "Organization",
+      "name": "Sapienza University of Rome"
+    },
+    "sameAs": [
+      "https://scholar.google.com/citations?user=Y2R2DXEAAAAJ",
+      "https://orcid.org/0000-0001-7471-6659",
+      "https://www.linkedin.com/in/gabrieletolomei/",
+      "https://twitter.com/gtolomei",
+      "https://www.researchgate.net/profile/Gabriele-Tolomei",
+      "https://dblp.org/pid/72/7456.html"
+    ],
+    "knowsAbout": [
+      "Explainable Artificial Intelligence",
+      "Counterfactual Explanations",
+      "Adversarial Machine Learning",
+      "Graph Neural Networks",
+      "Federated Learning",
+      "Recommender Systems",
+      "Machine Unlearning",
+      "Information Retrieval",
+      "Fairness in AI",
+      "Large Language Models"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+<!-- ════════════════════════════════════════════════════════════
+     NAVIGATION
+═════════════════════════════════════════════════════════════ -->
+<nav id="navbar" aria-label="Primary navigation">
+  <div class="nav-pill">
+    <a class="nav-brand" href="#home" aria-label="Gabriele Tolomei — home">GT</a>
+    <ul role="list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#teaching">Teaching</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="nav-scholar"
+       href="https://scholar.google.com/citations?user=Y2R2DXEAAAAJ"
+       target="_blank" rel="noopener" aria-label="Google Scholar profile">Scholar ↗</a>
+    <button id="theme-toggle" aria-label="Toggle colour theme">🌙</button>
+  </div>
+</nav>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     HERO
+═════════════════════════════════════════════════════════════ -->
+<section id="home" class="hero" aria-label="Introduction">
+  <div class="hero-content">
+    <div class="hero-text">
+      <p class="hero-role">Associate Professor · Sapienza University of Rome</p>
+      <h1 class="hero-name">Gabriele <span class="gradient-text">Tolomei</span></h1>
+      <p class="hero-bio">
+        I lead the <strong><a href="https://hercolelab.netlify.app/" target="_blank" rel="noopener">HERCOLE Lab</a></strong>
+        (Human-Explainable, Robust, and COllaborative LEarning) at the
+        Department of Computer Science, Sapienza University of Rome, and serve
+        as co-founder &amp; CSO at <strong><a href="https://tellmewai.com" target="_blank" rel="noopener">tellmewAI</a></strong>. My research is centred on three core pillars of modern AI:
+        <strong>explainability</strong>, <strong>security</strong>, and
+        <strong>scalability</strong>.
+      </p>
+
+      <!-- Stats — values filled by publications.js; h-index &amp; citations are updated manually -->
+      <div class="hero-stats" aria-label="Research metrics">
+        <div class="stat">
+          <span id="stat-total" class="stat-value">—</span>
+          <span class="stat-label">Publications</span>
+        </div>
+        <div class="stat">
+          <span id="stat-astar" class="stat-value">—</span>
+          <span class="stat-label">Top-tier Venues</span>
+        </div>
+        <!-- <div class="stat">
+          <span id="stat-q1" class="stat-value">—</span>
+          <span class="stat-label">Q1 Journals</span>
+        </div> -->
+        <!-- Update h-index and citations from Google Scholar -->
+        <div class="stat">
+          <span id="stat-hindex" class="stat-value"
+                data-manual="true"
+                title="Update from Google Scholar">—</span>
+          <span class="stat-label">h-index</span>
+        </div>
+        <div class="stat">
+          <span id="stat-citations" class="stat-value"
+                data-manual="true"
+                title="Update from Google Scholar">2,351</span>
+          <span class="stat-label">Citations</span>
+        </div>
+        <!-- <div class="stat">
+          <span id="stat-years" class="stat-value">—</span>
+          <span class="stat-label">Years active</span>
+        </div> -->
+      </div>
+
+      <div class="hero-links">
+        <a href="#publications" class="btn btn-primary">View Publications</a>
+        <a href="#about"        class="btn btn-ghost">About me</a>
+      </div>
+    </div>
+
+    <div class="hero-photo">
+      <div class="photo-ring">
+        <img src="assets/img/profile.jpg"
+             alt="Portrait of Gabriele Tolomei"
+             width="240" height="240"
+             loading="eager">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     ABOUT
+═════════════════════════════════════════════════════════════ -->
+<section id="about" class="section" aria-labelledby="about-title">
+  <div class="container">
+    <p class="section-label">// About</p>
+    <h2 id="about-title" class="section-title">Background</h2>
+
+      <div class="about-card about-full">
+        <p>
+          <strong>Gabriele Tolomei</strong> is an Associate Professor of Computer Science
+          at <strong>Sapienza University of Rome</strong>, where he leads the
+          <strong><a href="https://hercolelab.netlify.app/" target="_blank" rel="noopener">HERCOLE Lab</a></strong>
+          (Human-Explainable, Robust, and COllaborative LEarning). 
+          He is also co-founder and Chief Scientific Officer at <strong><a href="https://tellmewai.com" target="_blank" rel="noopener">tellmewAI</a></strong>, an innovative start-up developing tools for the automatic compliance verification of AI systems against regulatory frameworks, such as the European AI Act.
+        </p>
+        <br>
+        <p>  
+          His research is centred on three core pillars of modern AI: <strong>explainability</strong>,
+          <strong>security</strong>, and <strong>scalability</strong>.
+        </p>
+        <p>
+          In <strong>explainability</strong>, his work focuses on post-hoc,
+          model-agnostic methods—particularly counterfactual explanations—for complex, "black-box"
+          machine learning systems.
+          The goal is to make AI decisions transparent, actionable, and human-understandable.
+        </p>
+        <p>
+          In <strong>security</strong>, he studies adversarial machine learning,
+          analysing vulnerabilities of models under evasion and poisoning attacks,
+          and designing methods to improve the robustness and reliability of both
+          centralized and federated learning systems.
+        </p>
+        <p>
+          In <strong>scalability</strong>, his research addresses large-scale and
+          distributed learning, including federated learning, with a focus on efficiency, privacy, and deployment
+          in real-world settings.
+        </p>
+        <br>
+        <p>Before joining Sapienza, he held research positions at <strong>Yahoo Labs</strong> (London, UK) and 
+          <strong>ISTI-CNR</strong> (Pisa, Italy), working on advertising quality, query understanding, and large-scale data mining.
+        </p>
+      </div>
+      <div class="about-card">
+        <h3>🎓 Education</h3>
+        <p>
+          Ph.D. in Computer Science — Sapienza University of Rome<br>
+          M.Sc. in Computer Science <em>(summa cum laude)</em> — Sapienza University of Rome<br>
+          B.Sc. in Computer Science — Sapienza University of Rome
+        </p>
+      </div>
+
+      <div class="about-card">
+        <h3>🏛️ Affiliations</h3>
+        <p>
+          Head of the <strong><a href="https://hercolelab.netlify.app/" target="_blank" rel="noopener">HERCOLE Lab</a></strong> — Sapienza, Department of Computer Science<br>
+          Co-founder &amp; CSO at <strong><a href="https://tellmewai.com" target="_blank" rel="noopener">tellmewAI</a></strong><br>
+          Member of the European Laboratory for Learning and Intelligent Systems (<strong><a href="https://ellis.eu/person/gabriele-tolomei" target="_blank" rel="noopener">ELLIS</a></strong>)
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     RESEARCH
+═════════════════════════════════════════════════════════════ -->
+<section id="research" class="section" aria-labelledby="research-title">
+  <div class="container">
+    <p class="section-label">// Research</p>
+    <h2 id="research-title" class="section-title">Research Areas</h2>
+
+  <div class="research-grid">
+
+    <div class="research-card">
+      <div class="research-icon">💡</div>
+      <h3>Explainable AI (XAI)</h3>
+      <p>
+        Model-agnostic, post-hoc explainability methods for black-box systems, with a focus on counterfactual explanations. Emphasis on transparent, actionable, and human-understandable insights, through LLM-generated explanation narratives.
+      </p>
+    </div>
+
+    <div class="research-card">
+      <div class="research-icon">🛡️</div>
+      <h3>Robust &amp; Secure Machine Learning</h3>
+      <p>
+        Adversarial machine learning and robustness techniques for protecting AI systems against malicious attacks such as evasion and model poisoning, with the goal of improving security and reliability.
+      </p>
+    </div>
+
+    <div class="research-card">
+      <div class="research-icon">🌐</div>
+      <h3>Scalable &amp; Federated Learning</h3>
+      <p>
+        Large-scale machine learning systems, including federated learning and distributed optimization methods. Focus on privacy-preserving training, efficiency, and robustness in decentralized environments.
+      </p>
+    </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     PUBLICATIONS
+═════════════════════════════════════════════════════════════ -->
+<section id="publications" class="section" aria-labelledby="pub-title">
+  <div class="container">
+    <p class="section-label">// Publications</p>
+    <h2 id="pub-title" class="section-title">Publications</h2>
+
+    <p class="pub-meta">
+      Auto-synced nightly from
+      <a href="https://dblp.org/pid/72/7456.html" target="_blank" rel="noopener">DBLP</a>.
+      Last updated <span id="pub-last-updated">—</span>.
+    </p>
+
+    <!-- Type filter -->
+    <div id="type-filter"
+         class="filter-row"
+         role="group"
+         aria-label="Filter by publication type">
+    </div>
+
+    <!-- Topic filter -->
+    <div id="topic-filter"
+         class="filter-row"
+         role="group"
+         aria-label="Filter by research topic">
+    </div>
+
+    <p id="pub-count" class="pub-count" aria-live="polite"></p>
+
+    <!-- Publication cards injected here by publications.js -->
+    <div id="pub-list" role="list" aria-label="Publications list">
+      <p class="pub-empty">Loading publications…</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     TEACHING
+═════════════════════════════════════════════════════════════ -->
+<section id="teaching" class="section" aria-labelledby="teaching-title">
+  <div class="container">
+    <p class="section-label">// Teaching</p>
+    <h2 id="teaching-title" class="section-title">Teaching</h2>
+
+    <p style="color:var(--text-muted);margin-bottom:2rem;max-width:60ch">
+      I currently teach the following courses at Sapienza University of Rome.
+      I am the advisor of six Ph.D. candidates, and I also supervise B.Sc. and M.Sc. theses on topics including explainable AI,
+      adversarial robustness, and federated learning.
+      Prospective students are welcome to reach out!
+    </p>
+
+    <div class="teaching-grid">
+
+      <div class="teaching-card">
+        <span class="badge-lang">IT</span>
+        <h3>Sistemi Operativi (Operating Systems)</h3>
+        <p>
+          Bachelor's Degree in Computer Science
+          (Laurea Triennale in Informatica).
+          Covers process management, memory, file systems, and concurrency.
+        </p>
+        <a class="teaching-link"
+           href="https://github.com/gtolomei/operating-systems"
+           target="_blank" rel="noopener">Course material on GitHub</a>
+      </div>
+
+      <div class="teaching-card">
+        <span class="badge-lang">EN</span>
+        <h3>Big Data Computing</h3>
+        <p>
+          Master's Degree in Computer Science
+          (Laurea Magistrale in Informatica).
+          Large-scale data processing, distributed computing frameworks,
+          and scalable ML pipelines.
+        </p>
+        <a class="teaching-link"
+           href="https://github.com/gtolomei/big-data-computing"
+           target="_blank" rel="noopener">Course material on GitHub</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     CONTACT
+═════════════════════════════════════════════════════════════ -->
+<section id="contact" class="section" aria-labelledby="contact-title">
+  <div class="container">
+    <p class="section-label">// Contact</p>
+    <h2 id="contact-title" class="section-title">Get in Touch</h2>
+
+    <div class="contact-grid">
+
+      <div class="contact-block">
+        <h3>Office</h3>
+        <address>
+          Department of Computer Science<br>
+          Sapienza University of Rome<br>
+          Viale Regina Elena, 295<br>
+          Building E — 1st Floor — Room 106<br>
+          00161 Rome, Italy
+        </address>
+      </div>
+
+      <div class="contact-block">
+        <h3>Reach me</h3>
+        <p>
+          <a href="mailto:tolomei@di.uniroma1.it">tolomei@di.uniroma1.it</a><br>
+          <a href="tel:+390649255475">+39 06 4925 5475</a>
+        </p>
+
+        <div class="social-links" aria-label="External profiles">
+          <a class="social-link"
+             href="https://dblp.org/pid/72/7456.html"
+             target="_blank" rel="noopener">DBLP</a>
+          <a class="social-link"
+             href="https://scholar.google.com/citations?user=Y2R2DXEAAAAJ"
+             target="_blank" rel="noopener">Scholar</a>
+          <a class="social-link"
+             href="https://orcid.org/0000-0001-7471-6659"
+             target="_blank" rel="noopener">ORCID</a>
+          <a class="social-link"
+             href="https://www.linkedin.com/in/gabrieletolomei/"
+             target="_blank" rel="noopener">LinkedIn</a>
+          <a class="social-link"
+             href="https://twitter.com/gtolomei"
+             target="_blank" rel="noopener">X / Twitter</a>
+          <a class="social-link"
+             href="https://www.researchgate.net/profile/Gabriele-Tolomei"
+             target="_blank" rel="noopener">ResearchGate</a>
+          <a class="social-link"
+             href="https://github.com/gtolomei"
+             target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     FOOTER
+═════════════════════════════════════════════════════════════ -->
+<footer>
+  <p>
+    © <span id="footer-year"></span> Gabriele Tolomei ·
+    Built with static HTML &amp; auto-synced via GitHub Actions ·
+    <a href="https://github.com/gtolomei/gtolomei.github.io" target="_blank" rel="noopener">Source</a>
+  </p>
+  <script>document.getElementById("footer-year").textContent = new Date().getFullYear();</script>
+</footer>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     SCRIPTS
+═════════════════════════════════════════════════════════════ -->
+<!-- publications-data.js is AUTO-GENERATED by scripts/fetch_publications.py -->
+<script src="assets/js/publications-data.js"></script>
+<script src="assets/js/topic-labels.js"></script>
+<script src="assets/js/publications.js"></script>
+<!--<script src="assets/js/scholar.js"></script>-->
+
+</body>
+</html>

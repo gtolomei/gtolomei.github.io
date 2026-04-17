@@ -1,0 +1,46 @@
+name: Update Publications
+
+on:
+  schedule:
+    # Nightly at 04:00 UTC
+    - cron: '0 4 * * *'
+  workflow_dispatch:   # allow manual trigger from GitHub UI
+
+permissions:
+  contents: write      # needed to commit generated files back to main
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Fetch and classify publications
+        run: python3 scripts/fetch_publications.py
+
+      - name: Commit generated files (if changed)
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add \
+            data/publications.json \
+            data/scholar.json \
+            assets/js/publications-data.js \
+            sitemap.xml
+          # Only commit when there are actual changes
+          if git diff --cached --quiet; then
+            echo "No changes — skipping commit."
+          else
+            git commit -m "chore: auto-sync publications [skip ci]"
+            git push
+          fi

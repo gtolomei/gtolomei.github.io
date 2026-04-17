@@ -1,0 +1,141 @@
+# data/topics.yml — Research topic classifier
+#
+# Each entry:
+#   slug:     short identifier used in the UI filter chips and JS
+#   label:    human-readable label shown in the UI
+#   patterns: list of Python regex strings (case-insensitive, OR-combined)
+#             applied to: "<title> <venue_full>"
+#
+# Rules:
+#   - A paper may match multiple topics (all matching slugs are assigned).
+#   - The entry with empty patterns is the catch-all "misc" slug —
+#     it is assigned only to papers that match NOTHING else.
+#   - Order within the file does not affect matching (all are checked).
+#
+# Re-run scripts/fetch_publications.py after editing.
+
+- slug: xai
+  label: "Explainable AI"
+  patterns:
+    - "\\bexplain\\w*\\b"
+    - "\\bexplanation\\w*\\b"
+    - "\\bcounterfactual\\w*\\b"
+    - "\\binterpret\\w*\\b"
+    - "\\b(xai|saliency)\\b"
+    - "\\bfeature importance\\b"
+    - "\\b(shapley|shap|lime)\\b"
+    - "\\bxai narrative\\b"
+    - "\\bactionable\\b"
+    - "\\bdecision tree\\b"
+
+- slug: adversarial
+  label: "Adversarial ML"
+  patterns:
+    - "\\badversarial\\b"
+    - "\\bevasion\\s*(attack)?\\b"
+    - "\\bpoisoning\\b"
+    - "\\bvicious\\s*attack\\b"
+    - "\\bbackdoor\\b"
+    - "\\bevasion.aware\\b"
+    - "\\brobustness\\s*(verif|certif|of)\\b"
+    - "\\btreant\\b"
+    - "\\bameba\\b"
+
+- slug: gnn
+  label: "Graph Neural Networks"
+  patterns:
+    - "\\bgraph neural\\b"
+    - "\\b(gnn|gnns)\\b"
+    - "\\bgraph\\s+network\\b"
+    - "\\b(node classification|link prediction|graph convolution)\\b"
+    - "\\bcommunity\\s+(detection|hiding|membership)\\b"
+    - "\\bcombinex\\b"
+    - "\\bcf.gnn\\b"
+    - "\\bgraph.*explai\\b"
+
+- slug: recommender
+  label: "Recommender Systems"
+  patterns:
+    - "\\brecommend\\w*\\b"
+    - "\\bcollaborative filtering\\b"
+    - "\\bsequential recomm\\b"
+    - "\\bmatrix factor\\b"
+    - "\\bitem embed\\b"
+    - "\\buser preference\\b"
+    - "\\bgrease\\b"
+    - "\\bclick.through\\b"
+
+- slug: federated
+  label: "Federated Learning"
+  patterns:
+    - "\\bfederated\\b"
+    - "\\bfl\\s+(for|in|of)\\b"
+    - "\\bflirt\\b"
+    - "\\bcovert channel\\b"
+
+- slug: unlearning
+  label: "Machine Unlearning"
+  patterns:
+    - "\\bunlearn\\w*\\b"
+    - "\\bright to (be forgotten|erasure)\\b"
+    - "\\bmachine unlearn\\b"
+    - "\\bnabla.*tau\\b"
+    - "\\bgradient.based.*forget\\b"
+
+- slug: ir
+  label: "Information Retrieval"
+  patterns:
+    - "\\binformation retrieval\\b"
+    - "\\bweb search\\b"
+    - "\\bsearch engine\\b"
+    - "\\bweb mining\\b"
+    - "\\btask.based\\b"
+    - "\\bcache eviction\\b"
+    - "\\bsponsored search\\b"
+    - "\\bdwell time\\b"
+    - "\\ba/b testing\\b"
+    - "\\bquery (cluster|segment|intent|understand)\\b"
+    - "\\bmustache\\b"
+
+- slug: fairness
+  label: "Fairness & Privacy"
+  patterns:
+    - "\\bfairness\\b"
+    - "\\bfair\\s+removal\\b"
+    - "\\bprivacy\\b"
+    - "\\bbias\\b"
+    - "\\bdebiasing\\b"
+    - "\\bprivacy.preserving\\b"
+    - "\\bfrog\\b"
+    - "\\bdiscrimination\\b"
+
+- slug: llm
+  label: "LLMs & Generative AI"
+  patterns:
+    - "\\blarge language model\\b"
+    - "\\bllm\\b"
+    - "\\bgenerative (ai|model|agent)\\b"
+    - "\\blanguage model\\b"
+    - "\\bretrieval.augmented\\b"
+    - "\\bprompt.to.os\\b"
+    - "\\b(p2os)\\b"
+    - "\\bxai narrative\\b"
+
+- slug: security
+  label: "Security"
+  patterns:
+    - "\\bcyber.?security\\b"
+    - "\\bvulnerabilit\\w+\\b"
+    - "\\bmalware\\b"
+    - "\\bcsrf\\b"
+    - "\\bcross.site request forgery\\b"
+    - "\\bweb security\\b"
+    - "\\bmitch\\b"
+    - "\\bcovert channel\\b"
+    - "\\bintrusion detection\\b"
+    - "\\bblack.box detection\\b"
+
+# catch-all: assigned to papers matching no other topic
+- slug: misc
+  label: "Other"
+  patterns: []

@@ -1,0 +1,142 @@
+# data/venues.yml — Venue classification for DBLP-based publication fetch
+# Key = DBLP venue abbreviation (segment after conf/ or journals/ in DBLP key)
+# e.g. conf/sigir/... → sigir   |   journals/tkde/... → tkde
+# Re-run scripts/fetch_publications.py after editing.
+
+# ── CORE 2023 A* CS conferences ────────────────────────────────────────────
+a_star_confs:
+  # Information Retrieval & Web
+  - sigir       # ACM SIGIR
+  - www         # The Web Conference / WWW
+  - kdd         # ACM KDD
+  # Machine Learning & AI
+  - icml        # ICML
+  - nips        # NeurIPS
+  - iclr        # ICLR (de-facto A* in ML community)
+  - aaai        # AAAI
+  - ijcai       # IJCAI
+  # Databases
+  - icde        # IEEE ICDE
+  - vldb        # VLDB / PVLDB
+  - sigmod      # ACM SIGMOD
+  # Security
+  - ccs         # ACM CCS
+  - sp          # IEEE S&P (Oakland)
+  - ndss        # NDSS
+  - uss         # USENIX Security
+  # Computer Vision
+  - cvpr        # CVPR
+  - iccv        # ICCV
+  - eccv        # ECCV
+  # NLP
+  - acl         # ACL
+  - emnlp       # EMNLP
+  - naacl       # NAACL-HLT
+  # Software Engineering
+  - icse        # ICSE
+  - fse         # FSE / ESEC-FSE
+  # Systems
+  - sosp        # SOSP
+  - osdi        # OSDI / USENIX OSDI
+  - eurosys     # EuroSys
+  - asplos      # ASPLOS
+  # Theory
+  - stoc        # STOC
+  - focs        # FOCS
+  - soda        # SODA
+  # HCI
+  - chi         # ACM CHI
+  # Networking
+  - sigcomm     # ACM SIGCOMM
+  - mobicom     # ACM MobiCom
+  # Misc
+  - pods        # ACM PODS
+  - sc          # Supercomputing
+
+# ── CORE 2023 A CS conferences ─────────────────────────────────────────────
+a_confs:
+  # IR, Web & Recommender Systems
+  - cikm        # ACM CIKM
+  - wsdm        # ACM WSDM
+  - ecir        # ECIR
+  - recsys      # ACM RecSys
+  - ictir       # ACM ICTIR
+  # Machine Learning
+  - aistats     # AISTATS (PMLR)
+  - ecml        # ECML/PKDD
+  - pkdd        # PKDD (same conference, alt DBLP abbrev)
+  - icdm        # IEEE ICDM
+  - sdm         # SIAM SDM
+  - uai         # UAI
+  # NLP
+  - coling      # COLING
+  - eacl        # EACL
+  # Security
+  - esorics     # ESORICS
+  - eurosp      # IEEE EuroS&P
+  - raid        # RAID
+  - acsac       # ACSAC
+  - acns        # ACNS
+  - dimva       # DIMVA
+  - wisec       # ACM WiSec
+  - dsn         # IEEE/IFIP DSN
+  # Systems & Networks
+  - middleware  # ACM Middleware
+  - icdcs       # IEEE ICDCS
+  - infocom     # IEEE INFOCOM
+  # Data Mining
+  - pakdd       # PAKDD
+  # Digital Libraries
+  - jcdl        # ACM/IEEE JCDL
+
+# ── Scimago Q1 in a CS category ────────────────────────────────────────────
+# "Q1" means Q1 in at least one Scimago COMPUTER SCIENCE sub-category.
+# See: https://www.scimagojr.com/journalrank.php?area=1700
+# NOTE: IEEE Access and JASIST are Q1 in broad areas but Q2/Q3 in narrow CS
+# categories — they are intentionally excluded. Ask maintainer to audit.
+q1_journals:
+  # AI & Machine Learning
+  - tnn         # IEEE Trans. Neural Networks and Learning Systems
+  - tpami       # IEEE Trans. Pattern Analysis and Machine Intelligence
+  - jmlr        # Journal of Machine Learning Research
+  - tai         # IEEE Trans. Artificial Intelligence
+  # Knowledge & Data Engineering
+  - tkde        # IEEE Trans. Knowledge and Data Engineering
+  - dmkd        # Data Mining and Knowledge Discovery (Springer)
+  - datamine    # Data Mining and Knowledge Discovery (Springer)
+  - tkdd        # ACM Trans. Knowledge Discovery from Data
+  # Information Retrieval & Recommender Systems
+  - tois        # ACM Trans. Information Systems
+  - tors        # ACM Trans. Recommender Systems
+  - ipm         # Information Processing & Management
+  # Security
+  - tdsc        # IEEE Trans. Dependable and Secure Computing
+  - tifs        # IEEE Trans. Information Forensics and Security
+  - tissec      # ACM Trans. Information and System Security
+  # Databases & Systems
+  - tods        # ACM Trans. Database Systems
+  - tweb        # ACM Trans. Web
+  - vldbj       # VLDB Journal
+  # Information Science
+  - isj         # Information Systems Journal
+  - kais        # Knowledge and Information Systems
+  # Systems & Networks
+  - iot         # Internet of Things
+  - tce         # IEEE Trans. Consumer Electronics
+  # Magazines
+  - cm          # IEEE Commun. Mag. 
+
+# ── Paper TITLE patterns that flag non-papers ─────────────────────────────
+# Python regex, case-insensitive. Match → the entry is dropped.
+skip_title_patterns:
+  - "^[A-Z][A-Za-z]+ \\d{4}:"           # "ECIR 2025: Proceedings of …" prefaces
+  - "\\b(editorial|preface|foreword)\\b"
+  - "\\binvited\\s+(talk|paper|keynote)\\b"
+  - "\\bpanel\\b"
+  - "\\bworkshop\\s+(co-?chair|organiz)\\b"
+  - "\\borganizing\\s+(committee|co-?chair)\\b"
+  - " @ "                                # "X @ Venue" satellite-event shorthands
+
+# ── Explicit DBLP keys to drop ─────────────────────────────────────────────
+# Add dblp keys here for invited talks, panels, or other one-off exclusions.
+skip_keys: []
