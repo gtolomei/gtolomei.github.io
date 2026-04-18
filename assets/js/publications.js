@@ -363,11 +363,20 @@
 
     // Update "last updated" span
     const luEl = document.getElementById("pub-last-updated");
+    let lastUpdated = "Last updated —";
+
     if (luEl && window.PUBLICATIONS_TS) {
       const d = new Date(window.PUBLICATIONS_TS);
-      luEl.textContent = d.toLocaleDateString("en-GB", {
-        year: "numeric", month: "long", day: "numeric",
+      const formattedDate = d.toLocaleDateString("en-GB", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+        timeZone: "UTC"
       });
+      lastUpdated = `Last updated ${formattedDate}.`;
+    }
+    if (luEl) {
+      luEl.textContent = lastUpdated;
     }
   });
 

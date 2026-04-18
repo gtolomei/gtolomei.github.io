@@ -341,6 +341,7 @@ def write_outputs(publications: list, google_scholar_stats: map) -> None:
         f.write(f"// Last updated: {ts}\n")
         f.write(f"window.PUBLICATIONS = {js_blob};\n")
         f.write(f"window.SCHOLAR = {scholar_blob};\n")
+        f.write(f"window.PUBLICATIONS_TS = \"{ts}\"\n")
     print(f"  → {PUB_JS}", flush=True)
 
     # 4) sitemap.xml — update <lastmod>
