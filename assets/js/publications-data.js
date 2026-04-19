@@ -1,5 +1,9 @@
 // AUTO-GENERATED — do not edit manually
+<<<<<<< HEAD
 // Last updated: 2026-04-19T16:47:12Z
+=======
+// Last updated: 2026-04-19T16:45:16Z
+>>>>>>> 1317eb680cb7b0563260517da15838cc05b1d163
 window.PUBLICATIONS = [
   {
     "key": "journals/corr/abs-2602-04360",
@@ -1548,4 +1552,8 @@ window.SCHOLAR = {
   "h_index": 24,
   "i10_index": 39
 };
+<<<<<<< HEAD
 window.PUBLICATIONS_TS = "2026-04-19T16:47:12Z"
+=======
+window.PUBLICATIONS_TS = "2026-04-19T16:45:16Z"
+>>>>>>> 1317eb680cb7b0563260517da15838cc05b1d163
