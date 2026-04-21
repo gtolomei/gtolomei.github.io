@@ -281,11 +281,11 @@
   }
 
   /* ── Google Scholar stats ──────────────────────────────────────────────── */
-  async function loadScholarStats(scholar) {
-   document.getElementById("stat-citations").textContent = scholar.citations ?? 0;
-   document.getElementById("stat-hindex").textContent = scholar.h_index ?? 0;
-   /*document.getElementById("stat-i10").textContent = scholar.i10_index ?? 0;*/
-}
+  function loadScholarStats(scholar) {
+    document.getElementById("stat-citations").textContent = scholar.citations ?? 0;
+    document.getElementById("stat-hindex").textContent = scholar.h_index ?? 0;
+    /*document.getElementById("stat-i10").textContent = scholar.i10_index ?? 0;*/
+  }
 
   /* ── Active nav highlight on scroll ─────────────────────────── */
   function setupScrollSpy() {
