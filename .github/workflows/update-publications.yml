@@ -3,7 +3,7 @@ name: Update Publications
 on:
   schedule:
     # Nightly at 04:00 UTC
-    - cron: '0 7 * * *'
+    - cron: '0 4 * * *'
   workflow_dispatch:   # allow manual trigger from GitHub UI
 
 permissions:
