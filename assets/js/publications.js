@@ -125,16 +125,31 @@
       ? `<a href="${esc(pub.url)}" target="_blank" rel="noopener">${esc(pub.title)}</a>`
       : esc(pub.title);
 
+    // DOI link if URL contains doi.org
+    let doiLink = "";
+    if (pub.url && pub.url.includes("doi.org")) {
+      doiLink = `<a href="${esc(pub.url)}" class="pub-doi" target="_blank" rel="noopener">DOI ↗</a>`;
+    }
+
+    // Normalize arXiv label
+    const venueLabel = (pub.venue || "").toUpperCase() === "ARXIV" ? "arXiv" : pub.venue;
+
+    const metadataItems = [
+      esc(pub.venue_full || venueLabel),
+      pub.year ? esc(String(pub.year)) : "",
+      doiLink
+    ].filter(Boolean);
+
     return `
 <article class="pub-card" data-type="${esc(pub.type)}" data-topics="${esc((pub.topics||[]).join(','))}">
   <div class="pub-badge">
-    <span class="badge-pill ${badgeCls}">${esc(pub.venue)}</span>
+    <span class="badge-pill ${badgeCls}">${esc(venueLabel)}</span>
     <span class="badge-year">${esc(String(pub.year))}</span>
   </div>
   <div class="pub-body">
     <p class="pub-title">${titleEl}</p>
     <p class="pub-authors">${renderAuthors(pub.authors)}</p>
-    <p class="pub-venue-line">${esc(pub.venue_full)}${pub.year ? ` · ${pub.year}` : ""}</p>
+    <p class="pub-venue-line">${metadataItems.join(" · ")}</p>
     ${chips ? `<div class="pub-chips">${chips}</div>` : ""}
   </div>
 </article>`;
@@ -151,9 +166,21 @@
       return;
     }
 
-    pubList.innerHTML = visible.map(renderCard).join("");
+    let html = "";
+    let lastYear = null;
 
-    // Wire up inline topic chips
+    for (const pub of visible) {
+      // Add year header if year changes
+      if (pub.year !== lastYear) {
+        html += `<h3 class="pub-year-header">${esc(String(pub.year))}</h3>`;
+        lastYear = pub.year;
+      }
+      html += renderCard(pub);
+    }
+
+    pubList.innerHTML = html;
+
+    // Wire up inline topic chips (must do after setting innerHTML)
     pubList.querySelectorAll(".pub-chip").forEach((btn) => {
       btn.addEventListener("click", () => {
         const topic = btn.dataset.topic;
@@ -217,7 +244,7 @@
     allBtn.className = "topic-chip" + (activeTopic === "all" ? " active" : "");
     allBtn.dataset.topic = "all";
     allBtn.setAttribute("aria-pressed", String(activeTopic === "all"));
-    allBtn.textContent = "all";  // the ::before pseudo adds #
+    allBtn.textContent = "All";  // Changed from "all" to "All"
     allBtn.style.cssText = "--before-content: ''";
     allBtn.insertAdjacentText("afterbegin", ""); // label-only, # is pseudo
 
@@ -352,6 +379,9 @@
       if (pubList) pubList.innerHTML = `<p class="pub-empty">Publications loading…</p>`;
       return;
     }
+
+    // Sort by year descending (newest first)
+    pubs.sort((a, b) => (b.year || 0) - (a.year || 0));
 
     fillHeroStats(pubs);
     buildTypeFilter(pubs);
