@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-04-22T05:54:51Z
+// Last updated: 2026-04-23T06:13:31Z
 window.PUBLICATIONS = [
   {
     "key": "journals/corr/abs-2602-04360",
@@ -17,6 +17,24 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "https://doi.org/10.48550/arXiv.2602.04360"
+  },
+  {
+    "key": "conf/kdd/GiorgiVST26",
+    "title": "Countering Overfitting with Counterfactual Examples",
+    "authors": [
+      "Flavio Giorgi",
+      "Fabiano Veglianti",
+      "Fabrizio Silvestri",
+      "Gabriele Tolomei"
+    ],
+    "year": 2026,
+    "venue": "KDD",
+    "venue_full": "KDD (1)",
+    "type": "a_star",
+    "topics": [
+      "xai"
+    ],
+    "url": "https://doi.org/10.1145/3770854.3780243"
   },
   {
     "key": "conf/ecir/VineisT26",
@@ -1548,4 +1566,4 @@ window.SCHOLAR = {
   "h_index": 24,
   "i10_index": 39
 };
-window.PUBLICATIONS_TS = "2026-04-22T05:54:51Z"
+window.PUBLICATIONS_TS = "2026-04-23T06:13:31Z"

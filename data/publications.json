@@ -17,6 +17,24 @@
     "url": "https://doi.org/10.48550/arXiv.2602.04360"
   },
   {
+    "key": "conf/kdd/GiorgiVST26",
+    "title": "Countering Overfitting with Counterfactual Examples",
+    "authors": [
+      "Flavio Giorgi",
+      "Fabiano Veglianti",
+      "Fabrizio Silvestri",
+      "Gabriele Tolomei"
+    ],
+    "year": 2026,
+    "venue": "KDD",
+    "venue_full": "KDD (1)",
+    "type": "a_star",
+    "topics": [
+      "xai"
+    ],
+    "url": "https://doi.org/10.1145/3770854.3780243"
+  },
+  {
     "key": "conf/ecir/VineisT26",
     "title": "From Engagement to Empowerment: A Capability-Theoretic Rethinking of Recommender Systems",
     "authors": [
