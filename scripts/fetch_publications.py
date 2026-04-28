@@ -433,6 +433,7 @@ def main():
 
     papers_raw   = fetch_and_parse()
     publications = build(venues, topics, papers_raw)
+    # Fetching Google Scholar's stats with `scholarly` is very unreliable
     google_scholar_stats = fetch_google_scholar_stats()
 
     print_stats(publications, google_scholar_stats)

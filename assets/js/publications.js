@@ -299,20 +299,22 @@
     const years  = pubs.map((p) => p.year).filter(Boolean);
     const minYr  = years.length ? Math.min(...years) : "—";
     const maxYr  = years.length ? Math.max(...years) : "—";
-    const span   = years.length ? `${minYr}–${maxYr}` : "—";
+    //const span   = years.length ? `${minYr}–${maxYr}` : "—";
+    const span = years.length ? (maxYr - minYr + 1) : "—";
 
     set("stat-total",   total);
     set("stat-astar",   astar + aconf + q1); // overall statistics about top-tier venues summing A/A* conferences and Q1 journals
     set("stat-q1",      q1);
-    set("stat-years",   span);
+    set("stat-years", span);
   }
 
   /* ── Google Scholar stats ──────────────────────────────────────────────── */
-  function loadScholarStats(scholar) {
-    document.getElementById("stat-citations").textContent = scholar.citations ?? 0;
-    document.getElementById("stat-hindex").textContent = scholar.h_index ?? 0;
-    /*document.getElementById("stat-i10").textContent = scholar.i10_index ?? 0;*/
-  }
+  // Unreliable
+  // function loadScholarStats(scholar) {
+  //   document.getElementById("stat-citations").textContent = scholar.citations ?? 0;
+  //   document.getElementById("stat-hindex").textContent = scholar.h_index ?? 0;
+  //   /*document.getElementById("stat-i10").textContent = scholar.i10_index ?? 0;*/
+  // }
 
   /* ── Active nav highlight on scroll ─────────────────────────── */
   function setupScrollSpy() {
@@ -388,8 +390,9 @@
     buildTopicFilter(pubs);
     render(pubs);
 
-    const scholar = window.SCHOLAR
-    loadScholarStats(scholar);
+    // Unreliable
+    // const scholar = window.SCHOLAR
+    // loadScholarStats(scholar);
 
     // Update "last updated" span
     const luEl = document.getElementById("pub-last-updated");
