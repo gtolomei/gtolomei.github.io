@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-04-29T06:30:28Z
+// Last updated: 2026-04-30T06:20:55Z
 window.PUBLICATIONS = [
   {
     "key": "journals/corr/abs-2602-04360",
@@ -592,6 +592,28 @@ window.PUBLICATIONS = [
       "federated"
     ],
     "url": "https://doi.org/10.48550/arXiv.2303.16668"
+  },
+  {
+    "key": "conf/ph/BarsocchiBGRMPR23",
+    "title": "A Novel Architectural Schema for Constant Monitoring and Assessment of Older Adults' Health Status at Home",
+    "authors": [
+      "Paolo Barsocchi",
+      "Dimitri Belli",
+      "Edoardo Gabrielli",
+      "Davide La Rosa",
+      "Vittorio Miori",
+      "Filippo Palumbo",
+      "Dario Russo",
+      "Gabriele Tolomei"
+    ],
+    "year": 2023,
+    "venue": "PH",
+    "venue_full": "PervasiveHealth",
+    "type": "other",
+    "topics": [
+      "misc"
+    ],
+    "url": "https://doi.org/10.1007/978-3-031-59717-6_33"
   },
   {
     "key": "journals/corr/abs-2308-04604",
@@ -1566,4 +1588,4 @@ window.SCHOLAR = {
   "h_index": 24,
   "i10_index": 39
 };
-window.PUBLICATIONS_TS = "2026-04-29T06:30:28Z"
+window.PUBLICATIONS_TS = "2026-04-30T06:20:55Z"
