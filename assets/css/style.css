@@ -260,7 +260,9 @@ p { color: var(--text-muted); }
   font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
-  border: none;
+  border: 1px solid transparent;
+  line-height: 1.5;
+  box-sizing: border-box;
   transition: background var(--transition), color var(--transition),
               box-shadow var(--transition), transform var(--transition-fast);
   text-decoration: none !important;
@@ -290,6 +292,74 @@ p { color: var(--text-muted); }
   border-color: var(--accent);
 }
 
+/* ── Dropdowns (Hero & Nav) ────────────────────────────────── */
+.dropdown, .nav-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content, .nav-dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  min-width: 170px;
+  background: var(--bg-card);
+  backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: var(--blur);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  padding: 0.5rem;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition), transform var(--transition), visibility var(--transition);
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content,
+.nav-dropdown:hover .nav-dropdown-content,
+.nav-dropdown:focus-within .nav-dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(5px);
+}
+
+.dropdown-content a, .nav-dropdown-content a {
+  display: block;
+  padding: 0.6rem 1rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: var(--radius-sm);
+  text-decoration: none !important;
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.dropdown-content a:hover, .nav-dropdown-content a:hover {
+  background: var(--accent-bg);
+  color: var(--accent);
+}
+
+/* Nav specific */
+.nav-dropdown-content {
+  top: calc(100% + 8px);
+  min-width: 150px;
+}
+
+.dropdown-arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid currentColor;
+  margin-left: 6px;
+  opacity: 0.7;
+  vertical-align: middle;
+}
+
 /* ============================================================
    NAVIGATION
    ============================================================ */
@@ -315,8 +385,8 @@ p { color: var(--text-muted); }
   border: 1px solid var(--border);
   border-radius: var(--radius-full);
   box-shadow: var(--shadow);
-  overflow-x: auto;
-  scrollbar-width: none;
+  /* overflow-x: auto removed to allow dropdowns */
+  overflow: visible;
   transition: background var(--transition-slow);
 }
 .nav-pill::-webkit-scrollbar { display: none; }
@@ -486,7 +556,7 @@ p { color: var(--text-muted); }
    ============================================================ */
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
 }
 
@@ -510,6 +580,48 @@ p { color: var(--text-muted); }
 
 .about-full {
   grid-column: 1 / -1;
+}
+
+/* ── CV Card ───────────────────────────────────────────────── */
+.cv-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.cv-card p {
+  margin-bottom: 1.25rem;
+}
+
+.cv-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+.btn-cv {
+  flex: 1;
+  min-width: 130px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 1rem;
+  background: var(--bg-chip);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  color: var(--text);
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all var(--transition);
+  text-decoration: none !important;
+}
+
+.btn-cv:hover {
+  background: var(--accent-bg);
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
 }
 
 /* ============================================================
@@ -1002,8 +1114,10 @@ footer a { color: var(--accent); }
 
   /* Nav: horizontally scrollable on very small screens */
   .nav-pill {
-    width: calc(100vw - 2rem);
+    width: auto;
     max-width: calc(100vw - 2rem);
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   /* Filter rows: horizontal carousel */
