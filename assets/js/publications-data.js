@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-06-08T08:56:24Z
+// Last updated: 2026-06-09T07:35:47Z
 window.PUBLICATIONS = [
   {
     "key": "journals/corr/abs-2602-04360",
@@ -1584,8 +1584,8 @@ window.PUBLICATIONS = [
   }
 ];
 window.SCHOLAR = {
-  "citations": 2517,
+  "citations": 2520,
   "h_index": 24,
   "i10_index": 39
 };
-window.PUBLICATIONS_TS = "2026-06-08T08:56:24Z"
+window.PUBLICATIONS_TS = "2026-06-09T07:35:47Z"
