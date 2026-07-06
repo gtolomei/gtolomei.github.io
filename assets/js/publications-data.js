@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-07-05T06:58:28Z
+// Last updated: 2026-07-06T08:08:04Z
 window.PUBLICATIONS = [
   {
     "key": "journals/corr/abs-2602-04360",
@@ -110,6 +110,27 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "https://doi.org/10.48550/arXiv.2603.06485"
+  },
+  {
+    "key": "journals/corr/abs-2606-07688",
+    "title": "TRACER: Token Reassignment for Concept Erasure in Generative Recommendation",
+    "authors": [
+      "Ziheng Chen",
+      "Jiali Cheng",
+      "Zezhong Fan",
+      "Hadi Amiri",
+      "Diyuan Wu",
+      "Gabriele Tolomei",
+      "Yang Zhang"
+    ],
+    "year": 2026,
+    "venue": "arXiv",
+    "venue_full": "arXiv",
+    "type": "preprint",
+    "topics": [
+      "recommender"
+    ],
+    "url": "https://doi.org/10.48550/arXiv.2606.07688"
   },
   {
     "key": "conf/esws/dAmatoFTT25",
@@ -1584,8 +1605,8 @@ window.PUBLICATIONS = [
   }
 ];
 window.SCHOLAR = {
-  "citations": 2564,
+  "citations": 2567,
   "h_index": 24,
   "i10_index": 40
 };
-window.PUBLICATIONS_TS = "2026-07-05T06:58:28Z"
+window.PUBLICATIONS_TS = "2026-07-06T08:08:04Z"

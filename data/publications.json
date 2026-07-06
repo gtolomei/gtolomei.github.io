@@ -110,6 +110,27 @@
     "url": "https://doi.org/10.48550/arXiv.2603.06485"
   },
   {
+    "key": "journals/corr/abs-2606-07688",
+    "title": "TRACER: Token Reassignment for Concept Erasure in Generative Recommendation",
+    "authors": [
+      "Ziheng Chen",
+      "Jiali Cheng",
+      "Zezhong Fan",
+      "Hadi Amiri",
+      "Diyuan Wu",
+      "Gabriele Tolomei",
+      "Yang Zhang"
+    ],
+    "year": 2026,
+    "venue": "arXiv",
+    "venue_full": "arXiv",
+    "type": "preprint",
+    "topics": [
+      "recommender"
+    ],
+    "url": "https://doi.org/10.48550/arXiv.2606.07688"
+  },
+  {
     "key": "conf/esws/dAmatoFTT25",
     "title": "1st International Workshop on Explainable AI and Knowledge Graphs (XAI-KG)",
     "authors": [
