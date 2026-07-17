@@ -41,6 +41,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes — skipping commit."
           else
-            git commit -m "chore: auto-sync publications [skip ci]"
+            git commit -m "chore: auto-sync publications"
             git push
           fi
