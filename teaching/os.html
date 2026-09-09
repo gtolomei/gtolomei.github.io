@@ -59,7 +59,7 @@
       <li><a href="#news">News</a></li>
       <li><a href="#info">Informazioni</a></li>
       <li><a href="#syllabus">Syllabus</a></li>
-      <li><a href="#materiale">Materiale</a></li>
+      <li><a href="#lezioni">Slide Lezioni</a></li>
       <li><a href="#anni-precedenti">Anni Precedenti</a></li>
     </ul>
     <a class="nav-scholar"
@@ -150,23 +150,70 @@
 <section id="syllabus" class="section" aria-labelledby="syllabus-title">
   <div class="container">
     <h2 class="section-label" id="syllabus-title">// Syllabus</h2>
+    <p style="color:var(--text-muted);margin-bottom:2rem;max-width:120ch">
+      9 CFU — Laurea Triennale in Informatica, Sapienza Università di Roma. Sintesi del syllabus ufficiale del corso (a.a. 2026/27);
+      il documento completo, comprensivo di tutti i dettagli, è disponibile su richiesta.
+    </p>
 
     <div class="research-grid">
       <div class="research-card">
-        <h3>[Placeholder — Modulo 1]</h3>
-        <p>Breve descrizione degli argomenti trattati.</p>
+        <h3>Obiettivi Formativi</h3>
+        <p>
+          Il corso introduce i sistemi operativi come componente essenziale di ogni sistema di calcolo e come esempio
+          paradigmatico del concetto di <strong>astrazione</strong>. L'obiettivo primario è comprendere come il processo di
+          <strong>virtualizzazione</strong> delle risorse fisiche permetta di gestire la complessità hardware, offrendo un
+          ambiente semplificato per lo sviluppo del software applicativo.
+        </p>
       </div>
+
       <div class="research-card">
-        <h3>[Placeholder — Modulo 2]</h3>
-        <p>Breve descrizione degli argomenti trattati.</p>
+        <h3>Prerequisiti</h3>
+        <p>
+          <strong>Richiesti:</strong> concetti fondamentali di programmazione imperativa (es. Python), algoritmi e strutture dati.<br>
+          <strong>Consigliati:</strong> il corso fornisce comunque le basi necessarie di architettura dei calcolatori e di linguaggio C
+          rilevanti per comprendere il software di sistema.
+        </p>
       </div>
+
       <div class="research-card">
-        <h3>[Placeholder — Modulo 3]</h3>
-        <p>Breve descrizione degli argomenti trattati.</p>
+        <h3>Contenuti del Corso — 5 Moduli</h3>
+        <p>
+          <strong>1. Fondamenti</strong> — architettura di base, interfaccia HW/SW (interrupt, syscall), basi del linguaggio C.<br>
+          <strong>2. Virtualizzazione</strong> — astrazione della CPU (processi e scheduling) e della memoria (spazio di indirizzamento, paging).<br>
+          <strong>3. Concorrenza</strong> — thread, sincronizzazione, lock e gestione dei deadlock.<br>
+          <strong>4. Persistenza</strong> — dispositivi di I/O, hard disk/SSD, architettura del file system.<br>
+          <strong>5. Argomenti Avanzati</strong> — sicurezza, virtualizzazione moderna (VM/container), sistemi distribuiti, SO mobile.
+        </p>
       </div>
+
       <div class="research-card">
-        <h3>[Placeholder — Modalità d'esame]</h3>
-        <p>Struttura della prova scritta/orale, criteri di valutazione.</p>
+        <h3>Modalità d'Esame</h3>
+        <p>
+          <strong>Scritto (obbligatorio, max 24/30):</strong> domande concettuali ed esercizi applicati a risposta multipla.
+          Soglia minima <strong>18/30</strong> per l'accesso all'orale.<br>
+          <strong>Orale (facoltativo, ±8 punti):</strong> accessibile con voto scritto ≥ 18. Prestazione eccellente fino a
+          +8 punti (lode); prestazione sufficiente conferma il voto scritto; prestazione insufficiente fino a −8 punti.
+        </p>
+      </div>
+
+      <div class="research-card">
+        <h3>Testi di Riferimento</h3>
+        <p>
+          <em>Operating Systems: Three Easy Pieces</em> (Arpaci-Dusseau) — testo principale, disponibile
+          <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/" target="_blank" rel="noopener">gratuitamente online</a>.<br>
+          <em>The C Programming Language</em> (Kernighan &amp; Ritchie) — riferimento per il C.<br>
+          Testi aggiuntivi (anche in italiano): <em>Operating Systems Concepts</em> (Silberschatz et al.),
+          <em>Modern Operating Systems</em> (Tanenbaum et al.), materiale fornito dal docente.
+        </p>
+      </div>
+
+      <div class="research-card">
+        <h3>Modalità Didattica e Frequenza</h3>
+        <p>
+          <strong>Lezioni</strong> frontali sui concetti fondamentali, alternate a <strong>5 sessioni di esercitazione</strong>
+          (una per modulo) dedicate alla risoluzione di problemi in stile d'esame.
+          La frequenza è vivamente consigliata.
+        </p>
       </div>
     </div>
   </div>
@@ -174,42 +221,329 @@
 
 
 <!-- ════════════════════════════════════════════════════════════
-     TEACHING MATERIAL
+     LECTURES
 ═════════════════════════════════════════════════════════════ -->
-<section id="materiale" class="section" aria-labelledby="materiale-title">
+<section id="lezioni" class="section" aria-labelledby="lezioni-title">
   <div class="container">
-    <h2 class="section-label" id="materiale-title">// Materiale Didattico</h2>
+    <h2 class="section-label" id="lezioni-title">// Slide Lezioni</h2>
 
     <p style="color:var(--text-muted);margin-bottom:2rem;max-width:120ch">
-      Slide, esercizi e codice relativi all'a.a. 2026/27 sono ospitati nella repository GitHub del corso.
+      Calendario delle 36 lezioni del corso, organizzate in 12 settimane. Le slide del modulo in corso
+      (a.a. 2026/27) verranno pubblicate qui non appena disponibili; il materiale delle edizioni precedenti
+      resta consultabile nella sezione <a href="#anni-precedenti">Anni Precedenti</a>.
     </p>
 
+    <table class="lecture-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Titolo</th>
+          <th>Argomento e Descrizione</th>
+          <th>Testo</th>
+          <th>Slide</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr class="lecture-week-row"><td colspan="5">Settimana 1</td></tr>
+        <tr>
+          <td data-label="#"><span class="lecture-num">1</span></td>
+          <td data-label="Titolo" class="lecture-title">Fondamenti I</td>
+          <td data-label="Argomento">Architettura del calcolatore: CPU, memoria, I/O.</td>
+          <td data-label="Testo">Cap. 1-2</td>
+          <td data-label="Slide"><span class="lecture-slides-tba">In preparazione</span></td>
+        </tr>
+        <tr>
+          <td data-label="#"><span class="lecture-num">2</span></td>
+          <td data-label="Titolo" class="lecture-title">Fondamenti II</td>
+          <td data-label="Argomento">Introduzione ai SO: storia, astrazione, obiettivi; supporto hardware: interrupt, syscall, DMA, modalità utente/kernel.</td>
+          <td data-label="Testo">Cap. 2</td>
+          <td data-label="Slide"><span class="lecture-slides-tba">In preparazione</span></td>
+        </tr>
+        <tr>
+          <td data-label="#"><span class="lecture-num">3</span></td>
+          <td data-label="Titolo" class="lecture-title">Fondamenti III</td>
+          <td data-label="Argomento">Programmazione in C: tipi primitivi, array, puntatori, memoria (stack, heap).</td>
+          <td data-label="Testo">Note</td>
+          <td data-label="Slide"><span class="lecture-slides-tba">In preparazione</span></td>
+        </tr>
+
+        <tr class="lecture-week-row"><td colspan="5">Settimana 2</td></tr>
+        <tr>
+          <td data-label="#"><span class="lecture-num">4</span></td>
+          <td data-label="Titolo" class="lecture-title">Fondamenti IV</td>
+          <td data-label="Argomento">Programmazione in C: compilatore, linker, assembler.</td>
+          <td data-label="Testo">Note</td>
+          <td data-label="Slide"><span class="lecture-slides-tba">In preparazione</span></td>
+        </tr>
+        <tr class="lecture-row--break">
+          <td data-label="#"><span class="lecture-num">5</span></td>
+          <td data-label="Titolo" class="lecture-title">Laboratorio I <small>Fondamenti</small></td>
+          <td data-label="Argomento">Esercitazione — risoluzione guidata di problemi in stile d'esame.</td>
+          <td data-label="Testo">—</td>
+          <td data-label="Slide">—</td>
+        </tr>
+        <tr>
+          <td data-label="#"><span class="lecture-num">6</span></td>
+          <td data-label="Titolo" class="lecture-title">Virtualizzazione I (CPU)</td>
+          <td data-label="Argomento">Processi e API: <code>fork</code>, <code>exec</code>, <code>wait</code>, ecc.</td>
+          <td data-label="Testo">Cap. 4-5</td>
+          <td data-label="Slide"><span class="lecture-slides-tba">In preparazione</span></td>
+        </tr>
+
+        <tr class="lecture-week-row"><td colspan="5">Settimana 3</td></tr>
+        <tr>
+          <td data-label="#"><span class="lecture-num">7</span></td>
+          <td data-label="Titolo" class="lecture-title">Virtualizzazione II (CPU)</td>
+          <td data-label="Argomento">Limited Direct Execution e context switch.</td>
+          <td data-label="Testo">Cap. 6</td>
+          <td data-label="Slide"><span class="lecture-slides-tba">In preparazione</span></td>
+        </tr>
+        <tr>
+          <td data-label="#"><span class="lecture-num">8</span></td>
+          <td data-label="Titolo" class="lecture-title">Virtualizzazione III (CPU)</td>
+          <td data-label="Argomento">Scheduling della CPU: politiche di base (FIFO, RR, SJF, STCF).</td>
+          <td data-label="Testo">Cap. 7</td>
+          <td data-label="Slide"><span class="lecture-slides-tba">In preparazione</span></td>
+        </tr>
+        <tr>
+          <td data-label="#"><span class="lecture-num">9</span></td>
+          <td data-label="Titolo" class="lecture-title">Virtualizzazione IV (CPU)</td>
+          <td data-label="Argomento">Scheduling della CPU: MLFQ e Lottery/Stride.</td>
+          <td data-label="Testo">Cap. 8-9</td>
+          <td data-label="Slide"><span class="lecture-slides-tba">In preparazione</span></td>
+        </tr>
+
+        <tr class="lecture-week-row"><td colspan="5">Settimana 4</td></tr>
+        <tr>
+          <td data-label="#"><span class="lecture-num">10</span></td>
+          <td data-label="Titolo" class="lecture-title">Virtualizzazione V (Memoria)</td>
+          <td data-label="Argomento">Spazio di indirizzamento e Base/Bounds.</td>
+          <td data-label="Testo">Cap. 13-15</td>
+          <td data-label="Slide"><span class="lecture-slides-tba">In preparazione</span></td>
+        </tr>
+        <tr>
+          <td data-label="#"><span class="lecture-num">11</span></td>
+          <td data-label="Titolo" class="lecture-title">Virtualizzazione VI (Memoria)</td>
+          <td data-label="Argomento">Segmentazione e introduzione al paging.</td>
+          <td data-label="Testo">Cap. 16-18</td>
+          <td data-label="Slide"><span class="lecture-slides-tba">In preparazione</span></td>
+        </tr>
+        <tr>
+          <td data-label="#"><span class="lecture-num">12</span></td>
+          <td data-label="Titolo" class="lecture-title">Virtualizzazione VII (Memoria)</td>
+          <td data-label="Argomento">Accelerazione tramite TLB e paging multilivello.</td>
+          <td data-label="Testo">Cap. 19-20</td>
+          <td data-label="Slide"><span class="lecture-slides-tba">In preparazione</span></td>
+        </tr>
+
+        <tr class="lecture-week-row"><td colspan="5">Settimana 5</td></tr>
+        <tr>
+          <td data-label="#"><span class="lecture-num">13</span></td>
+          <td data-label="Titolo" class="lecture-title">Virtualizzazione VIII (Memoria)</td>
+          <td data-label="Argomento">Swapping: meccanismi e politiche (LRU/Clock).</td>
+          <td data-label="Testo">Cap. 21-22</td>
+          <td data-label="Slide"><span class="lecture-slides-tba">In preparazione</span></td>
+        </tr>
+        <tr class="lecture-row--break">
+          <td data-label="#"><span class="lecture-num">14</span></td>
+          <td data-label="Titolo" class="lecture-title">Laboratorio II <small>Virtualizzazione</small></td>
+          <td data-label="Argomento">Esercitazione — risoluzione guidata di problemi in stile d'esame.</td>
+          <td data-label="Testo">—</td>
+          <td data-label="Slide">—</td>
+        </tr>
+        <tr>
+          <td data-label="#"><span class="lecture-num">15</span></td>
+          <td data-label="Titolo" class="lecture-title">Concorrenza I</td>
+          <td data-label="Argomento">Thread e memoria condivisa.</td>
+          <td data-label="Testo">Cap. 26</td>
+          <td data-label="Slide"><span class="lecture-slides-tba">In preparazione</span></td>
+        </tr>
+
+        <tr class="lecture-week-row"><td colspan="5">Settimana 6</td></tr>
+        <tr>
+          <td data-label="#"><span class="lecture-num">16</span></td>
+          <td data-label="Titolo" class="lecture-title">Concorrenza II</td>
+          <td data-label="Argomento">Lock: test-and-set, CAS, spinlock.</td>
+          <td data-label="Testo">Cap. 28</td>
+          <td data-label="Slide"><span class="lecture-slides-tba">In preparazione</span></td>
+        </tr>
+        <tr>
+          <td data-label="#"><span class="lecture-num">17</span></td>
+          <td data-label="Titolo" class="lecture-title">Concorrenza III</td>
+          <td data-label="Argomento">Variabili di condizione e producer-consumer.</td>
+          <td data-label="Testo">Cap. 30</td>
+          <td data-label="Slide"><span class="lecture-slides-tba">In preparazione</span></td>
+        </tr>
+        <tr>
+          <td data-label="#"><span class="lecture-num">18</span></td>
+          <td data-label="Titolo" class="lecture-title">Concorrenza IV</td>
+          <td data-label="Argomento">Semafori: binari e a conteggio.</td>
+          <td data-label="Testo">Cap. 31</td>
+          <td data-label="Slide"><span class="lecture-slides-tba">In preparazione</span></td>
+        </tr>
+
+        <tr class="lecture-week-row"><td colspan="5">Settimana 7</td></tr>
+        <tr>
+          <td data-label="#"><span class="lecture-num">19</span></td>
+          <td data-label="Titolo" class="lecture-title">Concorrenza V</td>
+          <td data-label="Argomento">Deadlock.</td>
+          <td data-label="Testo">Cap. 32</td>
+          <td data-label="Slide"><span class="lecture-slides-tba">In preparazione</span></td>
+        </tr>
+        <tr class="lecture-row--break">
+          <td data-label="#"><span class="lecture-num">20</span></td>
+          <td data-label="Titolo" class="lecture-title">Laboratorio III <small>Concorrenza</small></td>
+          <td data-label="Argomento">Esercitazione — risoluzione guidata di problemi in stile d'esame.</td>
+          <td data-label="Testo">—</td>
+          <td data-label="Slide">—</td>
+        </tr>
+        <tr>
+          <td data-label="#"><span class="lecture-num">21</span></td>
+          <td data-label="Titolo" class="lecture-title">Persistenza I</td>
+          <td data-label="Argomento">Dispositivi di I/O: bus, DMA e interrupt.</td>
+          <td data-label="Testo">Cap. 36</td>
+          <td data-label="Slide"><span class="lecture-slides-tba">In preparazione</span></td>
+        </tr>
+
+        <tr class="lecture-week-row"><td colspan="5">Settimana 8</td></tr>
+        <tr>
+          <td data-label="#"><span class="lecture-num">22</span></td>
+          <td data-label="Titolo" class="lecture-title">Persistenza II</td>
+          <td data-label="Argomento">Hard disk e SSD: meccanica di funzionamento.</td>
+          <td data-label="Testo">Cap. 37, 44</td>
+          <td data-label="Slide"><span class="lecture-slides-tba">In preparazione</span></td>
+        </tr>
+        <tr>
+          <td data-label="#"><span class="lecture-num">23</span></td>
+          <td data-label="Titolo" class="lecture-title">Persistenza III</td>
+          <td data-label="Argomento">Scheduling per HDD (SCAN, C-LOOK, ecc.).</td>
+          <td data-label="Testo">Cap. 37</td>
+          <td data-label="Slide"><span class="lecture-slides-tba">In preparazione</span></td>
+        </tr>
+        <tr>
+          <td data-label="#"><span class="lecture-num">24</span></td>
+          <td data-label="Titolo" class="lecture-title">Persistenza IV</td>
+          <td data-label="Argomento">API del file system e struttura delle directory.</td>
+          <td data-label="Testo">Cap. 39</td>
+          <td data-label="Slide"><span class="lecture-slides-tba">In preparazione</span></td>
+        </tr>
+
+        <tr class="lecture-week-row"><td colspan="5">Settimana 9</td></tr>
+        <tr>
+          <td data-label="#"><span class="lecture-num">25</span></td>
+          <td data-label="Titolo" class="lecture-title">Persistenza V</td>
+          <td data-label="Argomento">Inode e implementazione del file system.</td>
+          <td data-label="Testo">Cap. 40</td>
+          <td data-label="Slide"><span class="lecture-slides-tba">In preparazione</span></td>
+        </tr>
+        <tr>
+          <td data-label="#"><span class="lecture-num">26</span></td>
+          <td data-label="Titolo" class="lecture-title">Persistenza VI</td>
+          <td data-label="Argomento">Integrità dei dati: FSCK e journaling.</td>
+          <td data-label="Testo">Cap. 42</td>
+          <td data-label="Slide"><span class="lecture-slides-tba">In preparazione</span></td>
+        </tr>
+        <tr class="lecture-row--break">
+          <td data-label="#"><span class="lecture-num">27</span></td>
+          <td data-label="Titolo" class="lecture-title">Laboratorio IV <small>Persistenza</small></td>
+          <td data-label="Argomento">Esercitazione — risoluzione guidata di problemi in stile d'esame.</td>
+          <td data-label="Testo">—</td>
+          <td data-label="Slide">—</td>
+        </tr>
+
+        <tr class="lecture-week-row"><td colspan="5">Settimana 10</td></tr>
+        <tr>
+          <td data-label="#"><span class="lecture-num">28</span></td>
+          <td data-label="Titolo" class="lecture-title">Argomenti Avanzati I</td>
+          <td data-label="Argomento">Sicurezza e protezione nei sistemi moderni.</td>
+          <td data-label="Testo">Note</td>
+          <td data-label="Slide"><span class="lecture-slides-tba">In preparazione</span></td>
+        </tr>
+        <tr>
+          <td data-label="#"><span class="lecture-num">29</span></td>
+          <td data-label="Titolo" class="lecture-title">Argomenti Avanzati II</td>
+          <td data-label="Argomento">Virtualizzazione: VM, hypervisor e container.</td>
+          <td data-label="Testo">Note</td>
+          <td data-label="Slide"><span class="lecture-slides-tba">In preparazione</span></td>
+        </tr>
+        <tr>
+          <td data-label="#"><span class="lecture-num">30</span></td>
+          <td data-label="Titolo" class="lecture-title">Argomenti Avanzati III</td>
+          <td data-label="Argomento">Introduzione ai sistemi distribuiti.</td>
+          <td data-label="Testo">Cap. 48</td>
+          <td data-label="Slide"><span class="lecture-slides-tba">In preparazione</span></td>
+        </tr>
+
+        <tr class="lecture-week-row"><td colspan="5">Settimana 11</td></tr>
+        <tr>
+          <td data-label="#"><span class="lecture-num">31</span></td>
+          <td data-label="Titolo" class="lecture-title">Argomenti Avanzati IV</td>
+          <td data-label="Argomento">SO mobile: architettura e struttura generale.</td>
+          <td data-label="Testo">Note</td>
+          <td data-label="Slide"><span class="lecture-slides-tba">In preparazione</span></td>
+        </tr>
+        <tr>
+          <td data-label="#"><span class="lecture-num">32</span></td>
+          <td data-label="Titolo" class="lecture-title">Argomenti Avanzati V</td>
+          <td data-label="Argomento">SO mobile: casi di studio (iOS/Android).</td>
+          <td data-label="Testo">Note</td>
+          <td data-label="Slide"><span class="lecture-slides-tba">In preparazione</span></td>
+        </tr>
+        <tr class="lecture-row--break">
+          <td data-label="#"><span class="lecture-num">33</span></td>
+          <td data-label="Titolo" class="lecture-title">Laboratorio V <small>Argomenti Avanzati</small></td>
+          <td data-label="Argomento">Esercitazione — risoluzione guidata di problemi in stile d'esame.</td>
+          <td data-label="Testo">—</td>
+          <td data-label="Slide">—</td>
+        </tr>
+
+        <tr class="lecture-week-row"><td colspan="5">Settimana 12</td></tr>
+        <tr class="lecture-row--break">
+          <td data-label="#"><span class="lecture-num">34</span></td>
+          <td data-label="Titolo" class="lecture-title">Recupero I</td>
+          <td data-label="Argomento">Riservata per recupero o approfondimenti.</td>
+          <td data-label="Testo">—</td>
+          <td data-label="Slide">—</td>
+        </tr>
+        <tr class="lecture-row--break">
+          <td data-label="#"><span class="lecture-num">35</span></td>
+          <td data-label="Titolo" class="lecture-title">Recupero II</td>
+          <td data-label="Argomento">Riservata per recupero o approfondimenti.</td>
+          <td data-label="Testo">—</td>
+          <td data-label="Slide">—</td>
+        </tr>
+        <tr class="lecture-row--break">
+          <td data-label="#"><span class="lecture-num">36</span></td>
+          <td data-label="Titolo" class="lecture-title">Recupero III</td>
+          <td data-label="Argomento">Riservata per recupero o approfondimenti.</td>
+          <td data-label="Testo">—</td>
+          <td data-label="Slide">—</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <p style="color:var(--text-muted);margin-top:2.5rem;margin-bottom:1rem;max-width:120ch">
+      Esercizi, codice di esempio e testi d'esame restano nella repository GitHub del corso:
+    </p>
     <div class="teaching-grid">
       <div class="teaching-card">
         <span class="badge-lang">IT</span>
-        <h3>Slide delle Lezioni</h3>
-        <p><em>[Placeholder]</em> — slide PDF organizzate per argomento.</p>
-        <a class="teaching-link" href="https://github.com/gtolomei/operating-systems/tree/master/lectures" target="_blank" rel="noopener">Vai alla cartella</a>
-      </div>
-
-      <div class="teaching-card">
-        <span class="badge-lang">IT</span>
         <h3>Esercizi</h3>
-        <p><em>[Placeholder]</em> — esercizi con e senza soluzione, per sessione di esercitazione.</p>
+        <p>Esercizi con e senza soluzione, per sessione di esercitazione.</p>
         <a class="teaching-link" href="https://github.com/gtolomei/operating-systems/tree/master/exercises" target="_blank" rel="noopener">Vai alla cartella</a>
       </div>
-
       <div class="teaching-card">
         <span class="badge-lang">IT</span>
         <h3>Codice</h3>
-        <p><em>[Placeholder]</em> — esempi di codice (processi, thread, sincronizzazione, memoria).</p>
+        <p>Esempi di codice (processi, thread, sincronizzazione, memoria).</p>
         <a class="teaching-link" href="https://github.com/gtolomei/operating-systems/tree/master/code" target="_blank" rel="noopener">Vai alla cartella</a>
       </div>
-
       <div class="teaching-card">
         <span class="badge-lang">IT</span>
         <h3>Esami</h3>
-        <p><em>[Placeholder]</em> — testi d'esame ed esiti degli appelli.</p>
+        <p>Testi d'esame ed esiti degli appelli.</p>
         <a class="teaching-link" href="https://github.com/gtolomei/operating-systems/tree/master/exams" target="_blank" rel="noopener">Vai alla cartella</a>
       </div>
     </div>
