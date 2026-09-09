@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO ─────────────────────────────────────────────── -->
+  <title>Sistemi Operativi — 2026/27 · Gabriele Tolomei · Sapienza</title>
+  <meta name="description" content="Pagina del corso di Sistemi Operativi (Laurea Triennale in Informatica, Sapienza Università di Roma) tenuto da Gabriele Tolomei — a.a. 2026/27. News, informazioni generali, syllabus e materiale didattico.">
+  <meta name="author" content="Gabriele Tolomei">
+  <link rel="canonical" href="https://gtolomei.github.io/teaching/os.html">
+
+  <!-- Open Graph ──────────────────────────────────────────────── -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Sistemi Operativi — 2026/27 · Gabriele Tolomei">
+  <meta property="og:description" content="Pagina del corso di Sistemi Operativi, Sapienza Università di Roma — a.a. 2026/27.">
+  <meta property="og:url"         content="https://gtolomei.github.io/teaching/os.html">
+  <meta property="og:image"       content="https://gtolomei.github.io/assets/img/profile.jpg">
+  <meta property="og:site_name"   content="Gabriele Tolomei">
+
+  <!-- Favicon ─────────────────────────────────────────────────── -->
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="apple-touch-icon"      href="../assets/img/favicon.png">
+
+  <!-- Theme: set before first paint to avoid flash ────────────── -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("theme-pref");
+        if (stored) { document.documentElement.setAttribute("data-theme", stored); return; }
+      } catch (_) {}
+      var h = new Date().getUTCHours();
+      document.documentElement.setAttribute("data-theme",
+        (h >= 18 || h < 6) ? "dark" : "light");
+    })();
+  </script>
+
+  <!-- Stylesheet ──────────────────────────────────────────────── -->
+  <link rel="stylesheet" href="../assets/css/style.css?v=1.0.1">
+</head>
+
+<body>
+
+<!-- ── Background Orbs ── -->
+<div class="bg-orbs" aria-hidden="true">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+</div>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     NAVIGATION
+═════════════════════════════════════════════════════════════ -->
+<nav id="navbar" aria-label="Navigazione principale">
+  <div class="nav-pill">
+    <a class="nav-brand" href="../index.html#teaching" aria-label="Torna alla home">GT</a>
+    <ul role="list">
+      <li><a href="#news">News</a></li>
+      <li><a href="#info">Informazioni</a></li>
+      <li><a href="#syllabus">Syllabus</a></li>
+      <li><a href="#materiale">Materiale</a></li>
+      <li><a href="#anni-precedenti">Anni Precedenti</a></li>
+    </ul>
+    <a class="nav-scholar"
+       href="../index.html"
+       aria-label="Torna al sito principale">← Home</a>
+    <button id="theme-toggle" aria-label="Cambia tema colore">🌙</button>
+  </div>
+</nav>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     PAGE HEADER
+═════════════════════════════════════════════════════════════ -->
+<section id="course-home" class="hero" aria-label="Intestazione corso" style="padding-block:6rem 3rem;">
+  <div class="hero-content">
+    <div class="hero-text">
+      <p class="hero-role">Laurea Triennale in Informatica · Sapienza Università di Roma</p>
+      <h1 class="hero-name">Sistemi <span class="gradient-text">Operativi</span></h1>
+      <p class="hero-bio">
+        Anno Accademico 2026/27 — I Canale.<br>
+        <em>[Placeholder: breve descrizione del corso — modulo, semestre, CFU, prerequisiti.]</em>
+      </p>
+      <div class="hero-links">
+        <a class="btn btn-primary" href="#syllabus">Vai al Syllabus</a>
+        <a class="btn btn-ghost" href="https://github.com/gtolomei/operating-systems" target="_blank" rel="noopener">Materiale su GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     NEWS
+═════════════════════════════════════════════════════════════ -->
+<section id="news" class="section" aria-labelledby="news-title">
+  <div class="container">
+    <h2 class="section-label" id="news-title">// News</h2>
+
+    <div class="about-grid">
+      <div class="about-card about-full">
+        <p style="color:var(--text-muted);">
+          <em>[Placeholder — le comunicazioni relative all'a.a. 2026/27 (avvisi, date d'esame, variazioni di orario) saranno pubblicate qui, in ordine cronologico inverso, non appena disponibili.]</em>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     GENERAL INFORMATION
+═════════════════════════════════════════════════════════════ -->
+<section id="info" class="section" aria-labelledby="info-title">
+  <div class="container">
+    <h2 class="section-label" id="info-title">// Informazioni Generali</h2>
+
+    <div class="about-grid">
+      <div class="about-card">
+        <h3>Orario delle Lezioni</h3>
+        <p><em>[Placeholder — giorni, orari e aula per l'a.a. 2026/27.]</em></p>
+      </div>
+
+      <div class="about-card">
+        <h3>Pagina Moodle</h3>
+        <p><em>[Placeholder — link alla pagina Moodle del corso, da aggiornare per il 2026/27.]</em></p>
+      </div>
+
+      <div class="about-card">
+        <h3>Orario di Ricevimento</h3>
+        <p><em>[Placeholder — modalità e come richiedere un appuntamento.]</em></p>
+      </div>
+
+      <div class="about-card">
+        <h3>Contatti Docente</h3>
+        <p>
+          Email: <a href="mailto:tolomei@di.uniroma1.it">tolomei@di.uniroma1.it</a><br>
+          Sito web: <a href="https://www.di.uniroma1.it/~tolomei" target="_blank" rel="noopener">di.uniroma1.it/~tolomei</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     SYLLABUS
+═════════════════════════════════════════════════════════════ -->
+<section id="syllabus" class="section" aria-labelledby="syllabus-title">
+  <div class="container">
+    <h2 class="section-label" id="syllabus-title">// Syllabus</h2>
+
+    <div class="research-grid">
+      <div class="research-card">
+        <h3>[Placeholder — Modulo 1]</h3>
+        <p>Breve descrizione degli argomenti trattati.</p>
+      </div>
+      <div class="research-card">
+        <h3>[Placeholder — Modulo 2]</h3>
+        <p>Breve descrizione degli argomenti trattati.</p>
+      </div>
+      <div class="research-card">
+        <h3>[Placeholder — Modulo 3]</h3>
+        <p>Breve descrizione degli argomenti trattati.</p>
+      </div>
+      <div class="research-card">
+        <h3>[Placeholder — Modalità d'esame]</h3>
+        <p>Struttura della prova scritta/orale, criteri di valutazione.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     TEACHING MATERIAL
+═════════════════════════════════════════════════════════════ -->
+<section id="materiale" class="section" aria-labelledby="materiale-title">
+  <div class="container">
+    <h2 class="section-label" id="materiale-title">// Materiale Didattico</h2>
+
+    <p style="color:var(--text-muted);margin-bottom:2rem;max-width:120ch">
+      Slide, esercizi e codice relativi all'a.a. 2026/27 sono ospitati nella repository GitHub del corso.
+    </p>
+
+    <div class="teaching-grid">
+      <div class="teaching-card">
+        <span class="badge-lang">IT</span>
+        <h3>Slide delle Lezioni</h3>
+        <p><em>[Placeholder]</em> — slide PDF organizzate per argomento.</p>
+        <a class="teaching-link" href="https://github.com/gtolomei/operating-systems/tree/master/lectures" target="_blank" rel="noopener">Vai alla cartella</a>
+      </div>
+
+      <div class="teaching-card">
+        <span class="badge-lang">IT</span>
+        <h3>Esercizi</h3>
+        <p><em>[Placeholder]</em> — esercizi con e senza soluzione, per sessione di esercitazione.</p>
+        <a class="teaching-link" href="https://github.com/gtolomei/operating-systems/tree/master/exercises" target="_blank" rel="noopener">Vai alla cartella</a>
+      </div>
+
+      <div class="teaching-card">
+        <span class="badge-lang">IT</span>
+        <h3>Codice</h3>
+        <p><em>[Placeholder]</em> — esempi di codice (processi, thread, sincronizzazione, memoria).</p>
+        <a class="teaching-link" href="https://github.com/gtolomei/operating-systems/tree/master/code" target="_blank" rel="noopener">Vai alla cartella</a>
+      </div>
+
+      <div class="teaching-card">
+        <span class="badge-lang">IT</span>
+        <h3>Esami</h3>
+        <p><em>[Placeholder]</em> — testi d'esame ed esiti degli appelli.</p>
+        <a class="teaching-link" href="https://github.com/gtolomei/operating-systems/tree/master/exams" target="_blank" rel="noopener">Vai alla cartella</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     PREVIOUS YEARS
+═════════════════════════════════════════════════════════════ -->
+<section id="anni-precedenti" class="section" aria-labelledby="anni-precedenti-title">
+  <div class="container">
+    <h2 class="section-label" id="anni-precedenti-title">// Anni Precedenti</h2>
+
+    <p style="color:var(--text-muted);margin-bottom:2rem;max-width:120ch">
+      Materiale e comunicazioni relativi alle precedenti edizioni del corso.
+    </p>
+
+    <div class="social-links" aria-label="Archivio anni precedenti">
+      <a class="social-link" href="https://github.com/gtolomei/operating-systems/blob/master/oldest/2024-25.md" target="_blank" rel="noopener">2024–25</a>
+      <a class="social-link" href="https://github.com/gtolomei/operating-systems/blob/master/oldest/2023-24.md" target="_blank" rel="noopener">2023–24</a>
+      <a class="social-link" href="https://github.com/gtolomei/operating-systems/blob/master/oldest/2022-23.md" target="_blank" rel="noopener">2022–23</a>
+      <a class="social-link" href="https://github.com/gtolomei/operating-systems/blob/master/oldest/2020-21.md" target="_blank" rel="noopener">2020–21</a>
+      <a class="social-link" href="https://github.com/gtolomei/operating-systems/blob/master/oldest/2019-20.md" target="_blank" rel="noopener">2019–20</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     FOOTER
+═════════════════════════════════════════════════════════════ -->
+<footer>
+  <p>
+    © <span id="footer-year"></span> Gabriele Tolomei ·
+    <a href="https://github.com/gtolomei/operating-systems" target="_blank" rel="noopener">Repository del corso</a> ·
+    <a href="../index.html">Torna al sito principale</a>
+  </p>
+</footer>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     SCRIPTS
+═════════════════════════════════════════════════════════════ -->
+<script src="../assets/js/course-page.js"></script>
+
+</body>
+</html>
