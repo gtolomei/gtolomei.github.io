@@ -1180,96 +1180,122 @@ footer a { color: var(--accent); }
 }
 .lecture-week:first-of-type { margin-top: 0; }
 
-.lecture-table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0 0.6rem;
-}
+/* ============================================================
+   MATERIALE DIDATTICO (lecture parts + cards)
+   ============================================================ */
+.materiale-part { margin-top: 2.75rem; }
+.materiale-part:first-of-type { margin-top: 0; }
 
-.lecture-table thead th {
-  text-align: left;
+.materiale-part-title {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
-  font-weight: 600;
+  font-size: 1.375rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--text-subtle);
-  padding: 0 1rem 0.5rem;
+  color: var(--accent);
+  margin-bottom: 1.25rem;
 }
 
-.lecture-table tbody tr {
+.lecture-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.lecture-card {
   background: var(--bg-card);
   backdrop-filter: var(--blur);
   -webkit-backdrop-filter: var(--blur);
-  box-shadow: var(--shadow-sm);
   border: 1px solid var(--border);
-  transition: box-shadow var(--transition), transform var(--transition);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: 1.1rem 1.25rem;
+  transition: box-shadow var(--transition), transform var(--transition-fast), border-color var(--transition);
 }
-.lecture-table tbody tr:hover {
+.lecture-card:hover {
   box-shadow: var(--shadow);
   transform: translateY(-1px);
+  border-color: var(--border-strong);
 }
-
-.lecture-table tbody tr.lecture-row--break {
+.lecture-card.lecture-card--break {
   background: var(--bg-chip);
   box-shadow: none;
-  opacity: 0.75;
+  opacity: 0.85;
 }
 
-.lecture-table td {
-  padding: 0.85rem 1rem;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  vertical-align: top;
-  font-size: 0.9rem;
-  color: var(--text-muted);
-}
-.lecture-table td:first-child {
-  border-left: 1px solid var(--border);
-  border-top-left-radius: var(--radius-md);
-  border-bottom-left-radius: var(--radius-md);
-}
-.lecture-table td:last-child {
-  border-right: 1px solid var(--border);
-  border-top-right-radius: var(--radius-md);
-  border-bottom-right-radius: var(--radius-md);
+.lecture-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 0.6rem;
 }
 
-.lecture-num {
+.lecture-card-id {
   font-family: var(--font-mono);
-  color: var(--accent);
   font-weight: 600;
-}
-
-.lecture-title { color: var(--text); font-weight: 600; }
-.lecture-title small { display: block; font-weight: 400; color: var(--text-muted); margin-top: 0.15rem; }
-
-.lecture-slides-link {
+  font-size: 1rem;
   color: var(--accent);
-  font-weight: 500;
-  white-space: nowrap;
-  text-decoration: none;
-}
-.lecture-slides-link:hover { text-decoration: underline; }
-.lecture-slides-link::after { content: ' ↓'; opacity: 0.7; }
-
-.lecture-slides-tba {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  color: var(--text-subtle);
-  white-space: nowrap;
 }
 
-.lecture-table tr.lecture-week-row td {
-  background: none;
-  box-shadow: none;
-  border: none;
-  padding: 1.75rem 1rem 0.5rem;
+.lecture-card-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
   font-family: var(--font-mono);
   font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--accent);
+  color: var(--text-subtle);
+  white-space: nowrap;
+  padding-top: 0.15rem;
 }
-.lecture-table tr.lecture-week-row:first-child td { padding-top: 0; }
+
+.lecture-card-desc {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin: 0 0 1rem;
+}
+
+.lecture-card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.lecture-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--radius-xs);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  border: 1px solid transparent;
+  transition: opacity var(--transition-fast);
+  white-space: nowrap;
+}
+.lecture-tag:hover { opacity: 0.78; }
+
+.lecture-tag-pdf {
+  background: var(--badge-preprint-bg);
+  color: var(--badge-preprint-text);
+}
+.lecture-tag-html {
+  background: var(--badge-journal-bg);
+  color: var(--badge-journal-text);
+}
+.lecture-tag-book {
+  background: transparent;
+  color: var(--accent);
+  border-color: var(--accent-bg);
+  font-weight: 500;
+}
+
+.lecture-tag-divider {
+  width: 1px;
+  height: 16px;
+  background: var(--border);
+  margin: 0 2px;
+}
