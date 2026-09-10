@@ -18,10 +18,12 @@ import json
 import os
 import re
 import sys
+import time
 import xml.etree.ElementTree as ET
 from datetime import date, datetime, timezone
 from pathlib import Path
-from urllib.request import urlopen
+from urllib.request import urlopen, Request
+from urllib.error import HTTPError, URLError
 from scholarly import scholarly
 
 import yaml
@@ -232,10 +234,43 @@ def _smart_title_part(word, is_first):
 def fetch_and_parse(url: str = DBLP_XML_URL) -> list:
     """Fetch the DBLP author XML and return a list of raw paper dicts."""
     print(f"Fetching {url} …", flush=True)
-    with urlopen(url, timeout=30) as resp:
-        xml_bytes = resp.read()
 
-    root = ET.fromstring(xml_bytes)
+    # DBLP (and the CDN in front of it) throttles/blocks the default
+    # urllib User-Agent ("Python-urllib/x.y"), sometimes returning an
+    # HTML/error page instead of XML. A browser-like UA avoids that.
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (compatible; gtolomei.github.io-publications-bot/1.0; "
+            "+https://gtolomei.github.io)"
+        ),
+        "Accept": "application/xml,text/xml;q=0.9,*/*;q=0.8",
+    }
+
+    xml_bytes = None
+    last_err = None
+    for attempt in range(1, 4):
+        try:
+            req = Request(url, headers=headers)
+            with urlopen(req, timeout=30) as resp:
+                xml_bytes = resp.read()
+            break
+        except (HTTPError, URLError, TimeoutError) as e:
+            last_err = e
+            print(f"  attempt {attempt}/3 failed ({e}); retrying…", flush=True)
+            time.sleep(5 * attempt)
+
+    if xml_bytes is None:
+        raise RuntimeError(f"Could not fetch {url} after 3 attempts: {last_err}")
+
+    try:
+        root = ET.fromstring(xml_bytes)
+    except ET.ParseError as e:
+        preview = xml_bytes[:300].decode("utf-8", errors="replace")
+        raise RuntimeError(
+            f"DBLP did not return valid XML for {url} (got {len(xml_bytes)} bytes; "
+            f"parse error: {e}). First bytes of response:\n{preview}"
+        ) from e
+
     papers = []
 
     for el in root.findall(".//r/*"):
@@ -431,8 +466,27 @@ def main():
         flush=True,
     )
 
-    papers_raw   = fetch_and_parse()
-    publications = build(venues, topics, papers_raw)
+    try:
+        papers_raw   = fetch_and_parse()
+        publications = build(venues, topics, papers_raw)
+    except Exception as e:
+        # DBLP actively rate-limits/blocks automated requests (see
+        # https://dblp.org/faq/1474706.html) and its robots.txt disallows
+        # crawling the per-author XML endpoint outright, so GitHub Actions'
+        # shared runner IPs occasionally get a 429 or a non-XML response.
+        # Treat that as a transient condition: warn loudly, leave the
+        # previously-published data/publications.json and
+        # assets/js/publications-data.js untouched, and exit 0 so the
+        # nightly workflow doesn't go red — it will simply try again on the
+        # next scheduled run.
+        print(f"  WARNING: Could not fetch/parse DBLP data: {e}", flush=True)
+        print(
+            "  Leaving existing publications data untouched for this run "
+            "(will retry on the next scheduled run).",
+            flush=True,
+        )
+        sys.exit(0)
+
     # Fetching Google Scholar's stats with `scholarly` is very unreliable
     google_scholar_stats = fetch_google_scholar_stats()
 
