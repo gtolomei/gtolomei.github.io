@@ -79,12 +79,17 @@
       <p class="hero-role">M.Sc. in Computer Science · Sapienza University of Rome</p>
       <h1 class="hero-name">Big Data <span class="gradient-text">Computing</span></h1>
       <p class="hero-bio">
-        Academic Year 2026/27.<br>
-        <em>[Placeholder: short course description — module, semester, credits (CFU), prerequisites.]</em>
+        Academic Year 2026/27 — 6 CFU.<br>
+        Big data computing as an advanced structural paradigm of modern computing platforms — from
+        scale-out distributed infrastructures to high-dimensional data representations and scalable
+        machine learning systems.
       </p>
       <div class="hero-links">
-        <a class="btn btn-primary" href="#syllabus">Go to Syllabus</a>
-        <a class="btn btn-ghost" href="https://github.com/gtolomei/big-data-computing" target="_blank" rel="noopener">Material on GitHub ↗</a>
+        <a class="btn btn-ghost" href="#news">News</a>
+        <a class="btn btn-ghost" href="#info">General Info</a>
+        <a class="btn btn-ghost" href="#syllabus">Syllabus</a>
+        <a class="btn btn-ghost" href="#material">Teaching Material</a>
+        <a class="btn btn-ghost" href="#previous-years">Previous Years</a>
       </div>
     </div>
   </div>
@@ -150,23 +155,70 @@
 <section id="syllabus" class="section" aria-labelledby="syllabus-title">
   <div class="container">
     <h2 class="section-label" id="syllabus-title">// Syllabus</h2>
+    <p style="color:var(--text-muted);margin-bottom:2rem;max-width:120ch">
+      6 CFU — M.Sc. in Computer Science, Sapienza University of Rome. Summary of the official course syllabus (A.Y. 2026/27);
+      the complete document, including all details, is available upon request.
+    </p>
 
     <div class="research-grid">
       <div class="research-card">
-        <h3>[Placeholder — Module 1]</h3>
-        <p>Short description of topics covered.</p>
+        <h3>Learning Objectives</h3>
+        <p>
+          The course introduces big data computing as an advanced structural paradigm of modern computing platforms,
+          at the intersection of <strong>distributed computing architectures</strong>, <strong>high-dimensional data
+          representations</strong>, and <strong>scalable machine learning systems</strong>. Students learn how the
+          scale-out model handles volume, velocity and variety of data, and the methodological abstractions needed
+          where classical exact computation becomes intractable.
+        </p>
       </div>
+
       <div class="research-card">
-        <h3>[Placeholder — Module 2]</h3>
-        <p>Short description of topics covered.</p>
+        <h3>Prerequisites</h3>
+        <p>
+          <strong>Required:</strong> algorithms and data structures, operating systems, basics of distributed systems,
+          and introductory machine learning mathematics (linear algebra, calculus, basic optimization).<br>
+          <strong>Recommended:</strong> prior familiarity with data analytics concepts and concurrent programming abstractions.
+        </p>
       </div>
+
       <div class="research-card">
-        <h3>[Placeholder — Module 3]</h3>
-        <p>Short description of topics covered.</p>
+        <h3>Course Contents — 4 Modules</h3>
+        <p>
+          <strong>1. Big Data Infrastructure</strong> — scale-out storage, fault tolerance via lineage, MapReduce, memory-centric DAG execution (Spark), streaming.<br>
+          <strong>2. High-Dimensional Data Representations</strong> — geometry of high-dimensional spaces, dimensionality reduction (Johnson–Lindenstrauss), columnar layouts, text/image/graph embeddings.<br>
+          <strong>3. Classical Non-Learning Tasks</strong> — web-scale indexing, sampling theory, Approximate Query Processing, sub-linear sketching (HyperLogLog, Count-Min), Locality-Sensitive Hashing.<br>
+          <strong>4. Scale-Out Learning Systems</strong> — large-scale ERM, parallel/asynchronous SGD, Parameter Server, Federated Learning, memory-bandwidth optimization.
+        </p>
       </div>
+
       <div class="research-card">
-        <h3>[Placeholder — Assessment]</h3>
-        <p>Exam structure, project requirements, grading criteria.</p>
+        <h3>Assessment Method</h3>
+        <p>
+          <strong>Research Seminar Presentation (mandatory, 100% of final grade):</strong> an oral presentation and critical
+          seminar on a recent, high-impact research paper, chosen autonomously by the student and approved by the instructor
+          from top-tier venues (e.g., SIGMOD, VLDB, OSDI, SOSP, NeurIPS, ICML, KDD). Minimum score <strong>18/30</strong> to pass;
+          honors (30 <em>cum laude</em>) require exceptional mastery, deep critical insight, and flawless academic communication.
+        </p>
+      </div>
+
+      <div class="research-card">
+        <h3>Textbooks &amp; References</h3>
+        <p>
+          <em>Mining of Massive Datasets</em> (Leskovec, Rajaraman &amp; Ullman) and <em>Foundations of Data Science</em>
+          (Blum, Hopcroft &amp; Kannan) — both <a href="http://www.mmds.org/" target="_blank" rel="noopener">available free online</a>.<br>
+          <em>Designing Data-Intensive Applications</em> (Kleppmann); <em>Introduction to Information Retrieval</em>
+          (Manning, Raghavan &amp; Schütze); <em>Understanding Machine Learning</em> (Shalev-Shwartz &amp; Ben-David).<br>
+          Plus canonical research papers referenced throughout the lecture material.
+        </p>
+      </div>
+
+      <div class="research-card">
+        <h3>Teaching Delivery &amp; Attendance</h3>
+        <p>
+          Purely theoretical and methodological <strong>lectures</strong> covering architectural design, mathematical proofs,
+          and platform mechanics. <strong>No</strong> practical lab sessions, programming assignments, or supervised exercises.
+          Attendance is highly recommended.
+        </p>
       </div>
     </div>
   </div>
@@ -180,37 +232,304 @@
   <div class="container">
     <h2 class="section-label" id="material-title">// Teaching Material</h2>
 
-    <p style="color:var(--text-muted);margin-bottom:2rem;max-width:120ch">
-      Slides, exercises and code for A.Y. 2026/27 are hosted in the course's GitHub repository.
+    <div class="materiale-part" id="part-1">
+      <h3 class="materiale-part-title">Part I — BIG DATA INFRASTRUCTURE</h3>
+      <div class="lecture-cards">
+        <article class="lecture-card">
+          <div class="lecture-card-head">
+            <span class="lecture-card-id">Lecture 1.1</span>
+            <span class="lecture-card-date"><i class="ti ti-calendar" aria-hidden="true"></i>Date TBD</span>
+          </div>
+          <p class="lecture-card-desc"><strong style="color:var(--text);font-weight:600;">Big Data Infrastructure I.</strong> The Scale-Out Paradigm &amp; Distributed Storage — vertical vs. horizontal scaling, the Google File System (GFS) and HDFS.</p>
+          <div class="lecture-card-links">
+            <a class="lecture-tag lecture-tag-pdf" href="../assets/docs/bdc/slides/pdf/Lecture_1_1_Scaling_Out.pdf" target="_blank" rel="noopener"><i class="ti ti-file-type-pdf" aria-hidden="true"></i>PDF</a>
+            <a class="lecture-tag lecture-tag-html" href="../assets/docs/bdc/slides/html/Lecture_1_1_Scaling_Out.html" target="_blank" rel="noopener"><i class="ti ti-code" aria-hidden="true"></i>HTML</a>
+          </div>
+        </article>
+        <article class="lecture-card">
+          <div class="lecture-card-head">
+            <span class="lecture-card-id">Lecture 1.2</span>
+            <span class="lecture-card-date"><i class="ti ti-calendar" aria-hidden="true"></i>Date TBD</span>
+          </div>
+          <p class="lecture-card-desc"><strong style="color:var(--text);font-weight:600;">Big Data Infrastructure II.</strong> The MapReduce Execution Model — Map, Shuffle, Sort and Reduce phases; straggler tracking and fault tolerance.</p>
+          <div class="lecture-card-links">
+            <a class="lecture-tag lecture-tag-pdf" href="../assets/docs/bdc/slides/pdf/Lecture_1_2_MapReduce.pdf" target="_blank" rel="noopener"><i class="ti ti-file-type-pdf" aria-hidden="true"></i>PDF</a>
+            <a class="lecture-tag lecture-tag-html" href="../assets/docs/bdc/slides/html/Lecture_1_2_MapReduce.html" target="_blank" rel="noopener"><i class="ti ti-code" aria-hidden="true"></i>HTML</a>
+          </div>
+        </article>
+        <article class="lecture-card">
+          <div class="lecture-card-head">
+            <span class="lecture-card-id">Lecture 1.3</span>
+            <span class="lecture-card-date"><i class="ti ti-calendar" aria-hidden="true"></i>Date TBD</span>
+          </div>
+          <p class="lecture-card-desc"><strong style="color:var(--text);font-weight:600;">Big Data Infrastructure III.</strong> Apache Spark &amp; Dataflow Graph Architectures — RDDs, memory-centric execution, lazy evaluation, DAG scheduling.</p>
+          <div class="lecture-card-links">
+            <a class="lecture-tag lecture-tag-pdf" href="../assets/docs/bdc/slides/pdf/Lecture_1_3_Spark_and_DAGs.pdf" target="_blank" rel="noopener"><i class="ti ti-file-type-pdf" aria-hidden="true"></i>PDF</a>
+            <a class="lecture-tag lecture-tag-html" href="../assets/docs/bdc/slides/html/Lecture_1_3_Spark_and_DAGs.html" target="_blank" rel="noopener"><i class="ti ti-code" aria-hidden="true"></i>HTML</a>
+          </div>
+        </article>
+        <article class="lecture-card">
+          <div class="lecture-card-head">
+            <span class="lecture-card-id">Lecture 1.4</span>
+            <span class="lecture-card-date"><i class="ti ti-calendar" aria-hidden="true"></i>Date TBD</span>
+          </div>
+          <p class="lecture-card-desc"><strong style="color:var(--text);font-weight:600;">Big Data Infrastructure IV.</strong> Modern Data Infrastructure &amp; Streaming Frameworks — Apache Flink, Ray, and Lakehouse storage (Delta Lake).</p>
+          <div class="lecture-card-links">
+            <a class="lecture-tag lecture-tag-pdf" href="../assets/docs/bdc/slides/pdf/Lecture_1_4_Streaming_Frameworks.pdf" target="_blank" rel="noopener"><i class="ti ti-file-type-pdf" aria-hidden="true"></i>PDF</a>
+            <a class="lecture-tag lecture-tag-html" href="../assets/docs/bdc/slides/html/Lecture_1_4_Streaming_Frameworks.html" target="_blank" rel="noopener"><i class="ti ti-code" aria-hidden="true"></i>HTML</a>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="materiale-part" id="part-2">
+      <h3 class="materiale-part-title">Part II — HIGH-DIMENSIONAL REPRESENTATIONS</h3>
+      <div class="lecture-cards">
+        <article class="lecture-card">
+          <div class="lecture-card-head">
+            <span class="lecture-card-id">Lecture 2.1</span>
+            <span class="lecture-card-date"><i class="ti ti-calendar" aria-hidden="true"></i>Date TBD</span>
+          </div>
+          <p class="lecture-card-desc"><strong style="color:var(--text);font-weight:600;">High-Dimensional Representations I.</strong> Geometry of High-Dimensional Spaces — volume concentration, distance concentration, breakdown of Euclidean metrics.</p>
+          <div class="lecture-card-links">
+            <a class="lecture-tag lecture-tag-pdf" href="../assets/docs/bdc/slides/pdf/Lecture_2_1_Geometry_of_High_Dimensions.pdf" target="_blank" rel="noopener"><i class="ti ti-file-type-pdf" aria-hidden="true"></i>PDF</a>
+            <a class="lecture-tag lecture-tag-html" href="../assets/docs/bdc/slides/html/Lecture_2_1_Geometry_of_High_Dimensions.html" target="_blank" rel="noopener"><i class="ti ti-code" aria-hidden="true"></i>HTML</a>
+          </div>
+        </article>
+        <article class="lecture-card">
+          <div class="lecture-card-head">
+            <span class="lecture-card-id">Lecture 2.2</span>
+            <span class="lecture-card-date"><i class="ti ti-calendar" aria-hidden="true"></i>Date TBD</span>
+          </div>
+          <p class="lecture-card-desc"><strong style="color:var(--text);font-weight:600;">High-Dimensional Representations II.</strong> Dimensionality Reduction &amp; Random Projections — the Johnson–Lindenstrauss Lemma.</p>
+          <div class="lecture-card-links">
+            <a class="lecture-tag lecture-tag-pdf" href="../assets/docs/bdc/slides/pdf/Lecture_2_2_Dimensionality_Reduction.pdf" target="_blank" rel="noopener"><i class="ti ti-file-type-pdf" aria-hidden="true"></i>PDF</a>
+            <a class="lecture-tag lecture-tag-html" href="../assets/docs/bdc/slides/html/Lecture_2_2_Dimensionality_Reduction.html" target="_blank" rel="noopener"><i class="ti ti-code" aria-hidden="true"></i>HTML</a>
+          </div>
+        </article>
+        <article class="lecture-card">
+          <div class="lecture-card-head">
+            <span class="lecture-card-id">Lecture 2.3</span>
+            <span class="lecture-card-date"><i class="ti ti-calendar" aria-hidden="true"></i>Date TBD</span>
+          </div>
+          <p class="lecture-card-desc"><strong style="color:var(--text);font-weight:600;">High-Dimensional Representations III.</strong> Scalable Tabular &amp; Columnar Representations — row- vs. column-major layouts, Parquet/ORC internals.</p>
+          <div class="lecture-card-links">
+            <a class="lecture-tag lecture-tag-pdf" href="../assets/docs/bdc/slides/pdf/Lecture_2_3_Columnar_Representations.pdf" target="_blank" rel="noopener"><i class="ti ti-file-type-pdf" aria-hidden="true"></i>PDF</a>
+            <a class="lecture-tag lecture-tag-html" href="../assets/docs/bdc/slides/html/Lecture_2_3_Columnar_Representations.html" target="_blank" rel="noopener"><i class="ti ti-code" aria-hidden="true"></i>HTML</a>
+          </div>
+        </article>
+        <article class="lecture-card">
+          <div class="lecture-card-head">
+            <span class="lecture-card-id">Lecture 2.4</span>
+            <span class="lecture-card-date"><i class="ti ti-calendar" aria-hidden="true"></i>Date TBD</span>
+          </div>
+          <p class="lecture-card-desc"><strong style="color:var(--text);font-weight:600;">High-Dimensional Representations IV.</strong> Vector Representations of Text &amp; Embeddings — sparse TF-IDF vs. dense embeddings, Word2Vec.</p>
+          <div class="lecture-card-links">
+            <a class="lecture-tag lecture-tag-pdf" href="../assets/docs/bdc/slides/pdf/Lecture_2_4_Text_Embeddings.pdf" target="_blank" rel="noopener"><i class="ti ti-file-type-pdf" aria-hidden="true"></i>PDF</a>
+            <a class="lecture-tag lecture-tag-html" href="../assets/docs/bdc/slides/html/Lecture_2_4_Text_Embeddings.html" target="_blank" rel="noopener"><i class="ti ti-code" aria-hidden="true"></i>HTML</a>
+          </div>
+        </article>
+        <article class="lecture-card">
+          <div class="lecture-card-head">
+            <span class="lecture-card-id">Lecture 2.5</span>
+            <span class="lecture-card-date"><i class="ti ti-calendar" aria-hidden="true"></i>Date TBD</span>
+          </div>
+          <p class="lecture-card-desc"><strong style="color:var(--text);font-weight:600;">High-Dimensional Representations V.</strong> High-Dimensional Image Latent Spaces — CNNs and vision transformers mapping pixels to semantic embeddings.</p>
+          <div class="lecture-card-links">
+            <a class="lecture-tag lecture-tag-pdf" href="../assets/docs/bdc/slides/pdf/Lecture_2_5_Image_Latent_Spaces.pdf" target="_blank" rel="noopener"><i class="ti ti-file-type-pdf" aria-hidden="true"></i>PDF</a>
+            <a class="lecture-tag lecture-tag-html" href="../assets/docs/bdc/slides/html/Lecture_2_5_Image_Latent_Spaces.html" target="_blank" rel="noopener"><i class="ti ti-code" aria-hidden="true"></i>HTML</a>
+          </div>
+        </article>
+        <article class="lecture-card">
+          <div class="lecture-card-head">
+            <span class="lecture-card-id">Lecture 2.6</span>
+            <span class="lecture-card-date"><i class="ti ti-calendar" aria-hidden="true"></i>Date TBD</span>
+          </div>
+          <p class="lecture-card-desc"><strong style="color:var(--text);font-weight:600;">High-Dimensional Representations VI.</strong> Graph Representation Foundations &amp; Sparsity — power-law graphs, adjacency decomposition, node-to-vector mappings.</p>
+          <div class="lecture-card-links">
+            <a class="lecture-tag lecture-tag-pdf" href="../assets/docs/bdc/slides/pdf/Lecture_2_6_Graph_Representations.pdf" target="_blank" rel="noopener"><i class="ti ti-file-type-pdf" aria-hidden="true"></i>PDF</a>
+            <a class="lecture-tag lecture-tag-html" href="../assets/docs/bdc/slides/html/Lecture_2_6_Graph_Representations.html" target="_blank" rel="noopener"><i class="ti ti-code" aria-hidden="true"></i>HTML</a>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="materiale-part" id="part-3">
+      <h3 class="materiale-part-title">Part III — SCALING CLASSICAL TASKS</h3>
+      <div class="lecture-cards">
+        <article class="lecture-card">
+          <div class="lecture-card-head">
+            <span class="lecture-card-id">Lecture 3.1</span>
+            <span class="lecture-card-date"><i class="ti ti-calendar" aria-hidden="true"></i>Date TBD</span>
+          </div>
+          <p class="lecture-card-desc"><strong style="color:var(--text);font-weight:600;">Scaling Classical Tasks I.</strong> Web-Scale Search and Inverted Indices — document vs. term partitioning, posting list compression.</p>
+          <div class="lecture-card-links">
+            <a class="lecture-tag lecture-tag-pdf" href="../assets/docs/bdc/slides/pdf/Lecture_3_1_Inverted_Indices.pdf" target="_blank" rel="noopener"><i class="ti ti-file-type-pdf" aria-hidden="true"></i>PDF</a>
+            <a class="lecture-tag lecture-tag-html" href="../assets/docs/bdc/slides/html/Lecture_3_1_Inverted_Indices.html" target="_blank" rel="noopener"><i class="ti ti-code" aria-hidden="true"></i>HTML</a>
+          </div>
+        </article>
+        <article class="lecture-card">
+          <div class="lecture-card-head">
+            <span class="lecture-card-id">Lecture 3.2</span>
+            <span class="lecture-card-date"><i class="ti ti-calendar" aria-hidden="true"></i>Date TBD</span>
+          </div>
+          <p class="lecture-card-desc"><strong style="color:var(--text);font-weight:600;">Scaling Classical Tasks II.</strong> Approximate Query Processing (AQP) Foundations — sampling theory, Hoeffding/Chebyshev bounds, data skipping.</p>
+          <div class="lecture-card-links">
+            <a class="lecture-tag lecture-tag-pdf" href="../assets/docs/bdc/slides/pdf/Lecture_3_2_Approximate_Query_Processing.pdf" target="_blank" rel="noopener"><i class="ti ti-file-type-pdf" aria-hidden="true"></i>PDF</a>
+            <a class="lecture-tag lecture-tag-html" href="../assets/docs/bdc/slides/html/Lecture_3_2_Approximate_Query_Processing.html" target="_blank" rel="noopener"><i class="ti ti-code" aria-hidden="true"></i>HTML</a>
+          </div>
+        </article>
+        <article class="lecture-card">
+          <div class="lecture-card-head">
+            <span class="lecture-card-id">Lecture 3.3</span>
+            <span class="lecture-card-date"><i class="ti ti-calendar" aria-hidden="true"></i>Date TBD</span>
+          </div>
+          <p class="lecture-card-desc"><strong style="color:var(--text);font-weight:600;">Scaling Classical Tasks III.</strong> Sketching Primitives I: Cardinality Estimation — the LogLog family and HyperLogLog.</p>
+          <div class="lecture-card-links">
+            <a class="lecture-tag lecture-tag-pdf" href="../assets/docs/bdc/slides/pdf/Lecture_3_3_HyperLogLog.pdf" target="_blank" rel="noopener"><i class="ti ti-file-type-pdf" aria-hidden="true"></i>PDF</a>
+            <a class="lecture-tag lecture-tag-html" href="../assets/docs/bdc/slides/html/Lecture_3_3_HyperLogLog.html" target="_blank" rel="noopener"><i class="ti ti-code" aria-hidden="true"></i>HTML</a>
+          </div>
+        </article>
+        <article class="lecture-card">
+          <div class="lecture-card-head">
+            <span class="lecture-card-id">Lecture 3.4</span>
+            <span class="lecture-card-date"><i class="ti ti-calendar" aria-hidden="true"></i>Date TBD</span>
+          </div>
+          <p class="lecture-card-desc"><strong style="color:var(--text);font-weight:600;">Scaling Classical Tasks IV.</strong> Sketching Primitives II: Frequency Estimation — the Count-Min Sketch and its error bounds.</p>
+          <div class="lecture-card-links">
+            <a class="lecture-tag lecture-tag-pdf" href="../assets/docs/bdc/slides/pdf/Lecture_3_4_Count_Min_Sketch.pdf" target="_blank" rel="noopener"><i class="ti ti-file-type-pdf" aria-hidden="true"></i>PDF</a>
+            <a class="lecture-tag lecture-tag-html" href="../assets/docs/bdc/slides/html/Lecture_3_4_Count_Min_Sketch.html" target="_blank" rel="noopener"><i class="ti ti-code" aria-hidden="true"></i>HTML</a>
+          </div>
+        </article>
+        <article class="lecture-card">
+          <div class="lecture-card-head">
+            <span class="lecture-card-id">Lecture 3.5</span>
+            <span class="lecture-card-date"><i class="ti ti-calendar" aria-hidden="true"></i>Date TBD</span>
+          </div>
+          <p class="lecture-card-desc"><strong style="color:var(--text);font-weight:600;">Scaling Classical Tasks V.</strong> Locality-Sensitive Hashing (LSH) — MinHashing, LSH bands, sub-linear nearest-neighbor search.</p>
+          <div class="lecture-card-links">
+            <a class="lecture-tag lecture-tag-pdf" href="../assets/docs/bdc/slides/pdf/Lecture_3_5_Locality_Sensitive_Hashing.pdf" target="_blank" rel="noopener"><i class="ti ti-file-type-pdf" aria-hidden="true"></i>PDF</a>
+            <a class="lecture-tag lecture-tag-html" href="../assets/docs/bdc/slides/html/Lecture_3_5_Locality_Sensitive_Hashing.html" target="_blank" rel="noopener"><i class="ti ti-code" aria-hidden="true"></i>HTML</a>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="materiale-part" id="part-4">
+      <h3 class="materiale-part-title">Part IV — SCALING LEARNING TASKS</h3>
+      <div class="lecture-cards">
+        <article class="lecture-card">
+          <div class="lecture-card-head">
+            <span class="lecture-card-id">Lecture 4.1</span>
+            <span class="lecture-card-date"><i class="ti ti-calendar" aria-hidden="true"></i>Date TBD</span>
+          </div>
+          <p class="lecture-card-desc"><strong style="color:var(--text);font-weight:600;">Scaling Learning Tasks I.</strong> Optimization at Scale: Empirical Risk Minimization — objective functions and batch gradient descent bottlenecks.</p>
+          <div class="lecture-card-links">
+            <a class="lecture-tag lecture-tag-pdf" href="../assets/docs/bdc/slides/pdf/Lecture_4_1_Empirical_Risk_Minimization.pdf" target="_blank" rel="noopener"><i class="ti ti-file-type-pdf" aria-hidden="true"></i>PDF</a>
+            <a class="lecture-tag lecture-tag-html" href="../assets/docs/bdc/slides/html/Lecture_4_1_Empirical_Risk_Minimization.html" target="_blank" rel="noopener"><i class="ti ti-code" aria-hidden="true"></i>HTML</a>
+          </div>
+        </article>
+        <article class="lecture-card">
+          <div class="lecture-card-head">
+            <span class="lecture-card-id">Lecture 4.2</span>
+            <span class="lecture-card-date"><i class="ti ti-calendar" aria-hidden="true"></i>Date TBD</span>
+          </div>
+          <p class="lecture-card-desc"><strong style="color:var(--text);font-weight:600;">Scaling Learning Tasks II.</strong> Parallel Stochastic Gradient Descent (SGD) — mini-batch SGD and the trade-offs of parallel batch sizes.</p>
+          <div class="lecture-card-links">
+            <a class="lecture-tag lecture-tag-pdf" href="../assets/docs/bdc/slides/pdf/Lecture_4_2_Parallel_SGD.pdf" target="_blank" rel="noopener"><i class="ti ti-file-type-pdf" aria-hidden="true"></i>PDF</a>
+            <a class="lecture-tag lecture-tag-html" href="../assets/docs/bdc/slides/html/Lecture_4_2_Parallel_SGD.html" target="_blank" rel="noopener"><i class="ti ti-code" aria-hidden="true"></i>HTML</a>
+          </div>
+        </article>
+        <article class="lecture-card">
+          <div class="lecture-card-head">
+            <span class="lecture-card-id">Lecture 4.3</span>
+            <span class="lecture-card-date"><i class="ti ti-calendar" aria-hidden="true"></i>Date TBD</span>
+          </div>
+          <p class="lecture-card-desc"><strong style="color:var(--text);font-weight:600;">Scaling Learning Tasks III.</strong> Asynchronous Optimization &amp; Hogwild! — lock-free shared-memory SGD and convergence under sparsity.</p>
+          <div class="lecture-card-links">
+            <a class="lecture-tag lecture-tag-pdf" href="../assets/docs/bdc/slides/pdf/Lecture_4_3_Hogwild.pdf" target="_blank" rel="noopener"><i class="ti ti-file-type-pdf" aria-hidden="true"></i>PDF</a>
+            <a class="lecture-tag lecture-tag-html" href="../assets/docs/bdc/slides/html/Lecture_4_3_Hogwild.html" target="_blank" rel="noopener"><i class="ti ti-code" aria-hidden="true"></i>HTML</a>
+          </div>
+        </article>
+        <article class="lecture-card">
+          <div class="lecture-card-head">
+            <span class="lecture-card-id">Lecture 4.4</span>
+            <span class="lecture-card-date"><i class="ti ti-calendar" aria-hidden="true"></i>Date TBD</span>
+          </div>
+          <p class="lecture-card-desc"><strong style="color:var(--text);font-weight:600;">Scaling Learning Tasks IV.</strong> The Parameter Server Architecture — sharded parameters, BSP/ASP/SSP, data vs. model parallelism.</p>
+          <div class="lecture-card-links">
+            <a class="lecture-tag lecture-tag-pdf" href="../assets/docs/bdc/slides/pdf/Lecture_4_4_Parameter_Server.pdf" target="_blank" rel="noopener"><i class="ti ti-file-type-pdf" aria-hidden="true"></i>PDF</a>
+            <a class="lecture-tag lecture-tag-html" href="../assets/docs/bdc/slides/html/Lecture_4_4_Parameter_Server.html" target="_blank" rel="noopener"><i class="ti ti-code" aria-hidden="true"></i>HTML</a>
+          </div>
+        </article>
+        <article class="lecture-card">
+          <div class="lecture-card-head">
+            <span class="lecture-card-id">Lecture 4.5</span>
+            <span class="lecture-card-date"><i class="ti ti-calendar" aria-hidden="true"></i>Date TBD</span>
+          </div>
+          <p class="lecture-card-desc"><strong style="color:var(--text);font-weight:600;">Scaling Learning Tasks V.</strong> Decentralized Systems &amp; Federated Learning — Federated Averaging (FedAvg), client heterogeneity, non-IID data.</p>
+          <div class="lecture-card-links">
+            <a class="lecture-tag lecture-tag-pdf" href="../assets/docs/bdc/slides/pdf/Lecture_4_5_Federated_Learning.pdf" target="_blank" rel="noopener"><i class="ti ti-file-type-pdf" aria-hidden="true"></i>PDF</a>
+            <a class="lecture-tag lecture-tag-html" href="../assets/docs/bdc/slides/html/Lecture_4_5_Federated_Learning.html" target="_blank" rel="noopener"><i class="ti ti-code" aria-hidden="true"></i>HTML</a>
+          </div>
+        </article>
+        <article class="lecture-card">
+          <div class="lecture-card-head">
+            <span class="lecture-card-id">Lecture 4.6</span>
+            <span class="lecture-card-date"><i class="ti ti-calendar" aria-hidden="true"></i>Date TBD</span>
+          </div>
+          <p class="lecture-card-desc"><strong style="color:var(--text);font-weight:600;">Scaling Learning Tasks VI.</strong> Memory-Efficient Machine Learning &amp; System Scalability — quantization, sparsification, gradient compression.</p>
+          <div class="lecture-card-links">
+            <a class="lecture-tag lecture-tag-pdf" href="../assets/docs/bdc/slides/pdf/Lecture_4_6_Memory_Efficient_ML.pdf" target="_blank" rel="noopener"><i class="ti ti-file-type-pdf" aria-hidden="true"></i>PDF</a>
+            <a class="lecture-tag lecture-tag-html" href="../assets/docs/bdc/slides/html/Lecture_4_6_Memory_Efficient_ML.html" target="_blank" rel="noopener"><i class="ti ti-code" aria-hidden="true"></i>HTML</a>
+          </div>
+        </article>
+        <article class="lecture-card">
+          <div class="lecture-card-head">
+            <span class="lecture-card-id">Lecture 4.7</span>
+            <span class="lecture-card-date"><i class="ti ti-calendar" aria-hidden="true"></i>Date TBD</span>
+          </div>
+          <p class="lecture-card-desc"><strong style="color:var(--text);font-weight:600;">Backup Lecture I.</strong> System Scaling Trade-offs — reviewing distributed computing trade-offs, e.g. CAP-theorem bounds vs. network routing choices.</p>
+          <div class="lecture-card-links">
+            <a class="lecture-tag lecture-tag-pdf" href="../assets/docs/bdc/slides/pdf/Lecture_4_7_Backup_System_Scaling_Tradeoffs.pdf" target="_blank" rel="noopener"><i class="ti ti-file-type-pdf" aria-hidden="true"></i>PDF</a>
+            <a class="lecture-tag lecture-tag-html" href="../assets/docs/bdc/slides/html/Lecture_4_7_Backup_System_Scaling_Tradeoffs.html" target="_blank" rel="noopener"><i class="ti ti-code" aria-hidden="true"></i>HTML</a>
+          </div>
+        </article>
+        <article class="lecture-card">
+          <div class="lecture-card-head">
+            <span class="lecture-card-id">Lecture 4.8</span>
+            <span class="lecture-card-date"><i class="ti ti-calendar" aria-hidden="true"></i>Date TBD</span>
+          </div>
+          <p class="lecture-card-desc"><strong style="color:var(--text);font-weight:600;">Backup Lecture II.</strong> Academic Literature Analysis Seminar — how to parse, evaluate, and present a critical review of top-tier research publications.</p>
+          <div class="lecture-card-links">
+            <a class="lecture-tag lecture-tag-pdf" href="../assets/docs/bdc/slides/pdf/Lecture_4_8_Backup_Literature_Analysis_Seminar.pdf" target="_blank" rel="noopener"><i class="ti ti-file-type-pdf" aria-hidden="true"></i>PDF</a>
+            <a class="lecture-tag lecture-tag-html" href="../assets/docs/bdc/slides/html/Lecture_4_8_Backup_Literature_Analysis_Seminar.html" target="_blank" rel="noopener"><i class="ti ti-code" aria-hidden="true"></i>HTML</a>
+          </div>
+        </article>
+        <article class="lecture-card">
+          <div class="lecture-card-head">
+            <span class="lecture-card-id">Lecture 4.9</span>
+            <span class="lecture-card-date"><i class="ti ti-calendar" aria-hidden="true"></i>Date TBD</span>
+          </div>
+          <p class="lecture-card-desc"><strong style="color:var(--text);font-weight:600;">Backup Lecture III.</strong> Emerging Trends and Open Frontiers — foundation model scaling, distributed GNN constraints, sustainable/green computing.</p>
+          <div class="lecture-card-links">
+            <a class="lecture-tag lecture-tag-pdf" href="../assets/docs/bdc/slides/pdf/Lecture_4_9_Backup_Emerging_Trends.pdf" target="_blank" rel="noopener"><i class="ti ti-file-type-pdf" aria-hidden="true"></i>PDF</a>
+            <a class="lecture-tag lecture-tag-html" href="../assets/docs/bdc/slides/html/Lecture_4_9_Backup_Emerging_Trends.html" target="_blank" rel="noopener"><i class="ti ti-code" aria-hidden="true"></i>HTML</a>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <p style="color:var(--text-muted);margin:2rem 0 1.5rem;max-width:120ch">
+      Candidate research papers for the seminar presentation, and archived material from previous editions, remain in the course's GitHub repository:
     </p>
 
     <div class="teaching-grid">
       <div class="teaching-card">
         <span class="badge-lang">EN</span>
-        <h3>Lecture Slides</h3>
-        <p><em>[Placeholder]</em> — PDF slides organized by topic.</p>
-        <a class="teaching-link" href="https://github.com/gtolomei/big-data-computing" target="_blank" rel="noopener">Browse folder</a>
-      </div>
-
-      <div class="teaching-card">
-        <span class="badge-lang">EN</span>
-        <h3>Exercises</h3>
-        <p><em>[Placeholder]</em> — hands-on exercises, with and without solutions.</p>
-        <a class="teaching-link" href="https://github.com/gtolomei/big-data-computing" target="_blank" rel="noopener">Browse folder</a>
-      </div>
-
-      <div class="teaching-card">
-        <span class="badge-lang">EN</span>
-        <h3>Code</h3>
-        <p><em>[Placeholder]</em> — example code for distributed data processing frameworks.</p>
-        <a class="teaching-link" href="https://github.com/gtolomei/big-data-computing" target="_blank" rel="noopener">Browse folder</a>
-      </div>
-
-      <div class="teaching-card">
-        <span class="badge-lang">EN</span>
-        <h3>Exams &amp; Projects</h3>
-        <p><em>[Placeholder]</em> — past exam texts, results, and project guidelines.</p>
-        <a class="teaching-link" href="https://github.com/gtolomei/big-data-computing" target="_blank" rel="noopener">Browse folder</a>
+        <h3>Seminar Papers</h3>
+        <p>Suggested list of top-tier research papers eligible for the seminar presentation.</p>
+        <a class="teaching-link" href="https://github.com/gtolomei/big-data-computing/tree/master/papers" target="_blank" rel="noopener">Browse folder</a>
       </div>
     </div>
   </div>
@@ -225,11 +544,17 @@
     <h2 class="section-label" id="previous-years-title">// Previous Years</h2>
 
     <p style="color:var(--text-muted);margin-bottom:2rem;max-width:120ch">
-      <em>[Placeholder — this course doesn't yet have a per-year archive folder like Operating Systems does.
-      Once past editions accumulate, add an <code>oldest/</code> folder to the
-      <a href="https://github.com/gtolomei/big-data-computing" target="_blank" rel="noopener">big-data-computing</a>
-      repository (one file per academic year) and link each year here, the same way Operating Systems does.]</em>
+      Material and announcements from previous editions of the course.
     </p>
+
+    <div class="social-links" aria-label="Previous years archive">
+      <a class="social-link" href="https://github.com/gtolomei/big-data-computing/blob/master/oldest/2024-25.md" target="_blank" rel="noopener">2024–25</a>
+      <a class="social-link" href="https://github.com/gtolomei/big-data-computing/blob/master/oldest/2023-24.md" target="_blank" rel="noopener">2023–24</a>
+      <a class="social-link" href="https://github.com/gtolomei/big-data-computing/blob/master/oldest/2022-23.md" target="_blank" rel="noopener">2022–23</a>
+      <a class="social-link" href="https://github.com/gtolomei/big-data-computing/blob/master/oldest/2021-22.md" target="_blank" rel="noopener">2021–22</a>
+      <a class="social-link" href="https://github.com/gtolomei/big-data-computing/blob/master/oldest/2020-21.md" target="_blank" rel="noopener">2020–21</a>
+      <a class="social-link" href="https://github.com/gtolomei/big-data-computing/blob/master/oldest/2019-20.md" target="_blank" rel="noopener">2019–20</a>
+    </div>
   </div>
 </section>
 
