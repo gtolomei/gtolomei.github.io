@@ -292,7 +292,13 @@ def fetch_and_parse(orcid: str = OPENALEX_ORCID, mailto: str = OPENALEX_MAILTO) 
 
         for attempt in range(1, 4):
             try:
-                resp = requests.get(OPENALEX_WORKS_URL, params=params, headers=headers, timeout=30)
+                # (10, 30): 10 s to establish the TCP connection, 30 s per read
+                # chunk.  A plain scalar timeout=30 only covers the read phase
+                # and does not protect against slow DNS / TCP stalls on CI.
+                resp = requests.get(
+                    OPENALEX_WORKS_URL, params=params, headers=headers,
+                    timeout=(10, 30),
+                )
                 resp.raise_for_status()
                 data = resp.json()
                 break
@@ -334,7 +340,21 @@ def fetch_and_parse(orcid: str = OPENALEX_ORCID, mailto: str = OPENALEX_MAILTO) 
 
         primary    = w.get("primary_location") or {}
         source     = primary.get("source") or {}
-        venue_full = (source.get("display_name") or "").strip()
+
+        # Prefer the structured source name; fall back to the raw string that
+        # OpenAlex records even when it cannot resolve a source entity.  This
+        # rescues ~27 papers whose primary_location.source is null but whose
+        # raw_source_name contains the real conference/journal name.
+        venue_full = (
+            source.get("display_name")
+            or primary.get("raw_source_name")
+            or ""
+        ).strip()
+
+        # OpenAlex sometimes labels conference papers as type="article".
+        # raw_type (inside primary_location) is closer to the publisher's own
+        # classification and is more reliable for proceedings-article detection.
+        raw_type = (primary.get("raw_type") or "").strip()
 
         authors = [
             (a.get("author") or {}).get("display_name", "")
@@ -351,14 +371,15 @@ def fetch_and_parse(orcid: str = OPENALEX_ORCID, mailto: str = OPENALEX_MAILTO) 
             venue_full = "arXiv"
 
         papers.append({
-            "key":        key,
-            "title":      title,
-            "authors":    authors,
-            "year":       year,
-            "venue_full": venue_full,
+            "key":           key,
+            "title":         title,
+            "authors":       authors,
+            "year":          year,
+            "venue_full":    venue_full,
             "openalex_type": w.get("type") or "",
-            "doi":        doi,
-            "url":        url_paper,
+            "raw_type":      raw_type,
+            "doi":           doi,
+            "url":           url_paper,
         })
 
     return papers
@@ -423,7 +444,13 @@ def build(venues: dict, topics: list, papers_raw: list) -> list:
             print(f"  SKIP  {title[:72]}", flush=True)
             continue
 
-        pub_type = classify_type(p["openalex_type"], p["venue_full"], doi, venues)
+        # Use raw_type as a fallback when OpenAlex's top-level type is
+        # misleading (e.g. "article" for a proceedings paper).  This fixes
+        # conference papers such as CIKM entries that arrive as type=article.
+        effective_type = p["openalex_type"] or p.get("raw_type", "")
+        if p["openalex_type"] == "article" and p.get("raw_type") == "proceedings-article":
+            effective_type = "proceedings-article"
+        pub_type = classify_type(effective_type, p["venue_full"], doi, venues)
         topics_list = classify_topics(title, p["venue_full"], topics)
 
         if pub_type == "other" and p["venue_full"]:
@@ -592,8 +619,22 @@ def main():
 
     status = load_sync_status()
 
+    # Hard wall-clock deadline for the OpenAlex fetch.  Even with per-request
+    # timeouts, DNS stalls or trickle-slow connections on CI can hold up the
+    # entire pagination loop for 10+ minutes.  180 s is generous for a ~77-
+    # work corpus while still being well within GitHub Actions' 6-hour limit.
+    _OPENALEX_DEADLINE = 180
+
     try:
-        papers_raw   = fetch_and_parse()
+        with concurrent.futures.ThreadPoolExecutor(max_workers=1) as _ex:
+            _fut = _ex.submit(fetch_and_parse)
+            try:
+                papers_raw = _fut.result(timeout=_OPENALEX_DEADLINE)
+            except concurrent.futures.TimeoutError:
+                raise RuntimeError(
+                    f"OpenAlex fetch timed out after {_OPENALEX_DEADLINE}s "
+                    "(network stall on CI — will retry next run)."
+                )
         publications = build(venues, topics, papers_raw)
     except Exception as e:
         # Leave the previously-published data/publications.json and

@@ -52,6 +52,9 @@
     - "\\bcombinex\\b"
     - "\\bcf.gnn\\b"
     - "\\bgraph.*explai\\b"
+    - "\\bgraph.*rewir\\b"
+    - "\\bevad.*community\\b"
+    - "\\bmasking.*affiliation\\b"
 
 - slug: recommender
   label: "Recommender Systems"
@@ -96,6 +99,24 @@
     - "\\ba/b testing\\b"
     - "\\bquery (cluster|segment|intent|understand)\\b"
     - "\\bmustache\\b"
+    - "\\bsearch task\\b"
+    - "\\bpost.click\\b"
+    - "\\beuropeana\\b"
+    - "\\bonline advertis\\w+\\b"
+    - "\\bweb \\d+\\.\\d+\\b"
+    - "\\btrending topic\\b"
+    - "\\bburst.*request\\b"
+    - "\\bhot quer\\w+\\b"
+    - "\\bsocial (web|search|network.*search)\\b"
+    - "\\blearn.*rank.*quer\\b"
+    - "\\bsearch.*session\\b"
+    - "\\bwikipedia.*burst\\b"
+    - "\\btwitter.*anticipat\\b"
+    - "\\bsearch result diversif\\b"
+    - "\\bsearch.*web\\b"
+    - "\\buser quer\\w+.*detect\\b"
+    - "\\bp2p.*aggregation\\b"
+    - "\\bdistributed.*user.*aggregation\\b"
 
 - slug: fairness
   label: "Fairness & Privacy"
@@ -120,6 +141,9 @@
     - "\\bprompt.to.os\\b"
     - "\\b(p2os)\\b"
     - "\\bxai narrative\\b"
+    - "\\bllm.*table\\b"
+    - "\\btable.*llm\\b"
+    - "\\blanguage model.*know.*table\\b"
 
 - slug: security
   label: "Security"
@@ -134,6 +158,10 @@
     - "\\bcovert channel\\b"
     - "\\bintrusion detection\\b"
     - "\\bblack.box detection\\b"
+    - "\\bcookie\\b"
+    - "\\bclient.authenti\\w+\\b"
+    - "\\bphishing\\b"
+    - "\\bweb (attack|vulnerability)\\b"
 
 # catch-all: assigned to papers matching no other topic
 - slug: misc
