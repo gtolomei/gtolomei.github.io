@@ -1077,6 +1077,7 @@ footer a { color: var(--accent); }
 .text-muted  { color: var(--text-muted); }
 .text-subtle { color: var(--text-subtle); }
 .text-accent { color: var(--accent); }
+.text-mono {font-family: var(--font-mono); }
 
 /* ============================================================
    RESPONSIVE

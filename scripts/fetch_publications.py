@@ -1,12 +1,20 @@
 #!/usr/bin/env python3
 """
-fetch_publications.py — DBLP fetch + classify for gtolomei.github.io
+fetch_publications.py — OpenAlex fetch + classify for gtolomei.github.io
+
+DBLP put its per-author XML endpoint behind an "Anubis" bot-wall
+(https://github.com/TecharoHQ/anubis) sometime around early Sept 2026 —
+it returns an HTML JS-challenge page instead of XML to any non-browser
+client, unconditionally. No amount of retry/backoff/headers gets past
+that, so as of v2.0 this script sources data from the OpenAlex API
+(https://openalex.org) instead, keyed on the author's ORCID.
 
 Usage:
     python3 scripts/fetch_publications.py
 
 Outputs:
     data/publications.json          canonical JSON dump
+    data/sync_status.json           last-run bookkeeping (for CI alerting)
     assets/js/publications-data.js  window.PUBLICATIONS for the browser
     sitemap.xml                     <lastmod> updated to today
 
@@ -15,18 +23,15 @@ Importable:
 """
 
 import json
-import os
 import re
 import sys
 import time
-import xml.etree.ElementTree as ET
 from datetime import date, datetime, timezone
 from pathlib import Path
-from urllib.request import urlopen, Request
-from urllib.error import HTTPError, URLError
-from scholarly import scholarly
 
+import requests
 import yaml
+from scholarly import scholarly
 
 # ── Paths ──────────────────────────────────────────────────────────────────
 ROOT        = Path(__file__).resolve().parent.parent
@@ -34,14 +39,22 @@ VENUES_YML  = ROOT / "data" / "venues.yml"
 TOPICS_YML  = ROOT / "data" / "topics.yml"
 PUB_JSON    = ROOT / "data" / "publications.json"
 PUB_JS      = ROOT / "assets" / "js" / "publications-data.js"
-GOOGLE_SCHOLAR_JSON    = ROOT / "data" / "scholar.json"
-GOOGLE_SCHOLAR_ID     = "Y2R2DXEAAAAJ" 
-GOOGLE_SCHOLAR_URL = f"https://scholar.google.com/citations?user={GOOGLE_SCHOLAR_ID}"
-SITEMAP_XML = ROOT / "sitemap.xml"
+GOOGLE_SCHOLAR_JSON = ROOT / "data" / "scholar.json"
+GOOGLE_SCHOLAR_ID   = "Y2R2DXEAAAAJ"
+GOOGLE_SCHOLAR_URL  = f"https://scholar.google.com/citations?user={GOOGLE_SCHOLAR_ID}"
+SITEMAP_XML       = ROOT / "sitemap.xml"
+SYNC_STATUS_JSON  = ROOT / "data" / "sync_status.json"
 
-DBLP_PID     = "72/7456"
-DBLP_XML_URL = f"https://dblp.org/pid/{DBLP_PID}.xml"
-OWNER_NAME   = "Gabriele Tolomei"
+# Consecutive failed nights before the workflow flags it via a GitHub Issue.
+# One bad night stays quiet; a real stall gets surfaced instead of silently
+# sitting there (this is how the sync went stale for ~2 weeks unnoticed).
+FAILURE_ALERT_THRESHOLD = 3
+
+# ── OpenAlex source ──────────────────────────────────────────────────────
+OPENALEX_ORCID     = "0000-0001-7471-6659"
+OPENALEX_MAILTO    = "gabriele.tolomei@gmail.com"  # puts requests in OpenAlex's "polite pool"
+OPENALEX_WORKS_URL = "https://api.openalex.org/works"
+OWNER_NAME         = "Gabriele Tolomei"
 
 # ── Useful stuff ──────────────────────────────────────────────────────────────────
 ACRONYMS = {"IoT", "AI", "NLP", "GPU", "CPU", "LLM", "GNN", "XAI", "KG"}
@@ -58,6 +71,13 @@ def load_venues(path: Path = VENUES_YML) -> dict:
         data[key] = {v.lower() for v in data.get(key) or []}
     data.setdefault("skip_keys", [])
     data.setdefault("skip_title_patterns", [])
+    # venue_aliases: acronym -> {"patterns": [...], "exclude": [...]} —
+    # regex overrides for venues whose OpenAlex source name doesn't
+    # literally contain the acronym (e.g. "icml" -> the source is named
+    # "International Conference on Machine Learning", not "ICML").
+    data["venue_aliases"] = {
+        k.lower(): v for k, v in (data.get("venue_aliases") or {}).items()
+    }
     return data
 
 
@@ -69,50 +89,78 @@ def load_topics(path: Path = TOPICS_YML) -> list:
 
 # ── Venue/type helpers ─────────────────────────────────────────────────────
 
-def _venue_abbrev(key: str) -> str:
-    """Extract venue abbreviation from a DBLP key.
-
-    Examples
-    --------
-    conf/sigir/TolomeiS17   → sigir
-    journals/tkde/TolomeiS21 → tkde
-    corr/abs/2305.01234      → corr
-    """
-    parts = key.split("/")
-    return parts[1].lower() if len(parts) >= 2 else ""
-
-
-def _is_workshop(booktitle: str) -> bool:
-    if not booktitle:
+def _is_workshop(text: str) -> bool:
+    if not text:
         return False
-    return bool(re.search(r"workshop", booktitle, re.IGNORECASE)) or " @ " in booktitle
+    return bool(re.search(r"workshop", text, re.IGNORECASE)) or " @ " in text
 
 
-def classify_type(key: str, booktitle: str, publtype: str, venues: dict) -> str:
+def _venue_matches(acronym: str, venue_full: str, venue_aliases: dict) -> bool:
+    """Does venue_full correspond to the given tier-list acronym?
+
+    Tries the acronym itself as a whole word first, then any configured
+    alias patterns for it, honoring an optional exclude list (needed to
+    tell e.g. 'sp' — IEEE S&P — apart from 'eurosp' — its European
+    sibling — since both source names contain "Security and Privacy").
+    """
+    if not venue_full:
+        return False
+
+    cfg = venue_aliases.get(acronym, {})
+    for exc in cfg.get("exclude", []):
+        try:
+            if re.search(exc, venue_full, re.IGNORECASE):
+                return False
+        except re.error:
+            pass
+
+    patterns = [rf"\b{re.escape(acronym)}\b"] + list(cfg.get("patterns", []))
+    for pat in patterns:
+        try:
+            if re.search(pat, venue_full, re.IGNORECASE):
+                return True
+        except re.error:
+            pass
+    return False
+
+
+def classify_venue_tier(venue_full: str, venues: dict):
+    """Return (tier, matched_acronym); tier is one of a_star/a_conf/q1/None."""
+    aliases = venues.get("venue_aliases", {})
+    for acronym in venues.get("a_star_confs", set()):
+        if _venue_matches(acronym, venue_full, aliases):
+            return "a_star", acronym
+    for acronym in venues.get("a_confs", set()):
+        if _venue_matches(acronym, venue_full, aliases):
+            return "a_conf", acronym
+    for acronym in venues.get("q1_journals", set()):
+        if _venue_matches(acronym, venue_full, aliases):
+            return "q1", acronym
+    return None, None
+
+
+def classify_type(work_type: str, venue_full: str, doi: str, venues: dict) -> str:
     """Return one of: preprint | workshop | a_star | a_conf | q1 | other."""
-    abbrev = _venue_abbrev(key)
+    work_type = (work_type or "").lower()
+    venue_full = venue_full or ""
 
-    # 1. Preprint: DBLP informal flag OR CoRR
-    if publtype == "informal" or abbrev == "corr":
+    # 1. Preprint: arXiv (by DOI prefix or venue name) or OpenAlex's own flag
+    if work_type == "preprint" or "10.48550" in doi or "arxiv" in venue_full.casefold():
         return "preprint"
 
-    # 2. Workshop: booktitle contains 'workshop' or ' @ ' shorthand
-    if _is_workshop(booktitle):
+    # 2. Workshop: venue name contains 'workshop' or the ' @ ' shorthand
+    if _is_workshop(venue_full):
         return "workshop"
 
     # 3. Conference papers
-    if key.startswith("conf/"):
-        if abbrev in venues.get("a_star_confs", set()):
-            return "a_star"
-        if abbrev in venues.get("a_confs", set()):
-            return "a_conf"
-        return "other"
+    if work_type == "proceedings-article":
+        tier, _ = classify_venue_tier(venue_full, venues)
+        return tier if tier in ("a_star", "a_conf") else "other"
 
-    # 4. Journal articles
-    if key.startswith("journals/"):
-        if abbrev in venues.get("q1_journals", set()):
-            return "q1"
-        return "other"
+    # 4. Journal articles (and reviews)
+    if work_type in ("article", "review"):
+        tier, _ = classify_venue_tier(venue_full, venues)
+        return "q1" if tier == "q1" else "other"
 
     return "other"
 
@@ -151,8 +199,9 @@ def classify_topics(title: str, venue_full: str, topics: list) -> list:
 
 # ── Skip logic ────────────────────────────────────────────────────────────
 
-def _should_skip(key: str, title: str, venues: dict) -> bool:
-    if key in venues.get("skip_keys", []):
+def _should_skip(key: str, doi: str, title: str, venues: dict) -> bool:
+    skip_keys = venues.get("skip_keys", [])
+    if key in skip_keys or (doi and doi in skip_keys):
         return True
     for pattern in venues.get("skip_title_patterns", []):
         try:
@@ -163,27 +212,10 @@ def _should_skip(key: str, title: str, venues: dict) -> bool:
     return False
 
 
-# ── XML parsing ────────────────────────────────────────────────────────────
+# ── Title casing ────────────────────────────────────────────────────────────
 
 def _remove_trailing_numbers(s):
     return re.sub(r'\s*\d+$', '', s)
-
-def _parse_authors(element) -> list:
-    return [
-        _remove_trailing_numbers((a.text or "").strip())
-        for a in element.findall("author")
-        if (a.text or "").strip()
-    ]
-
-
-def _get_ee(element) -> str:
-    """Return first <ee> URL, preferring non-paywall links."""
-    ees = [e.text or "" for e in element.findall("ee") if e.text]
-    if not ees:
-        return ""
-    # prefer non-paywall: doi.org links last
-    non_doi = [u for u in ees if "doi.org" not in u]
-    return (non_doi or ees)[0]
 
 def _smart_title(text):
     words = text.split()
@@ -191,7 +223,7 @@ def _smart_title(text):
 
     for i, word in enumerate(words):
         is_first = (i == 0)
-        
+
         # 1. Preserve ALL-CAPS words (user requirement)
         if word.isupper():
             result.append(word)
@@ -207,7 +239,6 @@ def _smart_title(text):
             parts = word.split("-")
             titled = "-".join(_smart_title_part(p, is_first=True) for p in parts)
             result.append(titled)
-
             continue
 
         # 4. Small words lowercase (unless first word)
@@ -221,98 +252,157 @@ def _smart_title(text):
     return " ".join(result)
 
 def _smart_title_part(word, is_first):
-
     # preserve ALL CAPS inside hyphen handling too
     if word.isupper():
         return word
     if word in ACRONYMS:
         return word
-
     return word.capitalize()
 
 
-def fetch_and_parse(url: str = DBLP_XML_URL) -> list:
-    """Fetch the DBLP author XML and return a list of raw paper dicts."""
-    print(f"Fetching {url} …", flush=True)
+# ── OpenAlex fetch ──────────────────────────────────────────────────────────
 
-    # DBLP (and the CDN in front of it) throttles/blocks the default
-    # urllib User-Agent ("Python-urllib/x.y"), sometimes returning an
-    # HTML/error page instead of XML. A browser-like UA avoids that.
+def fetch_and_parse(orcid: str = OPENALEX_ORCID, mailto: str = OPENALEX_MAILTO) -> list:
+    """Fetch every OpenAlex work for `orcid` and return a list of raw paper dicts."""
+    print(f"Fetching OpenAlex works for ORCID {orcid} …", flush=True)
+
     headers = {
         "User-Agent": (
-            "Mozilla/5.0 (compatible; gtolomei.github.io-publications-bot/1.0; "
-            "+https://gtolomei.github.io)"
+            f"gtolomei.github.io-publications-bot/2.0 "
+            f"(mailto:{mailto}; +https://gtolomei.github.io)"
         ),
-        "Accept": "application/xml,text/xml;q=0.9,*/*;q=0.8",
+        "Accept": "application/json",
+    }
+    base_params = {
+        "filter": f"author.orcid:{orcid}",
+        "per-page": 200,
+        "mailto": mailto,
+        "select": "id,doi,title,display_name,publication_year,type,primary_location,authorships",
     }
 
-    xml_bytes = None
-    last_err = None
-    for attempt in range(1, 4):
-        try:
-            req = Request(url, headers=headers)
-            with urlopen(req, timeout=30) as resp:
-                xml_bytes = resp.read()
+    all_results = []
+    cursor = "*"
+    page = 1
+
+    while cursor:
+        params = dict(base_params, cursor=cursor)
+        data = None
+        last_err = None
+
+        for attempt in range(1, 4):
+            try:
+                resp = requests.get(OPENALEX_WORKS_URL, params=params, headers=headers, timeout=30)
+                resp.raise_for_status()
+                data = resp.json()
+                break
+            except (requests.RequestException, ValueError) as e:
+                last_err = e
+                print(f"  attempt {attempt}/3 failed ({e}); retrying…", flush=True)
+                time.sleep(5 * attempt)
+
+        if data is None:
+            raise RuntimeError(
+                f"Could not fetch OpenAlex works (page {page}) after 3 attempts: {last_err}"
+            )
+
+        results = data.get("results", [])
+        all_results.extend(results)
+        print(f"  page {page}: {len(results)} works (total so far: {len(all_results)})", flush=True)
+
+        cursor = (data.get("meta") or {}).get("next_cursor")
+        page += 1
+        if not results:
             break
-        except (HTTPError, URLError, TimeoutError) as e:
-            last_err = e
-            print(f"  attempt {attempt}/3 failed ({e}); retrying…", flush=True)
-            time.sleep(5 * attempt)
 
-    if xml_bytes is None:
-        raise RuntimeError(f"Could not fetch {url} after 3 attempts: {last_err}")
-
-    try:
-        root = ET.fromstring(xml_bytes)
-    except ET.ParseError as e:
-        preview = xml_bytes[:300].decode("utf-8", errors="replace")
+    if not all_results:
         raise RuntimeError(
-            f"DBLP did not return valid XML for {url} (got {len(xml_bytes)} bytes; "
-            f"parse error: {e}). First bytes of response:\n{preview}"
-        ) from e
+            f"OpenAlex returned zero works for ORCID {orcid} — "
+            "check that the ORCID/filter is still correct."
+        )
 
     papers = []
-
-    for el in root.findall(".//r/*"):
-        tag = el.tag
-
-        if tag not in ("inproceedings", "article", "incollection"):
+    for w in all_results:
+        title = _smart_title((w.get("title") or w.get("display_name") or "").strip().rstrip("."))
+        if not title:
             continue
 
-        key      = el.get("key", "")
-        publtype = el.get("publtype", "")
-        title    = _smart_title((el.findtext("title") or "").strip().rstrip("."))
-        year_str = el.findtext("year") or "0"
+        year = w.get("publication_year") or 0
+        doi  = (w.get("doi") or "").strip()
+        oa_id = (w.get("id") or "").rsplit("/", 1)[-1]  # e.g. "W2741809807"
+        key = oa_id or doi or title  # stable-ish unique key, replaces the old DBLP key
 
-        try:
-            year = int(year_str)
-        except ValueError:
-            year = 0
+        primary    = w.get("primary_location") or {}
+        source     = primary.get("source") or {}
+        venue_full = (source.get("display_name") or "").strip()
 
-        authors      = _parse_authors(el)
-        booktitle    = (el.findtext("booktitle") or "").strip()
-        journal      = (el.findtext("journal") or "").strip()
-        venue_full   = booktitle or journal or _venue_abbrev(key).upper()
-        venue_short  = _venue_abbrev(key).upper()
-        url_paper    = _get_ee(el) or f"https://dblp.org/rec/{key}"
+        authors = [
+            (a.get("author") or {}).get("display_name", "")
+            for a in (w.get("authorships") or [])
+            if (a.get("author") or {}).get("display_name")
+        ]
 
-        # replace CoRR with arXiv
-        if "arxiv".casefold() in url_paper.casefold():
-            venue_full = venue_short = "arXiv"
+        url_paper = primary.get("landing_page_url") or (f"https://doi.org/{doi}" if doi else "")
+        if not url_paper and oa_id:
+            url_paper = f"https://openalex.org/{oa_id}"
+
+        # replace CoRR/arXiv venue names with a consistent short label
+        if "arxiv" in venue_full.casefold() or "10.48550" in doi:
+            venue_full = "arXiv"
 
         papers.append({
             "key":        key,
             "title":      title,
             "authors":    authors,
             "year":       year,
-            "venue":      venue_short,
             "venue_full": venue_full,
-            "booktitle":  booktitle,
-            "publtype":   publtype,
+            "openalex_type": w.get("type") or "",
+            "doi":        doi,
             "url":        url_paper,
         })
 
     return papers
+
+
+# ── Sync status tracking (for failure visibility) ──────────────────────────
+
+def load_sync_status() -> dict:
+    """Load the last known sync status, or sensible defaults if absent/corrupt."""
+    if SYNC_STATUS_JSON.exists():
+        try:
+            with open(SYNC_STATUS_JSON, encoding="utf-8") as f:
+                return json.load(f)
+        except (json.JSONDecodeError, OSError):
+            pass
+    return {
+        "last_success": None,
+        "last_attempt": None,
+        "consecutive_failures": 0,
+        "last_error": None,
+    }
+
+
+def write_sync_status(status: dict) -> None:
+    SYNC_STATUS_JSON.parent.mkdir(parents=True, exist_ok=True)
+    with open(SYNC_STATUS_JSON, "w", encoding="utf-8") as f:
+        json.dump(status, f, indent=2, ensure_ascii=False)
+    print(f"  → {SYNC_STATUS_JSON}", flush=True)
+
+
+def record_success(status: dict) -> dict:
+    ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    status["last_success"] = ts
+    status["last_attempt"] = ts
+    status["consecutive_failures"] = 0
+    status["last_error"] = None
+    return status
+
+
+def record_failure(status: dict, error: str) -> dict:
+    ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    status["last_attempt"] = ts
+    status["consecutive_failures"] = status.get("consecutive_failures", 0) + 1
+    status["last_error"] = error
+    return status
 
 
 # ── Main pipeline ──────────────────────────────────────────────────────────
@@ -320,27 +410,30 @@ def fetch_and_parse(url: str = DBLP_XML_URL) -> list:
 def build(venues: dict, topics: list, papers_raw: list) -> list:
     """Filter, classify, and enrich raw paper dicts."""
     result = []
+    unclassified = []  # for the post-run audit report
 
     for p in papers_raw:
-        key   = p["key"]
-        title = p["title"]
+        key, title, doi = p["key"], p["title"], p["doi"]
 
         if not title:
             continue
 
-        if _should_skip(key, title, venues):
+        if _should_skip(key, doi, title, venues):
             print(f"  SKIP  {title[:72]}", flush=True)
             continue
 
-        pub_type = classify_type(key, p["booktitle"], p["publtype"], venues)
+        pub_type = classify_type(p["openalex_type"], p["venue_full"], doi, venues)
         topics_list = classify_topics(title, p["venue_full"], topics)
+
+        if pub_type == "other" and p["venue_full"]:
+            unclassified.append((p["venue_full"], title[:60]))
 
         result.append({
             "key":        key,
             "title":      title,
             "authors":    p["authors"],
             "year":       p["year"],
-            "venue":      p["venue"],
+            "venue":      p["venue_full"],
             "venue_full": p["venue_full"],
             "type":       pub_type,
             "topics":     topics_list,
@@ -349,10 +442,23 @@ def build(venues: dict, topics: list, papers_raw: list) -> list:
 
     # Sort: newest first, then alphabetical within year
     result.sort(key=lambda x: (-x["year"], x["title"].lower()))
+
+    if unclassified:
+        print(
+            f"\n  NOTE: {len(unclassified)} conference/journal paper(s) classified as "
+            "'other' (no a_star/a_conf/q1 match) — review venue_aliases in data/venues.yml:",
+            flush=True,
+        )
+        seen_venues = {}
+        for vf, t in unclassified:
+            seen_venues.setdefault(vf, t)
+        for vf, t in list(seen_venues.items())[:40]:
+            print(f"    - {vf}   (e.g. {t}…)", flush=True)
+
     return result
 
 
-def write_outputs(publications: list, google_scholar_stats: map) -> None:
+def write_outputs(publications: list, google_scholar_stats: dict) -> None:
     ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
     # 1) data/publications.json
@@ -361,7 +467,7 @@ def write_outputs(publications: list, google_scholar_stats: map) -> None:
         json.dump(publications, f, indent=2, ensure_ascii=False)
     print(f"  → {PUB_JSON}  ({len(publications)} entries)", flush=True)
 
-    # 2) data/google_scholar.json
+    # 2) data/scholar.json
     GOOGLE_SCHOLAR_JSON.parent.mkdir(parents=True, exist_ok=True)
     with open(GOOGLE_SCHOLAR_JSON, "w", encoding="utf-8") as f:
         json.dump(google_scholar_stats, f, indent=2, ensure_ascii=False)
@@ -392,7 +498,7 @@ def write_outputs(publications: list, google_scholar_stats: map) -> None:
         print(f"  → sitemap.xml lastmod → {today}", flush=True)
 
 
-def print_stats(publications: list, google_scholar_stats: map) -> None:
+def print_stats(publications: list, google_scholar_stats: dict) -> None:
     total    = len(publications)
     a_star   = sum(1 for p in publications if p["type"] == "a_star")
     a_conf   = sum(1 for p in publications if p["type"] == "a_conf")
@@ -414,15 +520,12 @@ def print_stats(publications: list, google_scholar_stats: map) -> None:
     if years:
         print(f"  Year range    : {min(years)} – {max(years)}")
     print(f"  Misc-only tag : {misc_cov}/{total}")
-    #print(f"{'─'*52}\n")
     print()
 
-    # Google Scholar
     citations = google_scholar_stats["citations"]
     h_index   = google_scholar_stats["h_index"]
-    i10_index = google_scholar_stats["i10_index"] 
+    i10_index = google_scholar_stats["i10_index"]
 
-    #print(f"\n{'─'*52}")
     print(f"  ***** Google Scholar {GOOGLE_SCHOLAR_ID} *****")
     print(f"  N. of citations  : {citations}")
     print(f"  h-index          : {h_index}")
@@ -455,6 +558,7 @@ def fetch_google_scholar_stats() -> dict:
         print("  No cached scholar.json found — returning zeroed stats.", flush=True)
         return {"citations": 0, "h_index": 0, "i10_index": 0}
 
+
 def main():
     venues = load_venues()
     topics = load_topics()
@@ -466,23 +570,29 @@ def main():
         flush=True,
     )
 
+    status = load_sync_status()
+
     try:
         papers_raw   = fetch_and_parse()
         publications = build(venues, topics, papers_raw)
     except Exception as e:
-        # DBLP actively rate-limits/blocks automated requests (see
-        # https://dblp.org/faq/1474706.html) and its robots.txt disallows
-        # crawling the per-author XML endpoint outright, so GitHub Actions'
-        # shared runner IPs occasionally get a 429 or a non-XML response.
-        # Treat that as a transient condition: warn loudly, leave the
-        # previously-published data/publications.json and
+        # Leave the previously-published data/publications.json and
         # assets/js/publications-data.js untouched, and exit 0 so the
-        # nightly workflow doesn't go red — it will simply try again on the
-        # next scheduled run.
-        print(f"  WARNING: Could not fetch/parse DBLP data: {e}", flush=True)
+        # nightly workflow doesn't go red — it will simply try again on
+        # the next scheduled run. data/sync_status.json tracks how many
+        # nights this has happened in a row, and the workflow opens a
+        # GitHub Issue once FAILURE_ALERT_THRESHOLD is hit.
+        print(f"  WARNING: Could not fetch/parse OpenAlex data: {e}", flush=True)
         print(
             "  Leaving existing publications data untouched for this run "
             "(will retry on the next scheduled run).",
+            flush=True,
+        )
+        status = record_failure(status, str(e))
+        write_sync_status(status)
+        print(
+            f"  consecutive_failures={status['consecutive_failures']} "
+            f"(alert threshold: {FAILURE_ALERT_THRESHOLD})",
             flush=True,
         )
         sys.exit(0)
@@ -492,6 +602,8 @@ def main():
 
     print_stats(publications, google_scholar_stats)
     write_outputs(publications, google_scholar_stats)
+    status = record_success(status)
+    write_sync_status(status)
     print("Done.", flush=True)
 
 

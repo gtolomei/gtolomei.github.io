@@ -1,7 +1,13 @@
-# data/venues.yml — Venue classification for DBLP-based publication fetch
-# Key = DBLP venue abbreviation (segment after conf/ or journals/ in DBLP key)
-# e.g. conf/sigir/... → sigir   |   journals/tkde/... → tkde
-# Re-run scripts/fetch_publications.py after editing.
+# data/venues.yml — Venue classification for OpenAlex-based publication fetch
+# Key = short venue acronym (unchanged from the old DBLP-based scheme).
+# Matching against a work's OpenAlex venue name works two ways:
+#   1. the acronym itself, as a whole word (case-insensitive) — covers venues
+#      whose OpenAlex source name literally contains the acronym (e.g. "sigir")
+#   2. entries in venue_aliases below, for venues whose OpenAlex source name
+#      spells the venue out instead (e.g. "icml" -> "International Conference
+#      on Machine Learning") or where two acronyms could collide (sp/eurosp)
+# Re-run scripts/fetch_publications.py after editing, and check its printed
+# "classified as 'other'" report to catch anything still unmatched.
 
 # ── CORE 2023 A* CS conferences ────────────────────────────────────────────
 a_star_confs:
@@ -137,6 +143,181 @@ skip_title_patterns:
   - "\\borganizing\\s+(committee|co-?chair)\\b"
   - " @ "                                # "X @ Venue" satellite-event shorthands
 
-# ── Explicit DBLP keys to drop ─────────────────────────────────────────────
-# Add dblp keys here for invited talks, panels, or other one-off exclusions.
+# ── Explicit works to drop ──────────────────────────────────────────────
+# Add an OpenAlex work ID (e.g. "W2741809807") or a DOI here for invited
+# talks, panels, or other one-off exclusions.
 skip_keys: []
+
+# ── Acronym → OpenAlex venue-name overrides ────────────────────────────────
+# Only needed when a venue's OpenAlex source name doesn't literally contain
+# its acronym. "patterns" are extra regexes tried in addition to the plain
+# acronym; "exclude" (optional) vetoes a match if it also fires — used here
+# only to keep 'sp' (IEEE S&P) and 'eurosp' (its European sibling) apart,
+# since both source names contain "Security and Privacy".
+#
+# This list was built from general knowledge of standard venue naming, not
+# from your actual publication data (I hit rate-limiting pulling that for
+# validation) — check the "classified as 'other'" report the script prints
+# on its first real run and add/fix entries here as needed.
+venue_aliases:
+  www:
+    patterns: ["web conference"]
+  kdd:
+    patterns: ["knowledge discovery and data mining"]
+  icml:
+    patterns: ["international conference on machine learning"]
+  nips:
+    patterns: ["neural information processing systems", "neurips"]
+  iclr:
+    patterns: ["international conference on learning representations"]
+  aaai:
+    patterns: ["association for the advancement of artificial intelligence"]
+  ijcai:
+    patterns: ["international joint conference on artificial intelligence"]
+  icde:
+    patterns: ["international conference on data engineering"]
+  vldb:
+    patterns: ["very large data ?bases"]
+  sigmod:
+    patterns: ["management of data"]
+  ccs:
+    patterns: ["computer and communications security"]
+  sp:
+    patterns: ["symposium on security and privacy"]
+    exclude: ["european"]
+  eurosp:
+    patterns: ["european symposium on security and privacy", "euro ?s&p"]
+  ndss:
+    patterns: ["network and distributed system security"]
+  uss:
+    patterns: ["usenix security"]
+  cvpr:
+    patterns: ["computer vision and pattern recognition"]
+  iccv:
+    patterns: ["international conference on computer vision"]
+  eccv:
+    patterns: ["european conference on computer vision"]
+  acl:
+    patterns: ["association for computational linguistics"]
+  emnlp:
+    patterns: ["empirical methods in natural language processing"]
+  naacl:
+    patterns: ["north american chapter of the association for computational linguistics"]
+  icse:
+    patterns: ["international conference on software engineering"]
+  fse:
+    patterns: ["foundations of software engineering", "esec.?fse"]
+  sosp:
+    patterns: ["symposium on operating systems principles"]
+  osdi:
+    patterns: ["operating systems design and implementation"]
+  eurosys:
+    patterns: ["european conference on computer systems"]
+  asplos:
+    patterns: ["architectural support for programming languages"]
+  stoc:
+    patterns: ["symposium on theory of computing"]
+  focs:
+    patterns: ["foundations of computer science"]
+  soda:
+    patterns: ["symposium on discrete algorithms"]
+  chi:
+    patterns: ["human factors in computing systems"]
+  sigcomm:
+    patterns: ["data communication"]
+  mobicom:
+    patterns: ["mobile computing and networking"]
+  pods:
+    patterns: ["principles of database systems"]
+  sc:
+    patterns: ["supercomputing"]
+  cikm:
+    patterns: ["information and knowledge management"]
+  wsdm:
+    patterns: ["web search and data mining"]
+  ecir:
+    patterns: ["european conference on information retrieval", "advances in information retrieval"]
+  recsys:
+    patterns: ["recommender systems"]
+  ictir:
+    patterns: ["theory of information retrieval"]
+  aistats:
+    patterns: ["artificial intelligence and statistics"]
+  ecml:
+    patterns: ["machine learning and knowledge discovery in databases"]
+  pkdd:
+    patterns: ["machine learning and knowledge discovery in databases"]
+  icdm:
+    patterns: ["international conference on data mining"]
+  sdm:
+    patterns: ["siam international conference on data mining"]
+  uai:
+    patterns: ["uncertainty in artificial intelligence"]
+  coling:
+    patterns: ["international conference on computational linguistics"]
+  eacl:
+    patterns: ["european chapter of the association for computational linguistics"]
+  esorics:
+    patterns: ["european symposium on research in computer security"]
+  raid:
+    patterns: ["recent advances in intrusion detection"]
+  acsac:
+    patterns: ["annual computer security applications"]
+  acns:
+    patterns: ["applied cryptography and network security"]
+  dimva:
+    patterns: ["detection of intrusions and malware"]
+  wisec:
+    patterns: ["wireless security"]
+  dsn:
+    patterns: ["dependable systems and networks"]
+  icdcs:
+    patterns: ["distributed computing systems"]
+  pakdd:
+    patterns: ["pacific-asia conference on knowledge discovery"]
+  jcdl:
+    patterns: ["joint conference on digital libraries"]
+  tnn:
+    patterns: ["neural networks and learning systems"]
+  tpami:
+    patterns: ["pattern analysis and machine intelligence"]
+  jmlr:
+    patterns: ["journal of machine learning research"]
+  tai:
+    patterns: ["ieee transactions on artificial intelligence"]
+  tkde:
+    patterns: ["knowledge and data engineering"]
+  dmkd:
+    patterns: ["data mining and knowledge discovery"]
+  datamine:
+    patterns: ["data mining and knowledge discovery"]
+  tkdd:
+    patterns: ["transactions on knowledge discovery from data"]
+  tois:
+    patterns: ["transactions on information systems"]
+  tors:
+    patterns: ["transactions on recommender systems"]
+  ipm:
+    patterns: ["information processing (&|and) management"]
+  tdsc:
+    patterns: ["dependable and secure computing"]
+  tifs:
+    patterns: ["information forensics and security"]
+  tissec:
+    patterns: ["transactions on information and system security"]
+  tods:
+    patterns: ["transactions on database systems"]
+  tweb:
+    patterns: ["acm transactions on the web"]
+  vldbj:
+    patterns: ["vldb journal"]
+  isj:
+    patterns: ["information systems journal"]
+  kais:
+    patterns: ["knowledge and information systems"]
+  iot:
+    patterns: ["internet of things journal"]
+  tce:
+    patterns: ["transactions on consumer electronics"]
+  cm:
+    patterns: ["communications magazine"]

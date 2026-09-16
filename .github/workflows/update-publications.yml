@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write      # needed to commit generated files back to main
+  issues: write        # needed to open/update the sync-stall alert issue
 
 jobs:
   update:
@@ -35,6 +36,7 @@ jobs:
           git add \
             data/publications.json \
             data/scholar.json \
+            data/sync_status.json \
             assets/js/publications-data.js \
             sitemap.xml
           # Only commit when there are actual changes
@@ -43,4 +45,33 @@ jobs:
           else
             git commit -m "chore: auto-sync publications"
             git push
+          fi
+
+      - name: Alert on repeated sync failures (or auto-close a resolved alert)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          FAILURES=$(python3 -c "import json; print(json.load(open('data/sync_status.json')).get('consecutive_failures', 0))")
+          LAST_ERROR=$(python3 -c "import json; print(json.load(open('data/sync_status.json')).get('last_error') or '')")
+          THRESHOLD=3
+          TITLE="Publication sync has been failing"
+          EXISTING=$(gh issue list --state open --search "in:title \"$TITLE\"" --json number --jq '.[0].number' || true)
+
+          if [ "$FAILURES" -ge "$THRESHOLD" ]; then
+            BODY="The nightly publication sync (\`update-publications.yml\`) has failed to fetch fresh data from DBLP for **$FAILURES consecutive runs**. The site is silently serving stale publication data.
+
+          **Last error:**
+          \`\`\`
+          $LAST_ERROR
+          \`\`\`
+
+          This issue will auto-close once a run succeeds again."
+            if [ -n "$EXISTING" ]; then
+              gh issue comment "$EXISTING" --body "$BODY"
+            else
+              gh issue create --title "$TITLE" --body "$BODY"
+            fi
+          elif [ -n "$EXISTING" ]; then
+            gh issue close "$EXISTING" --comment "Sync succeeded again — closing automatically."
           fi
