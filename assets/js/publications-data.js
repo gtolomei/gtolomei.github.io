@@ -1,25 +1,8 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-09-03T08:20:38Z
+// Last updated: 2026-09-16T12:42:37Z
 window.PUBLICATIONS = [
   {
-    "key": "journals/corr/abs-2602-04360",
-    "title": "Counterfactual Explanations for Hypergraph Neural Networks",
-    "authors": [
-      "Fabiano Veglianti",
-      "Lorenzo Antonelli",
-      "Gabriele Tolomei"
-    ],
-    "year": 2026,
-    "venue": "arXiv",
-    "venue_full": "arXiv",
-    "type": "preprint",
-    "topics": [
-      "xai"
-    ],
-    "url": "https://doi.org/10.48550/arXiv.2602.04360"
-  },
-  {
-    "key": "conf/kdd/GiorgiVST26",
+    "key": "W7171965741",
     "title": "Countering Overfitting with Counterfactual Examples",
     "authors": [
       "Flavio Giorgi",
@@ -28,147 +11,37 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2026,
-    "venue": "KDD",
-    "venue_full": "KDD (1)",
-    "type": "a_star",
+    "venue": "",
+    "venue_full": "",
+    "type": "other",
     "topics": [
       "xai"
     ],
     "url": "https://doi.org/10.1145/3770854.3780243"
   },
   {
-    "key": "conf/ecir/VineisT26",
-    "title": "From Engagement to Empowerment: A Capability-Theoretic Rethinking of Recommender Systems",
+    "key": "W4416139721",
+    "title": "A Survey on Explainable AI Narratives Based on Large Language Models",
     "authors": [
-      "Vittoria Vineis",
-      "Gabriele Tolomei"
-    ],
-    "year": 2026,
-    "venue": "ECIR",
-    "venue_full": "ECIR (3)",
-    "type": "a_conf",
-    "topics": [
-      "recommender"
-    ],
-    "url": "https://doi.org/10.1007/978-3-032-21324-2_28"
-  },
-  {
-    "key": "journals/iot/RussoMTB26",
-    "title": "Home Automation Interoperability: Two Decades of Lessons Learned and Future Prospects Into the Development of IoT Ecosystems",
-    "authors": [
-      "Dario Russo",
-      "Vittorio Miori",
-      "Gabriele Tolomei",
-      "Dimitri Belli"
-    ],
-    "year": 2026,
-    "venue": "IOT",
-    "venue_full": "Internet Things",
-    "type": "q1",
-    "topics": [
-      "misc"
-    ],
-    "url": "https://doi.org/10.1016/j.iot.2026.101906"
-  },
-  {
-    "key": "journals/tors/ChenHSZAT26",
-    "title": "Joint Factual and Counterfactual Explanations for Top-K GNN-Based Recommendations",
-    "authors": [
-      "Ziheng Chen",
-      "Jin Huang",
-      "Fabrizio Silvestri",
-      "Yongfeng Zhang",
-      "Hongshik Ahn",
-      "Gabriele Tolomei"
-    ],
-    "year": 2026,
-    "venue": "TORS",
-    "venue_full": "Trans. Recomm. Syst.",
-    "type": "q1",
-    "topics": [
-      "xai",
-      "gnn",
-      "recommender"
-    ],
-    "url": "https://doi.org/10.1145/3731683"
-  },
-  {
-    "key": "journals/corr/abs-2603-06485",
-    "title": "PONTE: Personalized Orchestration for Natural Language Trustworthy Explanations",
-    "authors": [
-      "Vittoria Vineis",
       "Matteo Silvestri",
-      "Lorenzo Antonelli",
-      "Filippo Betello",
-      "Gabriele Tolomei"
-    ],
-    "year": 2026,
-    "venue": "arXiv",
-    "venue_full": "arXiv",
-    "type": "preprint",
-    "topics": [
-      "xai"
-    ],
-    "url": "https://doi.org/10.48550/arXiv.2603.06485"
-  },
-  {
-    "key": "journals/corr/abs-2606-07688",
-    "title": "TRACER: Token Reassignment for Concept Erasure in Generative Recommendation",
-    "authors": [
-      "Ziheng Chen",
-      "Jiali Cheng",
-      "Zezhong Fan",
-      "Hadi Amiri",
-      "Diyuan Wu",
-      "Gabriele Tolomei",
-      "Yang Zhang"
-    ],
-    "year": 2026,
-    "venue": "arXiv",
-    "venue_full": "arXiv",
-    "type": "preprint",
-    "topics": [
-      "recommender"
-    ],
-    "url": "https://doi.org/10.48550/arXiv.2606.07688"
-  },
-  {
-    "key": "conf/esws/dAmatoFTT25",
-    "title": "1st International Workshop on Explainable AI and Knowledge Graphs (XAI-KG)",
-    "authors": [
-      "Claudia d'Amato",
-      "Valeria Fionda",
-      "Ilaria Tiddi",
-      "Gabriele Tolomei"
-    ],
-    "year": 2025,
-    "venue": "ESWS",
-    "venue_full": "ESWC-JP",
-    "type": "other",
-    "topics": [
-      "xai"
-    ],
-    "url": "https://ceur-ws.org/Vol-3977/XAIKG-preface.pdf"
-  },
-  {
-    "key": "journals/corr/abs-2502-08542",
-    "title": "Beyond Predictions: A Participatory Framework for Multi-Stakeholder Decision-Making",
-    "authors": [
       "Vittoria Vineis",
-      "Giuseppe Perelli",
+      "Edoardo Gabrielli",
+      "Flavio Giorgi",
+      "Fabiano Veglianti",
+      "Fabrizio Silvestri",
       "Gabriele Tolomei"
     ],
     "year": 2025,
-    "venue": "arXiv",
-    "venue_full": "arXiv",
+    "venue": "",
+    "venue_full": "",
     "type": "preprint",
     "topics": [
-      "misc"
+      "xai"
     ],
-    "url": "https://doi.org/10.48550/arXiv.2502.08542"
+    "url": "https://doi.org/10.36227/techrxiv.176282217.77757258/v1"
   },
   {
-    "key": "journals/corr/abs-2502-10111",
+    "key": "W4407632620",
     "title": "COMBINEX: A Unified Counterfactual Explainer for Graph Neural Networks via Node Feature and Structural Perturbations",
     "authors": [
       "Flavio Giorgi",
@@ -183,14 +56,14 @@ window.PUBLICATIONS = [
       "xai",
       "gnn"
     ],
-    "url": "https://doi.org/10.48550/arXiv.2502.10111"
+    "url": "http://arxiv.org/abs/2502.10111"
   },
   {
-    "key": "journals/corr/abs-2502-00432",
-    "title": "Community Membership Hiding via Gradient-Based Optimization",
+    "key": "W4407571902",
+    "title": "Countering Overfitting with Counterfactual Examples",
     "authors": [
-      "Matteo Silvestri",
-      "Edoardo Gabrielli",
+      "Flavio Giorgi",
+      "Fabiano Veglianti",
       "Fabrizio Silvestri",
       "Gabriele Tolomei"
     ],
@@ -198,56 +71,17 @@ window.PUBLICATIONS = [
     "venue": "arXiv",
     "venue_full": "arXiv",
     "type": "preprint",
-    "topics": [
-      "gnn"
-    ],
-    "url": "https://doi.org/10.48550/arXiv.2502.00432"
-  },
-  {
-    "key": "journals/tai/MovinSFST25",
-    "title": "Consistent Counterfactual Explanations via Anomaly Control and Data Coherence",
-    "authors": [
-      "Maria Movin",
-      "Federico Siciliano",
-      "Rui Ferreira",
-      "Fabrizio Silvestri",
-      "Gabriele Tolomei"
-    ],
-    "year": 2025,
-    "venue": "TAI",
-    "venue_full": "IEEE Trans. Artif. Intell.",
-    "type": "q1",
     "topics": [
       "xai"
     ],
-    "url": "https://doi.org/10.1109/TAI.2024.3496616"
+    "url": "http://arxiv.org/abs/2502.09193"
   },
   {
-    "key": "journals/corr/abs-2508-03606",
-    "title": "Demystifying Sequential Recommendations: Counterfactual Explanations via Genetic Algorithms",
-    "authors": [
-      "Domiziano Scarcelli",
-      "Filippo Betello",
-      "Giuseppe Perelli",
-      "Fabrizio Silvestri",
-      "Gabriele Tolomei"
-    ],
-    "year": 2025,
-    "venue": "arXiv",
-    "venue_full": "arXiv",
-    "type": "preprint",
-    "topics": [
-      "xai",
-      "recommender"
-    ],
-    "url": "https://doi.org/10.48550/arXiv.2508.03606"
-  },
-  {
-    "key": "journals/corr/abs-2510-03134",
+    "key": "W4416371295",
     "title": "Enhancing XAI Narratives through Multi-Narrative Refinement and Knowledge Distillation",
     "authors": [
       "Flavio Giorgi",
-      "Matteo Silvestri",
+      "Silvestri, Matteo",
       "Cesare Campagnano",
       "Fabrizio Silvestri",
       "Gabriele Tolomei"
@@ -259,10 +93,10 @@ window.PUBLICATIONS = [
     "topics": [
       "xai"
     ],
-    "url": "https://doi.org/10.48550/arXiv.2510.03134"
+    "url": "http://arxiv.org/abs/2510.03134"
   },
   {
-    "key": "journals/corr/abs-2509-21211",
+    "key": "W4414790777",
     "title": "Evading Overlapping Community Detection via Proxy Node Injection",
     "authors": [
       "Dario Loi",
@@ -277,28 +111,10 @@ window.PUBLICATIONS = [
     "topics": [
       "gnn"
     ],
-    "url": "https://doi.org/10.48550/arXiv.2509.21211"
+    "url": "http://arxiv.org/abs/2509.21211"
   },
   {
-    "key": "journals/corr/abs-2510-20351",
-    "title": "Evaluating Latent Knowledge of Public Tabular Datasets in Large Language Models",
-    "authors": [
-      "Matteo Silvestri",
-      "Flavio Giorgi",
-      "Fabrizio Silvestri",
-      "Gabriele Tolomei"
-    ],
-    "year": 2025,
-    "venue": "arXiv",
-    "venue_full": "arXiv",
-    "type": "preprint",
-    "topics": [
-      "misc"
-    ],
-    "url": "https://doi.org/10.48550/arXiv.2510.20351"
-  },
-  {
-    "key": "conf/cikm/0002CANLLTS25",
+    "key": "W4416016566",
     "title": "FROG: Fair Removal on Graph",
     "authors": [
       "Ziheng Chen",
@@ -311,56 +127,16 @@ window.PUBLICATIONS = [
       "Xiangguo Sun"
     ],
     "year": 2025,
-    "venue": "CIKM",
-    "venue_full": "CIKM",
-    "type": "a_conf",
+    "venue": "",
+    "venue_full": "",
+    "type": "other",
     "topics": [
       "fairness"
     ],
     "url": "https://doi.org/10.1145/3746252.3761341"
   },
   {
-    "key": "journals/corr/abs-2503-18197",
-    "title": "FROG: Fair Removal on Graphs",
-    "authors": [
-      "Ziheng Chen",
-      "Jiali Cheng",
-      "Gabriele Tolomei",
-      "Sijia Liu",
-      "Hadi Amiri",
-      "Yu Wang",
-      "Kaushiki Nag",
-      "Lu Lin"
-    ],
-    "year": 2025,
-    "venue": "arXiv",
-    "venue_full": "arXiv",
-    "type": "preprint",
-    "topics": [
-      "fairness"
-    ],
-    "url": "https://doi.org/10.48550/arXiv.2503.18197"
-  },
-  {
-    "key": "journals/corr/abs-2502-09193",
-    "title": "Generalizability through Explainability: Countering Overfitting with Counterfactual Examples",
-    "authors": [
-      "Flavio Giorgi",
-      "Fabiano Veglianti",
-      "Fabrizio Silvestri",
-      "Gabriele Tolomei"
-    ],
-    "year": 2025,
-    "venue": "arXiv",
-    "venue_full": "arXiv",
-    "type": "preprint",
-    "topics": [
-      "xai"
-    ],
-    "url": "https://doi.org/10.48550/arXiv.2502.09193"
-  },
-  {
-    "key": "journals/corr/abs-2505-23225",
+    "key": "W4416610251",
     "title": "Generalizability Vs. Counterfactual Explainability Trade-Off",
     "authors": [
       "Fabiano Veglianti",
@@ -375,47 +151,32 @@ window.PUBLICATIONS = [
     "topics": [
       "xai"
     ],
-    "url": "https://doi.org/10.48550/arXiv.2505.23225"
+    "url": "http://arxiv.org/abs/2505.23225"
   },
   {
-    "key": "conf/aistats/GiorgiCST25",
-    "title": "Natural Language Counterfactual Explanations for Graphs Using Large Language Models",
+    "key": "W4410320553",
+    "title": "Joint Factual and Counterfactual Explanations for Top-K GNN-Based Recommendations",
     "authors": [
-      "Flavio Giorgi",
-      "Cesare Campagnano",
+      "Ziheng Chen",
+      "Jin Huang",
       "Fabrizio Silvestri",
+      "Yongfeng Zhang",
+      "Hongshik Ahn",
       "Gabriele Tolomei"
     ],
     "year": 2025,
-    "venue": "AISTATS",
-    "venue_full": "AISTATS",
-    "type": "a_conf",
+    "venue": "ACM Transactions on Recommender Systems",
+    "venue_full": "ACM Transactions on Recommender Systems",
+    "type": "other",
     "topics": [
-      "xai"
+      "xai",
+      "gnn",
+      "recommender"
     ],
-    "url": "https://proceedings.mlr.press/v258/giorgi25a.html"
+    "url": "https://doi.org/10.1145/3731683"
   },
   {
-    "key": "journals/corr/abs-2505-01468",
-    "title": "One Search Fits All: Pareto-Optimal Eco-Friendly Model Selection",
-    "authors": [
-      "Filippo Betello",
-      "Antonio Purificato",
-      "Vittoria Vineis",
-      "Gabriele Tolomei",
-      "Fabrizio Silvestri"
-    ],
-    "year": 2025,
-    "venue": "arXiv",
-    "venue_full": "arXiv",
-    "type": "preprint",
-    "topics": [
-      "misc"
-    ],
-    "url": "https://doi.org/10.48550/arXiv.2505.01468"
-  },
-  {
-    "key": "conf/ieeecai/HuangFMGNACT25",
+    "key": "W4412082038",
     "title": "Prompt-Tuning for Recommendation Unlearning",
     "authors": [
       "Jin Huang",
@@ -428,17 +189,17 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2025,
-    "venue": "IEEECAI",
-    "venue_full": "CAI",
+    "venue": "",
+    "venue_full": "",
     "type": "other",
     "topics": [
       "recommender",
       "unlearning"
     ],
-    "url": "https://doi.org/10.1109/CAI64502.2025.00152"
+    "url": "https://doi.org/10.1109/cai64502.2025.00152"
   },
   {
-    "key": "journals/tifs/GabrielliBMMT25",
+    "key": "W4361807037",
     "title": "Securing Federated Learning Against Extreme Model Poisoning Attacks via Multidimensional Time Series Anomaly Detection on Local Updates",
     "authors": [
       "Edoardo Gabrielli",
@@ -448,17 +209,114 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2025,
-    "venue": "TIFS",
-    "venue_full": "IEEE Trans. Inf. Forensics Secur.",
+    "venue": "IEEE Transactions on Information Forensics and Security",
+    "venue_full": "IEEE Transactions on Information Forensics and Security",
     "type": "q1",
     "topics": [
       "adversarial",
       "federated"
     ],
-    "url": "https://doi.org/10.1109/TIFS.2025.3608671"
+    "url": "https://doi.org/10.1109/tifs.2025.3608671"
   },
   {
-    "key": "journals/corr/abs-2404-15760",
+    "key": "W4407123573",
+    "title": "The Right to Hide: Masking Community Affiliation via Minimal Graph Rewiring",
+    "authors": [
+      "Matteo Silvestri",
+      "Edoardo Gabrielli",
+      "Fabrizio Silvestri",
+      "Gabriele Tolomei"
+    ],
+    "year": 2025,
+    "venue": "arXiv",
+    "venue_full": "arXiv",
+    "type": "preprint",
+    "topics": [
+      "misc"
+    ],
+    "url": "http://arxiv.org/abs/2502.00432"
+  },
+  {
+    "key": "W4416619852",
+    "title": "When Large Language Models Know the Table: A Framework for Assessing Data Contamination in Tabular Datasets",
+    "authors": [
+      "Matteo Silvestri",
+      "Veglianti, Fabiano",
+      "Giorgi, Flavio",
+      "Silvestri, Fabrizio",
+      "Gabriele Tolomei"
+    ],
+    "year": 2025,
+    "venue": "arXiv",
+    "venue_full": "arXiv",
+    "type": "preprint",
+    "topics": [
+      "misc"
+    ],
+    "url": "https://arxiv.org/abs/2510.20351"
+  },
+  {
+    "key": "W4393118871",
+    "title": "$\\nabla Τ$: Gradient-Based and Task-Agnostic Machine Unlearning",
+    "authors": [
+      "Daniel Trippa",
+      "Cesare Campagnano",
+      "Maria Sofia Bucarelli",
+      "Gabriele Tolomei",
+      "Fabrizio Silvestri"
+    ],
+    "year": 2024,
+    "venue": "arXiv",
+    "venue_full": "arXiv",
+    "type": "preprint",
+    "topics": [
+      "unlearning"
+    ],
+    "url": "http://arxiv.org/abs/2403.14339"
+  },
+  {
+    "key": "W4399286125",
+    "title": "A Novel Architectural Schema for Constant Monitoring and Assessment of Older Adults’ Health Status at Home",
+    "authors": [
+      "Paolo Barsocchi",
+      "Dimitri Belli",
+      "Edoardo Gabrielli",
+      "Davide La Rosa",
+      "Vittorio Miori",
+      "Filippo Palumbo",
+      "Dario Russo",
+      "Gabriele Tolomei"
+    ],
+    "year": 2024,
+    "venue": "Lecture notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering",
+    "venue_full": "Lecture notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering",
+    "type": "other",
+    "topics": [
+      "misc"
+    ],
+    "url": "https://doi.org/10.1007/978-3-031-59717-6_33"
+  },
+  {
+    "key": "W4404520975",
+    "title": "Consistent Counterfactual Explanations via Anomaly Control and Data Coherence",
+    "authors": [
+      "Maria Movin",
+      "Federico Siciliano",
+      "Rui Ferreira",
+      "Fabrizio Silvestri",
+      "Gabriele Tolomei"
+    ],
+    "year": 2024,
+    "venue": "IEEE Transactions on Artificial Intelligence",
+    "venue_full": "IEEE Transactions on Artificial Intelligence",
+    "type": "q1",
+    "topics": [
+      "xai"
+    ],
+    "url": "https://doi.org/10.1109/tai.2024.3496616"
+  },
+  {
+    "key": "W4395484015",
     "title": "Debiasing Machine Unlearning with Counterfactual Examples",
     "authors": [
       "Ziheng Chen",
@@ -481,10 +339,10 @@ window.PUBLICATIONS = [
       "unlearning",
       "fairness"
     ],
-    "url": "https://doi.org/10.48550/arXiv.2404.15760"
+    "url": "http://arxiv.org/abs/2404.15760"
   },
   {
-    "key": "conf/kdd/BerniniST24",
+    "key": "W4401863450",
     "title": "Evading Community Detection via Counterfactual Neighborhood Search",
     "authors": [
       "Andrea Bernini",
@@ -492,9 +350,9 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2024,
-    "venue": "KDD",
-    "venue_full": "KDD",
-    "type": "a_star",
+    "venue": "",
+    "venue_full": "",
+    "type": "other",
     "topics": [
       "xai",
       "gnn"
@@ -502,27 +360,25 @@ window.PUBLICATIONS = [
     "url": "https://doi.org/10.1145/3637528.3671896"
   },
   {
-    "key": "journals/tai/ChenSTWZA24",
-    "title": "Explain the Explainer: Interpreting Model-Agnostic Counterfactual Explanations of a Deep Reinforcement Learning Agent",
+    "key": "W4403334015",
+    "title": "Generate Counterfactual Explanations for Graph Neural Networks from Node Feature Perturbations",
     "authors": [
-      "Ziheng Chen",
+      "Flavio Giorgi",
       "Fabrizio Silvestri",
-      "Gabriele Tolomei",
-      "Jia Wang",
-      "He Zhu",
-      "Hongshik Ahn"
+      "Gabriele Tolomei"
     ],
     "year": 2024,
-    "venue": "TAI",
-    "venue_full": "IEEE Trans. Artif. Intell.",
-    "type": "q1",
+    "venue": "",
+    "venue_full": "",
+    "type": "preprint",
     "topics": [
-      "xai"
+      "xai",
+      "gnn"
     ],
-    "url": "https://doi.org/10.1109/TAI.2022.3223892"
+    "url": "https://doi.org/10.36227/techrxiv.172866006.66912846/v1"
   },
   {
-    "key": "journals/corr/abs-2410-09295",
+    "key": "W4403564539",
     "title": "Natural Language Counterfactual Explanations for Graphs Using Large Language Models",
     "authors": [
       "Flavio Giorgi",
@@ -537,125 +393,11 @@ window.PUBLICATIONS = [
     "topics": [
       "xai"
     ],
-    "url": "https://doi.org/10.48550/arXiv.2410.09295"
+    "url": "http://arxiv.org/abs/2410.09295"
   },
   {
-    "key": "conf/robustrecsys/SicilianoLGT24",
-    "title": "Robust Training of Sequential Recommender Systems with Missing Input Data",
-    "authors": [
-      "Federico Siciliano",
-      "Shoval Lagziel",
-      "Iftah Gamzu",
-      "Gabriele Tolomei"
-    ],
-    "year": 2024,
-    "venue": "ROBUSTRECSYS",
-    "venue_full": "RobustRecSys@RecSys",
-    "type": "other",
-    "topics": [
-      "recommender"
-    ],
-    "url": "https://ceur-ws.org/Vol-3924/paper1.pdf"
-  },
-  {
-    "key": "journals/tai/TrappoliniMSRST24",
-    "title": "Sparse Vicious Attacks on Graph Neural Networks",
-    "authors": [
-      "Giovanni Trappolini",
-      "Valentino Maiorca",
-      "Silvio Severino",
-      "Emanuele Rodolà",
-      "Fabrizio Silvestri",
-      "Gabriele Tolomei"
-    ],
-    "year": 2024,
-    "venue": "TAI",
-    "venue_full": "IEEE Trans. Artif. Intell.",
-    "type": "q1",
-    "topics": [
-      "gnn"
-    ],
-    "url": "https://doi.org/10.1109/TAI.2023.3319306"
-  },
-  {
-    "key": "journals/corr/abs-2403-14339",
-    "title": "∇ Τ: Gradient-Based and Task-Agnostic Machine Unlearning",
-    "authors": [
-      "Daniel Trippa",
-      "Cesare Campagnano",
-      "Maria Sofia Bucarelli",
-      "Gabriele Tolomei",
-      "Fabrizio Silvestri"
-    ],
-    "year": 2024,
-    "venue": "arXiv",
-    "venue_full": "arXiv",
-    "type": "preprint",
-    "topics": [
-      "unlearning"
-    ],
-    "url": "https://doi.org/10.48550/arXiv.2403.14339"
-  },
-  {
-    "key": "journals/corr/abs-2303-16668",
-    "title": "A Byzantine-Resilient Aggregation Scheme for Federated Learning via Matrix Autoregression on Client Updates",
-    "authors": [
-      "Gabriele Tolomei",
-      "Edoardo Gabrielli",
-      "Dimitri Belli",
-      "Vittorio Miori"
-    ],
-    "year": 2023,
-    "venue": "arXiv",
-    "venue_full": "arXiv",
-    "type": "preprint",
-    "topics": [
-      "federated"
-    ],
-    "url": "https://doi.org/10.48550/arXiv.2303.16668"
-  },
-  {
-    "key": "conf/ph/BarsocchiBGRMPR23",
-    "title": "A Novel Architectural Schema for Constant Monitoring and Assessment of Older Adults' Health Status at Home",
-    "authors": [
-      "Paolo Barsocchi",
-      "Dimitri Belli",
-      "Edoardo Gabrielli",
-      "Davide La Rosa",
-      "Vittorio Miori",
-      "Filippo Palumbo",
-      "Dario Russo",
-      "Gabriele Tolomei"
-    ],
-    "year": 2023,
-    "venue": "PH",
-    "venue_full": "PervasiveHealth",
-    "type": "other",
-    "topics": [
-      "misc"
-    ],
-    "url": "https://doi.org/10.1007/978-3-031-59717-6_33"
-  },
-  {
-    "key": "journals/corr/abs-2308-04604",
-    "title": "A Survey on Decentralized Federated Learning",
-    "authors": [
-      "Edoardo Gabrielli",
-      "Giovanni Pica",
-      "Gabriele Tolomei"
-    ],
-    "year": 2023,
-    "venue": "arXiv",
-    "venue_full": "arXiv",
-    "type": "preprint",
-    "topics": [
-      "federated"
-    ],
-    "url": "https://doi.org/10.48550/arXiv.2308.04604"
-  },
-  {
-    "key": "journals/corr/abs-2310-08909",
-    "title": "Community Membership Hiding As Counterfactual Graph Search via Deep Reinforcement Learning",
+    "key": "W4387687225",
+    "title": "Evading Community Detection via Counterfactual Neighborhood Search",
     "authors": [
       "Andrea Bernini",
       "Fabrizio Silvestri",
@@ -669,10 +411,10 @@ window.PUBLICATIONS = [
       "xai",
       "gnn"
     ],
-    "url": "https://doi.org/10.48550/arXiv.2310.08909"
+    "url": "http://arxiv.org/abs/2310.08909"
   },
   {
-    "key": "conf/sigir/PinelliTT23",
+    "key": "W4384828640",
     "title": "FLIRT: Federated Learning for Information Retrieval",
     "authors": [
       "Fabio Pinelli",
@@ -680,9 +422,9 @@ window.PUBLICATIONS = [
       "Giovanni Trappolini"
     ],
     "year": 2023,
-    "venue": "SIGIR",
-    "venue_full": "SIGIR",
-    "type": "a_star",
+    "venue": "",
+    "venue_full": "",
+    "type": "other",
     "topics": [
       "federated",
       "ir"
@@ -690,7 +432,7 @@ window.PUBLICATIONS = [
     "url": "https://doi.org/10.1145/3539618.3591926"
   },
   {
-    "key": "conf/cogmi/TolomeiCST23",
+    "key": "W4391923572",
     "title": "Prompt-To-OS (P2OS): Revolutionizing Operating Systems and Human-Computer Interaction with Integrated AI Generative Models",
     "authors": [
       "Gabriele Tolomei",
@@ -699,16 +441,16 @@ window.PUBLICATIONS = [
       "Giovanni Trappolini"
     ],
     "year": 2023,
-    "venue": "COGMI",
-    "venue_full": "CogMI",
+    "venue": "",
+    "venue_full": "",
     "type": "other",
     "topics": [
       "llm"
     ],
-    "url": "https://doi.org/10.1109/CogMI58952.2023.00027"
+    "url": "https://doi.org/10.1109/cogmi58952.2023.00027"
   },
   {
-    "key": "journals/corr/abs-2310-04875",
+    "key": "W4387559498",
     "title": "Prompt-To-OS (P2OS): Revolutionizing Operating Systems and Human-Computer Interaction with Integrated AI Generative Models",
     "authors": [
       "Gabriele Tolomei",
@@ -723,10 +465,30 @@ window.PUBLICATIONS = [
     "topics": [
       "llm"
     ],
-    "url": "https://doi.org/10.48550/arXiv.2310.04875"
+    "url": "http://arxiv.org/abs/2310.04875"
   },
   {
-    "key": "conf/sigir/ChenSWZT23",
+    "key": "W4387068289",
+    "title": "Sparse Vicious Attacks on Graph Neural Networks",
+    "authors": [
+      "Giovanni Trappolini",
+      "Valentino Maiorca",
+      "Silvio Severino",
+      "Emanuele Rodolà",
+      "Fabrizio Silvestri",
+      "Gabriele Tolomei"
+    ],
+    "year": 2023,
+    "venue": "IEEE Transactions on Artificial Intelligence",
+    "venue_full": "IEEE Transactions on Artificial Intelligence",
+    "type": "q1",
+    "topics": [
+      "gnn"
+    ],
+    "url": "https://doi.org/10.1109/tai.2023.3319306"
+  },
+  {
+    "key": "W4384891029",
     "title": "The Dark Side of Explanations: Poisoning Recommender Systems with Counterfactual Examples",
     "authors": [
       "Ziheng Chen",
@@ -736,9 +498,9 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2023,
-    "venue": "SIGIR",
-    "venue_full": "SIGIR",
-    "type": "a_star",
+    "venue": "",
+    "venue_full": "",
+    "type": "other",
     "topics": [
       "xai",
       "adversarial",
@@ -747,7 +509,7 @@ window.PUBLICATIONS = [
     "url": "https://doi.org/10.1145/3539618.3592070"
   },
   {
-    "key": "journals/corr/abs-2305-00574",
+    "key": "W4367694463",
     "title": "The Dark Side of Explanations: Poisoning Recommender Systems with Counterfactual Examples",
     "authors": [
       "Ziheng Chen",
@@ -765,52 +527,30 @@ window.PUBLICATIONS = [
       "adversarial",
       "recommender"
     ],
-    "url": "https://doi.org/10.48550/arXiv.2305.00574"
+    "url": "http://arxiv.org/abs/2305.00574"
   },
   {
-    "key": "conf/aistats/LucicHTRS22",
-    "title": "CF-Gnnexplainer: Counterfactual Explanations for Graph Neural Networks",
+    "key": "W4312453724",
+    "title": "Explain the Explainer: Interpreting Model-Agnostic Counterfactual Explanations of a Deep Reinforcement Learning Agent",
     "authors": [
-      "Ana Lucic",
-      "Maartje A. ter Hoeve",
+      "Ziheng Chen",
+      "Fabrizio Silvestri",
       "Gabriele Tolomei",
-      "Maarten de Rijke",
-      "Fabrizio Silvestri"
+      "Jia Wang",
+      "He Zhu",
+      "Hongshik Ahn"
     ],
     "year": 2022,
-    "venue": "AISTATS",
-    "venue_full": "AISTATS",
-    "type": "a_conf",
+    "venue": "IEEE Transactions on Artificial Intelligence",
+    "venue_full": "IEEE Transactions on Artificial Intelligence",
+    "type": "q1",
     "topics": [
-      "xai",
-      "gnn"
+      "xai"
     ],
-    "url": "https://proceedings.mlr.press/v151/lucic22a.html"
+    "url": "https://doi.org/10.1109/tai.2022.3223892"
   },
   {
-    "key": "conf/aiia/BelliBGRMPRT22",
-    "title": "Chaalenge: an Ambient Assisted Living Project to Promote an Active and Health Ageing",
-    "authors": [
-      "Dimitri Belli",
-      "Paolo Barsocchi",
-      "Edoardo Gabrielli",
-      "Davide La Rosa",
-      "Vittorio Miori",
-      "Filippo Palumbo",
-      "Dario Russo",
-      "Gabriele Tolomei"
-    ],
-    "year": 2022,
-    "venue": "AIIA",
-    "venue_full": "AIxAS@AI*IA",
-    "type": "other",
-    "topics": [
-      "misc"
-    ],
-    "url": "https://ceur-ws.org/Vol-3367/paper4.pdf"
-  },
-  {
-    "key": "journals/corr/abs-2208-04222",
+    "key": "W4298169105",
     "title": "GREASE: Generate Factual and Counterfactual Explanations for GNN-Based Recommendations",
     "authors": [
       "Ziheng Chen",
@@ -830,10 +570,10 @@ window.PUBLICATIONS = [
       "gnn",
       "recommender"
     ],
-    "url": "https://doi.org/10.48550/arXiv.2208.04222"
+    "url": "http://arxiv.org/abs/2208.04222"
   },
   {
-    "key": "conf/bigdataconf/BassettiCPT22",
+    "key": "W4320024272",
     "title": "ISIDE: Proactively Assist University Students at Risk of Dropout",
     "authors": [
       "Enrico Bassetti",
@@ -842,16 +582,16 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2022,
-    "venue": "BIGDATACONF",
-    "venue_full": "IEEE Big Data",
+    "venue": "2022 IEEE International Conference on Big Data (Big Data)",
+    "venue_full": "2022 IEEE International Conference on Big Data (Big Data)",
     "type": "other",
     "topics": [
       "misc"
     ],
-    "url": "https://doi.org/10.1109/BigData55660.2022.10020920"
+    "url": "https://doi.org/10.1109/bigdata55660.2022.10020920"
   },
   {
-    "key": "journals/corr/abs-2211-02177",
+    "key": "W4320561400",
     "title": "MUSTACHE: Multi-Step-Ahead Predictions for Cache Eviction",
     "authors": [
       "Gabriele Tolomei",
@@ -865,10 +605,10 @@ window.PUBLICATIONS = [
     "topics": [
       "ir"
     ],
-    "url": "https://doi.org/10.48550/arXiv.2211.02177"
+    "url": "http://arxiv.org/abs/2211.02177"
   },
   {
-    "key": "conf/ijcnn/SicilianoBTS22",
+    "key": "W3204287053",
     "title": "NEWRON: A New Generalization of the Artificial Neuron to Enhance the Interpretability of Neural Networks",
     "authors": [
       "Federico Siciliano",
@@ -877,17 +617,17 @@ window.PUBLICATIONS = [
       "Fabrizio Silvestri"
     ],
     "year": 2022,
-    "venue": "IJCNN",
-    "venue_full": "IJCNN",
+    "venue": "2022 International Joint Conference on Neural Networks (IJCNN)",
+    "venue_full": "2022 International Joint Conference on Neural Networks (IJCNN)",
     "type": "other",
     "topics": [
       "xai"
     ],
-    "url": "https://doi.org/10.1109/IJCNN55064.2022.9892367"
+    "url": "https://doi.org/10.1109/ijcnn55064.2022.9892367"
   },
   {
-    "key": "conf/cikm/ChenSW0AT22",
-    "title": "Relax: Reinforcement Learning Agent Explainer for Arbitrary Predictive Models",
+    "key": "W4306317232",
+    "title": "R E LAX: Reinforcement Learning Agent Explainer for Arbitrary Predictive Models",
     "authors": [
       "Ziheng Chen",
       "Fabrizio Silvestri",
@@ -897,16 +637,16 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2022,
-    "venue": "CIKM",
-    "venue_full": "CIKM",
-    "type": "a_conf",
+    "venue": "Proceedings of the 31st ACM International Conference on Information &amp; Knowledge Management",
+    "venue_full": "Proceedings of the 31st ACM International Conference on Information &amp; Knowledge Management",
+    "type": "other",
     "topics": [
       "xai"
     ],
     "url": "https://doi.org/10.1145/3511808.3557429"
   },
   {
-    "key": "journals/corr/abs-2209-09688",
+    "key": "W4296594317",
     "title": "Sparse Vicious Attacks on Graph Neural Networks",
     "authors": [
       "Giovanni Trappolini",
@@ -923,10 +663,10 @@ window.PUBLICATIONS = [
     "topics": [
       "gnn"
     ],
-    "url": "https://doi.org/10.48550/arXiv.2209.09688"
+    "url": "http://arxiv.org/abs/2209.09688"
   },
   {
-    "key": "journals/access/CostaPST22",
+    "key": "W4311721665",
     "title": "Turning Federated Learning Systems Into Covert Channels",
     "authors": [
       "Gabriele Costa",
@@ -935,19 +675,19 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2022,
-    "venue": "ACCESS",
+    "venue": "IEEE Access",
     "venue_full": "IEEE Access",
     "type": "other",
     "topics": [
       "federated"
     ],
-    "url": "https://www.wikidata.org/entity/Q116759381"
+    "url": "https://doi.org/10.1109/access.2022.3229124"
   },
   {
-    "key": "journals/corr/abs-2102-03322",
+    "key": "W4287331425",
     "title": "CF-Gnnexplainer: Counterfactual Explanations for Graph Neural Networks",
     "authors": [
-      "Ana Lucic",
+      "Ana Lučić",
       "Maartje ter Hoeve",
       "Gabriele Tolomei",
       "Maarten de Rijke",
@@ -961,10 +701,10 @@ window.PUBLICATIONS = [
       "xai",
       "gnn"
     ],
-    "url": "https://arxiv.org/abs/2102.03322"
+    "url": "https://hdl.handle.net/11245.1/d9c0804d-ef38-452b-8fb7-eb061065183c"
   },
   {
-    "key": "journals/corr/abs-2104-10561",
+    "key": "W3153233384",
     "title": "Covert Channel Attack to Federated Learning Systems",
     "authors": [
       "Gabriele Costa",
@@ -980,26 +720,10 @@ window.PUBLICATIONS = [
       "federated",
       "security"
     ],
-    "url": "https://arxiv.org/abs/2104.10561"
+    "url": "https://arxiv.org/pdf/2104.10561.pdf"
   },
   {
-    "key": "journals/tkde/TolomeiS21",
-    "title": "Generating Actionable Interpretations from Ensembles of Decision Trees",
-    "authors": [
-      "Gabriele Tolomei",
-      "Fabrizio Silvestri"
-    ],
-    "year": 2021,
-    "venue": "TKDE",
-    "venue_full": "IEEE Trans. Knowl. Data Eng.",
-    "type": "q1",
-    "topics": [
-      "xai"
-    ],
-    "url": "https://doi.org/10.1109/TKDE.2019.2945326"
-  },
-  {
-    "key": "journals/corr/abs-2110-02775",
+    "key": "W4298129223",
     "title": "NEWRON: A New Generalization of the Artificial Neuron to Enhance the Interpretability of Neural Networks",
     "authors": [
       "Federico Siciliano",
@@ -1014,10 +738,10 @@ window.PUBLICATIONS = [
     "topics": [
       "xai"
     ],
-    "url": "https://arxiv.org/abs/2110.02775"
+    "url": "http://arxiv.org/abs/2110.02775"
   },
   {
-    "key": "journals/corr/abs-2110-11960",
+    "key": "W3209179910",
     "title": "Relace: Reinforcement Learning Agent for Counterfactual Explanations of Arbitrary Predictive Models",
     "authors": [
       "Ziheng Chen",
@@ -1034,10 +758,30 @@ window.PUBLICATIONS = [
     "topics": [
       "xai"
     ],
-    "url": "https://arxiv.org/abs/2110.11960"
+    "url": "http://arxiv.org/abs/2110.11960"
   },
   {
-    "key": "journals/ieeesp/CalzavaraCFRT20",
+    "key": "W4301659304",
+    "title": "Relax: Reinforcement Learning Agent Explainer for Arbitrary Predictive Models",
+    "authors": [
+      "Ziheng Chen",
+      "Fabrizio Silvestri",
+      "Jia Wang",
+      "He Zhu",
+      "Hongshik Ahn",
+      "Gabriele Tolomei"
+    ],
+    "year": 2021,
+    "venue": "arXiv",
+    "venue_full": "arXiv",
+    "type": "preprint",
+    "topics": [
+      "xai"
+    ],
+    "url": "http://arxiv.org/abs/2110.11960"
+  },
+  {
+    "key": "W3001944142",
     "title": "Machine Learning for Web Vulnerability Detection: the Case of Cross-Site Request Forgery",
     "authors": [
       "Stefano Calzavara",
@@ -1047,16 +791,17 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2020,
-    "venue": "IEEESP",
-    "venue_full": "IEEE Secur. Priv.",
+    "venue": "IEEE Security & Privacy",
+    "venue_full": "IEEE Security & Privacy",
     "type": "other",
     "topics": [
+      "fairness",
       "security"
     ],
-    "url": "https://www.wikidata.org/entity/Q114255923"
+    "url": "https://doi.org/10.1109/msec.2019.2961649"
   },
   {
-    "key": "journals/datamine/CalzavaraLTAO20",
+    "key": "W3036568938",
     "title": "Treant: Training Evasion-Aware Decision Trees",
     "authors": [
       "Stefano Calzavara",
@@ -1066,8 +811,27 @@ window.PUBLICATIONS = [
       "Salvatore Orlando"
     ],
     "year": 2020,
-    "venue": "DATAMINE",
-    "venue_full": "Data Min. Knowl. Discov.",
+    "venue": "IRIS Research product catalog (Sapienza University of Rome)",
+    "venue_full": "IRIS Research product catalog (Sapienza University of Rome)",
+    "type": "other",
+    "topics": [
+      "adversarial"
+    ],
+    "url": "https://hdl.handle.net/11573/1648624"
+  },
+  {
+    "key": "W2955686665",
+    "title": "Treant: Training Evasion-Aware Decision Trees",
+    "authors": [
+      "Stefano Calzavara",
+      "Claudio Lucchese",
+      "Gabriele Tolomei",
+      "Seyum Assefa Abebe",
+      "Salvatore Orlando"
+    ],
+    "year": 2020,
+    "venue": "Data Mining and Knowledge Discovery",
+    "venue_full": "Data Mining and Knowledge Discovery",
     "type": "q1",
     "topics": [
       "adversarial"
@@ -1075,7 +839,7 @@ window.PUBLICATIONS = [
     "url": "https://doi.org/10.1007/s10618-020-00694-9"
   },
   {
-    "key": "conf/cikm/CalzavaraLT19",
+    "key": "W2987678574",
     "title": "Adversarial Training of Gradient-Boosted Decision Trees",
     "authors": [
       "Stefano Calzavara",
@@ -1083,16 +847,32 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2019,
-    "venue": "CIKM",
-    "venue_full": "CIKM",
-    "type": "a_conf",
+    "venue": "",
+    "venue_full": "",
+    "type": "other",
     "topics": [
       "adversarial"
     ],
     "url": "https://doi.org/10.1145/3357384.3358149"
   },
   {
-    "key": "conf/eurosp/CalzavaraCFRT19",
+    "key": "W2979156612",
+    "title": "Generating Actionable Interpretations from Ensembles of Decision Trees",
+    "authors": [
+      "Gabriele Tolomei",
+      "Fabrizio Silvestri"
+    ],
+    "year": 2019,
+    "venue": "IEEE Transactions on Knowledge and Data Engineering",
+    "venue_full": "IEEE Transactions on Knowledge and Data Engineering",
+    "type": "q1",
+    "topics": [
+      "xai"
+    ],
+    "url": "https://doi.org/10.1109/tkde.2019.2945326"
+  },
+  {
+    "key": "W2943467804",
     "title": "Mitch: A Machine Learning Approach to the Black-Box Detection of CSRF Vulnerabilities",
     "authors": [
       "Stefano Calzavara",
@@ -1102,53 +882,16 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2019,
-    "venue": "EUROSP",
-    "venue_full": "EuroS&P",
-    "type": "a_conf",
+    "venue": "",
+    "venue_full": "",
+    "type": "other",
     "topics": [
       "security"
     ],
-    "url": "https://doi.org/10.1109/EuroSP.2019.00045"
+    "url": "https://doi.org/10.1109/eurosp.2019.00045"
   },
   {
-    "key": "journals/corr/abs-1907-01197",
-    "title": "Treant: Training Evasion-Aware Decision Trees",
-    "authors": [
-      "Stefano Calzavara",
-      "Claudio Lucchese",
-      "Gabriele Tolomei",
-      "Seyum Assefa Abebe",
-      "Salvatore Orlando"
-    ],
-    "year": 2019,
-    "venue": "arXiv",
-    "venue_full": "arXiv",
-    "type": "preprint",
-    "topics": [
-      "adversarial"
-    ],
-    "url": "http://arxiv.org/abs/1907.01197"
-  },
-  {
-    "key": "journals/ijdsa/TolomeiLFH19",
-    "title": "You Must Have Clicked on This Ad by Mistake! Data-Driven Identification of Accidental Clicks on Mobile Ads with Applications to Advertiser Cost Discounting and Click-Through Rate Prediction",
-    "authors": [
-      "Gabriele Tolomei",
-      "Mounia Lalmas",
-      "Ayman Farahat",
-      "Andrew Haines"
-    ],
-    "year": 2019,
-    "venue": "IJDSA",
-    "venue_full": "Int. J. Data Sci. Anal.",
-    "type": "other",
-    "topics": [
-      "recommender"
-    ],
-    "url": "https://doi.org/10.1007/s41060-018-0122-1"
-  },
-  {
-    "key": "journals/cm/AksuBCTU18",
+    "key": "W2786484447",
     "title": "Advertising in the IoT Era: Vision and Challenges",
     "authors": [
       "Hidayet Aksu",
@@ -1158,35 +901,16 @@ window.PUBLICATIONS = [
       "A. Selcuk Uluagac"
     ],
     "year": 2018,
-    "venue": "CM",
-    "venue_full": "IEEE Commun. Mag.",
+    "venue": "IEEE Communications Magazine",
+    "venue_full": "IEEE Communications Magazine",
     "type": "q1",
     "topics": [
       "misc"
     ],
-    "url": "https://doi.org/10.1109/MCOM.2017.1700871"
+    "url": "https://doi.org/10.1109/mcom.2017.1700871"
   },
   {
-    "key": "journals/corr/abs-1802-04102",
-    "title": "Advertising in the IoT Era: Vision and Challenges",
-    "authors": [
-      "Hidayet Aksu",
-      "Leonardo Babun",
-      "Mauro Conti",
-      "Gabriele Tolomei",
-      "A. Selcuk Uluagac"
-    ],
-    "year": 2018,
-    "venue": "arXiv",
-    "venue_full": "arXiv",
-    "type": "preprint",
-    "topics": [
-      "misc"
-    ],
-    "url": "http://arxiv.org/abs/1802.04102"
-  },
-  {
-    "key": "conf/cns/ContiGGT18",
+    "key": "W2886626623",
     "title": "Spot the Difference: Your Bucket Is Leaking : A Novel Methodology to Expose A/B Testing Effortlessly",
     "authors": [
       "Mauro Conti",
@@ -1195,34 +919,52 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2018,
-    "venue": "CNS",
-    "venue_full": "CNS",
+    "venue": "",
+    "venue_full": "",
     "type": "other",
     "topics": [
       "ir"
     ],
-    "url": "https://doi.org/10.1109/CNS.2018.8433122"
+    "url": "https://doi.org/10.1109/cns.2018.8433122"
   },
   {
-    "key": "conf/kdd/TolomeiSHL17",
-    "title": "Interpretable Predictions of Tree-Based Ensembles via Actionable Feature Tweaking",
+    "key": "W2796774312",
+    "title": "You Must Have Clicked on This Ad by Mistake! Data-Driven Identification of Accidental Clicks on Mobile Ads with Applications to Advertiser Cost Discounting and Click-Through Rate Prediction",
     "authors": [
       "Gabriele Tolomei",
-      "Fabrizio Silvestri",
-      "Andrew Haines",
-      "Mounia Lalmas"
+      "Mounia Lalmas",
+      "Ayman Farahat",
+      "Andrew Haines"
     ],
-    "year": 2017,
-    "venue": "KDD",
-    "venue_full": "KDD",
-    "type": "a_star",
+    "year": 2018,
+    "venue": "International Journal of Data Science and Analytics",
+    "venue_full": "International Journal of Data Science and Analytics",
+    "type": "other",
     "topics": [
-      "xai"
+      "recommender"
     ],
-    "url": "https://www.wikidata.org/entity/Q102362877"
+    "url": "https://doi.org/10.1007/s41060-018-0122-1"
   },
   {
-    "key": "conf/ictir/LuccheseNOT16",
+    "key": "W2949706654",
+    "title": "You Must Have Clicked on This Ad by Mistake! Data-Driven Identification of Accidental Clicks on Mobile Ads with Applications to Advertiser Cost Discounting and Click-Through Rate Prediction",
+    "authors": [
+      "Gabriele Tolomei",
+      "Mounia Lalmas",
+      "Ayman Farahat",
+      "Andrew Haines"
+    ],
+    "year": 2018,
+    "venue": "arXiv",
+    "venue_full": "arXiv",
+    "type": "preprint",
+    "topics": [
+      "recommender"
+    ],
+    "url": "http://arxiv.org/pdf/1804.06912.pdf"
+  },
+  {
+    "key": "W2509050427",
     "title": "Learning to Rank User Queries to Detect Search Tasks",
     "authors": [
       "Claudio Lucchese",
@@ -1231,16 +973,16 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2016,
-    "venue": "ICTIR",
-    "venue_full": "ICTIR",
-    "type": "a_conf",
+    "venue": "",
+    "venue_full": "",
+    "type": "other",
     "topics": [
       "misc"
     ],
     "url": "https://doi.org/10.1145/2970398.2970407"
   },
   {
-    "key": "journals/tweb/CalzavaraTCBO15",
+    "key": "W2243132820",
     "title": "A Supervised Learning Approach to Protect Client Authentication on the Web",
     "authors": [
       "Stefano Calzavara",
@@ -1250,8 +992,8 @@ window.PUBLICATIONS = [
       "Salvatore Orlando"
     ],
     "year": 2015,
-    "venue": "TWEB",
-    "venue_full": "ACM Trans. Web",
+    "venue": "ACM Transactions on the Web",
+    "venue_full": "ACM Transactions on the Web",
     "type": "q1",
     "topics": [
       "misc"
@@ -1259,7 +1001,7 @@ window.PUBLICATIONS = [
     "url": "https://doi.org/10.1145/2754933"
   },
   {
-    "key": "conf/kdd/LalmasLSST15",
+    "key": "W2069361640",
     "title": "Promoting Positive Post-Click Experience for In-Stream Yahoo Gemini Users",
     "authors": [
       "Mounia Lalmas",
@@ -1269,17 +1011,17 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2015,
-    "venue": "KDD",
-    "venue_full": "KDD",
-    "type": "a_star",
+    "venue": "",
+    "venue_full": "",
+    "type": "other",
     "topics": [
       "misc"
     ],
     "url": "https://doi.org/10.1145/2783258.2788581"
   },
   {
-    "key": "conf/www/CalzavaraTBO14",
-    "title": "Quite a Mess in My Cookie Jar!: Leveraging Machine Learning to Protect Web Authentication",
+    "key": "W2079029214",
+    "title": "Quite a Mess in My Cookie Jar!",
     "authors": [
       "Stefano Calzavara",
       "Gabriele Tolomei",
@@ -1287,16 +1029,33 @@ window.PUBLICATIONS = [
       "Salvatore Orlando"
     ],
     "year": 2014,
-    "venue": "WWW",
-    "venue_full": "WWW",
-    "type": "a_star",
+    "venue": "",
+    "venue_full": "",
+    "type": "other",
     "topics": [
       "misc"
     ],
     "url": "https://doi.org/10.1145/2566486.2568047"
   },
   {
-    "key": "journals/tois/LuccheseOPST13",
+    "key": "W2103325788",
+    "title": "A Study on Microblog and Search Engine User Behaviors: How Twitter Trending Topics Help Predict Google Hot Queries",
+    "authors": [
+      "Federica Giummolè",
+      "Salvatore Orlando",
+      "Gabriele Tolomei"
+    ],
+    "year": 2013,
+    "venue": "",
+    "venue_full": "",
+    "type": "other",
+    "topics": [
+      "ir"
+    ],
+    "url": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.455.8914"
+  },
+  {
+    "key": "W1994305268",
     "title": "Discovering Tasks from Search Engine Query Logs",
     "authors": [
       "Claudio Lucchese",
@@ -1306,8 +1065,8 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2013,
-    "venue": "TOIS",
-    "venue_full": "ACM Trans. Inf. Syst.",
+    "venue": "ACM Transactions on Information Systems",
+    "venue_full": "ACM Transactions on Information Systems",
     "type": "q1",
     "topics": [
       "ir"
@@ -1315,7 +1074,7 @@ window.PUBLICATIONS = [
     "url": "https://doi.org/10.1145/2493175.2493179"
   },
   {
-    "key": "conf/riao/LuccheseOPST13",
+    "key": "W102760613",
     "title": "Modeling and Predicting the Task-By-Task Behavior of Search Engine Users",
     "authors": [
       "Claudio Lucchese",
@@ -1325,33 +1084,33 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2013,
-    "venue": "RIAO",
-    "venue_full": "OAIR",
+    "venue": "",
+    "venue_full": "",
     "type": "other",
     "topics": [
       "ir"
     ],
-    "url": "http://dl.acm.org/citation.cfm?id=2491768"
+    "url": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.309.8360"
   },
   {
-    "key": "conf/www/OrlandoPT13",
-    "title": "SEED: a Framework for Extracting Social Events from Press News",
+    "key": "W1588334334",
+    "title": "SEED",
     "authors": [
       "Salvatore Orlando",
       "Francesco Pizzolon",
       "Gabriele Tolomei"
     ],
     "year": 2013,
-    "venue": "WWW",
-    "venue_full": "WWW (Companion Volume)",
-    "type": "a_star",
+    "venue": "",
+    "venue_full": "",
+    "type": "other",
     "topics": [
       "misc"
     ],
     "url": "https://doi.org/10.1145/2487788.2488163"
   },
   {
-    "key": "conf/socialcom/GiummoleOT13",
+    "key": "W2545649789",
     "title": "Trending Topics on Twitter Improve the Prediction of Google Hot Queries",
     "authors": [
       "Federica Giummolè",
@@ -1359,16 +1118,16 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2013,
-    "venue": "SOCIALCOM",
-    "venue_full": "SocialCom",
+    "venue": "",
+    "venue_full": "",
     "type": "other",
     "topics": [
       "misc"
     ],
-    "url": "https://doi.ieeecomputersociety.org/10.1109/SocialCom.2013.12"
+    "url": "https://doi.org/10.1109/socialcom.2013.12"
   },
   {
-    "key": "conf/cikm/TolomeiOCL13",
+    "key": "W2017064567",
     "title": "Twitter Anticipates Bursts of Requests for Wikipedia Articles",
     "authors": [
       "Gabriele Tolomei",
@@ -1377,16 +1136,16 @@ window.PUBLICATIONS = [
       "Claudio Lucchese"
     ],
     "year": 2013,
-    "venue": "CIKM",
-    "venue_full": "DUBMOD@CIKM",
-    "type": "a_conf",
+    "venue": "",
+    "venue_full": "",
+    "type": "other",
     "topics": [
       "misc"
     ],
-    "url": "https://www.wikidata.org/entity/Q130824597"
+    "url": "https://doi.org/10.1145/2513577.2538768"
   },
   {
-    "key": "conf/refsq/FerrariGT13",
+    "key": "W124371493",
     "title": "Using Clustering to Improve the Structure of Natural Language Requirements Documents",
     "authors": [
       "Alessio Ferrari",
@@ -1394,8 +1153,8 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2013,
-    "venue": "REFSQ",
-    "venue_full": "REFSQ",
+    "venue": "Lecture notes in computer science",
+    "venue_full": "Lecture notes in computer science",
     "type": "other",
     "topics": [
       "misc"
@@ -1403,7 +1162,7 @@ window.PUBLICATIONS = [
     "url": "https://doi.org/10.1007/978-3-642-37422-7_3"
   },
   {
-    "key": "conf/sac/FerrariGT12",
+    "key": "W1972102081",
     "title": "A Clustering-Based Approach for Discovering Flaws in Requirements Specifications",
     "authors": [
       "Alessio Ferrari",
@@ -1411,8 +1170,8 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2012,
-    "venue": "SAC",
-    "venue_full": "SAC",
+    "venue": "",
+    "venue_full": "",
     "type": "other",
     "topics": [
       "misc"
@@ -1420,7 +1179,7 @@ window.PUBLICATIONS = [
     "url": "https://doi.org/10.1145/2245276.2231939"
   },
   {
-    "key": "conf/refsq/BruniFST12",
+    "key": "W1619182398",
     "title": "Automatic Analysis of Multimodal Requirements: A Research Preview",
     "authors": [
       "Elia Bruni",
@@ -1429,8 +1188,8 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2012,
-    "venue": "REFSQ",
-    "venue_full": "REFSQ",
+    "venue": "Lecture notes in computer science",
+    "venue_full": "Lecture notes in computer science",
     "type": "other",
     "topics": [
       "misc"
@@ -1438,8 +1197,46 @@ window.PUBLICATIONS = [
     "url": "https://doi.org/10.1007/978-3-642-28714-5_19"
   },
   {
-    "key": "journals/ercim/CeccarelliGLNPT11",
-    "title": "Discovering Europeana Users' Search Behavior",
+    "key": "W4249633366",
+    "title": "Mining Lifecycle Event Logs for Enhancing Service-Based Applications",
+    "authors": [
+      "Schahram Dustdar",
+      "Philipp Leitner",
+      "Franco Maria Nardini",
+      "Fabrizio Silvestri",
+      "Gabriele Tolomei"
+    ],
+    "year": 2012,
+    "venue": "IGI Global eBooks",
+    "venue_full": "IGI Global eBooks",
+    "type": "other",
+    "topics": [
+      "misc"
+    ],
+    "url": "https://doi.org/10.4018/978-1-4666-2455-9.ch033"
+  },
+  {
+    "key": "W2497334839",
+    "title": "Mining Lifecycle Event Logs for Enhancing Service-Based Applications",
+    "authors": [
+      "Schahram Dustdar",
+      "Philipp Leitner",
+      "Franco Maria Nardini",
+      "Fabrizio Silvestri",
+      "Gabriele Tolomei"
+    ],
+    "year": 2012,
+    "venue": "Advances in web technologies and engineering book series",
+    "venue_full": "Advances in web technologies and engineering book series",
+    "type": "other",
+    "topics": [
+      "misc"
+    ],
+    "url": "https://doi.org/10.4018/978-1-4666-2089-6.ch007"
+  },
+  {
+    "key": "W158804943",
+    "title": "Discovering Europeana Users’ Search Behavior",
     "authors": [
       "Diego Ceccarelli",
       "Sergiu Gordea",
@@ -1449,16 +1246,32 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2011,
-    "venue": "ERCIM",
-    "venue_full": "ERCIM News",
-    "type": "preprint",
+    "venue": "IMT Institutional Repository (IMT School for Advanced Studies Lucca)",
+    "venue_full": "IMT Institutional Repository (IMT School for Advanced Studies Lucca)",
+    "type": "other",
     "topics": [
       "misc"
     ],
-    "url": "http://ercim-news.ercim.eu/en86/special/discovering-europeana-users-search-behavior"
+    "url": "http://eprints.imtlucca.it/1451/1/Ercim_News_Ceccarelli_2011.pdf"
   },
   {
-    "key": "conf/wsdm/LuccheseOPST11",
+    "key": "W1567338811",
+    "title": "Enhancing Web Search User Experience : from Document Retrieval to Task Recommendation",
+    "authors": [
+      "Gabriele Tolomei"
+    ],
+    "year": 2011,
+    "venue": "ARCA (Università Ca' Foscari Venezia)",
+    "venue_full": "ARCA (Università Ca' Foscari Venezia)",
+    "type": "other",
+    "topics": [
+      "recommender",
+      "ir"
+    ],
+    "url": "https://hdl.handle.net/10278/5074041"
+  },
+  {
+    "key": "W2113363259",
     "title": "Identifying Task-Based Sessions in Search Engine Query Logs",
     "authors": [
       "Claudio Lucchese",
@@ -1468,16 +1281,16 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2011,
-    "venue": "WSDM",
-    "venue_full": "WSDM",
-    "type": "a_conf",
+    "venue": "",
+    "venue_full": "",
+    "type": "other",
     "topics": [
       "ir"
     ],
-    "url": "https://www.wikidata.org/entity/Q66710455"
+    "url": "https://doi.org/10.1145/1935826.1935875"
   },
   {
-    "key": "conf/ercimdl/CeccarelliGLNT11",
+    "key": "W157734559",
     "title": "Improving Europeana Search Experience Using Query Logs",
     "authors": [
       "Diego Ceccarelli",
@@ -1487,8 +1300,8 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2011,
-    "venue": "ERCIMDL",
-    "venue_full": "TPDL",
+    "venue": "Lecture notes in computer science",
+    "venue_full": "Lecture notes in computer science",
     "type": "other",
     "topics": [
       "misc"
@@ -1496,7 +1309,7 @@ window.PUBLICATIONS = [
     "url": "https://doi.org/10.1007/978-3-642-24469-8_39"
   },
   {
-    "key": "conf/iat/LuccheseOPST10",
+    "key": "W1987000429",
     "title": "Detecting Task-Based Query Sessions Using Collaborative Knowledge",
     "authors": [
       "Claudio Lucchese",
@@ -1506,16 +1319,16 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2010,
-    "venue": "IAT",
-    "venue_full": "Web Intelligence/IAT Workshops",
-    "type": "workshop",
+    "venue": "",
+    "venue_full": "",
+    "type": "other",
     "topics": [
       "ir"
     ],
-    "url": "https://doi.ieeecomputersociety.org/10.1109/WI-IAT.2010.281"
+    "url": "https://doi.org/10.1109/wi-iat.2010.281"
   },
   {
-    "key": "conf/icde/TolomeiOS10",
+    "key": "W2114346296",
     "title": "Towards a Task-Based Search and Recommender Systems",
     "authors": [
       "Gabriele Tolomei",
@@ -1523,17 +1336,17 @@ window.PUBLICATIONS = [
       "Fabrizio Silvestri"
     ],
     "year": 2010,
-    "venue": "ICDE",
-    "venue_full": "ICDE Workshops",
-    "type": "workshop",
+    "venue": "",
+    "venue_full": "",
+    "type": "other",
     "topics": [
       "recommender",
       "ir"
     ],
-    "url": "https://doi.ieeecomputersociety.org/10.1109/ICDEW.2010.5452726"
+    "url": "https://doi.org/10.1109/icdew.2010.5452726"
   },
   {
-    "key": "conf/icumt/MordacchiniDTBSO09",
+    "key": "W2126432673",
     "title": "Challenges in Designing an Interest-Based Distributed Aggregation of Users in P2P Systems",
     "authors": [
       "Matteo Mordacchini",
@@ -1544,31 +1357,31 @@ window.PUBLICATIONS = [
       "Salvatore Orlando"
     ],
     "year": 2009,
-    "venue": "ICUMT",
-    "venue_full": "ICUMT",
+    "venue": "",
+    "venue_full": "",
     "type": "other",
     "topics": [
       "misc"
     ],
-    "url": "https://doi.org/10.1109/ICUMT.2009.5345355"
+    "url": "https://doi.org/10.1109/icumt.2009.5345355"
   },
   {
-    "key": "conf/recsys/Tolomei09",
-    "title": "Search the Web X.0: Mining and Recommending Web-Mediated Processes",
+    "key": "W2050126912",
+    "title": "Search the Web X.0",
     "authors": [
       "Gabriele Tolomei"
     ],
     "year": 2009,
-    "venue": "RECSYS",
-    "venue_full": "RecSys",
-    "type": "a_conf",
+    "venue": "",
+    "venue_full": "",
+    "type": "other",
     "topics": [
-      "recommender"
+      "misc"
     ],
     "url": "https://doi.org/10.1145/1639714.1639803"
   },
   {
-    "key": "journals/ercim/LaforenzaNST08",
+    "key": "W59672765",
     "title": "SPRANKER: A Discovery Tool to Rank Service Providers Using Quality of Experience",
     "authors": [
       "Domenico Laforenza",
@@ -1577,36 +1390,54 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2008,
-    "venue": "ERCIM",
-    "venue_full": "ERCIM News",
-    "type": "preprint",
+    "venue": "ERCIM news/ERCIM news online edition",
+    "venue_full": "ERCIM news/ERCIM news online edition",
+    "type": "other",
     "topics": [
       "misc"
     ],
-    "url": "http://ercim-news.ercim.eu/spranker-a-discovery-tool-to-rank-service-providers-using-quality-of-experience"
+    "url": "http://dblp.uni-trier.de/db/journals/ercim/ercim2008.html#LaforenzaNST08"
   },
   {
-    "key": "journals/tce/MioriTMT06",
+    "key": "W2149786528",
     "title": "An Open Standard Solution for Domotic Interoperability",
     "authors": [
       "Vittorio Miori",
-      "Luca Tarrini",
-      "Maurizio Manca",
+      "L. Tarrini",
+      "Marco Manca",
       "Gabriele Tolomei"
     ],
     "year": 2006,
-    "venue": "TCE",
-    "venue_full": "IEEE Trans. Consumer Electron.",
+    "venue": "IEEE Transactions on Consumer Electronics",
+    "venue_full": "IEEE Transactions on Consumer Electronics",
     "type": "q1",
     "topics": [
       "misc"
     ],
-    "url": "https://doi.org/10.1109/TCE.2006.1605032"
+    "url": "https://doi.org/10.1109/tce.2006.1605032"
+  },
+  {
+    "key": "W2148346729",
+    "title": "Domonet: a Framework and a Prototype for Interoperability of Domotic Middlewares Based on XML and Web Services",
+    "authors": [
+      "Vittorio Miori",
+      "L. Tarrini",
+      "Marco Manca",
+      "Gabriele Tolomei"
+    ],
+    "year": 2006,
+    "venue": "",
+    "venue_full": "",
+    "type": "other",
+    "topics": [
+      "misc"
+    ],
+    "url": "https://doi.org/10.1109/icce.2006.1598338"
   }
 ];
 window.SCHOLAR = {
-  "citations": 2638,
+  "citations": 2675,
   "h_index": 25,
-  "i10_index": 40
+  "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-09-03T08:20:38Z"
+window.PUBLICATIONS_TS = "2026-09-16T12:42:37Z"
