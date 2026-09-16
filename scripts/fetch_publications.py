@@ -22,6 +22,7 @@ Importable:
     from fetch_publications import load_venues, load_topics, classify_topics
 """
 
+import concurrent.futures
 import json
 import re
 import sys
@@ -534,29 +535,48 @@ def print_stats(publications: list, google_scholar_stats: dict) -> None:
     print(f"{'─'*52}\n")
 
 
+# scholarly.fill() can hang indefinitely on CI/cloud IPs (Google Scholar
+# rate-limits / CAPTCHAs with no timeout).  Run the fetch in a thread so
+# we can enforce a hard deadline and fall back to cached data on a hang.
+_SCHOLAR_TIMEOUT_SECONDS = 60
+
+
+def _do_fetch_google_scholar_stats() -> dict:
+    """Inner fetch — runs in a thread so it can be killed on timeout."""
+    author = scholarly.search_author_id(GOOGLE_SCHOLAR_ID)
+    author = scholarly.fill(author)
+    return {
+        "citations": author.get("citedby", 0),
+        "h_index":   author.get("hindex", 0),
+        "i10_index": author.get("i10index", 0),
+    }
+
+
 def fetch_google_scholar_stats() -> dict:
-    """Fetch Google Scholar stats, falling back to cached scholar.json on failure."""
+    """Fetch Google Scholar stats, falling back to cached scholar.json on failure or timeout."""
     try:
-        author = scholarly.search_author_id(GOOGLE_SCHOLAR_ID)
-        author = scholarly.fill(author)
-        data = {
-            "citations": author.get("citedby", 0),
-            "h_index":   author.get("hindex", 0),
-            "i10_index": author.get("i10index", 0),
-        }
+        with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
+            future = executor.submit(_do_fetch_google_scholar_stats)
+            data = future.result(timeout=_SCHOLAR_TIMEOUT_SECONDS)
         print("  Google Scholar stats fetched successfully.", flush=True)
         return data
 
+    except concurrent.futures.TimeoutError:
+        print(
+            f"  WARNING: Google Scholar fetch timed out after {_SCHOLAR_TIMEOUT_SECONDS}s "
+            "(likely blocked by rate-limiting or CAPTCHA on this IP).",
+            flush=True,
+        )
     except Exception as e:
         print(f"  WARNING: Could not fetch Google Scholar stats: {e}", flush=True)
 
-        if GOOGLE_SCHOLAR_JSON.exists():
-            print(f"  Falling back to cached {GOOGLE_SCHOLAR_JSON} …", flush=True)
-            with open(GOOGLE_SCHOLAR_JSON, encoding="utf-8") as f:
-                return json.load(f)
+    if GOOGLE_SCHOLAR_JSON.exists():
+        print(f"  Falling back to cached {GOOGLE_SCHOLAR_JSON} …", flush=True)
+        with open(GOOGLE_SCHOLAR_JSON, encoding="utf-8") as f:
+            return json.load(f)
 
-        print("  No cached scholar.json found — returning zeroed stats.", flush=True)
-        return {"citations": 0, "h_index": 0, "i10_index": 0}
+    print("  No cached scholar.json found — returning zeroed stats.", flush=True)
+    return {"citations": 0, "h_index": 0, "i10_index": 0}
 
 
 def main():
