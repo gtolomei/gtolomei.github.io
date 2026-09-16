@@ -27,6 +27,7 @@ import json
 import re
 import sys
 import time
+import html
 from datetime import date, datetime, timezone
 from pathlib import Path
 
@@ -135,6 +136,9 @@ def _venue_matches(acronym: str, venue_full: str, venue_aliases: dict) -> bool:
     if not venue_full:
         return False
 
+    venue_full = html.unescape(venue_full)
+    #venue_full = html.unescape((source.get("display_name") or primary.get("raw_source_name") or "").strip())
+
     cfg = venue_aliases.get(acronym, {})
     for exc in cfg.get("exclude", []):
         try:
@@ -152,46 +156,61 @@ def _venue_matches(acronym: str, venue_full: str, venue_aliases: dict) -> bool:
             pass
     return False
 
+def classify_venue(venue_full: str, venues: dict):
+    """Return (tier, acronym, display) for a recognized venue.
+
+    tier:
+        a_star | a_conf | q1 | None
+
+    acronym:
+        canonical key from venues.yml, e.g. "wsdm", "kdd", "tos"
+
+    display:
+        human-facing venue label from venue_aliases[].display,
+        falling back to the acronym when no display is configured.
+    """
+    aliases = venues.get("venue_aliases", {})
+
+    # Keep the explicit priority: A* → A → Q1.
+    for tier, key in (
+        ("a_star", "a_star_confs"),
+        ("a_conf", "a_confs"),
+        ("q1", "q1_journals"),
+    ):
+        for acronym in venues.get(key, set()):
+            if _venue_matches(acronym, venue_full, aliases):
+                cfg = aliases.get(acronym, {})
+                display = cfg.get("display") or acronym.upper()
+                return tier, acronym, display
+
+    return None, None, None
 
 def classify_venue_tier(venue_full: str, venues: dict):
-    """Return (tier, matched_acronym); tier is one of a_star/a_conf/q1/None."""
-    aliases = venues.get("venue_aliases", {})
-    for acronym in venues.get("a_star_confs", set()):
-        if _venue_matches(acronym, venue_full, aliases):
-            return "a_star", acronym
-    for acronym in venues.get("a_confs", set()):
-        if _venue_matches(acronym, venue_full, aliases):
-            return "a_conf", acronym
-    for acronym in venues.get("q1_journals", set()):
-        if _venue_matches(acronym, venue_full, aliases):
-            return "q1", acronym
-    return None, None
+    tier, acronym, _ = classify_venue(venue_full, venues)
+    return tier, acronym
 
 
 def classify_type(work_type: str, venue_full: str, doi: str, venues: dict) -> str:
-    """Return one of: preprint | workshop | a_star | a_conf | q1 | other."""
+    """Return one of: preprint | workshop | a_star | a_conf | q1 | other.
+    Venue classification takes precedence over OpenAlex's work type because
+    OpenAlex sometimes labels conference papers as "article".
+    """
+
     work_type = (work_type or "").lower()
     venue_full = venue_full or ""
 
-    # 1. Preprint: arXiv (by DOI prefix or venue name) or OpenAlex's own flag
-    if work_type == "preprint" or "10.48550" in doi or "arxiv" in venue_full.casefold():
+    # 1. Preprint
+    if (work_type == "preprint" or "10.48550" in doi or "arxiv" in venue_full.casefold()):
         return "preprint"
 
-    # 2. Workshop: venue name contains 'workshop' or the ' @ ' shorthand
+    # 2. Workshop
     if _is_workshop(venue_full):
         return "workshop"
 
-    # 3. Conference papers
-    if work_type == "proceedings-article":
-        tier, _ = classify_venue_tier(venue_full, venues)
-        return tier if tier in ("a_star", "a_conf") else "other"
-
-    # 4. Journal articles (and reviews)
-    if work_type in ("article", "review"):
-        tier, _ = classify_venue_tier(venue_full, venues)
-        return "q1" if tier == "q1" else "other"
-
-    return "other"
+    # 3. Identify the venue independently of OpenAlex type.
+    tier, _, _ = classify_venue(venue_full, venues)
+    return tier or "other"
+    
 
 
 # ── Topic classifier ───────────────────────────────────────────────────────
@@ -475,11 +494,14 @@ def build(venues: dict, topics: list, papers_raw: list) -> list:
         # Use raw_type as a fallback when OpenAlex's top-level type is
         # misleading (e.g. "article" for a proceedings paper).  This fixes
         # conference papers such as CIKM entries that arrive as type=article.
-        effective_type = p["openalex_type"] or p.get("raw_type", "")
-        if (p["openalex_type"] == "article" and p.get("raw_type") == "proceedings-article"):
-            effective_type = "proceedings-article"
 
-        pub_type, venue_acronym = classify_publication(effective_type, p["venue_full"], doi, venues,)
+        tier, venue_acronym, venue_display = classify_venue(p["venue_full"], venues,)
+
+        if tier:
+            pub_type = tier
+        else:
+            pub_type = classify_type(p.get("openalex_type", ""), p["venue_full"], doi, venues,)
+
         if venue_acronym:
             print(f"  MATCH  {venue_acronym:12s} ← {p['venue_full']}", flush=True,)
 
@@ -490,15 +512,16 @@ def build(venues: dict, topics: list, papers_raw: list) -> list:
             unclassified.append((p["venue_full"], title[:60]))
 
         result.append({
-            "key": key,
-            "title": title,
-            "authors": p["authors"],
-            "year": p["year"],
-            "venue": venue_acronym or p["venue_full"],
-            "venue_full": p["venue_full"],
-            "type": pub_type,
-            "topics": topics_list,
-            "url": p["url"],
+            "key":          key,
+            "title":        title,
+            "authors":      p["authors"],
+            "year":         p["year"],
+            "venue":        venue_display or p["venue_full"],
+            "venue_full":   p["venue_full"],
+            "venue_key":    venue_acronym,
+            "type":         pub_type,
+            "topics":       topics_list,
+            "url":          p["url"],
             })
 
     # Sort: newest first, then alphabetical within year
