@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-09-16T13:20:02Z
+// Last updated: 2026-09-16T14:16:12Z
 window.PUBLICATIONS = [
   {
     "key": "W7171965741",
@@ -209,7 +209,7 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2025,
-    "venue": "IEEE Transactions on Information Forensics and Security",
+    "venue": "TIFS",
     "venue_full": "IEEE Transactions on Information Forensics and Security",
     "type": "q1",
     "topics": [
@@ -307,7 +307,7 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2024,
-    "venue": "IEEE Transactions on Artificial Intelligence",
+    "venue": "TAI",
     "venue_full": "IEEE Transactions on Artificial Intelligence",
     "type": "q1",
     "topics": [
@@ -479,7 +479,7 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2023,
-    "venue": "IEEE Transactions on Artificial Intelligence",
+    "venue": "TAI",
     "venue_full": "IEEE Transactions on Artificial Intelligence",
     "type": "q1",
     "topics": [
@@ -542,7 +542,7 @@ window.PUBLICATIONS = [
       "Hongshik Ahn"
     ],
     "year": 2022,
-    "venue": "IEEE Transactions on Artificial Intelligence",
+    "venue": "TAI",
     "venue_full": "IEEE Transactions on Artificial Intelligence",
     "type": "q1",
     "topics": [
@@ -792,7 +792,7 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2020,
-    "venue": "IEEE Security & Privacy",
+    "venue": "IEEESECPRIV",
     "venue_full": "IEEE Security & Privacy",
     "type": "q1",
     "topics": [
@@ -831,7 +831,7 @@ window.PUBLICATIONS = [
       "Salvatore Orlando"
     ],
     "year": 2020,
-    "venue": "Data Mining and Knowledge Discovery",
+    "venue": "DATAMINE",
     "venue_full": "Data Mining and Knowledge Discovery",
     "type": "q1",
     "topics": [
@@ -864,7 +864,7 @@ window.PUBLICATIONS = [
       "Fabrizio Silvestri"
     ],
     "year": 2019,
-    "venue": "IEEE Transactions on Knowledge and Data Engineering",
+    "venue": "TKDE",
     "venue_full": "IEEE Transactions on Knowledge and Data Engineering",
     "type": "q1",
     "topics": [
@@ -903,7 +903,7 @@ window.PUBLICATIONS = [
       "A. Selcuk Uluagac"
     ],
     "year": 2018,
-    "venue": "IEEE Communications Magazine",
+    "venue": "CM",
     "venue_full": "IEEE Communications Magazine",
     "type": "q1",
     "topics": [
@@ -994,7 +994,7 @@ window.PUBLICATIONS = [
       "Salvatore Orlando"
     ],
     "year": 2015,
-    "venue": "ACM Transactions on the Web",
+    "venue": "TWEB",
     "venue_full": "ACM Transactions on the Web",
     "type": "q1",
     "topics": [
@@ -1067,7 +1067,7 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2013,
-    "venue": "ACM Transactions on Information Systems",
+    "venue": "TOIS",
     "venue_full": "ACM Transactions on Information Systems",
     "type": "q1",
     "topics": [
@@ -1411,7 +1411,7 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2006,
-    "venue": "IEEE Transactions on Consumer Electronics",
+    "venue": "TCE",
     "venue_full": "IEEE Transactions on Consumer Electronics",
     "type": "q1",
     "topics": [
@@ -1439,8 +1439,8 @@ window.PUBLICATIONS = [
   }
 ];
 window.SCHOLAR = {
-  "citations": 2675,
+  "citations": 2676,
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-09-16T13:20:02Z"
+window.PUBLICATIONS_TS = "2026-09-16T14:16:12Z"
