@@ -33,7 +33,10 @@ from pathlib import Path
 
 import requests
 import yaml
-from scholarly import scholarly
+try:
+    from scholarly import scholarly
+except ImportError:
+    scholarly = None
 
 # ── Paths ──────────────────────────────────────────────────────────────────
 ROOT        = Path(__file__).resolve().parent.parent
@@ -41,6 +44,7 @@ VENUES_YML  = ROOT / "data" / "venues.yml"
 TOPICS_YML  = ROOT / "data" / "topics.yml"
 PUB_JSON    = ROOT / "data" / "publications.json"
 PUB_JS      = ROOT / "assets" / "js" / "publications-data.js"
+MANUAL_PUB_YML = ROOT / "data" / "manual_publications.yml"
 GOOGLE_SCHOLAR_JSON = ROOT / "data" / "scholar.json"
 GOOGLE_SCHOLAR_ID   = "Y2R2DXEAAAAJ"
 GOOGLE_SCHOLAR_URL  = f"https://scholar.google.com/citations?user={GOOGLE_SCHOLAR_ID}"
@@ -184,6 +188,49 @@ def classify_venue(venue_full: str, venues: dict):
                 return tier, acronym, display
 
     return None, None, None
+
+def clean_venue_display(venue_full: str) -> str:
+    """Fallback shortener for unrecognized venue titles."""
+    if not venue_full:
+        return ""
+    if venue_full == "arXiv" or "arxiv" in venue_full.casefold():
+        return "arXiv"
+    # Extract acronym in trailing parentheses if short, e.g., (CAI), (CogMI), (Big Data), (CNS)
+    m = re.search(r'\(\s*(?:IEEE\s+)?([A-Za-z0-9\-\&]+)\s*\)$', venue_full)
+    if m and len(m.group(1).strip()) <= 10:
+        return m.group(1).strip()
+    
+    # Specific known long strings
+    vf_lower = venue_full.lower()
+    if "world wide web" in vf_lower:
+        return "WWW"
+    if "information" in vf_lower and "knowledge management" in vf_lower:
+        return "CIKM"
+    if "web intelligence" in vf_lower:
+        return "WI"
+    if "symposium on applied computing" in vf_lower:
+        return "SAC"
+    if "social computing" in vf_lower:
+        return "SocialCom"
+    if "consumer electronics" in vf_lower:
+        return "ICCE"
+    if "ultra modern telecommunications" in vf_lower:
+        return "ICUMT"
+    if "lecture notes" in vf_lower:
+        return "LNCS"
+    if "data science and analytics" in vf_lower:
+        return "JDSA"
+    if "http" in vf_lower:
+        return "Journal/Conf"
+    if "repository" in vf_lower or "catalog" in vf_lower or "arca" in vf_lower:
+        return "Repository"
+    if "ebooks" in vf_lower or "book series" in vf_lower:
+        return "Book Chapter"
+    if "ercim" in vf_lower:
+        return "ERCIM News"
+    if "workshop" in vf_lower:
+        return "Workshop"
+    return venue_full
 
 def classify_venue_tier(venue_full: str, venues: dict):
     tier, acronym, _ = classify_venue(venue_full, venues)
@@ -511,18 +558,57 @@ def build(venues: dict, topics: list, papers_raw: list) -> list:
             print(f"  OTHER  {p['venue_full']}", flush=True,)
             unclassified.append((p["venue_full"], title[:60]))
 
+        final_venue = venue_display or clean_venue_display(p["venue_full"])
+
         result.append({
             "key":          key,
             "title":        title,
             "authors":      p["authors"],
             "year":         p["year"],
-            "venue":        venue_display or p["venue_full"],
+            "venue":        final_venue,
             "venue_full":   p["venue_full"],
             "venue_key":    venue_acronym,
             "type":         pub_type,
             "topics":       topics_list,
             "url":          p["url"],
             })
+
+    # Merge manual publications if present
+    if MANUAL_PUB_YML.exists():
+        try:
+            with open(MANUAL_PUB_YML, encoding="utf-8") as f:
+                manual_entries = yaml.safe_load(f) or []
+            existing_keys = {r["key"] for r in result}
+            existing_titles = {r["title"].lower() for r in result}
+
+            for m in manual_entries:
+                m_title = _smart_title((m.get("title") or "").strip())
+                if not m_title or m_title.lower() in existing_titles:
+                    continue
+                m_key = m.get("key") or m.get("doi") or m_title
+                if m_key in existing_keys:
+                    continue
+
+                m_vf = m.get("venue_full") or m.get("venue") or ""
+                tier, venue_acronym, venue_display = classify_venue(m_vf, venues)
+                m_type = m.get("type") or tier or "other"
+                m_topics = m.get("topics") or classify_topics(m_title, m_vf, topics)
+
+                result.append({
+                    "key":        m_key,
+                    "title":      m_title,
+                    "authors":    m.get("authors") or [],
+                    "year":       m.get("year") or 0,
+                    "venue":      m.get("venue") or venue_display or clean_venue_display(m_vf),
+                    "venue_full": m_vf,
+                    "venue_key":  venue_acronym,
+                    "type":       m_type,
+                    "topics":     m_topics,
+                    "url":        m.get("url") or (f"https://doi.org/{m['doi']}" if m.get("doi") else ""),
+                })
+                print(f"  MANUAL ADD  {m_title[:60]}", flush=True)
+        except Exception as err:
+            print(f"  WARNING: Could not parse manual_publications.yml: {err}", flush=True)
 
     # Sort: newest first, then alphabetical within year
     result.sort(key=lambda x: (-x["year"], x["title"].lower()))
@@ -626,6 +712,8 @@ _SCHOLAR_TIMEOUT_SECONDS = 60
 
 def _do_fetch_google_scholar_stats() -> dict:
     """Inner fetch — runs in a thread so it can be killed on timeout."""
+    if scholarly is None:
+        raise RuntimeError("scholarly package not installed")
     author = scholarly.search_author_id(GOOGLE_SCHOLAR_ID)
     author = scholarly.fill(author)
     return {

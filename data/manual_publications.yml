@@ -1,0 +1,21 @@
+# data/manual_publications.yml
+# Add publications here that are missing from OpenAlex or need explicit venue/type overrides.
+# These entries will be merged into data/publications.json by scripts/fetch_publications.py.
+
+- title: "A Survey on Explainable AI Narratives Based on Large Language Models"
+  authors:
+    - "Matteo Silvestri"
+    - "Vittoria Vineis"
+    - "Edoardo Gabrielli"
+    - "Flavio Giorgi"
+    - "Fabiano Veglianti"
+    - "Fabrizio Silvestri"
+    - "Gabriele Tolomei"
+  year: 2025
+  venue_full: "arXiv"
+  venue: "arXiv"
+  type: "preprint"
+  topics:
+    - "xai"
+  url: "https://arxiv.org/abs/2502.17628"
+  doi: "10.36227/techrxiv.176282217.77757258/v1"

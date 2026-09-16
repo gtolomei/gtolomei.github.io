@@ -96,6 +96,8 @@ a_confs:
   - jcdl        # ACM/IEEE JCDL
   # Neural Networks
   - ijcnn       # IEEE IJCNN
+  # AI & Data
+  - cogmi       # IEEE CogMI
 
 # ── Scimago Q1 in a CS category ────────────────────────────────────────────
 # "Q1" means Q1 in at least one Scimago COMPUTER SCIENCE sub-category.
@@ -494,3 +496,15 @@ venue_aliases:
     patterns:
       - "ieee security (and|&) privacy"
       - "ieee security \\& privacy"
+
+  cai:
+    display: "CAI"
+    patterns: ["conference on artificial intelligence"]
+
+  cogmi:
+    display: "CogMI"
+    patterns: ["cognitive machine intelligence"]
+
+  bigdata:
+    display: "BigData"
+    patterns: ["international conference on big data"]

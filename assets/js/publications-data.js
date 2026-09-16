@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-09-16T15:20:15Z
+// Last updated: 2026-09-16T15:37:14Z
 window.PUBLICATIONS = [
   {
     "key": "W7171965741",
@@ -198,7 +198,7 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2025,
-    "venue": "2025 IEEE Conference on Artificial Intelligence (CAI)",
+    "venue": "CAI",
     "venue_full": "2025 IEEE Conference on Artificial Intelligence (CAI)",
     "venue_key": null,
     "type": "other",
@@ -302,7 +302,7 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2024,
-    "venue": "Lecture notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering",
+    "venue": "LNCS",
     "venue_full": "Lecture notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering",
     "venue_key": null,
     "type": "other",
@@ -463,10 +463,10 @@ window.PUBLICATIONS = [
       "Giovanni Trappolini"
     ],
     "year": 2023,
-    "venue": "2023 IEEE 5th International Conference on Cognitive Machine Intelligence (CogMI)",
+    "venue": "CogMI",
     "venue_full": "2023 IEEE 5th International Conference on Cognitive Machine Intelligence (CogMI)",
-    "venue_key": null,
-    "type": "other",
+    "venue_key": "cogmi",
+    "type": "a_conf",
     "topics": [
       "llm"
     ],
@@ -670,7 +670,7 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2022,
-    "venue": "Proceedings of the 31st ACM International Conference on Information &amp; Knowledge Management",
+    "venue": "CIKM",
     "venue_full": "Proceedings of the 31st ACM International Conference on Information &amp; Knowledge Management",
     "venue_key": null,
     "type": "other",
@@ -853,7 +853,7 @@ window.PUBLICATIONS = [
       "Salvatore Orlando"
     ],
     "year": 2020,
-    "venue": "IRIS Research product catalog (Sapienza University of Rome)",
+    "venue": "Repository",
     "venue_full": "IRIS Research product catalog (Sapienza University of Rome)",
     "venue_key": null,
     "type": "other",
@@ -875,7 +875,7 @@ window.PUBLICATIONS = [
     "year": 2020,
     "venue": "DMKD",
     "venue_full": "Data Mining and Knowledge Discovery",
-    "venue_key": "datamine",
+    "venue_key": "dmkd",
     "type": "q1",
     "topics": [
       "adversarial"
@@ -968,7 +968,7 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2018,
-    "venue": "2018 IEEE Conference on Communications and Network Security (CNS)",
+    "venue": "CNS",
     "venue_full": "2018 IEEE Conference on Communications and Network Security (CNS)",
     "venue_key": null,
     "type": "other",
@@ -987,7 +987,7 @@ window.PUBLICATIONS = [
       "Andrew Haines"
     ],
     "year": 2018,
-    "venue": "International Journal of Data Science and Analytics",
+    "venue": "JDSA",
     "venue_full": "International Journal of Data Science and Analytics",
     "venue_key": null,
     "type": "other",
@@ -1084,7 +1084,7 @@ window.PUBLICATIONS = [
       "Salvatore Orlando"
     ],
     "year": 2014,
-    "venue": "Proceedings of the 23rd international conference on World wide web",
+    "venue": "WWW",
     "venue_full": "Proceedings of the 23rd international conference on World wide web",
     "venue_key": null,
     "type": "other",
@@ -1102,7 +1102,7 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2013,
-    "venue": "http://ojs.scienceengineering.org/index.php/human/article/download/64/97/",
+    "venue": "Journal/Conf",
     "venue_full": "http://ojs.scienceengineering.org/index.php/human/article/download/64/97/",
     "venue_key": null,
     "type": "other",
@@ -1160,7 +1160,7 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2013,
-    "venue": "Proceedings of the 22nd International Conference on World Wide Web",
+    "venue": "WWW",
     "venue_full": "Proceedings of the 22nd International Conference on World Wide Web",
     "venue_key": null,
     "type": "other",
@@ -1178,7 +1178,7 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2013,
-    "venue": "2013 International Conference on Social Computing",
+    "venue": "SocialCom",
     "venue_full": "2013 International Conference on Social Computing",
     "venue_key": null,
     "type": "other",
@@ -1197,7 +1197,7 @@ window.PUBLICATIONS = [
       "Claudio Lucchese"
     ],
     "year": 2013,
-    "venue": "Proceedings of the 2013 workshop on Data-driven user behavioral modelling and mining from social media",
+    "venue": "Workshop",
     "venue_full": "Proceedings of the 2013 workshop on Data-driven user behavioral modelling and mining from social media",
     "venue_key": null,
     "type": "workshop",
@@ -1215,7 +1215,7 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2013,
-    "venue": "Lecture notes in computer science",
+    "venue": "LNCS",
     "venue_full": "Lecture notes in computer science",
     "venue_key": null,
     "type": "other",
@@ -1233,7 +1233,7 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2012,
-    "venue": "Proceedings of the 27th Annual ACM Symposium on Applied Computing",
+    "venue": "SAC",
     "venue_full": "Proceedings of the 27th Annual ACM Symposium on Applied Computing",
     "venue_key": null,
     "type": "other",
@@ -1252,7 +1252,7 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2012,
-    "venue": "Lecture notes in computer science",
+    "venue": "LNCS",
     "venue_full": "Lecture notes in computer science",
     "venue_key": null,
     "type": "other",
@@ -1272,7 +1272,7 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2012,
-    "venue": "IGI Global eBooks",
+    "venue": "Book Chapter",
     "venue_full": "IGI Global eBooks",
     "venue_key": null,
     "type": "other",
@@ -1292,7 +1292,7 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2012,
-    "venue": "Advances in web technologies and engineering book series",
+    "venue": "Book Chapter",
     "venue_full": "Advances in web technologies and engineering book series",
     "venue_key": null,
     "type": "other",
@@ -1313,7 +1313,7 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2011,
-    "venue": "IMT Institutional Repository (IMT School for Advanced Studies Lucca)",
+    "venue": "Repository",
     "venue_full": "IMT Institutional Repository (IMT School for Advanced Studies Lucca)",
     "venue_key": null,
     "type": "other",
@@ -1329,7 +1329,7 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2011,
-    "venue": "ARCA (Università Ca' Foscari Venezia)",
+    "venue": "Repository",
     "venue_full": "ARCA (Università Ca' Foscari Venezia)",
     "venue_key": null,
     "type": "other",
@@ -1370,7 +1370,7 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2011,
-    "venue": "Lecture notes in computer science",
+    "venue": "LNCS",
     "venue_full": "Lecture notes in computer science",
     "venue_key": null,
     "type": "other",
@@ -1390,7 +1390,7 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2010,
-    "venue": "2010 IEEE/WIC/ACM International Conference on Web Intelligence and Intelligent Agent Technology",
+    "venue": "WI",
     "venue_full": "2010 IEEE/WIC/ACM International Conference on Web Intelligence and Intelligent Agent Technology",
     "venue_key": null,
     "type": "other",
@@ -1430,7 +1430,7 @@ window.PUBLICATIONS = [
       "Salvatore Orlando"
     ],
     "year": 2009,
-    "venue": "2009 International Conference on Ultra Modern Telecommunications &amp; Workshops",
+    "venue": "ICUMT",
     "venue_full": "2009 International Conference on Ultra Modern Telecommunications &amp; Workshops",
     "venue_key": null,
     "type": "workshop",
@@ -1466,7 +1466,7 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2008,
-    "venue": "ERCIM news/ERCIM news online edition",
+    "venue": "ERCIM News",
     "venue_full": "ERCIM news/ERCIM news online edition",
     "venue_key": null,
     "type": "other",
@@ -1504,7 +1504,7 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2006,
-    "venue": "2006 Digest of Technical Papers International Conference on Consumer Electronics",
+    "venue": "ICCE",
     "venue_full": "2006 Digest of Technical Papers International Conference on Consumer Electronics",
     "venue_key": null,
     "type": "other",
@@ -1519,4 +1519,4 @@ window.SCHOLAR = {
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-09-16T15:20:15Z"
+window.PUBLICATIONS_TS = "2026-09-16T15:37:14Z"
