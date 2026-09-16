@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-09-16T14:19:31Z
+// Last updated: 2026-09-16T15:20:15Z
 window.PUBLICATIONS = [
   {
     "key": "W7171965741",
@@ -11,9 +11,10 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2026,
-    "venue": "Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.1",
+    "venue": "KDD",
     "venue_full": "Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.1",
-    "type": "other",
+    "venue_key": "kdd",
+    "type": "a_star",
     "topics": [
       "xai"
     ],
@@ -34,6 +35,7 @@ window.PUBLICATIONS = [
     "year": 2025,
     "venue": "",
     "venue_full": "",
+    "venue_key": null,
     "type": "preprint",
     "topics": [
       "xai"
@@ -51,6 +53,7 @@ window.PUBLICATIONS = [
     "year": 2025,
     "venue": "arXiv",
     "venue_full": "arXiv",
+    "venue_key": null,
     "type": "preprint",
     "topics": [
       "xai",
@@ -70,6 +73,7 @@ window.PUBLICATIONS = [
     "year": 2025,
     "venue": "arXiv",
     "venue_full": "arXiv",
+    "venue_key": null,
     "type": "preprint",
     "topics": [
       "xai"
@@ -89,6 +93,7 @@ window.PUBLICATIONS = [
     "year": 2025,
     "venue": "arXiv",
     "venue_full": "arXiv",
+    "venue_key": null,
     "type": "preprint",
     "topics": [
       "xai"
@@ -107,6 +112,7 @@ window.PUBLICATIONS = [
     "year": 2025,
     "venue": "arXiv",
     "venue_full": "arXiv",
+    "venue_key": null,
     "type": "preprint",
     "topics": [
       "gnn"
@@ -127,9 +133,10 @@ window.PUBLICATIONS = [
       "Xiangguo Sun"
     ],
     "year": 2025,
-    "venue": "Proceedings of the 34th ACM International Conference on Information and Knowledge Management",
+    "venue": "CIKM",
     "venue_full": "Proceedings of the 34th ACM International Conference on Information and Knowledge Management",
-    "type": "other",
+    "venue_key": "cikm",
+    "type": "a_conf",
     "topics": [
       "fairness"
     ],
@@ -147,6 +154,7 @@ window.PUBLICATIONS = [
     "year": 2025,
     "venue": "arXiv",
     "venue_full": "arXiv",
+    "venue_key": null,
     "type": "preprint",
     "topics": [
       "xai"
@@ -165,9 +173,10 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2025,
-    "venue": "ACM Transactions on Recommender Systems",
+    "venue": "RecSys",
     "venue_full": "ACM Transactions on Recommender Systems",
-    "type": "other",
+    "venue_key": "recsys",
+    "type": "a_conf",
     "topics": [
       "xai",
       "gnn",
@@ -191,6 +200,7 @@ window.PUBLICATIONS = [
     "year": 2025,
     "venue": "2025 IEEE Conference on Artificial Intelligence (CAI)",
     "venue_full": "2025 IEEE Conference on Artificial Intelligence (CAI)",
+    "venue_key": null,
     "type": "other",
     "topics": [
       "recommender",
@@ -211,6 +221,7 @@ window.PUBLICATIONS = [
     "year": 2025,
     "venue": "TIFS",
     "venue_full": "IEEE Transactions on Information Forensics and Security",
+    "venue_key": "tifs",
     "type": "q1",
     "topics": [
       "adversarial",
@@ -230,6 +241,7 @@ window.PUBLICATIONS = [
     "year": 2025,
     "venue": "arXiv",
     "venue_full": "arXiv",
+    "venue_key": null,
     "type": "preprint",
     "topics": [
       "gnn"
@@ -249,6 +261,7 @@ window.PUBLICATIONS = [
     "year": 2025,
     "venue": "arXiv",
     "venue_full": "arXiv",
+    "venue_key": null,
     "type": "preprint",
     "topics": [
       "llm"
@@ -268,6 +281,7 @@ window.PUBLICATIONS = [
     "year": 2024,
     "venue": "arXiv",
     "venue_full": "arXiv",
+    "venue_key": null,
     "type": "preprint",
     "topics": [
       "unlearning"
@@ -290,6 +304,7 @@ window.PUBLICATIONS = [
     "year": 2024,
     "venue": "Lecture notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering",
     "venue_full": "Lecture notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering",
+    "venue_key": null,
     "type": "other",
     "topics": [
       "misc"
@@ -309,6 +324,7 @@ window.PUBLICATIONS = [
     "year": 2024,
     "venue": "TAI",
     "venue_full": "IEEE Transactions on Artificial Intelligence",
+    "venue_key": "tai",
     "type": "q1",
     "topics": [
       "xai"
@@ -333,6 +349,7 @@ window.PUBLICATIONS = [
     "year": 2024,
     "venue": "arXiv",
     "venue_full": "arXiv",
+    "venue_key": null,
     "type": "preprint",
     "topics": [
       "xai",
@@ -350,9 +367,10 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2024,
-    "venue": "Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+    "venue": "KDD",
     "venue_full": "Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
-    "type": "other",
+    "venue_key": "kdd",
+    "type": "a_star",
     "topics": [
       "xai",
       "gnn"
@@ -370,6 +388,7 @@ window.PUBLICATIONS = [
     "year": 2024,
     "venue": "",
     "venue_full": "",
+    "venue_key": null,
     "type": "preprint",
     "topics": [
       "xai",
@@ -389,6 +408,7 @@ window.PUBLICATIONS = [
     "year": 2024,
     "venue": "arXiv",
     "venue_full": "arXiv",
+    "venue_key": null,
     "type": "preprint",
     "topics": [
       "xai"
@@ -406,6 +426,7 @@ window.PUBLICATIONS = [
     "year": 2023,
     "venue": "arXiv",
     "venue_full": "arXiv",
+    "venue_key": null,
     "type": "preprint",
     "topics": [
       "xai",
@@ -422,9 +443,10 @@ window.PUBLICATIONS = [
       "Giovanni Trappolini"
     ],
     "year": 2023,
-    "venue": "Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval",
+    "venue": "SIGIR",
     "venue_full": "Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval",
-    "type": "other",
+    "venue_key": "sigir",
+    "type": "a_star",
     "topics": [
       "federated",
       "ir"
@@ -443,6 +465,7 @@ window.PUBLICATIONS = [
     "year": 2023,
     "venue": "2023 IEEE 5th International Conference on Cognitive Machine Intelligence (CogMI)",
     "venue_full": "2023 IEEE 5th International Conference on Cognitive Machine Intelligence (CogMI)",
+    "venue_key": null,
     "type": "other",
     "topics": [
       "llm"
@@ -461,6 +484,7 @@ window.PUBLICATIONS = [
     "year": 2023,
     "venue": "arXiv",
     "venue_full": "arXiv",
+    "venue_key": null,
     "type": "preprint",
     "topics": [
       "llm"
@@ -481,6 +505,7 @@ window.PUBLICATIONS = [
     "year": 2023,
     "venue": "TAI",
     "venue_full": "IEEE Transactions on Artificial Intelligence",
+    "venue_key": "tai",
     "type": "q1",
     "topics": [
       "gnn"
@@ -498,9 +523,10 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2023,
-    "venue": "Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval",
+    "venue": "SIGIR",
     "venue_full": "Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval",
-    "type": "other",
+    "venue_key": "sigir",
+    "type": "a_star",
     "topics": [
       "xai",
       "adversarial",
@@ -522,6 +548,7 @@ window.PUBLICATIONS = [
     "year": 2023,
     "venue": "arXiv",
     "venue_full": "arXiv",
+    "venue_key": null,
     "type": "preprint",
     "topics": [
       "xai",
@@ -544,6 +571,7 @@ window.PUBLICATIONS = [
     "year": 2022,
     "venue": "TAI",
     "venue_full": "IEEE Transactions on Artificial Intelligence",
+    "venue_key": "tai",
     "type": "q1",
     "topics": [
       "xai"
@@ -565,6 +593,7 @@ window.PUBLICATIONS = [
     "year": 2022,
     "venue": "arXiv",
     "venue_full": "arXiv",
+    "venue_key": null,
     "type": "preprint",
     "topics": [
       "xai",
@@ -585,6 +614,7 @@ window.PUBLICATIONS = [
     "year": 2022,
     "venue": "2022 IEEE International Conference on Big Data (Big Data)",
     "venue_full": "2022 IEEE International Conference on Big Data (Big Data)",
+    "venue_key": null,
     "type": "other",
     "topics": [
       "misc"
@@ -602,6 +632,7 @@ window.PUBLICATIONS = [
     "year": 2022,
     "venue": "arXiv",
     "venue_full": "arXiv",
+    "venue_key": null,
     "type": "preprint",
     "topics": [
       "ir"
@@ -618,9 +649,10 @@ window.PUBLICATIONS = [
       "Fabrizio Silvestri"
     ],
     "year": 2022,
-    "venue": "2022 International Joint Conference on Neural Networks (IJCNN)",
+    "venue": "IJCNN",
     "venue_full": "2022 International Joint Conference on Neural Networks (IJCNN)",
-    "type": "other",
+    "venue_key": "ijcnn",
+    "type": "a_conf",
     "topics": [
       "xai"
     ],
@@ -640,6 +672,7 @@ window.PUBLICATIONS = [
     "year": 2022,
     "venue": "Proceedings of the 31st ACM International Conference on Information &amp; Knowledge Management",
     "venue_full": "Proceedings of the 31st ACM International Conference on Information &amp; Knowledge Management",
+    "venue_key": null,
     "type": "other",
     "topics": [
       "xai"
@@ -660,6 +693,7 @@ window.PUBLICATIONS = [
     "year": 2022,
     "venue": "arXiv",
     "venue_full": "arXiv",
+    "venue_key": null,
     "type": "preprint",
     "topics": [
       "gnn"
@@ -678,6 +712,7 @@ window.PUBLICATIONS = [
     "year": 2022,
     "venue": "IEEE Access",
     "venue_full": "IEEE Access",
+    "venue_key": null,
     "type": "other",
     "topics": [
       "federated"
@@ -697,6 +732,7 @@ window.PUBLICATIONS = [
     "year": 2021,
     "venue": "arXiv",
     "venue_full": "arXiv",
+    "venue_key": null,
     "type": "preprint",
     "topics": [
       "xai",
@@ -716,6 +752,7 @@ window.PUBLICATIONS = [
     "year": 2021,
     "venue": "arXiv",
     "venue_full": "arXiv",
+    "venue_key": null,
     "type": "preprint",
     "topics": [
       "federated",
@@ -735,6 +772,7 @@ window.PUBLICATIONS = [
     "year": 2021,
     "venue": "arXiv",
     "venue_full": "arXiv",
+    "venue_key": null,
     "type": "preprint",
     "topics": [
       "xai"
@@ -755,6 +793,7 @@ window.PUBLICATIONS = [
     "year": 2021,
     "venue": "arXiv",
     "venue_full": "arXiv",
+    "venue_key": null,
     "type": "preprint",
     "topics": [
       "xai"
@@ -775,6 +814,7 @@ window.PUBLICATIONS = [
     "year": 2021,
     "venue": "arXiv",
     "venue_full": "arXiv",
+    "venue_key": null,
     "type": "preprint",
     "topics": [
       "xai"
@@ -792,8 +832,9 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2020,
-    "venue": "IEEESECPRIV",
+    "venue": "IEEE S&P",
     "venue_full": "IEEE Security & Privacy",
+    "venue_key": "ieeesecpriv",
     "type": "q1",
     "topics": [
       "fairness",
@@ -814,6 +855,7 @@ window.PUBLICATIONS = [
     "year": 2020,
     "venue": "IRIS Research product catalog (Sapienza University of Rome)",
     "venue_full": "IRIS Research product catalog (Sapienza University of Rome)",
+    "venue_key": null,
     "type": "other",
     "topics": [
       "adversarial"
@@ -831,8 +873,9 @@ window.PUBLICATIONS = [
       "Salvatore Orlando"
     ],
     "year": 2020,
-    "venue": "DATAMINE",
+    "venue": "DMKD",
     "venue_full": "Data Mining and Knowledge Discovery",
+    "venue_key": "datamine",
     "type": "q1",
     "topics": [
       "adversarial"
@@ -848,9 +891,10 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2019,
-    "venue": "Proceedings of the 28th ACM International Conference on Information and Knowledge Management",
+    "venue": "CIKM",
     "venue_full": "Proceedings of the 28th ACM International Conference on Information and Knowledge Management",
-    "type": "other",
+    "venue_key": "cikm",
+    "type": "a_conf",
     "topics": [
       "adversarial"
     ],
@@ -866,6 +910,7 @@ window.PUBLICATIONS = [
     "year": 2019,
     "venue": "TKDE",
     "venue_full": "IEEE Transactions on Knowledge and Data Engineering",
+    "venue_key": "tkde",
     "type": "q1",
     "topics": [
       "xai"
@@ -883,9 +928,10 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2019,
-    "venue": "2019 IEEE European Symposium on Security and Privacy (EuroS&amp;P)",
+    "venue": "EuroS&P",
     "venue_full": "2019 IEEE European Symposium on Security and Privacy (EuroS&amp;P)",
-    "type": "other",
+    "venue_key": "eurosp",
+    "type": "a_conf",
     "topics": [
       "fairness",
       "security"
@@ -903,8 +949,9 @@ window.PUBLICATIONS = [
       "A. Selcuk Uluagac"
     ],
     "year": 2018,
-    "venue": "CM",
+    "venue": "IEEE Communications Magazine",
     "venue_full": "IEEE Communications Magazine",
+    "venue_key": "cm",
     "type": "q1",
     "topics": [
       "misc"
@@ -923,6 +970,7 @@ window.PUBLICATIONS = [
     "year": 2018,
     "venue": "2018 IEEE Conference on Communications and Network Security (CNS)",
     "venue_full": "2018 IEEE Conference on Communications and Network Security (CNS)",
+    "venue_key": null,
     "type": "other",
     "topics": [
       "ir"
@@ -941,6 +989,7 @@ window.PUBLICATIONS = [
     "year": 2018,
     "venue": "International Journal of Data Science and Analytics",
     "venue_full": "International Journal of Data Science and Analytics",
+    "venue_key": null,
     "type": "other",
     "topics": [
       "recommender"
@@ -959,6 +1008,7 @@ window.PUBLICATIONS = [
     "year": 2018,
     "venue": "arXiv",
     "venue_full": "arXiv",
+    "venue_key": null,
     "type": "preprint",
     "topics": [
       "recommender"
@@ -975,9 +1025,10 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2016,
-    "venue": "Proceedings of the 2016 ACM International Conference on the Theory of Information Retrieval",
+    "venue": "ICTIR",
     "venue_full": "Proceedings of the 2016 ACM International Conference on the Theory of Information Retrieval",
-    "type": "other",
+    "venue_key": "ictir",
+    "type": "a_conf",
     "topics": [
       "ir"
     ],
@@ -996,6 +1047,7 @@ window.PUBLICATIONS = [
     "year": 2015,
     "venue": "TWEB",
     "venue_full": "ACM Transactions on the Web",
+    "venue_key": "tweb",
     "type": "q1",
     "topics": [
       "security"
@@ -1013,9 +1065,10 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2015,
-    "venue": "Proceedings of the 21th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining",
+    "venue": "KDD",
     "venue_full": "Proceedings of the 21th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining",
-    "type": "other",
+    "venue_key": "kdd",
+    "type": "a_star",
     "topics": [
       "ir"
     ],
@@ -1033,6 +1086,7 @@ window.PUBLICATIONS = [
     "year": 2014,
     "venue": "Proceedings of the 23rd international conference on World wide web",
     "venue_full": "Proceedings of the 23rd international conference on World wide web",
+    "venue_key": null,
     "type": "other",
     "topics": [
       "security"
@@ -1050,6 +1104,7 @@ window.PUBLICATIONS = [
     "year": 2013,
     "venue": "http://ojs.scienceengineering.org/index.php/human/article/download/64/97/",
     "venue_full": "http://ojs.scienceengineering.org/index.php/human/article/download/64/97/",
+    "venue_key": null,
     "type": "other",
     "topics": [
       "ir"
@@ -1069,6 +1124,7 @@ window.PUBLICATIONS = [
     "year": 2013,
     "venue": "TOIS",
     "venue_full": "ACM Transactions on Information Systems",
+    "venue_key": "tois",
     "type": "q1",
     "topics": [
       "ir"
@@ -1086,9 +1142,10 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2013,
-    "venue": "http://www.dsi.unive.it/~orlando/PAPERS/oair2013.pdf",
+    "venue": "WWW",
     "venue_full": "http://www.dsi.unive.it/~orlando/PAPERS/oair2013.pdf",
-    "type": "other",
+    "venue_key": "www",
+    "type": "a_star",
     "topics": [
       "ir"
     ],
@@ -1105,6 +1162,7 @@ window.PUBLICATIONS = [
     "year": 2013,
     "venue": "Proceedings of the 22nd International Conference on World Wide Web",
     "venue_full": "Proceedings of the 22nd International Conference on World Wide Web",
+    "venue_key": null,
     "type": "other",
     "topics": [
       "misc"
@@ -1122,6 +1180,7 @@ window.PUBLICATIONS = [
     "year": 2013,
     "venue": "2013 International Conference on Social Computing",
     "venue_full": "2013 International Conference on Social Computing",
+    "venue_key": null,
     "type": "other",
     "topics": [
       "ir"
@@ -1140,6 +1199,7 @@ window.PUBLICATIONS = [
     "year": 2013,
     "venue": "Proceedings of the 2013 workshop on Data-driven user behavioral modelling and mining from social media",
     "venue_full": "Proceedings of the 2013 workshop on Data-driven user behavioral modelling and mining from social media",
+    "venue_key": null,
     "type": "workshop",
     "topics": [
       "misc"
@@ -1157,6 +1217,7 @@ window.PUBLICATIONS = [
     "year": 2013,
     "venue": "Lecture notes in computer science",
     "venue_full": "Lecture notes in computer science",
+    "venue_key": null,
     "type": "other",
     "topics": [
       "misc"
@@ -1174,6 +1235,7 @@ window.PUBLICATIONS = [
     "year": 2012,
     "venue": "Proceedings of the 27th Annual ACM Symposium on Applied Computing",
     "venue_full": "Proceedings of the 27th Annual ACM Symposium on Applied Computing",
+    "venue_key": null,
     "type": "other",
     "topics": [
       "misc"
@@ -1192,6 +1254,7 @@ window.PUBLICATIONS = [
     "year": 2012,
     "venue": "Lecture notes in computer science",
     "venue_full": "Lecture notes in computer science",
+    "venue_key": null,
     "type": "other",
     "topics": [
       "misc"
@@ -1211,6 +1274,7 @@ window.PUBLICATIONS = [
     "year": 2012,
     "venue": "IGI Global eBooks",
     "venue_full": "IGI Global eBooks",
+    "venue_key": null,
     "type": "other",
     "topics": [
       "misc"
@@ -1230,6 +1294,7 @@ window.PUBLICATIONS = [
     "year": 2012,
     "venue": "Advances in web technologies and engineering book series",
     "venue_full": "Advances in web technologies and engineering book series",
+    "venue_key": null,
     "type": "other",
     "topics": [
       "misc"
@@ -1250,6 +1315,7 @@ window.PUBLICATIONS = [
     "year": 2011,
     "venue": "IMT Institutional Repository (IMT School for Advanced Studies Lucca)",
     "venue_full": "IMT Institutional Repository (IMT School for Advanced Studies Lucca)",
+    "venue_key": null,
     "type": "other",
     "topics": [
       "ir"
@@ -1265,6 +1331,7 @@ window.PUBLICATIONS = [
     "year": 2011,
     "venue": "ARCA (Università Ca' Foscari Venezia)",
     "venue_full": "ARCA (Università Ca' Foscari Venezia)",
+    "venue_key": null,
     "type": "other",
     "topics": [
       "recommender",
@@ -1283,9 +1350,10 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2011,
-    "venue": "Proceedings of the fourth ACM international conference on Web search and data mining",
+    "venue": "WSDM",
     "venue_full": "Proceedings of the fourth ACM international conference on Web search and data mining",
-    "type": "other",
+    "venue_key": "wsdm",
+    "type": "a_conf",
     "topics": [
       "ir"
     ],
@@ -1304,6 +1372,7 @@ window.PUBLICATIONS = [
     "year": 2011,
     "venue": "Lecture notes in computer science",
     "venue_full": "Lecture notes in computer science",
+    "venue_key": null,
     "type": "other",
     "topics": [
       "ir"
@@ -1323,6 +1392,7 @@ window.PUBLICATIONS = [
     "year": 2010,
     "venue": "2010 IEEE/WIC/ACM International Conference on Web Intelligence and Intelligent Agent Technology",
     "venue_full": "2010 IEEE/WIC/ACM International Conference on Web Intelligence and Intelligent Agent Technology",
+    "venue_key": null,
     "type": "other",
     "topics": [
       "ir"
@@ -1338,9 +1408,10 @@ window.PUBLICATIONS = [
       "Fabrizio Silvestri"
     ],
     "year": 2010,
-    "venue": "2010 IEEE 26th International Conference on Data Engineering Workshops (ICDEW 2010)",
+    "venue": "ICDE",
     "venue_full": "2010 IEEE 26th International Conference on Data Engineering Workshops (ICDEW 2010)",
-    "type": "workshop",
+    "venue_key": "icde",
+    "type": "a_star",
     "topics": [
       "recommender",
       "ir"
@@ -1361,6 +1432,7 @@ window.PUBLICATIONS = [
     "year": 2009,
     "venue": "2009 International Conference on Ultra Modern Telecommunications &amp; Workshops",
     "venue_full": "2009 International Conference on Ultra Modern Telecommunications &amp; Workshops",
+    "venue_key": null,
     "type": "workshop",
     "topics": [
       "misc"
@@ -1374,9 +1446,10 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2009,
-    "venue": "Proceedings of the third ACM conference on Recommender systems",
+    "venue": "RecSys",
     "venue_full": "Proceedings of the third ACM conference on Recommender systems",
-    "type": "other",
+    "venue_key": "recsys",
+    "type": "a_conf",
     "topics": [
       "recommender",
       "ir"
@@ -1395,6 +1468,7 @@ window.PUBLICATIONS = [
     "year": 2008,
     "venue": "ERCIM news/ERCIM news online edition",
     "venue_full": "ERCIM news/ERCIM news online edition",
+    "venue_key": null,
     "type": "other",
     "topics": [
       "misc"
@@ -1413,6 +1487,7 @@ window.PUBLICATIONS = [
     "year": 2006,
     "venue": "TCE",
     "venue_full": "IEEE Transactions on Consumer Electronics",
+    "venue_key": "tce",
     "type": "q1",
     "topics": [
       "misc"
@@ -1431,6 +1506,7 @@ window.PUBLICATIONS = [
     "year": 2006,
     "venue": "2006 Digest of Technical Papers International Conference on Consumer Electronics",
     "venue_full": "2006 Digest of Technical Papers International Conference on Consumer Electronics",
+    "venue_key": null,
     "type": "other",
     "topics": [
       "misc"
@@ -1443,4 +1519,4 @@ window.SCHOLAR = {
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-09-16T14:19:31Z"
+window.PUBLICATIONS_TS = "2026-09-16T15:20:15Z"
