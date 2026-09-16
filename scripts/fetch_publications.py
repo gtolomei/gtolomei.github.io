@@ -495,6 +495,7 @@ def build(venues: dict, topics: list, papers_raw: list) -> list:
             "topics":      topics_list,
             "url":         p["url"],
         })
+        print(result)
 
     # Sort: newest first, then alphabetical within year
     result.sort(key=lambda x: (-x["year"], x["title"].lower()))
