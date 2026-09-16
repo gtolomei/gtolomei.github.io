@@ -165,167 +165,332 @@ skip_keys: []
 # on its first real run and add/fix entries here as needed.
 venue_aliases:
   www:
+    display: "WWW"
     patterns: ["web conference"]
+
   kdd:
+    display: "KDD"
     patterns: ["knowledge discovery and data mining"]
+
   icml:
+    display: "ICML"
     patterns: ["international conference on machine learning"]
+
   nips:
+    display: "NeurIPS"
     patterns: ["neural information processing systems", "neurips"]
+
   iclr:
+    display: "ICLR"
     patterns: ["international conference on learning representations"]
+
   aaai:
+    display: "AAAI"
     patterns: ["association for the advancement of artificial intelligence"]
+
   ijcai:
+    display: "IJCAI"
     patterns: ["international joint conference on artificial intelligence"]
+
   icde:
+    display: "ICDE"
     patterns: ["international conference on data engineering"]
+
   vldb:
+    display: "VLDB"
     patterns: ["very large data ?bases"]
+
   sigmod:
+    display: "SIGMOD"
     patterns: ["management of data"]
+
   ccs:
+    display: "CCS"
     patterns: ["computer and communications security"]
+
   sp:
+    display: "IEEE S&P"
     patterns: ["symposium on security and privacy"]
     exclude: ["european"]
+
   eurosp:
+    display: "EuroS&P"
     patterns: ["european symposium on security and privacy", "euro ?s&p"]
+
   ndss:
+    display: "NDSS"
     patterns: ["network and distributed system security"]
+
   uss:
+    display: "USENIX Security"
     patterns: ["usenix security"]
+
   cvpr:
+    display: "CVPR"
     patterns: ["computer vision and pattern recognition"]
+
   iccv:
+    display: "ICCV"
     patterns: ["international conference on computer vision"]
+
   eccv:
+    display: "ECCV"
     patterns: ["european conference on computer vision"]
+
   acl:
+    display: "ACL"
     patterns: ["association for computational linguistics"]
+
   emnlp:
+    display: "EMNLP"
     patterns: ["empirical methods in natural language processing"]
+
   naacl:
+    display: "NAACL"
     patterns: ["north american chapter of the association for computational linguistics"]
+
   icse:
+    display: "ICSE"
     patterns: ["international conference on software engineering"]
+
   fse:
+    display: "FSE"
     patterns: ["foundations of software engineering", "esec.?fse"]
+
   sosp:
+    display: "SOSP"
     patterns: ["symposium on operating systems principles"]
+
   osdi:
+    display: "OSDI"
     patterns: ["operating systems design and implementation"]
+
   eurosys:
+    display: "EuroSys"
     patterns: ["european conference on computer systems"]
+
   asplos:
+    display: "ASPLOS"
     patterns: ["architectural support for programming languages"]
+
   stoc:
+    display: "STOC"
     patterns: ["symposium on theory of computing"]
+
   focs:
+    display: "FOCS"
     patterns: ["foundations of computer science"]
+
   soda:
+    display: "SODA"
     patterns: ["symposium on discrete algorithms"]
+
   chi:
+    display: "CHI"
     patterns: ["human factors in computing systems"]
+
   sigcomm:
+    display: "SIGCOMM"
     patterns: ["data communication"]
+
   mobicom:
+    display: "MobiCom"
     patterns: ["mobile computing and networking"]
+
   pods:
+    display: "PODS"
     patterns: ["principles of database systems"]
+
   sc:
+    display: "SC"
     patterns: ["supercomputing"]
+
   cikm:
+    display: "CIKM"
     patterns: ["information and knowledge management"]
+
   wsdm:
+    display: "WSDM"
     patterns: ["web search and data mining"]
+
   ecir:
+    display: "ECIR"
     patterns: ["european conference on information retrieval", "advances in information retrieval"]
+
   recsys:
+    display: "RecSys"
     patterns: ["recommender systems"]
+
   ictir:
+    display: "ICTIR"
     patterns: ["theory of information retrieval"]
+
   aistats:
+    display: "AISTATS"
     patterns: ["artificial intelligence and statistics"]
+
   ecml:
+    display: "ECML"
     patterns: ["machine learning and knowledge discovery in databases"]
+
   pkdd:
+    display: "PKDD"
     patterns: ["machine learning and knowledge discovery in databases"]
+
   icdm:
+    display: "ICDM"
     patterns: ["international conference on data mining"]
+
   sdm:
+    display: "SDM"
     patterns: ["siam international conference on data mining"]
+
   uai:
+    display: "UAI"
     patterns: ["uncertainty in artificial intelligence"]
+
   coling:
+    display: "COLING"
     patterns: ["international conference on computational linguistics"]
+
   eacl:
+    display: "EACL"
     patterns: ["european chapter of the association for computational linguistics"]
+
   esorics:
+    display: "ESORICS"
     patterns: ["european symposium on research in computer security"]
+
   raid:
+    display: "RAID"
     patterns: ["recent advances in intrusion detection"]
+
   acsac:
+    display: "ACSAC"
     patterns: ["annual computer security applications"]
+
   acns:
+    display: "ACNS"
     patterns: ["applied cryptography and network security"]
+
   dimva:
+    display: "DIMVA"
     patterns: ["detection of intrusions and malware"]
+
   wisec:
+    display: "WiSec"
     patterns: ["wireless security"]
+
   dsn:
+    display: "DSN"
     patterns: ["dependable systems and networks"]
+
   icdcs:
+    display: "ICDCS"
     patterns: ["distributed computing systems"]
+
   pakdd:
+    display: "PAKDD"
     patterns: ["pacific-asia conference on knowledge discovery"]
+
   jcdl:
+    display: "JCDL"
     patterns: ["joint conference on digital libraries"]
+
   tnn:
+    display: "TNNLS"
     patterns: ["neural networks and learning systems"]
+
   tpami:
+    display: "TPAMI"
     patterns: ["pattern analysis and machine intelligence"]
+
   jmlr:
+    display: "JMLR"
     patterns: ["journal of machine learning research"]
+
   tai:
+    display: "TAI"
     patterns: ["ieee transactions on artificial intelligence"]
+
   tkde:
+    display: "TKDE"
     patterns: ["knowledge and data engineering"]
+
   dmkd:
+    display: "DMKD"
     patterns: ["data mining and knowledge discovery"]
+
   datamine:
+    display: "DMKD"
     patterns: ["data mining and knowledge discovery"]
+
   tkdd:
+    display: "TKDD"
     patterns: ["transactions on knowledge discovery from data"]
+
   tois:
+    display: "TOIS"
     patterns: ["transactions on information systems"]
+
   tors:
+    display: "TORS"
     patterns: ["transactions on recommender systems"]
+
   ipm:
+    display: "IPM"
     patterns: ["information processing (&|and) management"]
+
   tdsc:
+    display: "TDSC"
     patterns: ["dependable and secure computing"]
+
   tifs:
+    display: "TIFS"
     patterns: ["information forensics and security"]
+
   tissec:
+    display: "TISSEC"
     patterns: ["transactions on information and system security"]
+
   tods:
+    display: "TODS"
     patterns: ["transactions on database systems"]
+
   tweb:
+    display: "TWEB"
     patterns: ["acm transactions on the web"]
+
   vldbj:
+    display: "VLDB J"
     patterns: ["vldb journal"]
+
   isj:
+    display: "ISJ"
     patterns: ["information systems journal"]
+
   kais:
+    display: "KAIS"
     patterns: ["knowledge and information systems"]
+
   iot:
+    display: "IoT"
     patterns: ["internet of things journal"]
+
   tce:
+    display: "TCE"
     patterns: ["transactions on consumer electronics"]
+
   cm:
+    display: "IEEE Communications Magazine"
     patterns: ["communications magazine"]
+
   ijcnn:
+    display: "IJCNN"
     patterns: ["international joint conference on neural network"]
+
   ieeesecpriv:
-    patterns: ["ieee security (and|&) privacy", "ieee security \\& privacy"]
+    display: "IEEE S&P"
+    patterns:
+      - "ieee security (and|&) privacy"
+      - "ieee security \\& privacy"
