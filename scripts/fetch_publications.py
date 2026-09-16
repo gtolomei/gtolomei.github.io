@@ -53,7 +53,7 @@ FAILURE_ALERT_THRESHOLD = 3
 
 # ── OpenAlex source ──────────────────────────────────────────────────────
 OPENALEX_ORCID     = "0000-0001-7471-6659"
-OPENALEX_MAILTO    = "gabriele.tolomei@gmail.com"  # puts requests in OpenAlex's "polite pool"
+OPENALEX_MAILTO    = "tolomei@di.uniroma1.it"  # puts requests in OpenAlex's "polite pool"
 OPENALEX_WORKS_URL = "https://api.openalex.org/works"
 OWNER_NAME         = "Gabriele Tolomei"
 
@@ -87,6 +87,33 @@ def load_topics(path: Path = TOPICS_YML) -> list:
     with open(path, encoding="utf-8") as f:
         return yaml.safe_load(f)
 
+
+def classify_publication(work_type: str, venue_full: str, doi: str, venues: dict,) -> tuple[str, str | None]:
+    """Return (publication_type, venue_acronym)."""
+
+    work_type = (work_type or "").lower()
+    venue_full = venue_full or ""
+
+    if work_type == "preprint" or "10.48550" in doi or "arxiv" in venue_full.casefold():
+        return "preprint", None
+
+    if _is_workshop(venue_full):
+        return "workshop", None
+
+    if work_type == "proceedings-article":
+        tier, acronym = classify_venue_tier(venue_full, venues)
+
+        if tier in ("a_star", "a_conf"):
+            return tier, acronym
+        return "other", None
+
+    if work_type in ("article", "review"):
+        tier, acronym = classify_venue_tier(venue_full, venues)
+        if tier == "q1":
+            return "q1", acronym
+        return "other", None
+
+    return "other", None
 
 # ── Venue/type helpers ─────────────────────────────────────────────────────
 
@@ -450,22 +477,23 @@ def build(venues: dict, topics: list, papers_raw: list) -> list:
         effective_type = p["openalex_type"] or p.get("raw_type", "")
         if p["openalex_type"] == "article" and p.get("raw_type") == "proceedings-article":
             effective_type = "proceedings-article"
-        pub_type = classify_type(effective_type, p["venue_full"], doi, venues)
+
+        pub_type, venue_acronym = classify_publication(effective_type, p["venue_full"], doi, venues,)
         topics_list = classify_topics(title, p["venue_full"], topics)
 
         if pub_type == "other" and p["venue_full"]:
             unclassified.append((p["venue_full"], title[:60]))
 
         result.append({
-            "key":        key,
-            "title":      title,
-            "authors":    p["authors"],
-            "year":       p["year"],
-            "venue":      p["venue_full"],
-            "venue_full": p["venue_full"],
-            "type":       pub_type,
-            "topics":     topics_list,
-            "url":        p["url"],
+            "key":         key,
+            "title":       title,
+            "authors":     p["authors"],
+            "year":        p["year"],
+            "venue":       venue_acronym.upper() if venue_acronym else p["venue_full"],
+            "venue_full":  p["venue_full"],
+            "type":        pub_type,
+            "topics":      topics_list,
+            "url":         p["url"],
         })
 
     # Sort: newest first, then alphabetical within year

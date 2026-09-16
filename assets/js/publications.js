@@ -134,11 +134,7 @@
     // Normalize arXiv label
     const venueLabel = (pub.venue || "").toUpperCase() === "ARXIV" ? "arXiv" : pub.venue;
 
-    const metadataItems = [
-      esc(pub.venue_full || venueLabel),
-      pub.year ? esc(String(pub.year)) : "",
-      doiLink
-    ].filter(Boolean);
+    const metadataItems = [esc(pub.venue_full || venueLabel), pub.year ? esc(String(pub.year)) : "",doiLink].filter(Boolean);
 
     return `
 <article class="pub-card" data-type="${esc(pub.type)}" data-topics="${esc((pub.topics||[]).join(','))}">
