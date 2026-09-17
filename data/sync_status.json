@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
   "last_success": "2026-09-16T16:26:15Z",
   "last_attempt": "2026-09-16T16:26:15Z",
+=======
+  "last_success": "2026-09-16T15:56:55Z",
+  "last_attempt": "2026-09-16T15:56:55Z",
+>>>>>>> ebfc573951aad6d012820b0b3551f787860d2f86
   "consecutive_failures": 0,
   "last_error": null
 }
