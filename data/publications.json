@@ -747,7 +747,7 @@
     "year": 2020,
     "venue": "DMKD",
     "venue_full": "Data Mining and Knowledge Discovery",
-    "venue_key": "datamine",
+    "venue_key": "dmkd",
     "type": "q1",
     "topics": [
       "adversarial"
@@ -1296,7 +1296,7 @@
       "ir"
     ],
     "url": "https://doi.org/10.1109/icdew.2010.5452726",
-    "citations": 6
+    "citations": 7
   },
   {
     "key": "W2126432673",

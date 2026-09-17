@@ -1,9 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-<<<<<<< HEAD
-// Last updated: 2026-09-16T16:26:15Z
-=======
-// Last updated: 2026-09-16T15:56:55Z
->>>>>>> ebfc573951aad6d012820b0b3551f787860d2f86
+// Last updated: 2026-09-17T08:59:20Z
 window.PUBLICATIONS = [
   {
     "key": "W7171965741",
@@ -753,7 +749,7 @@ window.PUBLICATIONS = [
     "year": 2020,
     "venue": "DMKD",
     "venue_full": "Data Mining and Knowledge Discovery",
-    "venue_key": "datamine",
+    "venue_key": "dmkd",
     "type": "q1",
     "topics": [
       "adversarial"
@@ -1302,7 +1298,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1109/icdew.2010.5452726",
-    "citations": 6
+    "citations": 7
   },
   {
     "key": "W2126432673",
@@ -1410,8 +1406,4 @@ window.SCHOLAR = {
   "h_index": 25,
   "i10_index": 41
 };
-<<<<<<< HEAD
-window.PUBLICATIONS_TS = "2026-09-16T16:26:15Z"
-=======
-window.PUBLICATIONS_TS = "2026-09-16T15:56:55Z"
->>>>>>> ebfc573951aad6d012820b0b3551f787860d2f86
+window.PUBLICATIONS_TS = "2026-09-17T08:59:20Z"
