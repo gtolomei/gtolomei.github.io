@@ -2,8 +2,9 @@ name: Update Publications
 
 on:
   schedule:
-    # Nightly at 04:00 UTC
-    - cron: '0 4 * * *'
+    # Nightly at 04:16 UTC (off-peak minute — avoids the top-of-hour queue
+    # contention that was delaying the old 04:00 UTC slot by ~5 hours)
+    - cron: '16 4 * * *'
   workflow_dispatch:   # allow manual trigger from GitHub UI
 
 permissions:
