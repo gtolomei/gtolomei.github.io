@@ -862,7 +862,8 @@ p { color: var(--text-muted); }
   text-decoration: underline;
 }
 
-.pub-doi {
+.pub-doi,
+.pub-citations {
   display: inline-flex;
   align-items: center;
   gap: 0.2rem;
@@ -872,7 +873,7 @@ p { color: var(--text-muted); }
   /* text-transform: uppercase; */
   letter-spacing: 0.05em;
   transition: color var(--transition), opacity var(--transition);
-  opacity: 0.8;
+  opacity: 0.85;
 }
 .pub-doi:hover {
   opacity: 1;

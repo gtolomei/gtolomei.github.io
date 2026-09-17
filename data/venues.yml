@@ -168,7 +168,7 @@ skip_keys: []
 venue_aliases:
   www:
     display: "WWW"
-    patterns: ["web conference"]
+    patterns: ["web conference", "world wide web"]
 
   kdd:
     display: "KDD"
@@ -309,7 +309,7 @@ venue_aliases:
 
   cikm:
     display: "CIKM"
-    patterns: ["information and knowledge management"]
+    patterns: ["information (and|\\&|\\&amp\\;) knowledge management"]
 
   wsdm:
     display: "WSDM"
@@ -321,7 +321,7 @@ venue_aliases:
 
   recsys:
     display: "RecSys"
-    patterns: ["recommender systems"]
+    patterns: ["conference on recommender systems", "\\brecsys\\b"]
 
   ictir:
     display: "ICTIR"

@@ -117,37 +117,90 @@
     <h2 class="section-label" id="info-title">// Informazioni Generali</h2>
 
     <div class="about-grid">
-      <div class="about-card">
+      <div class="about-card about-full">
         <h3>Orario delle Lezioni</h3>
-        <p>
-          <strong>martedì</strong> 15:00–18:00<br/>
-          <strong>mercoledì</strong> 16:00–18:00<br/>
-          <strong>giovedì</strong> 13:00–15:00<br/>
-        </p>
-        <br/>
-        <p>
-          Tutte le lezioni si svolgeranno nell'<b>Aula 4 di Via De Lollis (RM158)</b>.
-          L'accesso all'aula avviene dai laboratori di Via Tiburtina, 205 (<a href="https://goo.gl/maps/TgnJCWDfx2VQRo4u5" target="_blank">mappa</a>).
+
+        <div style="display:flex;flex-wrap:wrap;gap:.75rem;margin:1rem 0;">
+          <div style="background:var(--accent-bg);border:1px solid var(--border-strong);border-radius:10px;padding:1.25rem;flex:1;min-width:160px;">
+            <p style="font-family:'JetBrains Mono',monospace;font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin-bottom:.5rem;">Martedì</p>
+            <p style="font-size:1.05rem;font-weight:600;">15:00 – 18:00</p>
+          </div>
+          <div style="background:var(--accent-bg);border:1px solid var(--border-strong);border-radius:10px;padding:1.25rem;flex:1;min-width:160px;">
+            <p style="font-family:'JetBrains Mono',monospace;font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin-bottom:.5rem;">Mercoledì</p>
+            <p style="font-size:1.05rem;font-weight:600;">16:00 – 18:00</p>
+          </div>
+          <div style="background:var(--accent-bg);border:1px solid var(--border-strong);border-radius:10px;padding:1.25rem;flex:1;min-width:160px;">
+            <p style="font-family:'JetBrains Mono',monospace;font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin-bottom:.5rem;">Giovedì</p>
+            <p style="font-size:1.05rem;font-weight:600;">13:00 – 15:00</p>
+          </div>
+        </div>
+
+        <p style="font-size:.88rem;color:var(--text-muted);display:flex;align-items:center;gap:.4rem;">
+          <i class="ti ti-map-pin" aria-hidden="true" style="color:var(--accent);font-size:.9rem;flex-shrink:0;"></i>
+          <span><strong>Aula 4 — Via De Lollis (RM158)</strong> &mdash; accesso dai laboratori di
+          <a href="https://goo.gl/maps/TgnJCWDfx2VQRo4u5" target="_blank">Via Tiburtina 205</a>.</span>
         </p>
       </div>
 
-      <div class="about-card">
+      <div class="about-card about-full">
         <h3>Google Classroom</h3>
-        <p>
-          È <strong>obbligatorio</strong> iscriversi al Google Classroom del corso, tramite il seguente <a href="https://classroom.google.com/c/MTYyNjgxNDg0MjI4?cjc=2woj537w" target="_blank">link</a>.
+
+        <p style="margin:.75rem 0 1rem;font-size:.92rem;">
+          L'iscrizione al Google Classroom del corso è <strong>obbligatoria</strong> per rimanere aggiornati su tutto ciò che riguarda il corso.
         </p>
+        <a href="https://classroom.google.com/c/MTYyNjgxNDg0MjI4?cjc=2woj537w"
+           target="_blank"
+           style="display:inline-flex;align-items:center;gap:.4rem;background:var(--accent);color:#fff;padding:.5rem 1.1rem;border-radius:7px;font-size:.88rem;font-weight:600;text-decoration:none;">
+          <i class="ti ti-external-link" aria-hidden="true"></i>
+          Iscriviti al Classroom
+        </a>
       </div>
 
-      <div class="about-card">
+      <div class="about-card about-full">
         <h3>Contatti Docente</h3>
-        <p>
-          <strong>Email:</strong> <a href="mailto:tolomei@di.uniroma1.it">tolomei@di.uniroma1.it</a><br>
-          <strong>Sito web:</strong> <a href="https://www.di.uniroma1.it/~tolomei" target="_blank" rel="noopener">https//www.di.uniroma1.it/~tolomei</a>
-          <strong>Bacheca Sapienza:</strong> <a href="https://corsidilaurea.uniroma1.it/it/users/gabrieletolomeiuniroma1it" target="_blank" rel="noopener">https://corsidilaurea.uniroma1.it/it/users/gabrieletolomeiuniroma1it</a> <br/>
-          <strong>Ufficio:</strong> Ufficio: Stanza 106 I piano Edificio E c/o Viale Regina Elena, 295 (<a href="https://goo.gl/maps/5dSuQbvaeqXePV9y6", target="_blank">mappa</a>)<br/>
-          <strong>Modalità di Ricevimento:</strong> Inviare richiesta via email inserendo come oggetto "<span class="text-mono">[SO 2026/27]: Ricevimento</span>"<br/>
-          Più in generale, usare sempre il seguente pattern nell'oggetto dei vostri messaggi "<span class="text-mono">[SO 2026/27]: &lt;OGGETTO&gt;</span>".
+
+        <div style="margin-top:.75rem;">
+
+          <div style="display:flex;align-items:baseline;gap:.6rem;padding:.4rem 0;border-bottom:1px solid var(--border);">
+            <i class="ti ti-mail" aria-hidden="true" style="color:var(--accent);flex-shrink:0;"></i>
+            <span style="min-width:110px;font-size:.82rem;color:var(--text-muted);">Email</span>
+            <a href="mailto:tolomei@di.uniroma1.it">tolomei@di.uniroma1.it</a>
+          </div>
+
+          <div style="display:flex;align-items:baseline;gap:.6rem;padding:.4rem 0;border-bottom:1px solid var(--border);">
+            <i class="ti ti-world" aria-hidden="true" style="color:var(--accent);flex-shrink:0;"></i>
+            <span style="min-width:110px;font-size:.82rem;color:var(--text-muted);">Sito web</span>
+            <a href="https://www.di.uniroma1.it/~tolomei" target="_blank" rel="noopener">di.uniroma1.it/~tolomei</a>
+          </div>
+
+          <div style="display:flex;align-items:baseline;gap:.6rem;padding:.4rem 0;border-bottom:1px solid var(--border);">
+            <i class="ti ti-school" aria-hidden="true" style="color:var(--accent);flex-shrink:0;"></i>
+            <span style="min-width:110px;font-size:.82rem;color:var(--text-muted);">Bacheca Sapienza</span>
+            <a href="https://corsidilaurea.uniroma1.it/it/users/gabrieletolomeiuniroma1it" target="_blank" rel="noopener">corsidilaurea.uniroma1.it &rarr;</a>
+          </div>
+
+          <div style="display:flex;align-items:baseline;gap:.6rem;padding:.4rem 0;border-bottom:1px solid var(--border);">
+            <i class="ti ti-building" aria-hidden="true" style="color:var(--accent);flex-shrink:0;"></i>
+            <span style="min-width:110px;font-size:.82rem;color:var(--text-muted);">Ufficio</span>
+            <span>Stanza 106, I piano, Edificio E &mdash;
+              <a href="https://goo.gl/maps/5dSuQbvaeqXePV9y6" target="_blank">Viale Regina Elena 295</a>
+            </span>
+          </div>
+
+          <div style="display:flex;align-items:baseline;gap:.6rem;padding:.4rem 0;">
+            <i class="ti ti-calendar-time" aria-hidden="true" style="color:var(--accent);flex-shrink:0;"></i>
+            <span style="min-width:110px;font-size:.82rem;color:var(--text-muted);">Ricevimento</span>
+            <span>Su appuntamento via email</span>
+          </div>
+
+        </div>
+
+        <p style="margin-top:1rem;font-size:.85rem;color:var(--text-muted);">
+          Usare sempre il seguente pattern nell'oggetto delle email:
         </p>
+        <div style="background:var(--surface-2,var(--surface));border:1px solid var(--border);border-radius:8px;padding:.5rem .9rem;margin-top:.4rem;font-family:'JetBrains Mono',monospace;font-size:.82rem;">
+          [SO 2026/27]: &lt;OGGETTO&gt;
+        </div>
       </div>
     </div>
   </div>
@@ -164,10 +217,16 @@
       il documento completo, comprensivo di tutti i dettagli, è disponibile su richiesta.
     </p> -->
 
-    <div class="research-grid">
-      <div class="research-card">
+    <div class="about-grid">
+      <div class="about-card about-full">
         <h3>Obiettivi Formativi</h3>
-        <p>
+
+        <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin:.75rem 0;">
+          <span style="background:var(--surface-2,var(--surface));border:1px solid var(--border);border-radius:6px;padding:.25rem .65rem;font-size:.82rem;background:var(--accent-bg);border-color:var(--accent);color:var(--accent);font-weight:600;">Astrazione</span>
+          <span style="background:var(--surface-2,var(--surface));border:1px solid var(--border);border-radius:6px;padding:.25rem .65rem;font-size:.82rem;background:var(--accent-bg);border-color:var(--accent);color:var(--accent);font-weight:600;">Virtualizzazione</span>
+        </div>
+
+        <p style="font-size:.92rem;line-height:1.65;">
           Il corso introduce i sistemi operativi come componente essenziale di ogni sistema di calcolo e come esempio
           paradigmatico del concetto di <strong>astrazione</strong>. L'obiettivo primario è comprendere come il processo di
           <strong>virtualizzazione</strong> delle risorse fisiche permetta di gestire la complessità hardware, offrendo un
@@ -175,56 +234,174 @@
         </p>
       </div>
 
-      <div class="research-card">
+      <div class="about-card about-full">
         <h3>Prerequisiti</h3>
-        <p>
-          <strong>Richiesti:</strong> concetti fondamentali di programmazione imperativa (es. C/C++, Java, Python), algoritmi e strutture dati.<br>
-          <strong>Consigliati:</strong> il corso fornisce comunque le basi necessarie di architettura dei calcolatori e di linguaggio C
-          rilevanti per comprendere il software di sistema.
-        </p>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1rem;">
+          <div style="background:var(--accent-bg);border:1px solid var(--border-strong);border-radius:10px;padding:1.25rem;">
+            <p style="font-family:'JetBrains Mono',monospace;font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin-bottom:.6rem;">Richiesti</p>
+            <ul style="list-style:none;padding:0;margin:0;font-size:.88rem;line-height:1.8;">
+              <li style="display:flex;gap:.4rem;"><span style="color:var(--accent);">▸</span> Programmazione imperativa (C/C++, Java, Python)</li>
+              <li style="display:flex;gap:.4rem;"><span style="color:var(--accent);">▸</span> Algoritmi e strutture dati</li>
+            </ul>
+          </div>
+          <div style="background:var(--accent-bg);border:1px solid var(--border-strong);border-radius:10px;padding:1.25rem;">
+            <p style="font-family:'JetBrains Mono',monospace;font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin-bottom:.6rem;">Consigliati</p>
+            <ul style="list-style:none;padding:0;margin:0;font-size:.88rem;line-height:1.8;">
+              <li style="display:flex;gap:.4rem;"><span style="color:var(--text-muted);">▸</span> Architettura dei calcolatori</li>
+              <li style="display:flex;gap:.4rem;"><span style="color:var(--text-muted);">▸</span> Linguaggio C</li>
+              <li style="display:flex;gap:.4rem;color:var(--text-muted);font-style:italic;"><span>↳</span> forniti dal corso ove necessario</li>
+            </ul>
+          </div>
+        </div>
       </div>
 
-      <div class="research-card">
-        <h3>Contenuti del Corso — 5 Moduli</h3>
-        <p>
-          <strong>1. Fondamenti</strong> — architettura di base, interfaccia HW/SW (interrupt, syscall), basi del linguaggio C.<br>
-          <strong>2. Virtualizzazione</strong> — astrazione della CPU (processi e scheduling) e della memoria (spazio di indirizzamento, paging).<br>
-          <strong>3. Concorrenza</strong> — thread, sincronizzazione, lock e gestione dei deadlock.<br>
-          <strong>4. Persistenza</strong> — dispositivi di I/O, hard disk/SSD, architettura del file system.<br>
-          <strong>5. Argomenti Avanzati</strong> — sicurezza, virtualizzazione moderna (VM/container), sistemi distribuiti, SO mobile.
-        </p>
+      <div class="about-card about-full">
+        <h3>Contenuti del Corso &mdash; 5 Moduli</h3>
+
+        <div style="margin-top:1rem;display:flex;flex-direction:column;gap:.5rem;">
+
+          <div style="display:flex;gap:1rem;align-items:baseline;padding:.55rem .75rem;border-radius:8px;background:var(--accent-bg);border:1px solid var(--border);">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:.9rem;font-weight:700;color:var(--accent);min-width:1.4rem;">1.</span>
+            <span><strong>Fondamenti</strong> &mdash; architettura di base, interfaccia HW/SW (interrupt, syscall), basi del linguaggio C.</span>
+          </div>
+
+          <div style="display:flex;gap:1rem;align-items:baseline;padding:.55rem .75rem;border-radius:8px;border:1px solid transparent;">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:.9rem;font-weight:700;color:var(--accent);min-width:1.4rem;">2.</span>
+            <span><strong>Virtualizzazione</strong> &mdash; astrazione della CPU (processi e scheduling) e della memoria (spazio di indirizzamento, paging).</span>
+          </div>
+
+          <div style="display:flex;gap:1rem;align-items:baseline;padding:.55rem .75rem;border-radius:8px;background:var(--accent-bg);border:1px solid var(--border);">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:.9rem;font-weight:700;color:var(--accent);min-width:1.4rem;">3.</span>
+            <span><strong>Concorrenza</strong> &mdash; thread, sincronizzazione, lock e gestione dei deadlock.</span>
+          </div>
+
+          <div style="display:flex;gap:1rem;align-items:baseline;padding:.55rem .75rem;border-radius:8px;border:1px solid transparent;">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:.9rem;font-weight:700;color:var(--accent);min-width:1.4rem;">4.</span>
+            <span><strong>Persistenza</strong> &mdash; dispositivi di I/O, hard disk/SSD, architettura del file system.</span>
+          </div>
+
+          <div style="display:flex;gap:1rem;align-items:baseline;padding:.55rem .75rem;border-radius:8px;background:var(--accent-bg);border:1px solid var(--border);">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:.9rem;font-weight:700;color:var(--accent);min-width:1.4rem;">5.</span>
+            <span><strong>Argomenti Avanzati</strong> &mdash; sicurezza, virtualizzazione moderna (VM/container), sistemi distribuiti, SO mobile.</span>
+          </div>
+
+        </div>
       </div>
 
-      <div class="research-card">
-        <h3>Modalità d'Esame</h3>
-        <p>
-          <strong>Scritto (obbligatorio, max 24 punti):</strong> domande concettuali ed esercizi applicati a risposta multipla.
-          Soglia minima <strong>18 punti</strong> per l'accesso all'orale.<br>
-          <strong>Orale (facoltativo, ±8 punti):</strong> accessibile con voto scritto ≥ 18. Prestazione eccellente fino a
-          +8 punti (lode); prestazione sufficiente conferma il voto scritto; prestazione insufficiente fino a −8 punti.
-        </p>
-      </div>
-
-      <div class="research-card">
+      <div class="about-card about-full">
         <h3>Testi di Riferimento</h3>
-        <p>
-          <em>Operating Systems: Three Easy Pieces</em> (Arpaci-Dusseau) — testo principale, disponibile
-          <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/" target="_blank" rel="noopener">gratuitamente online</a>.<br>
-          <em>The C Programming Language</em> (Kernighan &amp; Ritchie) — riferimento per il C.<br>
-          Testi aggiuntivi (anche in italiano): <em>Operating Systems Concepts</em> (Silberschatz et al.),
-          <em>Modern Operating Systems</em> (Tanenbaum et al.), materiale fornito dal docente.
-        </p>
-      </div>
 
-      <div class="research-card">
-        <h3>Modalità Didattica e Frequenza</h3>
-        <p>
-          Lezioni frontali sui concetti fondamentali, corredate da sessioni dedicate alla risoluzione di problemi in stile d'esame.
-          La frequenza è vivamente consigliata.
-        </p>
+        <div style="margin-top:1rem;display:flex;flex-direction:column;gap:.75rem;">
+
+          <div style="background:var(--accent-bg);border:1px solid var(--border-strong);border-radius:10px;padding:1.25rem;">
+            <p style="font-family:'JetBrains Mono',monospace;font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin-bottom:.3rem;">Testo principale</p>
+            <p style="font-size:.92rem;"><em>Operating Systems: Three Easy Pieces</em> &mdash; Arpaci-Dusseau &amp; Arpaci-Dusseau</p>
+            <p style="font-size:.82rem;color:var(--text-muted);margin-top:.25rem;">
+              Disponibile <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/" target="_blank" rel="noopener">gratuitamente online</a>.
+            </p>
+          </div>
+
+          <div style="padding:.6rem .75rem;border-left:3px solid var(--border-strong);font-size:.88rem;line-height:1.6;">
+            <em>The C Programming Language</em> &mdash; Kernighan &amp; Ritchie &mdash;
+            <span style="color:var(--text-muted);">riferimento per il linguaggio C.</span>
+          </div>
+
+          <div style="padding:.6rem .75rem;border-left:3px solid var(--border-strong);font-size:.88rem;line-height:1.6;">
+            Testi alternativi (anche in italiano):
+            <em>Operating Systems Concepts</em> (Silberschatz et al.),
+            <em>Modern Operating Systems</em> (Tanenbaum et al.) &mdash;
+            <span style="color:var(--text-muted);">materiale aggiuntivo fornito dal docente.</span>
+          </div>
+
+        </div>
+      </div>
+      <div class="about-card about-full">
+        <h3>Modalità d'Esame</h3>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-top:1rem;">
+
+          <!-- ── Scritto ── -->
+          <div style="background:var(--accent-bg);border:1px solid var(--border-strong);border-radius:10px;padding:1.25rem;">
+            <p style="font-family:'JetBrains Mono',monospace;font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin-bottom:.75rem;">Scritto — obbligatorio</p>
+
+            <div style="display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1rem;">
+              <span style="background:var(--surface-2,var(--surface));border:1px solid var(--border);border-radius:6px;padding:.25rem .65rem;font-size:.82rem;"><strong>48</strong> domande</span>
+              <span style="background:var(--surface-2,var(--surface));border:1px solid var(--border);border-radius:6px;padding:.25rem .65rem;font-size:.82rem;"><strong>30</strong> minuti</span>
+              <span style="background:var(--surface-2,var(--surface));border:1px solid var(--border);border-radius:6px;padding:.25rem .65rem;font-size:.82rem;">max <strong>24</strong> punti</span>
+            </div>
+
+            <table style="width:100%;border-collapse:collapse;font-size:.85rem;margin-bottom:1rem;">
+              <thead>
+                <tr style="border-bottom:1px solid var(--border);">
+                  <th style="text-align:left;padding:.3rem .4rem;color:var(--text-muted);font-weight:500;">Risposta</th>
+                  <th style="text-align:right;padding:.3rem .4rem;color:var(--text-muted);font-weight:500;">Punteggio</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="padding:.3rem .4rem;">Corretta</td>
+                  <td style="text-align:right;padding:.3rem .4rem;color:#22c55e;font-weight:600;">+2</td>
+                </tr>
+                <tr style="background:var(--accent-bg);">
+                  <td style="padding:.3rem .4rem;">Non data</td>
+                  <td style="text-align:right;padding:.3rem .4rem;color:var(--text-muted);font-weight:600;">0</td>
+                </tr>
+                <tr>
+                  <td style="padding:.3rem .4rem;">Errata</td>
+                  <td style="text-align:right;padding:.3rem .4rem;color:#ef4444;font-weight:600;">&minus;1</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p style="font-size:.85rem;color:var(--text-muted);line-height:1.55;">
+              Il punteggio grezzo S &isin; [&minus;48,&thinsp;96] è convertito linearmente in voto V(S):
+            </p>
+            <div style="background:var(--surface-2,var(--surface));border:1px solid var(--border);border-radius:8px;padding:.7rem 1rem;margin:.6rem 0;font-family:'JetBrains Mono',monospace;font-size:.8rem;line-height:1.9;">
+              V(S) = <strong>INS</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; se S &lt; T<br>
+              V(S) = 18 + 6 &sdot; (S&minus;T)&nbsp;/&nbsp;(96&minus;T) &nbsp;&nbsp; se S &ge; T
+            </div>
+            <p style="font-size:.82rem;color:var(--text-muted);">
+              dove T è la soglia minima (es.&nbsp;T&nbsp;=&nbsp;42). Voto minimo per l'accesso all'orale: <strong>V(S)&nbsp;=&nbsp;18</strong>.
+            </p>
+          </div>
+
+          <!-- ── Orale ── -->
+          <div style="background:var(--accent-bg);border:1px solid var(--border-strong);border-radius:10px;padding:1.25rem;">
+            <p style="font-family:'JetBrains Mono',monospace;font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin-bottom:.75rem;">Orale — facoltativo</p>
+
+            <div style="display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1rem;">
+              <span style="background:var(--surface-2,var(--surface));border:1px solid var(--border);border-radius:6px;padding:.25rem .65rem;font-size:.82rem;">accesso con voto scritto &ge; <strong>18</strong></span>
+              <span style="background:var(--surface-2,var(--surface));border:1px solid var(--border);border-radius:6px;padding:.25rem .65rem;font-size:.82rem;">variazione <strong>&plusmn;8</strong> punti</span>
+            </div>
+
+            <table style="width:100%;border-collapse:collapse;font-size:.85rem;">
+              <thead>
+                <tr style="border-bottom:1px solid var(--border);">
+                  <th style="text-align:left;padding:.3rem .4rem;color:var(--text-muted);font-weight:500;">Prestazione</th>
+                  <th style="text-align:right;padding:.3rem .4rem;color:var(--text-muted);font-weight:500;">Effetto</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="padding:.3rem .4rem;">Eccellente</td>
+                  <td style="text-align:right;padding:.3rem .4rem;color:#22c55e;font-weight:600;">fino a +8 &nbsp;(lode)</td>
+                </tr>
+                <tr style="background:var(--accent-bg);">
+                  <td style="padding:.3rem .4rem;">Sufficiente</td>
+                  <td style="text-align:right;padding:.3rem .4rem;color:var(--text-muted);font-weight:600;">conferma voto scritto</td>
+                </tr>
+                <tr>
+                  <td style="padding:.3rem .4rem;">Insufficiente</td>
+                  <td style="text-align:right;padding:.3rem .4rem;color:#ef4444;font-weight:600;">fino a &minus;8</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div><!-- /grid -->
       </div>
     </div>
-  </div>
 </section>
 
 <!-- ════════════════════════════════════════════════════════════
@@ -285,7 +462,7 @@
             <a class="lecture-tag lecture-tag-html" href="../assets/docs/os/slides/html/Lecture_1_4_C_Compiler_Linker_Assembler.html" target="_blank" rel="noopener"><i class="ti ti-code" aria-hidden="true"></i>HTML</a>
           </div>
         </article>
-        <article class="lecture-card lecture-card--break">
+        <!-- <article class="lecture-card lecture-card--break">
           <div class="lecture-card-head">
             <span class="lecture-card-id">Lezione 1.5</span>
             <span class="lecture-card-date"><i class="ti ti-calendar" aria-hidden="true"></i>Data da definire</span>
@@ -295,7 +472,7 @@
             <a class="lecture-tag lecture-tag-pdf" href="../assets/docs/os/slides/pdf/Lecture_1_5_Lab_Fundamentals.pdf" target="_blank" rel="noopener"><i class="ti ti-file-type-pdf" aria-hidden="true"></i>PDF</a>
             <a class="lecture-tag lecture-tag-html" href="../assets/docs/os/slides/html/Lecture_1_5_Lab_Fundamentals.html" target="_blank" rel="noopener"><i class="ti ti-code" aria-hidden="true"></i>HTML</a>
           </div>
-        </article>
+        </article> -->
       </div>
     </div>
 
@@ -406,7 +583,7 @@
             <a class="lecture-tag lecture-tag-book" href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys.pdf" target="_blank" rel="noopener"><i class="ti ti-book" aria-hidden="true"></i>OSTEP · Cap. 21-22</a>
           </div>
         </article>
-        <article class="lecture-card lecture-card--break">
+        <!-- <article class="lecture-card lecture-card--break">
           <div class="lecture-card-head">
             <span class="lecture-card-id">Lezione 2.9</span>
             <span class="lecture-card-date"><i class="ti ti-calendar" aria-hidden="true"></i>Data da definire</span>
@@ -416,7 +593,7 @@
             <a class="lecture-tag lecture-tag-pdf" href="../assets/docs/os/slides/pdf/Lecture_2_9_Lab_Virtualization.pdf" target="_blank" rel="noopener"><i class="ti ti-file-type-pdf" aria-hidden="true"></i>PDF</a>
             <a class="lecture-tag lecture-tag-html" href="../assets/docs/os/slides/html/Lecture_2_9_Lab_Virtualization.html" target="_blank" rel="noopener"><i class="ti ti-code" aria-hidden="true"></i>HTML</a>
           </div>
-        </article>
+        </article> -->
       </div>
     </div>
 
@@ -488,7 +665,7 @@
             <a class="lecture-tag lecture-tag-book" href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf" target="_blank" rel="noopener"><i class="ti ti-book" aria-hidden="true"></i>OSTEP · Cap. 32</a>
           </div>
         </article>
-        <article class="lecture-card lecture-card--break">
+        <!-- <article class="lecture-card lecture-card--break">
           <div class="lecture-card-head">
             <span class="lecture-card-id">Lezione 3.6</span>
             <span class="lecture-card-date"><i class="ti ti-calendar" aria-hidden="true"></i>Data da definire</span>
@@ -498,7 +675,7 @@
             <a class="lecture-tag lecture-tag-pdf" href="../assets/docs/os/slides/pdf/Lecture_3_6_Lab_Concurrency.pdf" target="_blank" rel="noopener"><i class="ti ti-file-type-pdf" aria-hidden="true"></i>PDF</a>
             <a class="lecture-tag lecture-tag-html" href="../assets/docs/os/slides/html/Lecture_3_6_Lab_Concurrency.html" target="_blank" rel="noopener"><i class="ti ti-code" aria-hidden="true"></i>HTML</a>
           </div>
-        </article>
+        </article> -->
       </div>
     </div>
 
@@ -583,7 +760,7 @@
             <a class="lecture-tag lecture-tag-book" href="https://pages.cs.wisc.edu/~remzi/OSTEP/file-journaling.pdf" target="_blank" rel="noopener"><i class="ti ti-book" aria-hidden="true"></i>OSTEP · Cap. 42</a>
           </div>
         </article>
-        <article class="lecture-card lecture-card--break">
+        <!-- <article class="lecture-card lecture-card--break">
           <div class="lecture-card-head">
             <span class="lecture-card-id">Lezione 4.7</span>
             <span class="lecture-card-date"><i class="ti ti-calendar" aria-hidden="true"></i>Data da definire</span>
@@ -593,7 +770,7 @@
             <a class="lecture-tag lecture-tag-pdf" href="../assets/docs/os/slides/pdf/Lecture_4_7_Lab_Persistence.pdf" target="_blank" rel="noopener"><i class="ti ti-file-type-pdf" aria-hidden="true"></i>PDF</a>
             <a class="lecture-tag lecture-tag-html" href="../assets/docs/os/slides/html/Lecture_4_7_Lab_Persistence.html" target="_blank" rel="noopener"><i class="ti ti-code" aria-hidden="true"></i>HTML</a>
           </div>
-        </article>
+        </article> -->
       </div>
     </div>
 
@@ -657,7 +834,7 @@
             <a class="lecture-tag lecture-tag-html" href="../assets/docs/os/slides/html/Lecture_5_5_Mobile_OS_Case_Studies.html" target="_blank" rel="noopener"><i class="ti ti-code" aria-hidden="true"></i>HTML</a>
           </div>
         </article>
-        <article class="lecture-card lecture-card--break">
+        <!-- <article class="lecture-card lecture-card--break">
           <div class="lecture-card-head">
             <span class="lecture-card-id">Lezione 5.6</span>
             <span class="lecture-card-date"><i class="ti ti-calendar" aria-hidden="true"></i>Data da definire</span>
@@ -667,11 +844,11 @@
             <a class="lecture-tag lecture-tag-pdf" href="../assets/docs/os/slides/pdf/Lecture_5_6_Lab_Advanced_Topics.pdf" target="_blank" rel="noopener"><i class="ti ti-file-type-pdf" aria-hidden="true"></i>PDF</a>
             <a class="lecture-tag lecture-tag-html" href="../assets/docs/os/slides/html/Lecture_5_6_Lab_Advanced_Topics.html" target="_blank" rel="noopener"><i class="ti ti-code" aria-hidden="true"></i>HTML</a>
           </div>
-        </article>
+        </article> -->
       </div>
     </div>
 
-    <p style="color:var(--text-muted);margin-top:2.5rem;margin-bottom:1rem;max-width:120ch">
+    <!-- <p style="color:var(--text-muted);margin-top:2.5rem;margin-bottom:1rem;max-width:120ch">
       Esercizi, codice di esempio e testi d'esame restano nella repository GitHub del corso:
     </p>
     <div class="teaching-grid">
@@ -693,7 +870,7 @@
         <p>Testi d'esame ed esiti degli appelli.</p>
         <a class="teaching-link" href="https://github.com/gtolomei/operating-systems/tree/master/exams" target="_blank" rel="noopener">Vai alla cartella</a>
       </div>
-    </div>
+    </div> -->
   </div>
 </section>
 
@@ -715,6 +892,7 @@
       <a class="social-link" href="https://github.com/gtolomei/operating-systems/blob/master/oldest/2020-21.md" target="_blank" rel="noopener">2020–21</a>
       <a class="social-link" href="https://github.com/gtolomei/operating-systems/blob/master/oldest/2019-20.md" target="_blank" rel="noopener">2019–20</a>
     </div>
+  </div>
   </div>
 </section>
 

@@ -195,6 +195,8 @@ def clean_venue_display(venue_full: str) -> str:
         return ""
     if venue_full == "arXiv" or "arxiv" in venue_full.casefold():
         return "arXiv"
+    if "techrxiv" in venue_full.casefold():
+        return "TechRxiv"
     # Extract acronym in trailing parentheses if short, e.g., (CAI), (CogMI), (Big Data), (CNS)
     m = re.search(r'\(\s*(?:IEEE\s+)?([A-Za-z0-9\-\&]+)\s*\)$', venue_full)
     if m and len(m.group(1).strip()) <= 10:
@@ -202,6 +204,8 @@ def clean_venue_display(venue_full: str) -> str:
     
     # Specific known long strings
     vf_lower = venue_full.lower()
+    if "big data" in vf_lower:
+        return "BigData"
     if "world wide web" in vf_lower:
         return "WWW"
     if "information" in vf_lower and "knowledge management" in vf_lower:
@@ -247,7 +251,7 @@ def classify_type(work_type: str, venue_full: str, doi: str, venues: dict) -> st
     venue_full = venue_full or ""
 
     # 1. Preprint
-    if (work_type == "preprint" or "10.48550" in doi or "arxiv" in venue_full.casefold()):
+    if (work_type == "preprint" or "10.48550" in doi or "arxiv" in venue_full.casefold() or "techrxiv" in venue_full.casefold() or "techrxiv" in doi.casefold()):
         return "preprint"
 
     # 2. Workshop
@@ -372,7 +376,7 @@ def fetch_and_parse(orcid: str = OPENALEX_ORCID, mailto: str = OPENALEX_MAILTO) 
         "filter": f"author.orcid:{orcid}",
         "per-page": 200,
         "mailto": mailto,
-        "select": "id,doi,title,display_name,publication_year,type,primary_location,authorships",
+        "select": "id,doi,title,display_name,publication_year,type,primary_location,authorships,cited_by_count",
     }
 
     all_results = []
@@ -423,7 +427,10 @@ def fetch_and_parse(orcid: str = OPENALEX_ORCID, mailto: str = OPENALEX_MAILTO) 
 
     papers = []
     for w in all_results:
-        title = _smart_title((w.get("title") or w.get("display_name") or "").strip().rstrip("."))
+        raw_title = html.unescape((w.get("title") or w.get("display_name") or "").strip().rstrip("."))
+        # Fix spaced acronyms from OpenAlex (e.g. "R E LAX" -> "RELAX")
+        raw_title = re.sub(r'\bR\s+E\s+LAX\b', 'RELAX', raw_title, flags=re.IGNORECASE)
+        title = _smart_title(raw_title)
         if not title:
             continue
 
@@ -439,11 +446,11 @@ def fetch_and_parse(orcid: str = OPENALEX_ORCID, mailto: str = OPENALEX_MAILTO) 
         # OpenAlex records even when it cannot resolve a source entity.  This
         # rescues ~27 papers whose primary_location.source is null but whose
         # raw_source_name contains the real conference/journal name.
-        venue_full = (
+        venue_full = html.unescape((
             source.get("display_name")
             or primary.get("raw_source_name")
             or ""
-        ).strip()
+        ).strip())
 
         # OpenAlex sometimes labels conference papers as type="article".
         # raw_type (inside primary_location) is closer to the publisher's own
@@ -461,8 +468,13 @@ def fetch_and_parse(orcid: str = OPENALEX_ORCID, mailto: str = OPENALEX_MAILTO) 
             url_paper = f"https://openalex.org/{oa_id}"
 
         # replace CoRR/arXiv venue names with a consistent short label
-        if "arxiv" in venue_full.casefold() or "10.48550" in doi:
+        if "arxiv" in venue_full.casefold() or "10.48550" in doi or "arxiv.org" in url_paper:
             venue_full = "arXiv"
+            if not doi and "arxiv.org/abs/" in url_paper:
+                arxiv_id = url_paper.rsplit("/", 1)[-1]
+                doi = f"10.48550/arXiv.{arxiv_id}"
+        elif "techrxiv" in venue_full.casefold() or "techrxiv" in doi.casefold() or "36227/techrxiv" in url_paper.casefold():
+            venue_full = "TechRxiv"
 
         papers.append({
             "key":           key,
@@ -474,6 +486,7 @@ def fetch_and_parse(orcid: str = OPENALEX_ORCID, mailto: str = OPENALEX_MAILTO) 
             "raw_type":      raw_type,
             "doi":           doi,
             "url":           url_paper,
+            "citations":     w.get("cited_by_count") or 0,
         })
 
     return papers
@@ -571,6 +584,7 @@ def build(venues: dict, topics: list, papers_raw: list) -> list:
             "type":         pub_type,
             "topics":       topics_list,
             "url":          p["url"],
+            "citations":    p.get("citations") or 0,
             })
 
     # Merge manual publications if present
@@ -579,15 +593,15 @@ def build(venues: dict, topics: list, papers_raw: list) -> list:
             with open(MANUAL_PUB_YML, encoding="utf-8") as f:
                 manual_entries = yaml.safe_load(f) or []
             existing_keys = {r["key"] for r in result}
-            existing_titles = {r["title"].lower() for r in result}
+            existing_titles = {re.sub(r'\s+', ' ', r["title"].strip().lower()) for r in result}
 
             for m in manual_entries:
                 m_title = _smart_title((m.get("title") or "").strip())
-                if not m_title or m_title.lower() in existing_titles:
-                    continue
+                norm_m_title = re.sub(r'\s+', ' ', m_title.strip().lower())
                 m_key = m.get("key") or m.get("doi") or m_title
-                if m_key in existing_keys:
-                    continue
+                if m_key in existing_keys or norm_m_title in existing_titles:
+                    # Replace existing entry if manual entry provides better details
+                    result = [r for r in result if re.sub(r'\s+', ' ', r["title"].strip().lower()) != norm_m_title]
 
                 m_vf = m.get("venue_full") or m.get("venue") or ""
                 tier, venue_acronym, venue_display = classify_venue(m_vf, venues)
@@ -605,10 +619,40 @@ def build(venues: dict, topics: list, papers_raw: list) -> list:
                     "type":       m_type,
                     "topics":     m_topics,
                     "url":        m.get("url") or (f"https://doi.org/{m['doi']}" if m.get("doi") else ""),
+                    "citations":  m.get("citations") or 0,
                 })
                 print(f"  MANUAL ADD  {m_title[:60]}", flush=True)
         except Exception as err:
             print(f"  WARNING: Could not parse manual_publications.yml: {err}", flush=True)
+
+    # Deduplicate entries with identical titles: prefer formal publication tiers (a_star, a_conf, q1, other)
+    # over preprints or institutional repositories, and prefer entries with doi.org links.
+    TYPE_PRIORITY = {
+        "a_star": 5,
+        "a_conf": 4,
+        "q1": 3,
+        "other": 2,
+        "workshop": 1,
+        "preprint": 0,
+    }
+
+    def _pub_score(item):
+        t_score = TYPE_PRIORITY.get(item.get("type"), 0)
+        has_doi = 1 if (item.get("url") and "doi.org" in item["url"]) else 0
+        is_repo = -1 if item.get("venue") == "Repository" else 0
+        return (t_score, has_doi, is_repo, item.get("year", 0))
+
+    unique_by_title = {}
+    for r in result:
+        norm_title = re.sub(r'\s+', ' ', r["title"].strip().lower())
+        if norm_title not in unique_by_title:
+            unique_by_title[norm_title] = r
+        else:
+            existing = unique_by_title[norm_title]
+            if _pub_score(r) > _pub_score(existing):
+                unique_by_title[norm_title] = r
+
+    result = list(unique_by_title.values())
 
     # Sort: newest first, then alphabetical within year
     result.sort(key=lambda x: (-x["year"], x["title"].lower()))

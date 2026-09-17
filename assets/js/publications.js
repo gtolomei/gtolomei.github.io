@@ -19,13 +19,12 @@
   const OWNER = "Gabriele Tolomei";
 
   const TYPE_META = [
-    { slug: "all",      label: "All" },
-    { slug: "a_star",   label: "A* Conferences" },
-    { slug: "a_conf",   label: "A Conferences" },
-    { slug: "q1",       label: "Q1 Journals" },
-    { slug: "other",    label: "Other Conf. & Journals" },
-    { slug: "workshop", label: "Workshops" },
-    { slug: "preprint", label: "Preprints" },
+    { slug: "all",           label: "All" },
+    { slug: "top_tier_conf", label: "A*/A Conferences" },
+    { slug: "q1",            label: "Q1 Journals" },
+    { slug: "other",         label: "Other Conf. & Journals" },
+    { slug: "workshop",      label: "Workshops" },
+    { slug: "preprint",      label: "Preprints" },
   ];
 
   const BADGE_CLASS = {
@@ -98,7 +97,9 @@
 
   /* ── Filter logic ───────────────────────────────────────────── */
   function matchesType(pub) {
-    return activeType === "all" || pub.type === activeType;
+    if (activeType === "all") return true;
+    if (activeType === "top_tier_conf") return pub.type === "a_star" || pub.type === "a_conf";
+    return pub.type === activeType;
   }
 
   function matchesTopic(pub) {
@@ -125,16 +126,28 @@
       ? `<a href="${esc(pub.url)}" target="_blank" rel="noopener">${esc(pub.title)}</a>`
       : esc(pub.title);
 
-    // DOI link if URL contains doi.org
+    // DOI link if pub has doi or url (doi.org, arxiv.org, techrxiv)
     let doiLink = "";
-    if (pub.url && pub.url.includes("doi.org")) {
+    if (pub.doi) {
+      const doiUrl = pub.doi.startswith?.("http") ? pub.doi : `https://doi.org/${pub.doi}`;
+      doiLink = `<a href="${esc(doiUrl)}" class="pub-doi" target="_blank" rel="noopener">DOI ↗</a>`;
+    } else if (pub.url && (pub.url.includes("doi.org") || pub.url.includes("arxiv.org") || pub.url.includes("techrxiv"))) {
       doiLink = `<a href="${esc(pub.url)}" class="pub-doi" target="_blank" rel="noopener">DOI ↗</a>`;
     }
+
+    // Cited by statistics
+    const citeCount = typeof pub.citations === "number" ? pub.citations : 0;
+    const citedByHtml = citeCount > 0 ? `<span class="pub-citations">Cited by ${citeCount}</span>` : "";
 
     // Normalize arXiv label
     const venueLabel = (pub.venue || "").toUpperCase() === "ARXIV" ? "arXiv" : pub.venue;
 
-    const metadataItems = [esc(pub.venue_full || venueLabel), pub.year ? esc(String(pub.year)) : "",doiLink].filter(Boolean);
+    const metadataItems = [
+      esc(pub.venue_full || venueLabel),
+      pub.year ? esc(String(pub.year)) : "",
+      citedByHtml,
+      doiLink
+    ].filter(Boolean);
 
     return `
 <article class="pub-card" data-type="${esc(pub.type)}" data-topics="${esc((pub.topics||[]).join(','))}">
@@ -192,6 +205,7 @@
     // Count per type
     const counts = {};
     for (const p of pubs) counts[p.type] = (counts[p.type] || 0) + 1;
+    counts["top_tier_conf"] = (counts["a_star"] || 0) + (counts["a_conf"] || 0);
 
     const label = document.createElement("span");
     label.className = "filter-label";
