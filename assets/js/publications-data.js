@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-09-17T08:59:20Z
+// Last updated: 2026-09-18T09:02:25Z
 window.PUBLICATIONS = [
   {
     "key": "W7171965741",
@@ -1402,8 +1402,8 @@ window.PUBLICATIONS = [
   }
 ];
 window.SCHOLAR = {
-  "citations": 2676,
+  "citations": 2678,
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-09-17T08:59:20Z"
+window.PUBLICATIONS_TS = "2026-09-18T09:02:25Z"
