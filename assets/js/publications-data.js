@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-09-20T09:19:20Z
+// Last updated: 2026-09-22T09:33:34Z
 window.PUBLICATIONS = [
   {
     "key": "W7171965741",
@@ -20,6 +20,64 @@ window.PUBLICATIONS = [
     ],
     "url": "https://doi.org/10.1145/3770854.3780243",
     "citations": 0
+  },
+  {
+    "key": "W7140102874",
+    "title": "From Engagement to Empowerment: A Capability-Theoretic Rethinking of Recommender Systems",
+    "authors": [
+      "Vittoria Vineis",
+      "Gabriele Tolomei"
+    ],
+    "year": 2026,
+    "venue": "LNCS",
+    "venue_full": "Lecture notes in computer science",
+    "venue_key": null,
+    "type": "other",
+    "topics": [
+      "recommender"
+    ],
+    "url": "https://doi.org/10.1007/978-3-032-21324-2_28",
+    "citations": 0
+  },
+  {
+    "key": "W7130435732",
+    "title": "Home Automation Interoperability: Two Decades of Lessons Learned and Future Prospects Into the Development of IoT Ecosystems",
+    "authors": [
+      "Dario Russo",
+      "Vittorio Miori",
+      "Gabriele Tolomei",
+      "Dimitri Belli"
+    ],
+    "year": 2026,
+    "venue": "Internet of Things",
+    "venue_full": "Internet of Things",
+    "venue_key": null,
+    "type": "other",
+    "topics": [
+      "misc"
+    ],
+    "url": "https://doi.org/10.1016/j.iot.2026.101906",
+    "citations": 1
+  },
+  {
+    "key": "W7125616339",
+    "title": "What Course Should I Enroll in Next? Guiding Students Toward Academic Success with Sequential Recommendations",
+    "authors": [
+      "Gabriele Tolomei",
+      "Lorenzo Antonelli",
+      "Enrico Bassetti",
+      "Emanuele Panizzi"
+    ],
+    "year": 2026,
+    "venue": "TORS",
+    "venue_full": "ACM Transactions on Recommender Systems",
+    "venue_key": "tors",
+    "type": "q1",
+    "topics": [
+      "recommender"
+    ],
+    "url": "https://doi.org/10.1145/3789502",
+    "citations": 1
   },
   {
     "key": "A Survey on Explainable AI Narratives Based on Large Language Models",
@@ -289,7 +347,7 @@ window.PUBLICATIONS = [
       "Paolo Barsocchi",
       "Dimitri Belli",
       "Edoardo Gabrielli",
-      "Davide La Rosa",
+      "Davide Maria La Rosa",
       "Vittorio Miori",
       "Filippo Palumbo",
       "Dario Russo",
@@ -339,7 +397,7 @@ window.PUBLICATIONS = [
       "Jin Huang",
       "Kaushiki Nag",
       "Kun Kuang",
-      "Xin Ning",
+      "Xin Bao Ning",
       "Gabriele Tolomei"
     ],
     "year": 2024,
@@ -575,7 +633,7 @@ window.PUBLICATIONS = [
     "title": "ISIDE: Proactively Assist University Students at Risk of Dropout",
     "authors": [
       "Enrico Bassetti",
-      "Andrea Conti",
+      "Andrea Alberto Conti",
       "Emanuele Panizzi",
       "Gabriele Tolomei"
     ],
@@ -1406,4 +1464,4 @@ window.SCHOLAR = {
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-09-20T09:19:20Z"
+window.PUBLICATIONS_TS = "2026-09-22T09:33:34Z"
