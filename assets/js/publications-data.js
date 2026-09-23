@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-09-22T09:33:34Z
+// Last updated: 2026-09-23T09:20:54Z
 window.PUBLICATIONS = [
   {
     "key": "W7171965741",
@@ -882,7 +882,7 @@ window.PUBLICATIONS = [
       "Leonardo Babun",
       "Mauro Conti",
       "Gabriele Tolomei",
-      "A. Selcuk Uluagac"
+      "Arif Selcuk Uluagac"
     ],
     "year": 2018,
     "venue": "IEEE Communications Magazine",
@@ -1424,7 +1424,7 @@ window.PUBLICATIONS = [
     "authors": [
       "Vittorio Miori",
       "L. Tarrini",
-      "Marco Manca",
+      "Marco Manolo Manca",
       "Gabriele Tolomei"
     ],
     "year": 2006,
@@ -1444,7 +1444,7 @@ window.PUBLICATIONS = [
     "authors": [
       "Vittorio Miori",
       "L. Tarrini",
-      "Marco Manca",
+      "Marco Manolo Manca",
       "Gabriele Tolomei"
     ],
     "year": 2006,
@@ -1464,4 +1464,4 @@ window.SCHOLAR = {
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-09-22T09:33:34Z"
+window.PUBLICATIONS_TS = "2026-09-23T09:20:54Z"
