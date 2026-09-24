@@ -1,6 +1,25 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-09-23T09:20:54Z
+// Last updated: 2026-09-24T09:36:53Z
 window.PUBLICATIONS = [
+  {
+    "key": "W7128095008",
+    "title": "Counterfactual Explanations for Hypergraph Neural Networks",
+    "authors": [
+      "Fabiano Veglianti",
+      "Lorenzo Antonelli",
+      "Gabriele Tolomei"
+    ],
+    "year": 2026,
+    "venue": "arXiv",
+    "venue_full": "arXiv",
+    "venue_key": null,
+    "type": "preprint",
+    "topics": [
+      "xai"
+    ],
+    "url": "https://doi.org/10.48550/arxiv.2602.04360",
+    "citations": 0
+  },
   {
     "key": "W7171965741",
     "title": "Countering Overfitting with Counterfactual Examples",
@@ -58,6 +77,29 @@ window.PUBLICATIONS = [
     ],
     "url": "https://doi.org/10.1016/j.iot.2026.101906",
     "citations": 1
+  },
+  {
+    "key": "W7164233895",
+    "title": "TRACER: Token Reassignment for Concept Erasure in Generative Recommendation",
+    "authors": [
+      "Ziheng Chen",
+      "Jiali Cheng",
+      "Zezhong Fan",
+      "Hadi Amiri",
+      "Diyuan Wu",
+      "Gabriele Tolomei",
+      "Yang Zhang"
+    ],
+    "year": 2026,
+    "venue": "arXiv",
+    "venue_full": "arXiv",
+    "venue_key": null,
+    "type": "preprint",
+    "topics": [
+      "recommender"
+    ],
+    "url": "https://arxiv.org/abs/2606.07688",
+    "citations": 0
   },
   {
     "key": "W7125616339",
@@ -893,7 +935,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1109/mcom.2017.1700871",
-    "citations": 5
+    "citations": 6
   },
   {
     "key": "W2886626623",
@@ -1464,4 +1506,4 @@ window.SCHOLAR = {
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-09-23T09:20:54Z"
+window.PUBLICATIONS_TS = "2026-09-24T09:36:53Z"
