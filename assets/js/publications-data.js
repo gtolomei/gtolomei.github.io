@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-09-24T09:36:53Z
+// Last updated: 2026-09-25T09:38:48Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -41,6 +41,28 @@ window.PUBLICATIONS = [
     "citations": 0
   },
   {
+    "key": "W7212003216",
+    "title": "Explaining AI Agents through Execution Traces",
+    "authors": [
+      "Vittoria Vineis",
+      "Fabiano Veglianti",
+      "Lorenzo Antonelli",
+      "Claudia Di Carlo",
+      "Matteo Silvestri",
+      "Gabriele Tolomei"
+    ],
+    "year": 2026,
+    "venue": "arXiv",
+    "venue_full": "arXiv",
+    "venue_key": null,
+    "type": "preprint",
+    "topics": [
+      "xai"
+    ],
+    "url": "https://arxiv.org/abs/2609.06063",
+    "citations": 0
+  },
+  {
     "key": "W7140102874",
     "title": "From Engagement to Empowerment: A Capability-Theoretic Rethinking of Recommender Systems",
     "authors": [
@@ -79,7 +101,66 @@ window.PUBLICATIONS = [
     "citations": 1
   },
   {
-    "key": "W7164233895",
+    "key": "W7206212483",
+    "title": "Optimizing Byzantine Node Placement in Decentralized Federated Learning",
+    "authors": [
+      "Edoardo Gabrielli",
+      "Gabriele Tolomei"
+    ],
+    "year": 2026,
+    "venue": "arXiv",
+    "venue_full": "arXiv",
+    "venue_key": null,
+    "type": "preprint",
+    "topics": [
+      "federated"
+    ],
+    "url": "https://arxiv.org/abs/2609.01495",
+    "citations": 0
+  },
+  {
+    "key": "W7134276457",
+    "title": "PONTE: Personalized Orchestration for Natural Language Trustworthy Explanations",
+    "authors": [
+      "Vittoria Vineis",
+      "Matteo Silvestri",
+      "Lorenzo Antonelli",
+      "Filippo Betello",
+      "Gabriele Tolomei"
+    ],
+    "year": 2026,
+    "venue": "arXiv",
+    "venue_full": "arXiv",
+    "venue_key": null,
+    "type": "preprint",
+    "topics": [
+      "xai"
+    ],
+    "url": "https://doi.org/10.48550/arxiv.2603.06485",
+    "citations": 0
+  },
+  {
+    "key": "W7212192700",
+    "title": "The Right to Hide: Masking Community Affiliation via Minimal Graph Rewiring",
+    "authors": [
+      "Matteo Silvestri",
+      "Edoardo Gabrielli",
+      "Fabrizio Silvestri",
+      "Gabriele Tolomei"
+    ],
+    "year": 2026,
+    "venue": "Online Social Networks and Media",
+    "venue_full": "Online Social Networks and Media",
+    "venue_key": null,
+    "type": "other",
+    "topics": [
+      "gnn"
+    ],
+    "url": "https://doi.org/10.1016/j.osnem.2026.100357",
+    "citations": 0
+  },
+  {
+    "key": "W7164010575",
     "title": "TRACER: Token Reassignment for Concept Erasure in Generative Recommendation",
     "authors": [
       "Ziheng Chen",
@@ -98,7 +179,27 @@ window.PUBLICATIONS = [
     "topics": [
       "recommender"
     ],
-    "url": "https://arxiv.org/abs/2606.07688",
+    "url": "https://doi.org/10.48550/arxiv.2606.07688",
+    "citations": 0
+  },
+  {
+    "key": "W7167350586",
+    "title": "Unified Counterfactual Explainer for Graph Neural Networks",
+    "authors": [
+      "Flavio Giorgi",
+      "Fabrizio Silvestri",
+      "Gabriele Tolomei"
+    ],
+    "year": 2026,
+    "venue": "npj Artificial Intelligence",
+    "venue_full": "npj Artificial Intelligence",
+    "venue_key": null,
+    "type": "other",
+    "topics": [
+      "xai",
+      "gnn"
+    ],
+    "url": "https://doi.org/10.1038/s44387-026-00135-w",
     "citations": 0
   },
   {
@@ -143,6 +244,25 @@ window.PUBLICATIONS = [
     ],
     "url": "https://arxiv.org/abs/2502.17628",
     "citations": 0
+  },
+  {
+    "key": "W4414942173",
+    "title": "Beyond Predictions: A Participatory Framework for Multi-Stakeholder Decision-Making",
+    "authors": [
+      "Vittoria Vineis",
+      "Giuseppe Perelli",
+      "Gabriele Tolomei"
+    ],
+    "year": 2025,
+    "venue": "arXiv",
+    "venue_full": "arXiv",
+    "venue_key": null,
+    "type": "preprint",
+    "topics": [
+      "misc"
+    ],
+    "url": "http://arxiv.org/abs/2502.08542",
+    "citations": 1
   },
   {
     "key": "W4407632620",
@@ -274,6 +394,27 @@ window.PUBLICATIONS = [
     "citations": 5
   },
   {
+    "key": "W4415026067",
+    "title": "One Search Fits All: Pareto-Optimal Eco-Friendly Model Selection",
+    "authors": [
+      "Filippo Betello",
+      "Antonio Purificato",
+      "Vittoria Vineis",
+      "Gabriele Tolomei",
+      "Fabrizio Silvestri"
+    ],
+    "year": 2025,
+    "venue": "arXiv",
+    "venue_full": "arXiv",
+    "venue_key": null,
+    "type": "preprint",
+    "topics": [
+      "misc"
+    ],
+    "url": "http://arxiv.org/abs/2505.01468",
+    "citations": 0
+  },
+  {
     "key": "W4412082038",
     "title": "Prompt-Tuning for Recommendation Unlearning",
     "authors": [
@@ -319,26 +460,6 @@ window.PUBLICATIONS = [
     ],
     "url": "https://doi.org/10.1109/tifs.2025.3608671",
     "citations": 4
-  },
-  {
-    "key": "W4407123573",
-    "title": "The Right to Hide: Masking Community Affiliation via Minimal Graph Rewiring",
-    "authors": [
-      "Matteo Silvestri",
-      "Edoardo Gabrielli",
-      "Fabrizio Silvestri",
-      "Gabriele Tolomei"
-    ],
-    "year": 2025,
-    "venue": "arXiv",
-    "venue_full": "arXiv",
-    "venue_key": null,
-    "type": "preprint",
-    "topics": [
-      "gnn"
-    ],
-    "url": "http://arxiv.org/abs/2502.00432",
-    "citations": 0
   },
   {
     "key": "W4416619852",
@@ -849,7 +970,7 @@ window.PUBLICATIONS = [
     "year": 2020,
     "venue": "DMKD",
     "venue_full": "Data Mining and Knowledge Discovery",
-    "venue_key": "datamine",
+    "venue_key": "dmkd",
     "type": "q1",
     "topics": [
       "adversarial"
@@ -1506,4 +1627,4 @@ window.SCHOLAR = {
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-09-24T09:36:53Z"
+window.PUBLICATIONS_TS = "2026-09-25T09:38:48Z"
