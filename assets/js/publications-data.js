@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-09-25T09:38:48Z
+// Last updated: 2026-09-26T09:37:46Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -17,7 +17,7 @@ window.PUBLICATIONS = [
     "topics": [
       "xai"
     ],
-    "url": "https://doi.org/10.48550/arxiv.2602.04360",
+    "url": "https://arxiv.org/abs/2602.04360",
     "citations": 0
   },
   {
@@ -136,7 +136,7 @@ window.PUBLICATIONS = [
     "topics": [
       "xai"
     ],
-    "url": "https://doi.org/10.48550/arxiv.2603.06485",
+    "url": "http://arxiv.org/abs/2603.06485",
     "citations": 0
   },
   {
@@ -179,7 +179,7 @@ window.PUBLICATIONS = [
     "topics": [
       "recommender"
     ],
-    "url": "https://doi.org/10.48550/arxiv.2606.07688",
+    "url": "https://arxiv.org/abs/2606.07688",
     "citations": 0
   },
   {
@@ -1056,7 +1056,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1109/mcom.2017.1700871",
-    "citations": 6
+    "citations": 87
   },
   {
     "key": "W2886626623",
@@ -1586,7 +1586,7 @@ window.PUBLICATIONS = [
     "title": "An Open Standard Solution for Domotic Interoperability",
     "authors": [
       "Vittorio Miori",
-      "L. Tarrini",
+      "Tarrini L",
       "Marco Manolo Manca",
       "Gabriele Tolomei"
     ],
@@ -1606,7 +1606,7 @@ window.PUBLICATIONS = [
     "title": "Domonet: a Framework and a Prototype for Interoperability of Domotic Middlewares Based on XML and Web Services",
     "authors": [
       "Vittorio Miori",
-      "L. Tarrini",
+      "Tarrini L",
       "Marco Manolo Manca",
       "Gabriele Tolomei"
     ],
@@ -1627,4 +1627,4 @@ window.SCHOLAR = {
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-09-25T09:38:48Z"
+window.PUBLICATIONS_TS = "2026-09-26T09:37:46Z"

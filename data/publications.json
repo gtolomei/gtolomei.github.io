@@ -15,7 +15,7 @@
     "topics": [
       "xai"
     ],
-    "url": "https://doi.org/10.48550/arxiv.2602.04360",
+    "url": "https://arxiv.org/abs/2602.04360",
     "citations": 0
   },
   {
@@ -134,7 +134,7 @@
     "topics": [
       "xai"
     ],
-    "url": "https://doi.org/10.48550/arxiv.2603.06485",
+    "url": "http://arxiv.org/abs/2603.06485",
     "citations": 0
   },
   {
@@ -177,7 +177,7 @@
     "topics": [
       "recommender"
     ],
-    "url": "https://doi.org/10.48550/arxiv.2606.07688",
+    "url": "https://arxiv.org/abs/2606.07688",
     "citations": 0
   },
   {
@@ -1054,7 +1054,7 @@
       "misc"
     ],
     "url": "https://doi.org/10.1109/mcom.2017.1700871",
-    "citations": 6
+    "citations": 87
   },
   {
     "key": "W2886626623",
@@ -1584,7 +1584,7 @@
     "title": "An Open Standard Solution for Domotic Interoperability",
     "authors": [
       "Vittorio Miori",
-      "L. Tarrini",
+      "Tarrini L",
       "Marco Manolo Manca",
       "Gabriele Tolomei"
     ],
@@ -1604,7 +1604,7 @@
     "title": "Domonet: a Framework and a Prototype for Interoperability of Domotic Middlewares Based on XML and Web Services",
     "authors": [
       "Vittorio Miori",
-      "L. Tarrini",
+      "Tarrini L",
       "Marco Manolo Manca",
       "Gabriele Tolomei"
     ],
