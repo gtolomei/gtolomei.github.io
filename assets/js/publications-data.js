@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-09-26T09:37:46Z
+// Last updated: 2026-09-27T10:16:25Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -560,7 +560,7 @@ window.PUBLICATIONS = [
       "Jin Huang",
       "Kaushiki Nag",
       "Kun Kuang",
-      "Xin Bao Ning",
+      "Ning, Xin",
       "Gabriele Tolomei"
     ],
     "year": 2024,
@@ -1056,7 +1056,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1109/mcom.2017.1700871",
-    "citations": 87
+    "citations": 119
   },
   {
     "key": "W2886626623",
@@ -1096,7 +1096,7 @@ window.PUBLICATIONS = [
       "recommender"
     ],
     "url": "https://doi.org/10.1007/s41060-018-0122-1",
-    "citations": 23
+    "citations": 24
   },
   {
     "key": "10.1145/3097983.3098039",
@@ -1238,7 +1238,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1145/2493175.2493179",
-    "citations": 61
+    "citations": 62
   },
   {
     "key": "W102760613",
@@ -1457,7 +1457,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1145/1935826.1935875",
-    "citations": 131
+    "citations": 132
   },
   {
     "key": "W157734559",
@@ -1627,4 +1627,4 @@ window.SCHOLAR = {
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-09-26T09:37:46Z"
+window.PUBLICATIONS_TS = "2026-09-27T10:16:25Z"
