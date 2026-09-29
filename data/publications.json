@@ -968,13 +968,13 @@
     "year": 2020,
     "venue": "DMKD",
     "venue_full": "Data Mining and Knowledge Discovery",
-    "venue_key": "dmkd",
+    "venue_key": "datamine",
     "type": "q1",
     "topics": [
       "adversarial"
     ],
     "url": "https://doi.org/10.1007/s10618-020-00694-9",
-    "citations": 8
+    "citations": 32
   },
   {
     "key": "W2987678574",
@@ -993,7 +993,7 @@
       "adversarial"
     ],
     "url": "https://doi.org/10.1145/3357384.3358149",
-    "citations": 31
+    "citations": 28
   },
   {
     "key": "W2979156612",
@@ -1054,7 +1054,7 @@
       "misc"
     ],
     "url": "https://doi.org/10.1109/mcom.2017.1700871",
-    "citations": 119
+    "citations": 118
   },
   {
     "key": "W2886626623",
