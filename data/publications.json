@@ -552,7 +552,7 @@
     "authors": [
       "Ziheng Chen",
       "Jia Wang",
-      "Jun Zhuang",
+      "Zhuang, Jun",
       "Abbavaram Gowtham Reddy",
       "Fabrizio Silvestri",
       "Jin Huang",
@@ -694,7 +694,7 @@
       "gnn"
     ],
     "url": "https://doi.org/10.1109/tai.2023.3319306",
-    "citations": 7
+    "citations": 6
   },
   {
     "key": "W4384891029",
@@ -787,14 +787,14 @@
       "recommender"
     ],
     "url": "http://arxiv.org/abs/2208.04222",
-    "citations": 11
+    "citations": 9
   },
   {
     "key": "W4320024272",
     "title": "ISIDE: Proactively Assist University Students at Risk of Dropout",
     "authors": [
       "Enrico Bassetti",
-      "Andrea Alberto Conti",
+      "Andrea Conti",
       "Emanuele Panizzi",
       "Gabriele Tolomei"
     ],
@@ -868,7 +868,7 @@
       "xai"
     ],
     "url": "https://doi.org/10.1145/3511808.3557429",
-    "citations": 28
+    "citations": 36
   },
   {
     "key": "W4311721665",
@@ -888,7 +888,7 @@
       "federated"
     ],
     "url": "https://doi.org/10.1109/access.2022.3229124",
-    "citations": 19
+    "citations": 18
   },
   {
     "key": "W3153233384",
@@ -968,7 +968,7 @@
     "year": 2020,
     "venue": "DMKD",
     "venue_full": "Data Mining and Knowledge Discovery",
-    "venue_key": "datamine",
+    "venue_key": "dmkd",
     "type": "q1",
     "topics": [
       "adversarial"
@@ -1011,7 +1011,7 @@
       "xai"
     ],
     "url": "https://doi.org/10.1109/tkde.2019.2945326",
-    "citations": 20
+    "citations": 19
   },
   {
     "key": "W2943467804",

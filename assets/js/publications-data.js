@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-09-29T10:44:11Z
+// Last updated: 2026-09-30T10:45:07Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -554,7 +554,7 @@ window.PUBLICATIONS = [
     "authors": [
       "Ziheng Chen",
       "Jia Wang",
-      "Jun Zhuang",
+      "Zhuang, Jun",
       "Abbavaram Gowtham Reddy",
       "Fabrizio Silvestri",
       "Jin Huang",
@@ -696,7 +696,7 @@ window.PUBLICATIONS = [
       "gnn"
     ],
     "url": "https://doi.org/10.1109/tai.2023.3319306",
-    "citations": 7
+    "citations": 6
   },
   {
     "key": "W4384891029",
@@ -789,14 +789,14 @@ window.PUBLICATIONS = [
       "recommender"
     ],
     "url": "http://arxiv.org/abs/2208.04222",
-    "citations": 11
+    "citations": 9
   },
   {
     "key": "W4320024272",
     "title": "ISIDE: Proactively Assist University Students at Risk of Dropout",
     "authors": [
       "Enrico Bassetti",
-      "Andrea Alberto Conti",
+      "Andrea Conti",
       "Emanuele Panizzi",
       "Gabriele Tolomei"
     ],
@@ -870,7 +870,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "https://doi.org/10.1145/3511808.3557429",
-    "citations": 28
+    "citations": 36
   },
   {
     "key": "W4311721665",
@@ -890,7 +890,7 @@ window.PUBLICATIONS = [
       "federated"
     ],
     "url": "https://doi.org/10.1109/access.2022.3229124",
-    "citations": 19
+    "citations": 18
   },
   {
     "key": "W3153233384",
@@ -970,7 +970,7 @@ window.PUBLICATIONS = [
     "year": 2020,
     "venue": "DMKD",
     "venue_full": "Data Mining and Knowledge Discovery",
-    "venue_key": "datamine",
+    "venue_key": "dmkd",
     "type": "q1",
     "topics": [
       "adversarial"
@@ -1013,7 +1013,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "https://doi.org/10.1109/tkde.2019.2945326",
-    "citations": 20
+    "citations": 19
   },
   {
     "key": "W2943467804",
@@ -1627,4 +1627,4 @@ window.SCHOLAR = {
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-09-29T10:44:11Z"
+window.PUBLICATIONS_TS = "2026-09-30T10:45:07Z"
