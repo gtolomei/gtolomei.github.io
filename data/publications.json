@@ -508,7 +508,7 @@
       "Paolo Barsocchi",
       "Dimitri Belli",
       "Edoardo Gabrielli",
-      "Davide Maria La Rosa",
+      "Davide La Rosa",
       "Vittorio Miori",
       "Filippo Palumbo",
       "Dario Russo",
@@ -968,7 +968,7 @@
     "year": 2020,
     "venue": "DMKD",
     "venue_full": "Data Mining and Knowledge Discovery",
-    "venue_key": "datamine",
+    "venue_key": "dmkd",
     "type": "q1",
     "topics": [
       "adversarial"
@@ -1585,7 +1585,7 @@
     "authors": [
       "Vittorio Miori",
       "Tarrini L",
-      "Marco Manolo Manca",
+      "Marco Manca",
       "Gabriele Tolomei"
     ],
     "year": 2006,
@@ -1605,7 +1605,7 @@
     "authors": [
       "Vittorio Miori",
       "Tarrini L",
-      "Marco Manolo Manca",
+      "Marco Manca",
       "Gabriele Tolomei"
     ],
     "year": 2006,

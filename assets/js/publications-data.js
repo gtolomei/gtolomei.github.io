@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-10-02T10:32:58Z
+// Last updated: 2026-10-03T09:54:09Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -510,7 +510,7 @@ window.PUBLICATIONS = [
       "Paolo Barsocchi",
       "Dimitri Belli",
       "Edoardo Gabrielli",
-      "Davide Maria La Rosa",
+      "Davide La Rosa",
       "Vittorio Miori",
       "Filippo Palumbo",
       "Dario Russo",
@@ -970,7 +970,7 @@ window.PUBLICATIONS = [
     "year": 2020,
     "venue": "DMKD",
     "venue_full": "Data Mining and Knowledge Discovery",
-    "venue_key": "datamine",
+    "venue_key": "dmkd",
     "type": "q1",
     "topics": [
       "adversarial"
@@ -1587,7 +1587,7 @@ window.PUBLICATIONS = [
     "authors": [
       "Vittorio Miori",
       "Tarrini L",
-      "Marco Manolo Manca",
+      "Marco Manca",
       "Gabriele Tolomei"
     ],
     "year": 2006,
@@ -1607,7 +1607,7 @@ window.PUBLICATIONS = [
     "authors": [
       "Vittorio Miori",
       "Tarrini L",
-      "Marco Manolo Manca",
+      "Marco Manca",
       "Gabriele Tolomei"
     ],
     "year": 2006,
@@ -1623,8 +1623,8 @@ window.PUBLICATIONS = [
   }
 ];
 window.SCHOLAR = {
-  "citations": 2701,
+  "citations": 2705,
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-10-02T10:32:58Z"
+window.PUBLICATIONS_TS = "2026-10-03T09:54:09Z"
