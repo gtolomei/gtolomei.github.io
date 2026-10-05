@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-10-04T10:49:51Z
+// Last updated: 2026-10-05T11:33:52Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -31,7 +31,7 @@ window.PUBLICATIONS = [
     ],
     "year": 2026,
     "venue": "KDD",
-    "venue_full": "Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.1",
+    "venue_full": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)",
     "venue_key": "kdd",
     "type": "a_star",
     "topics": [
@@ -340,7 +340,7 @@ window.PUBLICATIONS = [
     ],
     "year": 2025,
     "venue": "CIKM",
-    "venue_full": "Proceedings of the 34th ACM International Conference on Information and Knowledge Management",
+    "venue_full": "ACM International Conference on Information and Knowledge Management (CIKM)",
     "venue_key": "cikm",
     "type": "a_conf",
     "topics": [
@@ -429,7 +429,7 @@ window.PUBLICATIONS = [
     ],
     "year": 2025,
     "venue": "CAI",
-    "venue_full": "2025 IEEE Conference on Artificial Intelligence (CAI)",
+    "venue_full": "IEEE Conference on Artificial Intelligence (CAI)",
     "venue_key": null,
     "type": "other",
     "topics": [
@@ -586,7 +586,7 @@ window.PUBLICATIONS = [
     ],
     "year": 2024,
     "venue": "KDD",
-    "venue_full": "Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+    "venue_full": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)",
     "venue_key": "kdd",
     "type": "a_star",
     "topics": [
@@ -646,7 +646,7 @@ window.PUBLICATIONS = [
     ],
     "year": 2023,
     "venue": "SIGIR",
-    "venue_full": "Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval",
+    "venue_full": "International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR)",
     "venue_key": "sigir",
     "type": "a_star",
     "topics": [
@@ -667,7 +667,7 @@ window.PUBLICATIONS = [
     ],
     "year": 2023,
     "venue": "CogMI",
-    "venue_full": "2023 IEEE 5th International Conference on Cognitive Machine Intelligence (CogMI)",
+    "venue_full": "IEEE International Conference on Cognitive Machine Intelligence (CogMI)",
     "venue_key": "cogmi",
     "type": "a_conf",
     "topics": [
@@ -710,7 +710,7 @@ window.PUBLICATIONS = [
     ],
     "year": 2023,
     "venue": "SIGIR",
-    "venue_full": "Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval",
+    "venue_full": "International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR)",
     "venue_key": "sigir",
     "type": "a_star",
     "topics": [
@@ -802,14 +802,14 @@ window.PUBLICATIONS = [
     ],
     "year": 2022,
     "venue": "BigData",
-    "venue_full": "2022 IEEE International Conference on Big Data (Big Data)",
+    "venue_full": "IEEE International Conference on Big Data (BigData)",
     "venue_key": null,
     "type": "other",
     "topics": [
       "misc"
     ],
     "url": "https://doi.org/10.1109/bigdata55660.2022.10020920",
-    "citations": 2
+    "citations": 3
   },
   {
     "key": "W4320561400",
@@ -970,7 +970,7 @@ window.PUBLICATIONS = [
     "year": 2020,
     "venue": "DMKD",
     "venue_full": "Data Mining and Knowledge Discovery",
-    "venue_key": "dmkd",
+    "venue_key": "datamine",
     "type": "q1",
     "topics": [
       "adversarial"
@@ -988,7 +988,7 @@ window.PUBLICATIONS = [
     ],
     "year": 2019,
     "venue": "CIKM",
-    "venue_full": "Proceedings of the 28th ACM International Conference on Information and Knowledge Management",
+    "venue_full": "ACM International Conference on Information and Knowledge Management (CIKM)",
     "venue_key": "cikm",
     "type": "a_conf",
     "topics": [
@@ -1027,7 +1027,7 @@ window.PUBLICATIONS = [
     ],
     "year": 2019,
     "venue": "EuroS&P",
-    "venue_full": "2019 IEEE European Symposium on Security and Privacy (EuroS&P)",
+    "venue_full": "IEEE European Symposium on Security and Privacy",
     "venue_key": "eurosp",
     "type": "a_conf",
     "topics": [
@@ -1171,7 +1171,7 @@ window.PUBLICATIONS = [
     ],
     "year": 2015,
     "venue": "KDD",
-    "venue_full": "Proceedings of the 21th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining",
+    "venue_full": "ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD)",
     "venue_key": "kdd",
     "type": "a_star",
     "topics": [
@@ -1191,7 +1191,7 @@ window.PUBLICATIONS = [
     ],
     "year": 2014,
     "venue": "WWW",
-    "venue_full": "Proceedings of the 23rd international conference on World wide web",
+    "venue_full": "International World Wide Web Conference (WWW)",
     "venue_key": "www",
     "type": "a_star",
     "topics": [
@@ -1271,7 +1271,7 @@ window.PUBLICATIONS = [
     ],
     "year": 2013,
     "venue": "WWW",
-    "venue_full": "Proceedings of the 22nd International Conference on World Wide Web",
+    "venue_full": "International World Wide Web Conference (WWW)",
     "venue_key": "www",
     "type": "a_star",
     "topics": [
@@ -1348,7 +1348,7 @@ window.PUBLICATIONS = [
     ],
     "year": 2012,
     "venue": "SAC",
-    "venue_full": "Proceedings of the 27th Annual ACM Symposium on Applied Computing",
+    "venue_full": "ACM Symposium on Applied Computing",
     "venue_key": null,
     "type": "other",
     "topics": [
@@ -1450,7 +1450,7 @@ window.PUBLICATIONS = [
     ],
     "year": 2011,
     "venue": "WSDM",
-    "venue_full": "Proceedings of the fourth ACM international conference on Web search and data mining",
+    "venue_full": "ACM International Conference on Web Search and Data Mining (WSDM)",
     "venue_key": "wsdm",
     "type": "a_conf",
     "topics": [
@@ -1491,8 +1491,8 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2010,
-    "venue": "WI",
-    "venue_full": "2010 IEEE/WIC/ACM International Conference on Web Intelligence and Intelligent Agent Technology",
+    "venue": "WI-IAT",
+    "venue_full": "IEEE/WIC/ACM International Conference on Web Intelligence and Intelligent Agent Technology (WI-IAT)",
     "venue_key": null,
     "type": "other",
     "topics": [
@@ -1511,7 +1511,7 @@ window.PUBLICATIONS = [
     ],
     "year": 2010,
     "venue": "ICDE",
-    "venue_full": "2010 IEEE 26th International Conference on Data Engineering Workshops (ICDEW 2010)",
+    "venue_full": "IEEE International Conference on Data Engineering Workshops (ICDEW)",
     "venue_key": "icde",
     "type": "a_star",
     "topics": [
@@ -1551,7 +1551,7 @@ window.PUBLICATIONS = [
     ],
     "year": 2009,
     "venue": "RecSys",
-    "venue_full": "Proceedings of the third ACM conference on Recommender systems",
+    "venue_full": "ACM Conference on Recommender Systems (RecSys)",
     "venue_key": "recsys",
     "type": "a_conf",
     "topics": [
@@ -1612,7 +1612,7 @@ window.PUBLICATIONS = [
     ],
     "year": 2006,
     "venue": "ICCE",
-    "venue_full": "2006 Digest of Technical Papers International Conference on Consumer Electronics",
+    "venue_full": "IEEE International Conference on Consumer Electronics (ICCE)",
     "venue_key": null,
     "type": "other",
     "topics": [
@@ -1623,8 +1623,8 @@ window.PUBLICATIONS = [
   }
 ];
 window.SCHOLAR = {
-  "citations": 2705,
+  "citations": 2708,
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-10-04T10:49:51Z"
+window.PUBLICATIONS_TS = "2026-10-05T11:33:52Z"
