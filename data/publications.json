@@ -861,7 +861,7 @@
     ],
     "year": 2022,
     "venue": "CIKM",
-    "venue_full": "Proceedings of the 31st ACM International Conference on Information & Knowledge Management",
+    "venue_full": "Proceedings of the ... ACM International Conference on Information & Knowledge Management",
     "venue_key": "cikm",
     "type": "a_conf",
     "topics": [
@@ -968,7 +968,7 @@
     "year": 2020,
     "venue": "DMKD",
     "venue_full": "Data Mining and Knowledge Discovery",
-    "venue_key": "dmkd",
+    "venue_key": "datamine",
     "type": "q1",
     "topics": [
       "adversarial"
@@ -1066,8 +1066,8 @@
       "Gabriele Tolomei"
     ],
     "year": 2018,
-    "venue": "CNS",
-    "venue_full": "2018 IEEE Conference on Communications and Network Security (CNS)",
+    "venue": "IEEE Conference on Communications and Network Security",
+    "venue_full": "IEEE Conference on Communications and Network Security",
     "venue_key": null,
     "type": "other",
     "topics": [
@@ -1334,7 +1334,7 @@
       "misc"
     ],
     "url": "https://doi.org/10.1007/978-3-642-37422-7_3",
-    "citations": 23
+    "citations": 24
   },
   {
     "key": "W1972102081",
@@ -1610,7 +1610,7 @@
     ],
     "year": 2006,
     "venue": "ICCE",
-    "venue_full": "IEEE International Conference on Consumer Electronics (ICCE)",
+    "venue_full": "International Conference on Consumer Electronics",
     "venue_key": null,
     "type": "other",
     "topics": [

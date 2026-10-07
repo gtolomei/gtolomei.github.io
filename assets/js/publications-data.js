@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-10-06T11:33:07Z
+// Last updated: 2026-10-07T11:07:23Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -863,7 +863,7 @@ window.PUBLICATIONS = [
     ],
     "year": 2022,
     "venue": "CIKM",
-    "venue_full": "Proceedings of the 31st ACM International Conference on Information & Knowledge Management",
+    "venue_full": "Proceedings of the ... ACM International Conference on Information & Knowledge Management",
     "venue_key": "cikm",
     "type": "a_conf",
     "topics": [
@@ -970,7 +970,7 @@ window.PUBLICATIONS = [
     "year": 2020,
     "venue": "DMKD",
     "venue_full": "Data Mining and Knowledge Discovery",
-    "venue_key": "dmkd",
+    "venue_key": "datamine",
     "type": "q1",
     "topics": [
       "adversarial"
@@ -1068,8 +1068,8 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2018,
-    "venue": "CNS",
-    "venue_full": "2018 IEEE Conference on Communications and Network Security (CNS)",
+    "venue": "IEEE Conference on Communications and Network Security",
+    "venue_full": "IEEE Conference on Communications and Network Security",
     "venue_key": null,
     "type": "other",
     "topics": [
@@ -1336,7 +1336,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1007/978-3-642-37422-7_3",
-    "citations": 23
+    "citations": 24
   },
   {
     "key": "W1972102081",
@@ -1612,7 +1612,7 @@ window.PUBLICATIONS = [
     ],
     "year": 2006,
     "venue": "ICCE",
-    "venue_full": "IEEE International Conference on Consumer Electronics (ICCE)",
+    "venue_full": "International Conference on Consumer Electronics",
     "venue_key": null,
     "type": "other",
     "topics": [
@@ -1623,8 +1623,8 @@ window.PUBLICATIONS = [
   }
 ];
 window.SCHOLAR = {
-  "citations": 2708,
+  "citations": 2715,
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-10-06T11:33:07Z"
+window.PUBLICATIONS_TS = "2026-10-07T11:07:23Z"
