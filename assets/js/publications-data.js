@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-10-08T11:25:01Z
+// Last updated: 2026-10-09T11:35:59Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -911,7 +911,7 @@ window.PUBLICATIONS = [
       "security"
     ],
     "url": "https://arxiv.org/pdf/2104.10561.pdf",
-    "citations": 13
+    "citations": 12
   },
   {
     "key": "W3209179910",
@@ -1336,7 +1336,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1007/978-3-642-37422-7_3",
-    "citations": 25
+    "citations": 24
   },
   {
     "key": "W1972102081",
@@ -1627,4 +1627,4 @@ window.SCHOLAR = {
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-10-08T11:25:01Z"
+window.PUBLICATIONS_TS = "2026-10-09T11:35:59Z"
