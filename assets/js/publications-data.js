@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-10-11T11:05:10Z
+// Last updated: 2026-10-12T12:20:22Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -696,7 +696,7 @@ window.PUBLICATIONS = [
       "gnn"
     ],
     "url": "https://doi.org/10.1109/tai.2023.3319306",
-    "citations": 6
+    "citations": 7
   },
   {
     "key": "W4384891029",
@@ -890,7 +890,7 @@ window.PUBLICATIONS = [
       "federated"
     ],
     "url": "https://doi.org/10.1109/access.2022.3229124",
-    "citations": 18
+    "citations": 17
   },
   {
     "key": "W3153233384",
@@ -970,7 +970,7 @@ window.PUBLICATIONS = [
     "year": 2020,
     "venue": "DMKD",
     "venue_full": "Data Mining and Knowledge Discovery",
-    "venue_key": "datamine",
+    "venue_key": "dmkd",
     "type": "q1",
     "topics": [
       "adversarial"
@@ -1217,7 +1217,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.455.8914",
-    "citations": 13
+    "citations": 11
   },
   {
     "key": "W1994305268",
@@ -1627,4 +1627,4 @@ window.SCHOLAR = {
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-10-11T11:05:10Z"
+window.PUBLICATIONS_TS = "2026-10-12T12:20:22Z"
