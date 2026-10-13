@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-10-12T12:20:22Z
+// Last updated: 2026-10-13T12:05:11Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -970,7 +970,7 @@ window.PUBLICATIONS = [
     "year": 2020,
     "venue": "DMKD",
     "venue_full": "Data Mining and Knowledge Discovery",
-    "venue_key": "dmkd",
+    "venue_key": "datamine",
     "type": "q1",
     "topics": [
       "adversarial"
@@ -1096,7 +1096,7 @@ window.PUBLICATIONS = [
       "recommender"
     ],
     "url": "https://doi.org/10.1007/s41060-018-0122-1",
-    "citations": 24
+    "citations": 23
   },
   {
     "key": "10.1145/3097983.3098039",
@@ -1178,7 +1178,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1145/2783258.2788581",
-    "citations": 33
+    "citations": 31
   },
   {
     "key": "W2079029214",
@@ -1317,7 +1317,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1145/2513577.2538768",
-    "citations": 5
+    "citations": 4
   },
   {
     "key": "W124371493",
@@ -1336,7 +1336,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1007/978-3-642-37422-7_3",
-    "citations": 24
+    "citations": 23
   },
   {
     "key": "W1972102081",
@@ -1627,4 +1627,4 @@ window.SCHOLAR = {
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-10-12T12:20:22Z"
+window.PUBLICATIONS_TS = "2026-10-13T12:05:11Z"
