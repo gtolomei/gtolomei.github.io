@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-10-14T09:47:43Z
+// Last updated: 2026-10-15T09:26:00Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -554,7 +554,7 @@ window.PUBLICATIONS = [
     "authors": [
       "Ziheng Chen",
       "Jia Wang",
-      "Zhuang, Jun",
+      "Jun Zhuang",
       "Abbavaram Gowtham Reddy",
       "Fabrizio Silvestri",
       "Jin Huang",
@@ -941,7 +941,7 @@ window.PUBLICATIONS = [
     "authors": [
       "Stefano Calzavara",
       "Mauro Conti",
-      "Riccardo Focardi",
+      "Riccardo Focardi A",
       "Alvise Rabitti",
       "Gabriele Tolomei"
     ],
@@ -970,7 +970,7 @@ window.PUBLICATIONS = [
     "year": 2020,
     "venue": "DMKD",
     "venue_full": "Data Mining and Knowledge Discovery",
-    "venue_key": "dmkd",
+    "venue_key": "datamine",
     "type": "q1",
     "topics": [
       "adversarial"
@@ -1021,7 +1021,7 @@ window.PUBLICATIONS = [
     "authors": [
       "Stefano Calzavara",
       "Mauro Conti",
-      "Riccardo Focardi",
+      "Riccardo Focardi A",
       "Alvise Rabitti",
       "Gabriele Tolomei"
     ],
@@ -1586,7 +1586,7 @@ window.PUBLICATIONS = [
     "title": "An Open Standard Solution for Domotic Interoperability",
     "authors": [
       "Vittorio Miori",
-      "Tarrini L",
+      "Luca Tarrini",
       "Marco Manca",
       "Gabriele Tolomei"
     ],
@@ -1606,7 +1606,7 @@ window.PUBLICATIONS = [
     "title": "Domonet: a Framework and a Prototype for Interoperability of Domotic Middlewares Based on XML and Web Services",
     "authors": [
       "Vittorio Miori",
-      "Tarrini L",
+      "Luca Tarrini",
       "Marco Manca",
       "Gabriele Tolomei"
     ],
@@ -1627,4 +1627,4 @@ window.SCHOLAR = {
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-10-14T09:47:43Z"
+window.PUBLICATIONS_TS = "2026-10-15T09:26:00Z"
