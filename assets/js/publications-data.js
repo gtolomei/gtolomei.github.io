@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-10-16T09:17:30Z
+// Last updated: 2026-10-17T08:51:07Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -459,7 +459,7 @@ window.PUBLICATIONS = [
       "federated"
     ],
     "url": "https://doi.org/10.1109/tifs.2025.3608671",
-    "citations": 4
+    "citations": 5
   },
   {
     "key": "W4416619852",
@@ -574,7 +574,7 @@ window.PUBLICATIONS = [
       "fairness"
     ],
     "url": "http://arxiv.org/abs/2404.15760",
-    "citations": 0
+    "citations": 1
   },
   {
     "key": "W4401863450",
@@ -634,7 +634,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "http://arxiv.org/abs/2410.09295",
-    "citations": 0
+    "citations": 1
   },
   {
     "key": "W4384828640",
@@ -696,7 +696,7 @@ window.PUBLICATIONS = [
       "gnn"
     ],
     "url": "https://doi.org/10.1109/tai.2023.3319306",
-    "citations": 7
+    "citations": 8
   },
   {
     "key": "W4384891029",
@@ -789,7 +789,7 @@ window.PUBLICATIONS = [
       "recommender"
     ],
     "url": "http://arxiv.org/abs/2208.04222",
-    "citations": 9
+    "citations": 10
   },
   {
     "key": "W4320024272",
@@ -870,7 +870,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "https://doi.org/10.1145/3511808.3557429",
-    "citations": 36
+    "citations": 38
   },
   {
     "key": "W4311721665",
@@ -995,7 +995,7 @@ window.PUBLICATIONS = [
       "adversarial"
     ],
     "url": "https://doi.org/10.1145/3357384.3358149",
-    "citations": 28
+    "citations": 30
   },
   {
     "key": "W2979156612",
@@ -1035,7 +1035,7 @@ window.PUBLICATIONS = [
       "security"
     ],
     "url": "https://doi.org/10.1109/eurosp.2019.00045",
-    "citations": 39
+    "citations": 40
   },
   {
     "key": "W2786484447",
@@ -1056,7 +1056,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1109/mcom.2017.1700871",
-    "citations": 118
+    "citations": 119
   },
   {
     "key": "W2886626623",
@@ -1178,7 +1178,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1145/2783258.2788581",
-    "citations": 31
+    "citations": 32
   },
   {
     "key": "W2079029214",
@@ -1336,7 +1336,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1007/978-3-642-37422-7_3",
-    "citations": 23
+    "citations": 24
   },
   {
     "key": "W1972102081",
@@ -1627,4 +1627,4 @@ window.SCHOLAR = {
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-10-16T09:17:30Z"
+window.PUBLICATIONS_TS = "2026-10-17T08:51:07Z"
