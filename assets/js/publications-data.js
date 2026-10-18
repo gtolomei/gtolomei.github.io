@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-10-17T08:51:07Z
+// Last updated: 2026-10-18T09:07:49Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -1145,7 +1145,7 @@ window.PUBLICATIONS = [
       "Stefano Calzavara",
       "Gabriele Tolomei",
       "Andrea Casini",
-      "Michele Bugliesi",
+      "Michele Bugliesi A",
       "Salvatore Orlando"
     ],
     "year": 2015,
@@ -1186,7 +1186,7 @@ window.PUBLICATIONS = [
     "authors": [
       "Stefano Calzavara",
       "Gabriele Tolomei",
-      "Michele Bugliesi",
+      "Michele Bugliesi A",
       "Salvatore Orlando"
     ],
     "year": 2014,
@@ -1627,4 +1627,4 @@ window.SCHOLAR = {
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-10-17T08:51:07Z"
+window.PUBLICATIONS_TS = "2026-10-18T09:07:49Z"
