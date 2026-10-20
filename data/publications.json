@@ -888,7 +888,7 @@
       "federated"
     ],
     "url": "https://doi.org/10.1109/access.2022.3229124",
-    "citations": 17
+    "citations": 18
   },
   {
     "key": "W3153233384",
@@ -968,7 +968,7 @@
     "year": 2020,
     "venue": "DMKD",
     "venue_full": "Data Mining and Knowledge Discovery",
-    "venue_key": "datamine",
+    "venue_key": "dmkd",
     "type": "q1",
     "topics": [
       "adversarial"
