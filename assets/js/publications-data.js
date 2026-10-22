@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-10-21T09:38:22Z
+// Last updated: 2026-10-22T09:39:57Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -970,7 +970,7 @@ window.PUBLICATIONS = [
     "year": 2020,
     "venue": "DMKD",
     "venue_full": "Data Mining and Knowledge Discovery",
-    "venue_key": "dmkd",
+    "venue_key": "datamine",
     "type": "q1",
     "topics": [
       "adversarial"
@@ -1627,4 +1627,4 @@ window.SCHOLAR = {
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-10-21T09:38:22Z"
+window.PUBLICATIONS_TS = "2026-10-22T09:39:57Z"
