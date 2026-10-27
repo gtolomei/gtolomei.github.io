@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-10-26T10:12:26Z
+// Last updated: 2026-10-27T10:05:58Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -841,7 +841,7 @@ window.PUBLICATIONS = [
     ],
     "year": 2022,
     "venue": "IJCNN",
-    "venue_full": "2022 International Joint Conference on Neural Networks (IJCNN)",
+    "venue_full": "International Joint Conference on Neural Networks (IJCNN)",
     "venue_key": "ijcnn",
     "type": "a_conf",
     "topics": [
@@ -863,7 +863,7 @@ window.PUBLICATIONS = [
     ],
     "year": 2022,
     "venue": "CIKM",
-    "venue_full": "Proceedings of the ... ACM International Conference on Information & Knowledge Management",
+    "venue_full": "ACM International Conference on Information and Knowledge Management (CIKM)",
     "venue_key": "cikm",
     "type": "a_conf",
     "topics": [
@@ -970,7 +970,7 @@ window.PUBLICATIONS = [
     "year": 2020,
     "venue": "DMKD",
     "venue_full": "Data Mining and Knowledge Discovery",
-    "venue_key": "dmkd",
+    "venue_key": "datamine",
     "type": "q1",
     "topics": [
       "adversarial"
@@ -1171,7 +1171,7 @@ window.PUBLICATIONS = [
     ],
     "year": 2015,
     "venue": "KDD",
-    "venue_full": "ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD)",
+    "venue_full": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)",
     "venue_key": "kdd",
     "type": "a_star",
     "topics": [
@@ -1290,7 +1290,7 @@ window.PUBLICATIONS = [
     ],
     "year": 2013,
     "venue": "SocialCom",
-    "venue_full": "2013 International Conference on Social Computing",
+    "venue_full": "International Conference on Social Computing",
     "venue_key": null,
     "type": "other",
     "topics": [
@@ -1534,7 +1534,7 @@ window.PUBLICATIONS = [
     ],
     "year": 2009,
     "venue": "ICUMT",
-    "venue_full": "2009 International Conference on Ultra Modern Telecommunications & Workshops",
+    "venue_full": "International Congress on Ultra Modern Telecommunications and Control Systems and Workshops (ICUMT)",
     "venue_key": null,
     "type": "workshop",
     "topics": [
@@ -1627,4 +1627,4 @@ window.SCHOLAR = {
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-10-26T10:12:26Z"
+window.PUBLICATIONS_TS = "2026-10-27T10:05:58Z"
