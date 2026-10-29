@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-10-28T10:53:18Z
+// Last updated: 2026-10-29T10:55:54Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -1128,10 +1128,10 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2016,
-    "venue": "ICTIR",
-    "venue_full": "Proceedings of the 2016 ACM International Conference on the Theory of Information Retrieval",
-    "venue_key": "ictir",
-    "type": "a_conf",
+    "venue": "SIGIR",
+    "venue_full": "ACM SIGIR International Conference on Theory of Information Retrieval (ICTIR)",
+    "venue_key": "sigir",
+    "type": "a_star",
     "topics": [
       "ir"
     ],
@@ -1309,8 +1309,8 @@ window.PUBLICATIONS = [
       "Claudio Lucchese"
     ],
     "year": 2013,
-    "venue": "Workshop",
-    "venue_full": "Proceedings of the 2013 workshop on Data-driven user behavioral modelling and mining from social media",
+    "venue": "DUBMMSM",
+    "venue_full": "Workshop on Data-Driven User Behavioral Modelling and Mining from Social Media (DUBMMSM)",
     "venue_key": null,
     "type": "workshop",
     "topics": [
@@ -1623,8 +1623,8 @@ window.PUBLICATIONS = [
   }
 ];
 window.SCHOLAR = {
-  "citations": 2754,
+  "citations": 2757,
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-10-28T10:53:18Z"
+window.PUBLICATIONS_TS = "2026-10-29T10:55:54Z"
