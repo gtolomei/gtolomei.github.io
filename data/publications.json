@@ -968,7 +968,7 @@
     "year": 2020,
     "venue": "DMKD",
     "venue_full": "Data Mining and Knowledge Discovery",
-    "venue_key": "dmkd",
+    "venue_key": "datamine",
     "type": "q1",
     "topics": [
       "adversarial"
@@ -1539,7 +1539,7 @@
       "misc"
     ],
     "url": "https://doi.org/10.1109/icumt.2009.5345355",
-    "citations": 20
+    "citations": 19
   },
   {
     "key": "W2050126912",
@@ -1597,7 +1597,7 @@
       "misc"
     ],
     "url": "https://doi.org/10.1109/tce.2006.1605032",
-    "citations": 91
+    "citations": 90
   },
   {
     "key": "W2148346729",
