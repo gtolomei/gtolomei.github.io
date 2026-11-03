@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-11-02T12:44:02Z
+// Last updated: 2026-11-03T11:59:13Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -38,6 +38,32 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "https://doi.org/10.1145/3770854.3780243",
+    "citations": 0
+  },
+  {
+    "key": "W7151933956",
+    "title": "CURE: Circuit-Aware Unlearning for LLM-Based Recommendation",
+    "authors": [
+      "Ziheng Chen",
+      "Zezhong Fan",
+      "Jiali Cheng",
+      "Yunzhi Yao",
+      "Hadi Amiri",
+      "Gabriele Tolomei",
+      "Xiangguo Sun",
+      "Yang Zhang"
+    ],
+    "year": 2026,
+    "venue": "CIKM",
+    "venue_full": "ACM International Conference on Information and Knowledge Management (CIKM)",
+    "venue_key": "cikm",
+    "type": "a_conf",
+    "topics": [
+      "recommender",
+      "unlearning",
+      "llm"
+    ],
+    "url": "https://doi.org/10.1145/3799682.3840564",
     "citations": 0
   },
   {
@@ -789,7 +815,7 @@ window.PUBLICATIONS = [
       "recommender"
     ],
     "url": "http://arxiv.org/abs/2208.04222",
-    "citations": 10
+    "citations": 11
   },
   {
     "key": "W4320024272",
@@ -970,7 +996,7 @@ window.PUBLICATIONS = [
     "year": 2020,
     "venue": "DMKD",
     "venue_full": "Data Mining and Knowledge Discovery",
-    "venue_key": "dmkd",
+    "venue_key": "datamine",
     "type": "q1",
     "topics": [
       "adversarial"
@@ -1627,4 +1653,4 @@ window.SCHOLAR = {
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-11-02T12:44:02Z"
+window.PUBLICATIONS_TS = "2026-11-03T11:59:13Z"
