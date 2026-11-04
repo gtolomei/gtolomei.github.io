@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-11-03T11:59:13Z
+// Last updated: 2026-11-04T12:13:27Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -10,14 +10,14 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2026,
-    "venue": "arXiv",
-    "venue_full": "arXiv",
-    "venue_key": null,
-    "type": "preprint",
+    "venue": "CIKM",
+    "venue_full": "ACM International Conference on Information and Knowledge Management (CIKM)",
+    "venue_key": "cikm",
+    "type": "a_conf",
     "topics": [
       "xai"
     ],
-    "url": "https://arxiv.org/abs/2602.04360",
+    "url": "https://doi.org/10.1145/3799682.3840852",
     "citations": 0
   },
   {
@@ -64,7 +64,7 @@ window.PUBLICATIONS = [
       "llm"
     ],
     "url": "https://doi.org/10.1145/3799682.3840564",
-    "citations": 0
+    "citations": 2
   },
   {
     "key": "W7212003216",
@@ -125,6 +125,30 @@ window.PUBLICATIONS = [
     ],
     "url": "https://doi.org/10.1016/j.iot.2026.101906",
     "citations": 1
+  },
+  {
+    "key": "W7225085741",
+    "title": "LLM4XAI: Generative Models for Explainable AI Narratives",
+    "authors": [
+      "Gabriele Tolomei",
+      "Ziheng Chen",
+      "Flavio Giorgi",
+      "Vittoria Vineis",
+      "Matteo Silvestri",
+      "Fabiano Veglianti",
+      "Edoardo Gabrielli",
+      "Lorenzo Antonelli"
+    ],
+    "year": 2026,
+    "venue": "CIKM",
+    "venue_full": "ACM International Conference on Information and Knowledge Management (CIKM)",
+    "venue_key": "cikm",
+    "type": "a_conf",
+    "topics": [
+      "xai"
+    ],
+    "url": "https://doi.org/10.1145/3799682.3839285",
+    "citations": 0
   },
   {
     "key": "W7206212483",
@@ -373,7 +397,7 @@ window.PUBLICATIONS = [
       "fairness"
     ],
     "url": "https://doi.org/10.1145/3746252.3761341",
-    "citations": 3
+    "citations": 4
   },
   {
     "key": "W4416610251",
@@ -417,7 +441,7 @@ window.PUBLICATIONS = [
       "recommender"
     ],
     "url": "https://doi.org/10.1145/3731683",
-    "citations": 5
+    "citations": 7
   },
   {
     "key": "W4415026067",
@@ -438,7 +462,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "http://arxiv.org/abs/2505.01468",
-    "citations": 0
+    "citations": 3
   },
   {
     "key": "W4412082038",
@@ -620,7 +644,7 @@ window.PUBLICATIONS = [
       "gnn"
     ],
     "url": "https://doi.org/10.1145/3637528.3671896",
-    "citations": 5
+    "citations": 6
   },
   {
     "key": "W4403334015",
@@ -746,7 +770,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1145/3539618.3592070",
-    "citations": 23
+    "citations": 24
   },
   {
     "key": "CF-Gnnexplainer: Counterfactual Explanations for Graph Neural Networks",
@@ -790,7 +814,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "https://doi.org/10.1109/tai.2022.3223892",
-    "citations": 25
+    "citations": 26
   },
   {
     "key": "W4298169105",
@@ -896,7 +920,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "https://doi.org/10.1145/3511808.3557429",
-    "citations": 38
+    "citations": 39
   },
   {
     "key": "W4311721665",
@@ -916,7 +940,7 @@ window.PUBLICATIONS = [
       "federated"
     ],
     "url": "https://doi.org/10.1109/access.2022.3229124",
-    "citations": 18
+    "citations": 29
   },
   {
     "key": "W3153233384",
@@ -937,7 +961,7 @@ window.PUBLICATIONS = [
       "security"
     ],
     "url": "https://arxiv.org/pdf/2104.10561.pdf",
-    "citations": 12
+    "citations": 13
   },
   {
     "key": "W3209179910",
@@ -1122,7 +1146,7 @@ window.PUBLICATIONS = [
       "recommender"
     ],
     "url": "https://doi.org/10.1007/s41060-018-0122-1",
-    "citations": 23
+    "citations": 24
   },
   {
     "key": "10.1145/3097983.3098039",
@@ -1204,7 +1228,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1145/2783258.2788581",
-    "citations": 32
+    "citations": 33
   },
   {
     "key": "W2079029214",
@@ -1625,7 +1649,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1109/tce.2006.1605032",
-    "citations": 90
+    "citations": 91
   },
   {
     "key": "W2148346729",
@@ -1645,12 +1669,12 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1109/icce.2006.1598338",
-    "citations": 12
+    "citations": 13
   }
 ];
 window.SCHOLAR = {
-  "citations": 2760,
+  "citations": 2764,
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-11-03T11:59:13Z"
+window.PUBLICATIONS_TS = "2026-11-04T12:13:27Z"

@@ -8,14 +8,14 @@
       "Gabriele Tolomei"
     ],
     "year": 2026,
-    "venue": "arXiv",
-    "venue_full": "arXiv",
-    "venue_key": null,
-    "type": "preprint",
+    "venue": "CIKM",
+    "venue_full": "ACM International Conference on Information and Knowledge Management (CIKM)",
+    "venue_key": "cikm",
+    "type": "a_conf",
     "topics": [
       "xai"
     ],
-    "url": "https://arxiv.org/abs/2602.04360",
+    "url": "https://doi.org/10.1145/3799682.3840852",
     "citations": 0
   },
   {
@@ -62,7 +62,7 @@
       "llm"
     ],
     "url": "https://doi.org/10.1145/3799682.3840564",
-    "citations": 0
+    "citations": 2
   },
   {
     "key": "W7212003216",
@@ -123,6 +123,30 @@
     ],
     "url": "https://doi.org/10.1016/j.iot.2026.101906",
     "citations": 1
+  },
+  {
+    "key": "W7225085741",
+    "title": "LLM4XAI: Generative Models for Explainable AI Narratives",
+    "authors": [
+      "Gabriele Tolomei",
+      "Ziheng Chen",
+      "Flavio Giorgi",
+      "Vittoria Vineis",
+      "Matteo Silvestri",
+      "Fabiano Veglianti",
+      "Edoardo Gabrielli",
+      "Lorenzo Antonelli"
+    ],
+    "year": 2026,
+    "venue": "CIKM",
+    "venue_full": "ACM International Conference on Information and Knowledge Management (CIKM)",
+    "venue_key": "cikm",
+    "type": "a_conf",
+    "topics": [
+      "xai"
+    ],
+    "url": "https://doi.org/10.1145/3799682.3839285",
+    "citations": 0
   },
   {
     "key": "W7206212483",
@@ -371,7 +395,7 @@
       "fairness"
     ],
     "url": "https://doi.org/10.1145/3746252.3761341",
-    "citations": 3
+    "citations": 4
   },
   {
     "key": "W4416610251",
@@ -415,7 +439,7 @@
       "recommender"
     ],
     "url": "https://doi.org/10.1145/3731683",
-    "citations": 5
+    "citations": 7
   },
   {
     "key": "W4415026067",
@@ -436,7 +460,7 @@
       "misc"
     ],
     "url": "http://arxiv.org/abs/2505.01468",
-    "citations": 0
+    "citations": 3
   },
   {
     "key": "W4412082038",
@@ -618,7 +642,7 @@
       "gnn"
     ],
     "url": "https://doi.org/10.1145/3637528.3671896",
-    "citations": 5
+    "citations": 6
   },
   {
     "key": "W4403334015",
@@ -744,7 +768,7 @@
       "ir"
     ],
     "url": "https://doi.org/10.1145/3539618.3592070",
-    "citations": 23
+    "citations": 24
   },
   {
     "key": "CF-Gnnexplainer: Counterfactual Explanations for Graph Neural Networks",
@@ -788,7 +812,7 @@
       "xai"
     ],
     "url": "https://doi.org/10.1109/tai.2022.3223892",
-    "citations": 25
+    "citations": 26
   },
   {
     "key": "W4298169105",
@@ -894,7 +918,7 @@
       "xai"
     ],
     "url": "https://doi.org/10.1145/3511808.3557429",
-    "citations": 38
+    "citations": 39
   },
   {
     "key": "W4311721665",
@@ -914,7 +938,7 @@
       "federated"
     ],
     "url": "https://doi.org/10.1109/access.2022.3229124",
-    "citations": 18
+    "citations": 29
   },
   {
     "key": "W3153233384",
@@ -935,7 +959,7 @@
       "security"
     ],
     "url": "https://arxiv.org/pdf/2104.10561.pdf",
-    "citations": 12
+    "citations": 13
   },
   {
     "key": "W3209179910",
@@ -1120,7 +1144,7 @@
       "recommender"
     ],
     "url": "https://doi.org/10.1007/s41060-018-0122-1",
-    "citations": 23
+    "citations": 24
   },
   {
     "key": "10.1145/3097983.3098039",
@@ -1202,7 +1226,7 @@
       "ir"
     ],
     "url": "https://doi.org/10.1145/2783258.2788581",
-    "citations": 32
+    "citations": 33
   },
   {
     "key": "W2079029214",
@@ -1623,7 +1647,7 @@
       "misc"
     ],
     "url": "https://doi.org/10.1109/tce.2006.1605032",
-    "citations": 90
+    "citations": 91
   },
   {
     "key": "W2148346729",
@@ -1643,6 +1667,6 @@
       "misc"
     ],
     "url": "https://doi.org/10.1109/icce.2006.1598338",
-    "citations": 12
+    "citations": 13
   }
 ]
