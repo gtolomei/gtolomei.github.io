@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-11-04T12:13:27Z
+// Last updated: 2026-11-05T12:40:06Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -124,7 +124,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1016/j.iot.2026.101906",
-    "citations": 1
+    "citations": 2
   },
   {
     "key": "W7225085741",
@@ -187,7 +187,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "http://arxiv.org/abs/2603.06485",
-    "citations": 0
+    "citations": 1
   },
   {
     "key": "W7212192700",
@@ -207,7 +207,7 @@ window.PUBLICATIONS = [
       "gnn"
     ],
     "url": "https://doi.org/10.1016/j.osnem.2026.100357",
-    "citations": 0
+    "citations": 1
   },
   {
     "key": "W7164010575",
@@ -250,7 +250,7 @@ window.PUBLICATIONS = [
       "gnn"
     ],
     "url": "https://doi.org/10.1038/s44387-026-00135-w",
-    "citations": 0
+    "citations": 1
   },
   {
     "key": "W7125616339",
@@ -315,26 +315,6 @@ window.PUBLICATIONS = [
     "citations": 1
   },
   {
-    "key": "W4407632620",
-    "title": "COMBINEX: A Unified Counterfactual Explainer for Graph Neural Networks via Node Feature and Structural Perturbations",
-    "authors": [
-      "Flavio Giorgi",
-      "Fabrizio Silvestri",
-      "Gabriele Tolomei"
-    ],
-    "year": 2025,
-    "venue": "arXiv",
-    "venue_full": "arXiv",
-    "venue_key": null,
-    "type": "preprint",
-    "topics": [
-      "xai",
-      "gnn"
-    ],
-    "url": "http://arxiv.org/abs/2502.10111",
-    "citations": 0
-  },
-  {
     "key": "W4416371295",
     "title": "Enhancing XAI Narratives through Multi-Narrative Refinement and Knowledge Distillation",
     "authors": [
@@ -353,7 +333,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "http://arxiv.org/abs/2510.03134",
-    "citations": 0
+    "citations": 1
   },
   {
     "key": "W4414790777",
@@ -373,7 +353,7 @@ window.PUBLICATIONS = [
       "gnn"
     ],
     "url": "http://arxiv.org/abs/2509.21211",
-    "citations": 0
+    "citations": 2
   },
   {
     "key": "W4416016566",
@@ -509,7 +489,7 @@ window.PUBLICATIONS = [
       "federated"
     ],
     "url": "https://doi.org/10.1109/tifs.2025.3608671",
-    "citations": 5
+    "citations": 6
   },
   {
     "key": "W4416619852",
@@ -530,7 +510,7 @@ window.PUBLICATIONS = [
       "llm"
     ],
     "url": "https://arxiv.org/abs/2510.20351",
-    "citations": 0
+    "citations": 1
   },
   {
     "key": "W4393118871",
@@ -551,7 +531,7 @@ window.PUBLICATIONS = [
       "unlearning"
     ],
     "url": "http://arxiv.org/abs/2403.14339",
-    "citations": 1
+    "citations": 5
   },
   {
     "key": "W4399286125",
@@ -624,7 +604,7 @@ window.PUBLICATIONS = [
       "fairness"
     ],
     "url": "http://arxiv.org/abs/2404.15760",
-    "citations": 1
+    "citations": 5
   },
   {
     "key": "W4401863450",
@@ -684,7 +664,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "http://arxiv.org/abs/2410.09295",
-    "citations": 1
+    "citations": 3
   },
   {
     "key": "W4384828640",
@@ -724,7 +704,7 @@ window.PUBLICATIONS = [
       "llm"
     ],
     "url": "https://doi.org/10.1109/cogmi58952.2023.00027",
-    "citations": 9
+    "citations": 10
   },
   {
     "key": "W4387068289",
@@ -770,7 +750,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1145/3539618.3592070",
-    "citations": 24
+    "citations": 27
   },
   {
     "key": "CF-Gnnexplainer: Counterfactual Explanations for Graph Neural Networks",
@@ -839,7 +819,7 @@ window.PUBLICATIONS = [
       "recommender"
     ],
     "url": "http://arxiv.org/abs/2208.04222",
-    "citations": 11
+    "citations": 19
   },
   {
     "key": "W4320024272",
@@ -920,7 +900,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "https://doi.org/10.1145/3511808.3557429",
-    "citations": 39
+    "citations": 42
   },
   {
     "key": "W4311721665",
@@ -941,27 +921,6 @@ window.PUBLICATIONS = [
     ],
     "url": "https://doi.org/10.1109/access.2022.3229124",
     "citations": 29
-  },
-  {
-    "key": "W3153233384",
-    "title": "Covert Channel Attack to Federated Learning Systems",
-    "authors": [
-      "Gabriele Costa",
-      "Fabio Pinelli",
-      "Simone Soderi",
-      "Gabriele Tolomei"
-    ],
-    "year": 2021,
-    "venue": "arXiv",
-    "venue_full": "arXiv",
-    "venue_key": null,
-    "type": "preprint",
-    "topics": [
-      "federated",
-      "security"
-    ],
-    "url": "https://arxiv.org/pdf/2104.10561.pdf",
-    "citations": 13
   },
   {
     "key": "W3209179910",
@@ -1026,7 +985,7 @@ window.PUBLICATIONS = [
       "adversarial"
     ],
     "url": "https://doi.org/10.1007/s10618-020-00694-9",
-    "citations": 32
+    "citations": 33
   },
   {
     "key": "W2987678574",
@@ -1085,7 +1044,7 @@ window.PUBLICATIONS = [
       "security"
     ],
     "url": "https://doi.org/10.1109/eurosp.2019.00045",
-    "citations": 40
+    "citations": 41
   },
   {
     "key": "W2786484447",
@@ -1106,7 +1065,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1109/mcom.2017.1700871",
-    "citations": 119
+    "citations": 117
   },
   {
     "key": "W2886626623",
@@ -1126,7 +1085,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1109/cns.2018.8433122",
-    "citations": 6
+    "citations": 5
   },
   {
     "key": "W2796774312",
@@ -1207,7 +1166,7 @@ window.PUBLICATIONS = [
       "security"
     ],
     "url": "https://doi.org/10.1145/2754933",
-    "citations": 26
+    "citations": 27
   },
   {
     "key": "W2069361640",
@@ -1228,7 +1187,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1145/2783258.2788581",
-    "citations": 33
+    "citations": 32
   },
   {
     "key": "W2079029214",
@@ -1347,7 +1306,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1109/socialcom.2013.12",
-    "citations": 14
+    "citations": 15
   },
   {
     "key": "W2017064567",
@@ -1507,7 +1466,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1145/1935826.1935875",
-    "citations": 133
+    "citations": 132
   },
   {
     "key": "W157734559",
@@ -1591,7 +1550,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1109/icumt.2009.5345355",
-    "citations": 19
+    "citations": 18
   },
   {
     "key": "W2050126912",
@@ -1621,14 +1580,14 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2008,
-    "venue": "ERCIM News",
-    "venue_full": "ERCIM news/ERCIM news online edition",
+    "venue": "Repository",
+    "venue_full": "IRIS Research product catalog (Sapienza University of Rome)",
     "venue_key": null,
     "type": "other",
     "topics": [
       "misc"
     ],
-    "url": "http://dblp.uni-trier.de/db/journals/ercim/ercim2008.html#LaforenzaNST08",
+    "url": "http://hdl.handle.net/11573/1382684",
     "citations": 1
   },
   {
@@ -1677,4 +1636,4 @@ window.SCHOLAR = {
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-11-04T12:13:27Z"
+window.PUBLICATIONS_TS = "2026-11-05T12:40:06Z"
