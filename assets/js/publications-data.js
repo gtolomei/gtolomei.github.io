@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-11-05T12:40:06Z
+// Last updated: 2026-11-10T11:39:08Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -38,7 +38,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "https://doi.org/10.1145/3770854.3780243",
-    "citations": 0
+    "citations": 2
   },
   {
     "key": "W7151933956",
@@ -64,7 +64,7 @@ window.PUBLICATIONS = [
       "llm"
     ],
     "url": "https://doi.org/10.1145/3799682.3840564",
-    "citations": 2
+    "citations": 7
   },
   {
     "key": "W7212003216",
@@ -124,7 +124,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1016/j.iot.2026.101906",
-    "citations": 2
+    "citations": 3
   },
   {
     "key": "W7225085741",
@@ -187,7 +187,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "http://arxiv.org/abs/2603.06485",
-    "citations": 1
+    "citations": 3
   },
   {
     "key": "W7212192700",
@@ -207,7 +207,7 @@ window.PUBLICATIONS = [
       "gnn"
     ],
     "url": "https://doi.org/10.1016/j.osnem.2026.100357",
-    "citations": 1
+    "citations": 2
   },
   {
     "key": "W7164010575",
@@ -230,7 +230,7 @@ window.PUBLICATIONS = [
       "recommender"
     ],
     "url": "https://arxiv.org/abs/2606.07688",
-    "citations": 0
+    "citations": 4
   },
   {
     "key": "W7167350586",
@@ -250,7 +250,7 @@ window.PUBLICATIONS = [
       "gnn"
     ],
     "url": "https://doi.org/10.1038/s44387-026-00135-w",
-    "citations": 1
+    "citations": 5
   },
   {
     "key": "W7125616339",
@@ -312,7 +312,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "http://arxiv.org/abs/2502.08542",
-    "citations": 1
+    "citations": 3
   },
   {
     "key": "W4416371295",
@@ -333,7 +333,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "http://arxiv.org/abs/2510.03134",
-    "citations": 1
+    "citations": 3
   },
   {
     "key": "W4414790777",
@@ -377,7 +377,7 @@ window.PUBLICATIONS = [
       "fairness"
     ],
     "url": "https://doi.org/10.1145/3746252.3761341",
-    "citations": 4
+    "citations": 7
   },
   {
     "key": "W4416610251",
@@ -421,7 +421,7 @@ window.PUBLICATIONS = [
       "recommender"
     ],
     "url": "https://doi.org/10.1145/3731683",
-    "citations": 7
+    "citations": 9
   },
   {
     "key": "W4415026067",
@@ -442,7 +442,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "http://arxiv.org/abs/2505.01468",
-    "citations": 3
+    "citations": 4
   },
   {
     "key": "W4412082038",
@@ -489,7 +489,7 @@ window.PUBLICATIONS = [
       "federated"
     ],
     "url": "https://doi.org/10.1109/tifs.2025.3608671",
-    "citations": 6
+    "citations": 9
   },
   {
     "key": "W4416619852",
@@ -510,7 +510,7 @@ window.PUBLICATIONS = [
       "llm"
     ],
     "url": "https://arxiv.org/abs/2510.20351",
-    "citations": 1
+    "citations": 6
   },
   {
     "key": "W4393118871",
@@ -531,7 +531,7 @@ window.PUBLICATIONS = [
       "unlearning"
     ],
     "url": "http://arxiv.org/abs/2403.14339",
-    "citations": 5
+    "citations": 10
   },
   {
     "key": "W4399286125",
@@ -576,7 +576,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "https://doi.org/10.1109/tai.2024.3496616",
-    "citations": 7
+    "citations": 8
   },
   {
     "key": "W4395484015",
@@ -604,7 +604,7 @@ window.PUBLICATIONS = [
       "fairness"
     ],
     "url": "http://arxiv.org/abs/2404.15760",
-    "citations": 5
+    "citations": 7
   },
   {
     "key": "W4401863450",
@@ -624,7 +624,7 @@ window.PUBLICATIONS = [
       "gnn"
     ],
     "url": "https://doi.org/10.1145/3637528.3671896",
-    "citations": 6
+    "citations": 8
   },
   {
     "key": "W4403334015",
@@ -644,7 +644,7 @@ window.PUBLICATIONS = [
       "gnn"
     ],
     "url": "https://doi.org/10.36227/techrxiv.172866006.66912846/v1",
-    "citations": 3
+    "citations": 4
   },
   {
     "key": "W4403564539",
@@ -664,7 +664,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "http://arxiv.org/abs/2410.09295",
-    "citations": 3
+    "citations": 9
   },
   {
     "key": "W4384828640",
@@ -684,7 +684,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1145/3539618.3591926",
-    "citations": 6
+    "citations": 8
   },
   {
     "key": "W4391923572",
@@ -704,7 +704,7 @@ window.PUBLICATIONS = [
       "llm"
     ],
     "url": "https://doi.org/10.1109/cogmi58952.2023.00027",
-    "citations": 10
+    "citations": 11
   },
   {
     "key": "W4387068289",
@@ -726,7 +726,7 @@ window.PUBLICATIONS = [
       "gnn"
     ],
     "url": "https://doi.org/10.1109/tai.2023.3319306",
-    "citations": 8
+    "citations": 9
   },
   {
     "key": "W4384891029",
@@ -750,7 +750,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1145/3539618.3592070",
-    "citations": 27
+    "citations": 35
   },
   {
     "key": "CF-Gnnexplainer: Counterfactual Explanations for Graph Neural Networks",
@@ -794,7 +794,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "https://doi.org/10.1109/tai.2022.3223892",
-    "citations": 26
+    "citations": 27
   },
   {
     "key": "W4298169105",
@@ -819,7 +819,7 @@ window.PUBLICATIONS = [
       "recommender"
     ],
     "url": "http://arxiv.org/abs/2208.04222",
-    "citations": 19
+    "citations": 33
   },
   {
     "key": "W4320024272",
@@ -878,7 +878,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "https://doi.org/10.1109/ijcnn55064.2022.9892367",
-    "citations": 5
+    "citations": 6
   },
   {
     "key": "W4306317232",
@@ -900,7 +900,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "https://doi.org/10.1145/3511808.3557429",
-    "citations": 42
+    "citations": 51
   },
   {
     "key": "W4311721665",
@@ -920,7 +920,7 @@ window.PUBLICATIONS = [
       "federated"
     ],
     "url": "https://doi.org/10.1109/access.2022.3229124",
-    "citations": 29
+    "citations": 35
   },
   {
     "key": "W3209179910",
@@ -950,7 +950,7 @@ window.PUBLICATIONS = [
     "authors": [
       "Stefano Calzavara",
       "Mauro Conti",
-      "Riccardo Focardi A",
+      "Riccardo Focardi",
       "Alvise Rabitti",
       "Gabriele Tolomei"
     ],
@@ -964,7 +964,7 @@ window.PUBLICATIONS = [
       "security"
     ],
     "url": "https://doi.org/10.1109/msec.2019.2961649",
-    "citations": 29
+    "citations": 30
   },
   {
     "key": "W2955686665",
@@ -985,7 +985,7 @@ window.PUBLICATIONS = [
       "adversarial"
     ],
     "url": "https://doi.org/10.1007/s10618-020-00694-9",
-    "citations": 33
+    "citations": 39
   },
   {
     "key": "W2987678574",
@@ -1022,7 +1022,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "https://doi.org/10.1109/tkde.2019.2945326",
-    "citations": 19
+    "citations": 21
   },
   {
     "key": "W2943467804",
@@ -1030,7 +1030,7 @@ window.PUBLICATIONS = [
     "authors": [
       "Stefano Calzavara",
       "Mauro Conti",
-      "Riccardo Focardi A",
+      "Riccardo Focardi",
       "Alvise Rabitti",
       "Gabriele Tolomei"
     ],
@@ -1044,7 +1044,7 @@ window.PUBLICATIONS = [
       "security"
     ],
     "url": "https://doi.org/10.1109/eurosp.2019.00045",
-    "citations": 41
+    "citations": 46
   },
   {
     "key": "W2786484447",
@@ -1065,7 +1065,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1109/mcom.2017.1700871",
-    "citations": 117
+    "citations": 126
   },
   {
     "key": "W2886626623",
@@ -1105,7 +1105,7 @@ window.PUBLICATIONS = [
       "recommender"
     ],
     "url": "https://doi.org/10.1007/s41060-018-0122-1",
-    "citations": 24
+    "citations": 25
   },
   {
     "key": "10.1145/3097983.3098039",
@@ -1154,7 +1154,7 @@ window.PUBLICATIONS = [
       "Stefano Calzavara",
       "Gabriele Tolomei",
       "Andrea Casini",
-      "Michele Bugliesi A",
+      "Michele Bugliesi",
       "Salvatore Orlando"
     ],
     "year": 2015,
@@ -1187,7 +1187,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1145/2783258.2788581",
-    "citations": 32
+    "citations": 36
   },
   {
     "key": "W2079029214",
@@ -1195,7 +1195,7 @@ window.PUBLICATIONS = [
     "authors": [
       "Stefano Calzavara",
       "Gabriele Tolomei",
-      "Michele Bugliesi A",
+      "Michele Bugliesi",
       "Salvatore Orlando"
     ],
     "year": 2014,
@@ -1247,7 +1247,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1145/2493175.2493179",
-    "citations": 63
+    "citations": 64
   },
   {
     "key": "W102760613",
@@ -1326,7 +1326,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1145/2513577.2538768",
-    "citations": 4
+    "citations": 5
   },
   {
     "key": "W124371493",
@@ -1466,7 +1466,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1145/1935826.1935875",
-    "citations": 132
+    "citations": 134
   },
   {
     "key": "W157734559",
@@ -1608,7 +1608,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1109/tce.2006.1605032",
-    "citations": 91
+    "citations": 97
   },
   {
     "key": "W2148346729",
@@ -1636,4 +1636,4 @@ window.SCHOLAR = {
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-11-05T12:40:06Z"
+window.PUBLICATIONS_TS = "2026-11-10T11:39:08Z"
