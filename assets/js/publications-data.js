@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-11-10T12:56:48Z
+// Last updated: 2026-11-11T11:55:11Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -421,7 +421,7 @@ window.PUBLICATIONS = [
       "recommender"
     ],
     "url": "https://doi.org/10.1145/3731683",
-    "citations": 9
+    "citations": 7
   },
   {
     "key": "W4415026067",
@@ -442,7 +442,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "http://arxiv.org/abs/2505.01468",
-    "citations": 4
+    "citations": 5
   },
   {
     "key": "W4412082038",
@@ -489,7 +489,7 @@ window.PUBLICATIONS = [
       "federated"
     ],
     "url": "https://doi.org/10.1109/tifs.2025.3608671",
-    "citations": 9
+    "citations": 10
   },
   {
     "key": "W4416619852",
@@ -531,7 +531,7 @@ window.PUBLICATIONS = [
       "unlearning"
     ],
     "url": "http://arxiv.org/abs/2403.14339",
-    "citations": 10
+    "citations": 12
   },
   {
     "key": "W4399286125",
@@ -750,7 +750,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1145/3539618.3592070",
-    "citations": 35
+    "citations": 36
   },
   {
     "key": "CF-Gnnexplainer: Counterfactual Explanations for Graph Neural Networks",
@@ -819,7 +819,7 @@ window.PUBLICATIONS = [
       "recommender"
     ],
     "url": "http://arxiv.org/abs/2208.04222",
-    "citations": 33
+    "citations": 35
   },
   {
     "key": "W4320024272",
@@ -839,7 +839,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1109/bigdata55660.2022.10020920",
-    "citations": 3
+    "citations": 4
   },
   {
     "key": "W4320561400",
@@ -900,7 +900,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "https://doi.org/10.1145/3511808.3557429",
-    "citations": 51
+    "citations": 53
   },
   {
     "key": "W4311721665",
@@ -979,7 +979,7 @@ window.PUBLICATIONS = [
     "year": 2020,
     "venue": "DMKD",
     "venue_full": "Data Mining and Knowledge Discovery",
-    "venue_key": "dmkd",
+    "venue_key": "datamine",
     "type": "q1",
     "topics": [
       "adversarial"
@@ -1044,7 +1044,7 @@ window.PUBLICATIONS = [
       "security"
     ],
     "url": "https://doi.org/10.1109/eurosp.2019.00045",
-    "citations": 46
+    "citations": 47
   },
   {
     "key": "W2786484447",
@@ -1632,8 +1632,8 @@ window.PUBLICATIONS = [
   }
 ];
 window.SCHOLAR = {
-  "citations": 2764,
+  "citations": 2793,
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-11-10T12:56:48Z"
+window.PUBLICATIONS_TS = "2026-11-11T11:55:11Z"
