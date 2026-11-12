@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-11-11T11:55:11Z
+// Last updated: 2026-11-12T13:01:27Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -489,7 +489,7 @@ window.PUBLICATIONS = [
       "federated"
     ],
     "url": "https://doi.org/10.1109/tifs.2025.3608671",
-    "citations": 10
+    "citations": 11
   },
   {
     "key": "W4416619852",
@@ -1636,4 +1636,4 @@ window.SCHOLAR = {
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-11-11T11:55:11Z"
+window.PUBLICATIONS_TS = "2026-11-12T13:01:27Z"
