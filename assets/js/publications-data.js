@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-11-12T13:01:27Z
+// Last updated: 2026-11-13T12:33:18Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -18,7 +18,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "https://doi.org/10.1145/3799682.3840852",
-    "citations": 0
+    "citations": 1
   },
   {
     "key": "W7171965741",
@@ -1065,7 +1065,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1109/mcom.2017.1700871",
-    "citations": 126
+    "citations": 127
   },
   {
     "key": "W2886626623",
@@ -1191,7 +1191,7 @@ window.PUBLICATIONS = [
   },
   {
     "key": "W2079029214",
-    "title": "Quite a Mess in My Cookie Jar!",
+    "title": "Quite a Mess in My Cookie Jar! Leveraging Machine Learning to Protect Web Authentication",
     "authors": [
       "Stefano Calzavara",
       "Gabriele Tolomei",
@@ -1272,7 +1272,7 @@ window.PUBLICATIONS = [
   },
   {
     "key": "W1588334334",
-    "title": "SEED",
+    "title": "SEED: a Framework for Extracting Social Events from Press News",
     "authors": [
       "Salvatore Orlando",
       "Francesco Pizzolon",
@@ -1554,7 +1554,7 @@ window.PUBLICATIONS = [
   },
   {
     "key": "W2050126912",
-    "title": "Search the Web X.0",
+    "title": "Search the Web X.0: Mining and Recommending Web-Mediated Processes",
     "authors": [
       "Gabriele Tolomei"
     ],
@@ -1608,7 +1608,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1109/tce.2006.1605032",
-    "citations": 97
+    "citations": 96
   },
   {
     "key": "W2148346729",
@@ -1636,4 +1636,4 @@ window.SCHOLAR = {
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-11-12T13:01:27Z"
+window.PUBLICATIONS_TS = "2026-11-13T12:33:18Z"
