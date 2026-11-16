@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-11-15T11:59:28Z
+// Last updated: 2026-11-16T13:03:54Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -1022,7 +1022,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "https://doi.org/10.1109/tkde.2019.2945326",
-    "citations": 21
+    "citations": 22
   },
   {
     "key": "W2943467804",
@@ -1218,14 +1218,14 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2013,
-    "venue": "Journal/Conf",
-    "venue_full": "http://ojs.scienceengineering.org/index.php/human/article/download/64/97/",
+    "venue": "Repository",
+    "venue_full": "IRIS Research product catalog (Sapienza University of Rome)",
     "venue_key": null,
     "type": "other",
     "topics": [
       "ir"
     ],
-    "url": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.455.8914",
+    "url": "http://hdl.handle.net/11573/1382663",
     "citations": 11
   },
   {
@@ -1260,14 +1260,14 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2013,
-    "venue": "WWW",
-    "venue_full": "http://www.dsi.unive.it/~orlando/PAPERS/oair2013.pdf",
-    "venue_key": "www",
-    "type": "a_star",
+    "venue": "Repository",
+    "venue_full": "IRIS Research product catalog (Sapienza University of Rome)",
+    "venue_key": null,
+    "type": "other",
     "topics": [
       "ir"
     ],
-    "url": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.309.8360",
+    "url": "https://hdl.handle.net/11573/1382673",
     "citations": 5
   },
   {
@@ -1636,4 +1636,4 @@ window.SCHOLAR = {
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-11-15T11:59:28Z"
+window.PUBLICATIONS_TS = "2026-11-16T13:03:54Z"
