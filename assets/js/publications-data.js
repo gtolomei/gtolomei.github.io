@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-11-16T13:03:54Z
+// Last updated: 2026-11-17T13:47:09Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -104,7 +104,7 @@ window.PUBLICATIONS = [
       "recommender"
     ],
     "url": "https://doi.org/10.1007/978-3-032-21324-2_28",
-    "citations": 0
+    "citations": 1
   },
   {
     "key": "W7130435732",
@@ -124,7 +124,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1016/j.iot.2026.101906",
-    "citations": 3
+    "citations": 5
   },
   {
     "key": "W7225085741",
@@ -187,7 +187,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "http://arxiv.org/abs/2603.06485",
-    "citations": 3
+    "citations": 4
   },
   {
     "key": "W7212192700",
@@ -250,7 +250,7 @@ window.PUBLICATIONS = [
       "gnn"
     ],
     "url": "https://doi.org/10.1038/s44387-026-00135-w",
-    "citations": 5
+    "citations": 6
   },
   {
     "key": "W7125616339",
@@ -312,7 +312,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "http://arxiv.org/abs/2502.08542",
-    "citations": 3
+    "citations": 5
   },
   {
     "key": "W4416371295",
@@ -333,7 +333,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "http://arxiv.org/abs/2510.03134",
-    "citations": 3
+    "citations": 4
   },
   {
     "key": "W4414790777",
@@ -377,7 +377,7 @@ window.PUBLICATIONS = [
       "fairness"
     ],
     "url": "https://doi.org/10.1145/3746252.3761341",
-    "citations": 7
+    "citations": 12
   },
   {
     "key": "W4416610251",
@@ -421,7 +421,7 @@ window.PUBLICATIONS = [
       "recommender"
     ],
     "url": "https://doi.org/10.1145/3731683",
-    "citations": 7
+    "citations": 13
   },
   {
     "key": "W4415026067",
@@ -467,7 +467,7 @@ window.PUBLICATIONS = [
       "unlearning"
     ],
     "url": "https://doi.org/10.1109/cai64502.2025.00152",
-    "citations": 0
+    "citations": 3
   },
   {
     "key": "W4361807037",
@@ -489,7 +489,7 @@ window.PUBLICATIONS = [
       "federated"
     ],
     "url": "https://doi.org/10.1109/tifs.2025.3608671",
-    "citations": 11
+    "citations": 14
   },
   {
     "key": "W4416619852",
@@ -510,7 +510,7 @@ window.PUBLICATIONS = [
       "llm"
     ],
     "url": "https://arxiv.org/abs/2510.20351",
-    "citations": 6
+    "citations": 7
   },
   {
     "key": "W4393118871",
@@ -531,7 +531,7 @@ window.PUBLICATIONS = [
       "unlearning"
     ],
     "url": "http://arxiv.org/abs/2403.14339",
-    "citations": 12
+    "citations": 22
   },
   {
     "key": "W4399286125",
@@ -555,7 +555,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1007/978-3-031-59717-6_33",
-    "citations": 1
+    "citations": 2
   },
   {
     "key": "W4404520975",
@@ -576,7 +576,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "https://doi.org/10.1109/tai.2024.3496616",
-    "citations": 8
+    "citations": 9
   },
   {
     "key": "W4395484015",
@@ -604,7 +604,7 @@ window.PUBLICATIONS = [
       "fairness"
     ],
     "url": "http://arxiv.org/abs/2404.15760",
-    "citations": 7
+    "citations": 10
   },
   {
     "key": "W4401863450",
@@ -624,7 +624,7 @@ window.PUBLICATIONS = [
       "gnn"
     ],
     "url": "https://doi.org/10.1145/3637528.3671896",
-    "citations": 8
+    "citations": 13
   },
   {
     "key": "W4403334015",
@@ -684,7 +684,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1145/3539618.3591926",
-    "citations": 8
+    "citations": 12
   },
   {
     "key": "W4391923572",
@@ -704,7 +704,7 @@ window.PUBLICATIONS = [
       "llm"
     ],
     "url": "https://doi.org/10.1109/cogmi58952.2023.00027",
-    "citations": 11
+    "citations": 14
   },
   {
     "key": "W4387068289",
@@ -726,7 +726,7 @@ window.PUBLICATIONS = [
       "gnn"
     ],
     "url": "https://doi.org/10.1109/tai.2023.3319306",
-    "citations": 9
+    "citations": 14
   },
   {
     "key": "W4384891029",
@@ -750,7 +750,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1145/3539618.3592070",
-    "citations": 36
+    "citations": 43
   },
   {
     "key": "CF-Gnnexplainer: Counterfactual Explanations for Graph Neural Networks",
@@ -794,7 +794,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "https://doi.org/10.1109/tai.2022.3223892",
-    "citations": 27
+    "citations": 40
   },
   {
     "key": "W4298169105",
@@ -819,7 +819,7 @@ window.PUBLICATIONS = [
       "recommender"
     ],
     "url": "http://arxiv.org/abs/2208.04222",
-    "citations": 35
+    "citations": 45
   },
   {
     "key": "W4320024272",
@@ -839,7 +839,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1109/bigdata55660.2022.10020920",
-    "citations": 4
+    "citations": 5
   },
   {
     "key": "W4320561400",
@@ -858,7 +858,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "http://arxiv.org/abs/2211.02177",
-    "citations": 0
+    "citations": 1
   },
   {
     "key": "W3204287053",
@@ -878,7 +878,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "https://doi.org/10.1109/ijcnn55064.2022.9892367",
-    "citations": 6
+    "citations": 7
   },
   {
     "key": "W4306317232",
@@ -900,7 +900,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "https://doi.org/10.1145/3511808.3557429",
-    "citations": 53
+    "citations": 76
   },
   {
     "key": "W4311721665",
@@ -920,7 +920,7 @@ window.PUBLICATIONS = [
       "federated"
     ],
     "url": "https://doi.org/10.1109/access.2022.3229124",
-    "citations": 35
+    "citations": 37
   },
   {
     "key": "W3209179910",
@@ -942,7 +942,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "http://arxiv.org/abs/2110.11960",
-    "citations": 3
+    "citations": 5
   },
   {
     "key": "W3001944142",
@@ -964,7 +964,7 @@ window.PUBLICATIONS = [
       "security"
     ],
     "url": "https://doi.org/10.1109/msec.2019.2961649",
-    "citations": 30
+    "citations": 36
   },
   {
     "key": "W2955686665",
@@ -985,7 +985,7 @@ window.PUBLICATIONS = [
       "adversarial"
     ],
     "url": "https://doi.org/10.1007/s10618-020-00694-9",
-    "citations": 39
+    "citations": 59
   },
   {
     "key": "W2987678574",
@@ -1004,7 +1004,7 @@ window.PUBLICATIONS = [
       "adversarial"
     ],
     "url": "https://doi.org/10.1145/3357384.3358149",
-    "citations": 30
+    "citations": 41
   },
   {
     "key": "W2979156612",
@@ -1022,7 +1022,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "https://doi.org/10.1109/tkde.2019.2945326",
-    "citations": 22
+    "citations": 24
   },
   {
     "key": "W2943467804",
@@ -1044,7 +1044,7 @@ window.PUBLICATIONS = [
       "security"
     ],
     "url": "https://doi.org/10.1109/eurosp.2019.00045",
-    "citations": 47
+    "citations": 63
   },
   {
     "key": "W2786484447",
@@ -1065,7 +1065,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1109/mcom.2017.1700871",
-    "citations": 127
+    "citations": 137
   },
   {
     "key": "W2886626623",
@@ -1105,7 +1105,7 @@ window.PUBLICATIONS = [
       "recommender"
     ],
     "url": "https://doi.org/10.1007/s41060-018-0122-1",
-    "citations": 25
+    "citations": 30
   },
   {
     "key": "10.1145/3097983.3098039",
@@ -1166,7 +1166,7 @@ window.PUBLICATIONS = [
       "security"
     ],
     "url": "https://doi.org/10.1145/2754933",
-    "citations": 27
+    "citations": 32
   },
   {
     "key": "W2069361640",
@@ -1187,7 +1187,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1145/2783258.2788581",
-    "citations": 36
+    "citations": 40
   },
   {
     "key": "W2079029214",
@@ -1207,7 +1207,7 @@ window.PUBLICATIONS = [
       "security"
     ],
     "url": "https://doi.org/10.1145/2566486.2568047",
-    "citations": 24
+    "citations": 30
   },
   {
     "key": "W2103325788",
@@ -1247,7 +1247,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1145/2493175.2493179",
-    "citations": 64
+    "citations": 70
   },
   {
     "key": "W102760613",
@@ -1268,7 +1268,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://hdl.handle.net/11573/1382673",
-    "citations": 5
+    "citations": 9
   },
   {
     "key": "W1588334334",
@@ -1287,7 +1287,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1145/2487788.2488163",
-    "citations": 6
+    "citations": 9
   },
   {
     "key": "W2545649789",
@@ -1306,7 +1306,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1109/socialcom.2013.12",
-    "citations": 15
+    "citations": 16
   },
   {
     "key": "W2017064567",
@@ -1326,7 +1326,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1145/2513577.2538768",
-    "citations": 5
+    "citations": 6
   },
   {
     "key": "W124371493",
@@ -1345,7 +1345,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1007/978-3-642-37422-7_3",
-    "citations": 24
+    "citations": 26
   },
   {
     "key": "W1972102081",
@@ -1364,7 +1364,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1145/2245276.2231939",
-    "citations": 6
+    "citations": 7
   },
   {
     "key": "W1619182398",
@@ -1466,7 +1466,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1145/1935826.1935875",
-    "citations": 134
+    "citations": 144
   },
   {
     "key": "W157734559",
@@ -1487,7 +1487,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1007/978-3-642-24469-8_39",
-    "citations": 16
+    "citations": 21
   },
   {
     "key": "W1987000429",
@@ -1508,7 +1508,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1109/wi-iat.2010.281",
-    "citations": 4
+    "citations": 6
   },
   {
     "key": "W2114346296",
@@ -1528,7 +1528,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1109/icdew.2010.5452726",
-    "citations": 7
+    "citations": 8
   },
   {
     "key": "W2126432673",
@@ -1550,7 +1550,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1109/icumt.2009.5345355",
-    "citations": 18
+    "citations": 20
   },
   {
     "key": "W2050126912",
@@ -1608,7 +1608,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1109/tce.2006.1605032",
-    "citations": 96
+    "citations": 103
   },
   {
     "key": "W2148346729",
@@ -1628,7 +1628,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1109/icce.2006.1598338",
-    "citations": 13
+    "citations": 19
   }
 ];
 window.SCHOLAR = {
@@ -1636,4 +1636,4 @@ window.SCHOLAR = {
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-11-16T13:03:54Z"
+window.PUBLICATIONS_TS = "2026-11-17T13:47:09Z"
