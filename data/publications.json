@@ -177,14 +177,14 @@
       "Gabriele Tolomei"
     ],
     "year": 2026,
-    "venue": "arXiv",
-    "venue_full": "arXiv",
+    "venue": "Communications in computer and information science",
+    "venue_full": "Communications in computer and information science",
     "venue_key": null,
-    "type": "preprint",
+    "type": "other",
     "topics": [
       "xai"
     ],
-    "url": "http://arxiv.org/abs/2603.06485",
+    "url": "https://doi.org/10.1007/978-3-032-45467-6_6",
     "citations": 4
   },
   {
@@ -918,7 +918,7 @@
       "federated"
     ],
     "url": "https://doi.org/10.1109/access.2022.3229124",
-    "citations": 37
+    "citations": 38
   },
   {
     "key": "W3209179910",

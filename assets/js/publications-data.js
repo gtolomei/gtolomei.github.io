@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-11-17T13:47:09Z
+// Last updated: 2026-11-18T13:22:01Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -179,14 +179,14 @@ window.PUBLICATIONS = [
       "Gabriele Tolomei"
     ],
     "year": 2026,
-    "venue": "arXiv",
-    "venue_full": "arXiv",
+    "venue": "Communications in computer and information science",
+    "venue_full": "Communications in computer and information science",
     "venue_key": null,
-    "type": "preprint",
+    "type": "other",
     "topics": [
       "xai"
     ],
-    "url": "http://arxiv.org/abs/2603.06485",
+    "url": "https://doi.org/10.1007/978-3-032-45467-6_6",
     "citations": 4
   },
   {
@@ -920,7 +920,7 @@ window.PUBLICATIONS = [
       "federated"
     ],
     "url": "https://doi.org/10.1109/access.2022.3229124",
-    "citations": 37
+    "citations": 38
   },
   {
     "key": "W3209179910",
@@ -1636,4 +1636,4 @@ window.SCHOLAR = {
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-11-17T13:47:09Z"
+window.PUBLICATIONS_TS = "2026-11-18T13:22:01Z"
