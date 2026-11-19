@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-11-18T13:22:01Z
+// Last updated: 2026-11-19T13:33:18Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -422,6 +422,44 @@ window.PUBLICATIONS = [
     ],
     "url": "https://doi.org/10.1145/3731683",
     "citations": 13
+  },
+  {
+    "key": "W7235814506",
+    "title": "Joint Proceedings of the {ESWC} 2025 Workshops and Tutorials Co-Located with 22nd Extended Semantic Web Conference {(ESWC} 2025), Portoro{\\v{z}}, Slovenia, June 1-2, 2025",
+    "authors": [
+      "Marta Sabou and Andreas Harth and Pasquale Lisena and Edward Curry and Bohui Zhang and Reham Alharbi andYuan He andGeorg Rehm andSonja Schimmler andStefan Dietze andNatalia Manola andNicoletta Fornara andV{\\'{\\i}}ctor Rodr{\\'{\\i}}guez{-}Doncel andJohn Domingue andAchim Rettinger and Damian Trilling and Marko Grobelnik and Claudia d'Amato and Valeria Fionda and Ilaria Tiddi and Gabriele Tolomei",
+      "Marta Sabou",
+      "Andrea Harth",
+      "Pasquale Lisena",
+      "Edward Curry",
+      "Bohui Zhang",
+      "Reham Alharbi",
+      "Yuan He",
+      "Georg Rehm",
+      "Sonja Schimmler",
+      "Stefan Dietze",
+      "Natalia Manola",
+      "Nicoletta Fornara",
+      "V('(\\i))ctor Rodr('(\\i))guez(-)Doncel",
+      "John Domingue",
+      "Achim Rettinger",
+      "Damian Trilling",
+      "Marko Grobelnik",
+      "Claudia d’Amato",
+      "Valeria Fionda",
+      "Ilaria Tiddi",
+      "Gabriele Tolomei"
+    ],
+    "year": 2025,
+    "venue": "CINECA IRIS Institutional Research Information System (University of Bari Aldo Moro)",
+    "venue_full": "CINECA IRIS Institutional Research Information System (University of Bari Aldo Moro)",
+    "venue_key": null,
+    "type": "other",
+    "topics": [
+      "misc"
+    ],
+    "url": "https://ceur-ws.org/Vol-3977",
+    "citations": 0
   },
   {
     "key": "W4415026067",
@@ -979,7 +1017,7 @@ window.PUBLICATIONS = [
     "year": 2020,
     "venue": "DMKD",
     "venue_full": "Data Mining and Knowledge Discovery",
-    "venue_key": "dmkd",
+    "venue_key": "datamine",
     "type": "q1",
     "topics": [
       "adversarial"
@@ -1187,7 +1225,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1145/2783258.2788581",
-    "citations": 40
+    "citations": 41
   },
   {
     "key": "W2079029214",
@@ -1636,4 +1674,4 @@ window.SCHOLAR = {
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-11-18T13:22:01Z"
+window.PUBLICATIONS_TS = "2026-11-19T13:33:18Z"
