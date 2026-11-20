@@ -660,7 +660,7 @@
       "gnn"
     ],
     "url": "https://doi.org/10.1145/3637528.3671896",
-    "citations": 13
+    "citations": 14
   },
   {
     "key": "W4403334015",
@@ -740,7 +740,7 @@
       "llm"
     ],
     "url": "https://doi.org/10.1109/cogmi58952.2023.00027",
-    "citations": 14
+    "citations": 15
   },
   {
     "key": "W4387068289",
@@ -1015,7 +1015,7 @@
     "year": 2020,
     "venue": "DMKD",
     "venue_full": "Data Mining and Knowledge Discovery",
-    "venue_key": "datamine",
+    "venue_key": "dmkd",
     "type": "q1",
     "topics": [
       "adversarial"
@@ -1283,7 +1283,7 @@
       "ir"
     ],
     "url": "https://doi.org/10.1145/2493175.2493179",
-    "citations": 70
+    "citations": 71
   },
   {
     "key": "W102760613",

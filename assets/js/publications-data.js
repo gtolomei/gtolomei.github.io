@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-11-19T13:33:18Z
+// Last updated: 2026-11-20T12:59:58Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -662,7 +662,7 @@ window.PUBLICATIONS = [
       "gnn"
     ],
     "url": "https://doi.org/10.1145/3637528.3671896",
-    "citations": 13
+    "citations": 14
   },
   {
     "key": "W4403334015",
@@ -742,7 +742,7 @@ window.PUBLICATIONS = [
       "llm"
     ],
     "url": "https://doi.org/10.1109/cogmi58952.2023.00027",
-    "citations": 14
+    "citations": 15
   },
   {
     "key": "W4387068289",
@@ -1017,7 +1017,7 @@ window.PUBLICATIONS = [
     "year": 2020,
     "venue": "DMKD",
     "venue_full": "Data Mining and Knowledge Discovery",
-    "venue_key": "datamine",
+    "venue_key": "dmkd",
     "type": "q1",
     "topics": [
       "adversarial"
@@ -1285,7 +1285,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1145/2493175.2493179",
-    "citations": 70
+    "citations": 71
   },
   {
     "key": "W102760613",
@@ -1670,8 +1670,8 @@ window.PUBLICATIONS = [
   }
 ];
 window.SCHOLAR = {
-  "citations": 2799,
+  "citations": 2800,
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-11-19T13:33:18Z"
+window.PUBLICATIONS_TS = "2026-11-20T12:59:58Z"
