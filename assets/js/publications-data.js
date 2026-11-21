@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-11-20T12:59:58Z
+// Last updated: 2026-11-21T12:43:36Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -916,7 +916,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "https://doi.org/10.1109/ijcnn55064.2022.9892367",
-    "citations": 7
+    "citations": 8
   },
   {
     "key": "W4306317232",
@@ -938,7 +938,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "https://doi.org/10.1145/3511808.3557429",
-    "citations": 76
+    "citations": 81
   },
   {
     "key": "W4311721665",
@@ -959,28 +959,6 @@ window.PUBLICATIONS = [
     ],
     "url": "https://doi.org/10.1109/access.2022.3229124",
     "citations": 38
-  },
-  {
-    "key": "W3209179910",
-    "title": "Relace: Reinforcement Learning Agent for Counterfactual Explanations of Arbitrary Predictive Models",
-    "authors": [
-      "Ziheng Chen",
-      "Fabrizio Silvestri",
-      "Gabriele Tolomei",
-      "He Zhu",
-      "Jia Wang",
-      "Hongshik Ahn"
-    ],
-    "year": 2021,
-    "venue": "arXiv",
-    "venue_full": "arXiv",
-    "venue_key": null,
-    "type": "preprint",
-    "topics": [
-      "xai"
-    ],
-    "url": "http://arxiv.org/abs/2110.11960",
-    "citations": 5
   },
   {
     "key": "W3001944142",
@@ -1017,13 +995,13 @@ window.PUBLICATIONS = [
     "year": 2020,
     "venue": "DMKD",
     "venue_full": "Data Mining and Knowledge Discovery",
-    "venue_key": "dmkd",
+    "venue_key": "datamine",
     "type": "q1",
     "topics": [
       "adversarial"
     ],
     "url": "https://doi.org/10.1007/s10618-020-00694-9",
-    "citations": 59
+    "citations": 60
   },
   {
     "key": "W2987678574",
@@ -1060,7 +1038,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "https://doi.org/10.1109/tkde.2019.2945326",
-    "citations": 24
+    "citations": 23
   },
   {
     "key": "W2943467804",
@@ -1103,7 +1081,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1109/mcom.2017.1700871",
-    "citations": 137
+    "citations": 138
   },
   {
     "key": "W2886626623",
@@ -1344,7 +1322,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1109/socialcom.2013.12",
-    "citations": 16
+    "citations": 17
   },
   {
     "key": "W2017064567",
@@ -1402,7 +1380,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1145/2245276.2231939",
-    "citations": 7
+    "citations": 8
   },
   {
     "key": "W1619182398",
@@ -1504,7 +1482,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1145/1935826.1935875",
-    "citations": 144
+    "citations": 145
   },
   {
     "key": "W157734559",
@@ -1525,7 +1503,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1007/978-3-642-24469-8_39",
-    "citations": 21
+    "citations": 23
   },
   {
     "key": "W1987000429",
@@ -1646,7 +1624,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1109/tce.2006.1605032",
-    "citations": 103
+    "citations": 104
   },
   {
     "key": "W2148346729",
@@ -1674,4 +1652,4 @@ window.SCHOLAR = {
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-11-20T12:59:58Z"
+window.PUBLICATIONS_TS = "2026-11-21T12:43:36Z"
