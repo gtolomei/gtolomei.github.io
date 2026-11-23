@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-11-22T12:52:34Z
+// Last updated: 2026-11-23T14:59:36Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -642,7 +642,7 @@ window.PUBLICATIONS = [
       "fairness"
     ],
     "url": "http://arxiv.org/abs/2404.15760",
-    "citations": 10
+    "citations": 11
   },
   {
     "key": "W4401863450",
@@ -788,7 +788,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1145/3539618.3592070",
-    "citations": 43
+    "citations": 44
   },
   {
     "key": "CF-Gnnexplainer: Counterfactual Explanations for Graph Neural Networks",
@@ -832,7 +832,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "https://doi.org/10.1109/tai.2022.3223892",
-    "citations": 40
+    "citations": 41
   },
   {
     "key": "W4298169105",
@@ -938,7 +938,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "https://doi.org/10.1145/3511808.3557429",
-    "citations": 81
+    "citations": 83
   },
   {
     "key": "W4311721665",
@@ -995,7 +995,7 @@ window.PUBLICATIONS = [
     "year": 2020,
     "venue": "DMKD",
     "venue_full": "Data Mining and Knowledge Discovery",
-    "venue_key": "datamine",
+    "venue_key": "dmkd",
     "type": "q1",
     "topics": [
       "adversarial"
@@ -1101,7 +1101,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1109/cns.2018.8433122",
-    "citations": 5
+    "citations": 6
   },
   {
     "key": "W2796774312",
@@ -1652,4 +1652,4 @@ window.SCHOLAR = {
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-11-22T12:52:34Z"
+window.PUBLICATIONS_TS = "2026-11-23T14:59:36Z"
