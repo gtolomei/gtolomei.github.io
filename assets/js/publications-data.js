@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-11-24T15:08:53Z
+// Last updated: 2026-11-25T14:44:04Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -548,7 +548,7 @@ window.PUBLICATIONS = [
       "llm"
     ],
     "url": "https://arxiv.org/abs/2510.20351",
-    "citations": 7
+    "citations": 8
   },
   {
     "key": "W4393118871",
@@ -614,7 +614,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "https://doi.org/10.1109/tai.2024.3496616",
-    "citations": 9
+    "citations": 10
   },
   {
     "key": "W4395484015",
@@ -702,7 +702,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "http://arxiv.org/abs/2410.09295",
-    "citations": 9
+    "citations": 14
   },
   {
     "key": "W4384828640",
@@ -788,7 +788,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1145/3539618.3592070",
-    "citations": 44
+    "citations": 46
   },
   {
     "key": "CF-Gnnexplainer: Counterfactual Explanations for Graph Neural Networks",
@@ -832,7 +832,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "https://doi.org/10.1109/tai.2022.3223892",
-    "citations": 41
+    "citations": 43
   },
   {
     "key": "W4298169105",
@@ -938,7 +938,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "https://doi.org/10.1145/3511808.3557429",
-    "citations": 83
+    "citations": 85
   },
   {
     "key": "W4311721665",
@@ -958,7 +958,7 @@ window.PUBLICATIONS = [
       "federated"
     ],
     "url": "https://doi.org/10.1109/access.2022.3229124",
-    "citations": 38
+    "citations": 35
   },
   {
     "key": "W3001944142",
@@ -995,13 +995,13 @@ window.PUBLICATIONS = [
     "year": 2020,
     "venue": "DMKD",
     "venue_full": "Data Mining and Knowledge Discovery",
-    "venue_key": "datamine",
+    "venue_key": "dmkd",
     "type": "q1",
     "topics": [
       "adversarial"
     ],
     "url": "https://doi.org/10.1007/s10618-020-00694-9",
-    "citations": 60
+    "citations": 63
   },
   {
     "key": "W2987678574",
@@ -1020,7 +1020,7 @@ window.PUBLICATIONS = [
       "adversarial"
     ],
     "url": "https://doi.org/10.1145/3357384.3358149",
-    "citations": 41
+    "citations": 42
   },
   {
     "key": "W2979156612",
@@ -1060,7 +1060,7 @@ window.PUBLICATIONS = [
       "security"
     ],
     "url": "https://doi.org/10.1109/eurosp.2019.00045",
-    "citations": 63
+    "citations": 66
   },
   {
     "key": "W2786484447",
@@ -1081,7 +1081,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1109/mcom.2017.1700871",
-    "citations": 138
+    "citations": 137
   },
   {
     "key": "W2886626623",
@@ -1223,7 +1223,7 @@ window.PUBLICATIONS = [
       "security"
     ],
     "url": "https://doi.org/10.1145/2566486.2568047",
-    "citations": 30
+    "citations": 29
   },
   {
     "key": "W2103325788",
@@ -1263,7 +1263,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1145/2493175.2493179",
-    "citations": 71
+    "citations": 70
   },
   {
     "key": "W102760613",
@@ -1303,7 +1303,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1145/2487788.2488163",
-    "citations": 9
+    "citations": 8
   },
   {
     "key": "W2545649789",
@@ -1400,7 +1400,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1007/978-3-642-28714-5_19",
-    "citations": 3
+    "citations": 2
   },
   {
     "key": "W4249633366",
@@ -1482,7 +1482,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1145/1935826.1935875",
-    "citations": 145
+    "citations": 149
   },
   {
     "key": "W157734559",
@@ -1503,7 +1503,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1007/978-3-642-24469-8_39",
-    "citations": 23
+    "citations": 24
   },
   {
     "key": "W1987000429",
@@ -1566,7 +1566,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1109/icumt.2009.5345355",
-    "citations": 20
+    "citations": 19
   },
   {
     "key": "W2050126912",
@@ -1624,7 +1624,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1109/tce.2006.1605032",
-    "citations": 104
+    "citations": 98
   },
   {
     "key": "W2148346729",
@@ -1644,7 +1644,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1109/icce.2006.1598338",
-    "citations": 19
+    "citations": 16
   }
 ];
 window.SCHOLAR = {
@@ -1652,4 +1652,4 @@ window.SCHOLAR = {
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-11-24T15:08:53Z"
+window.PUBLICATIONS_TS = "2026-11-25T14:44:04Z"
