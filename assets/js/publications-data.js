@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-11-25T14:44:04Z
+// Last updated: 2026-11-26T14:12:00Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -421,7 +421,7 @@ window.PUBLICATIONS = [
       "recommender"
     ],
     "url": "https://doi.org/10.1145/3731683",
-    "citations": 13
+    "citations": 14
   },
   {
     "key": "W7235814506",
@@ -742,7 +742,7 @@ window.PUBLICATIONS = [
       "llm"
     ],
     "url": "https://doi.org/10.1109/cogmi58952.2023.00027",
-    "citations": 15
+    "citations": 16
   },
   {
     "key": "W4387068289",
@@ -788,7 +788,7 @@ window.PUBLICATIONS = [
       "ir"
     ],
     "url": "https://doi.org/10.1145/3539618.3592070",
-    "citations": 46
+    "citations": 48
   },
   {
     "key": "CF-Gnnexplainer: Counterfactual Explanations for Graph Neural Networks",
@@ -857,7 +857,7 @@ window.PUBLICATIONS = [
       "recommender"
     ],
     "url": "http://arxiv.org/abs/2208.04222",
-    "citations": 45
+    "citations": 46
   },
   {
     "key": "W4320024272",
@@ -1652,4 +1652,4 @@ window.SCHOLAR = {
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-11-25T14:44:04Z"
+window.PUBLICATIONS_TS = "2026-11-26T14:12:00Z"
