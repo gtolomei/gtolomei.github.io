@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-11-26T14:12:00Z
+// Last updated: 2026-11-27T13:56:22Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -527,7 +527,7 @@ window.PUBLICATIONS = [
       "federated"
     ],
     "url": "https://doi.org/10.1109/tifs.2025.3608671",
-    "citations": 14
+    "citations": 15
   },
   {
     "key": "W4416619852",
@@ -742,7 +742,7 @@ window.PUBLICATIONS = [
       "llm"
     ],
     "url": "https://doi.org/10.1109/cogmi58952.2023.00027",
-    "citations": 16
+    "citations": 17
   },
   {
     "key": "W4387068289",
@@ -1001,7 +1001,7 @@ window.PUBLICATIONS = [
       "adversarial"
     ],
     "url": "https://doi.org/10.1007/s10618-020-00694-9",
-    "citations": 63
+    "citations": 64
   },
   {
     "key": "W2987678574",
@@ -1604,7 +1604,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "http://hdl.handle.net/11573/1382684",
-    "citations": 1
+    "citations": 0
   },
   {
     "key": "W2149786528",
@@ -1648,8 +1648,8 @@ window.PUBLICATIONS = [
   }
 ];
 window.SCHOLAR = {
-  "citations": 2800,
+  "citations": 2809,
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-11-26T14:12:00Z"
+window.PUBLICATIONS_TS = "2026-11-27T13:56:22Z"
