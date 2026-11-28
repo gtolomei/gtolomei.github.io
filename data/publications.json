@@ -36,7 +36,7 @@
       "xai"
     ],
     "url": "https://doi.org/10.1145/3770854.3780243",
-    "citations": 2
+    "citations": 3
   },
   {
     "key": "W7151933956",
@@ -525,7 +525,7 @@
       "federated"
     ],
     "url": "https://doi.org/10.1109/tifs.2025.3608671",
-    "citations": 14
+    "citations": 15
   },
   {
     "key": "W4416619852",
@@ -740,7 +740,7 @@
       "llm"
     ],
     "url": "https://doi.org/10.1109/cogmi58952.2023.00027",
-    "citations": 16
+    "citations": 17
   },
   {
     "key": "W4387068289",
@@ -936,7 +936,7 @@
       "xai"
     ],
     "url": "https://doi.org/10.1145/3511808.3557429",
-    "citations": 85
+    "citations": 86
   },
   {
     "key": "W4311721665",
@@ -999,7 +999,7 @@
       "adversarial"
     ],
     "url": "https://doi.org/10.1007/s10618-020-00694-9",
-    "citations": 63
+    "citations": 64
   },
   {
     "key": "W2987678574",
@@ -1079,7 +1079,7 @@
       "misc"
     ],
     "url": "https://doi.org/10.1109/mcom.2017.1700871",
-    "citations": 137
+    "citations": 138
   },
   {
     "key": "W2886626623",
@@ -1602,7 +1602,7 @@
       "misc"
     ],
     "url": "http://hdl.handle.net/11573/1382684",
-    "citations": 1
+    "citations": 0
   },
   {
     "key": "W2149786528",
