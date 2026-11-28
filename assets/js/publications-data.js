@@ -1,5 +1,5 @@
 // AUTO-GENERATED — do not edit manually
-// Last updated: 2026-11-27T13:56:22Z
+// Last updated: 2026-11-28T13:21:41Z
 window.PUBLICATIONS = [
   {
     "key": "W7128095008",
@@ -38,7 +38,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "https://doi.org/10.1145/3770854.3780243",
-    "citations": 2
+    "citations": 3
   },
   {
     "key": "W7151933956",
@@ -938,7 +938,7 @@ window.PUBLICATIONS = [
       "xai"
     ],
     "url": "https://doi.org/10.1145/3511808.3557429",
-    "citations": 85
+    "citations": 86
   },
   {
     "key": "W4311721665",
@@ -1081,7 +1081,7 @@ window.PUBLICATIONS = [
       "misc"
     ],
     "url": "https://doi.org/10.1109/mcom.2017.1700871",
-    "citations": 137
+    "citations": 138
   },
   {
     "key": "W2886626623",
@@ -1652,4 +1652,4 @@ window.SCHOLAR = {
   "h_index": 25,
   "i10_index": 41
 };
-window.PUBLICATIONS_TS = "2026-11-27T13:56:22Z"
+window.PUBLICATIONS_TS = "2026-11-28T13:21:41Z"
